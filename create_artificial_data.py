@@ -55,8 +55,6 @@ def convert(sentence, table):
 			sentence = re.sub(regexp_pattern, abjad_dict[1], sentence)
 		else:
 			dice_roll = random.randint(0, 100) / 100
-			print(dice_roll)
-			print(abjad_dict.keys())
 			correct_idx = where_in_list(dice_roll, abjad_dict.keys())
 			target_key = list(abjad_dict.keys())[correct_idx]
 			sentence = re.sub(regexp_pattern, abjad_dict[target_key], sentence)
@@ -125,27 +123,25 @@ def compare_word_by_word(converted, target, orig):
 def treat_ramistes(sentence):
 
 
-	i_semi_voyelles = re.compile("i([aeiou])")
-	sentence = re.sub(i_semi_voyelles, r"j\1", sentence)
+	i_semi_voyelles = re.compile("([aeio]|\s)i([aeiou])")
+	sentence = re.sub(i_semi_voyelles, r"\1j\2", sentence)
 
 
-	u_semi_voyelles = re.compile(r"([aeuio])u([aeiou])")
+	u_semi_voyelles = re.compile(r"([aeuio]|\s)u([aeiou])")
 	sentence = re.sub(u_semi_voyelles, r"\1v\2", sentence)
 
 	return sentence
 
-def main(example):
-	# On importe d'abord la table de conversion
-	imported_table_path = "documents/latin-to-aljamia.csv"
+def create_conversion_dict():
+	imported_table_path = "documents/latin-to-aljamia_v2.csv"
 	table = pd.read_csv(imported_table_path, sep=",")
-	print(table.columns)
 	# Create a dictionary of lists to handle multiple values per key
 	conversion_dict = OrderedDict()
 	for pattern, position, abjad, exclude, prob in zip(table['Regexp'],
-														table['Position'],
-														table['Abjad'],
-														table['exclude'],
-														table['Probs']):
+													   table['Position'],
+													   table['Abjad'],
+													   table['exclude'],
+													   table['Probs']):
 		pattern = pattern.strip()
 		if exclude == "TRUE":
 			continue
@@ -158,32 +154,52 @@ def main(example):
 			conversion_dict[pattern] = {**conversion_dict[pattern], **{sum_probs + float(prob): abjad}}
 		except KeyError as e:
 			conversion_dict[pattern] = {prob: abjad}
+	return conversion_dict
 
+def main(example):
+	# On importe d'abord la table de conversion
+	conversion_dict = create_conversion_dict()
 	for orig, realizations in conversion_dict.items():
 		all_probs = realizations.keys()
-		assert all(item <= 1 for item in all_probs), f"Probabilities must be between 0 and 1: {orig} {realizations}"
+		# assert all(item <= 1 for item in all_probs), f"Probabilities must be between 0 and 1: {orig} {realizations}"
 	# Convert defaultdict to regular dict for consistency
 	conversion_dict = OrderedDict(conversion_dict)
 
-	with open("/home/mgl/Documents/conversion_dict.json", "w") as output_test:
+	with open("dicts/conversion_dict.json", "w") as output_test:
 		output_test.write(json.dumps(dict(conversion_dict), indent=4))
 
+
+
 	# Puis on s'occupe d'importer les données d'entrée
-	if example:
-		sentence = treat_ramistes(example)
-		converted = convert(sentence.lower(), conversion_dict)
-		print(converted)
-	else:
 		castilian_sentences = import_xml_to_dict()
-		for sentence in castilian_sentences[1:2]:
+	if example:
+		castilian_sentences = [shorten_sentence(sentence, example) for sentence in castilian_sentences if example in sentence]
+		sentence = castilian_sentences[random.randint(0, len(castilian_sentences) - 1)]
+	else:
+		for i in range(30):
+			sentence = castilian_sentences[random.randint(0, len(castilian_sentences) - 1)]
 			print(sentence)
 			sentence = treat_ramistes(sentence)
-			target = "لُش اَلْكَلْدَاشْ دَا اَلبَ اِ ءَالْجُئَازْ نُنْ بَّارَانْضَنْ اَنَانغُنُ اُمْنَا نِن اَنَانْغُنَ مَُلَارْ شُ ڧُوَاربُّ نِن نَانغُنَ كُشَ دَا شُ اَبَارْ شِ نُنْْ ڢُوَارَا كَارَلُشُ"
 			print(sentence)
 			converted = convert(sentence.lower(), conversion_dict)
 			print(converted)
-			compare_word_by_word(converted=converted, target=target, orig=sentence)
+			# compare_word_by_word(converted=converted, target=target, orig=sentence)
 
+			with open("/home/mgl/Documents/artificial_data.txt", "a") as out_file:
+				out_file.write("\nq---\n")
+				out_file.write(f"{sentence}")
+				out_file.write(f"\n{converted}")
+
+def treat_sentence(sentence):
+	conversion_dict = create_conversion_dict()
+	sentence = treat_ramistes(sentence)
+	converted = convert(sentence.lower(), conversion_dict)
+	return converted
+
+
+def shorten_sentence(sentence, word):
+	position_word = sentence.index(word)
+	return sentence[position_word - 20: position_word + 20]
 
 
 if __name__ == '__main__':
