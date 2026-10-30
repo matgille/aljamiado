@@ -1,0 +1,1185 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="/home/mgl/Bureau/Travail/projets/Biblissima-Text/Transform/schemata/out/ODD.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Vida de la Madre Juana Inés de la Cruz</title>
+                <respStmt>
+                    <resp>Transcrit par</resp>
+                    <name>
+                        <surname>Gama de Cossío</surname>
+                        <forename>Borja</forename>
+                    </name>
+                </respStmt>
+                <respStmt>
+                    <resp>Textes édités et rassemblés par </resp>
+                    <name>
+                        <forename>Francisco</forename>
+                        <surname>Gago Jover</surname>
+                    </name>
+                    <name>
+                        <forename>Javier</forename>
+                        <surname>Pueyo Mena</surname>
+                    </name>
+                </respStmt>
+                <respStmt>
+                    <resp>Modélisation, encodage et structuration XML-TEI
+                        par</resp>
+                    <name>
+                        <forename>Matthias</forename>
+                        <surname>Gille Levenson</surname>
+                    </name>
+                </respStmt>
+                <respStmt>
+                    <resp>Responsabilité du projet Biblissima-Textes: </resp>
+                    <name>
+                        <forename>Thibault</forename>
+                        <surname>Clérice</surname>
+                    </name>
+                    <name>
+                        <forename>Olivier</forename>
+                        <surname>Brisville-Fertin</surname>
+                    </name>
+                    <name>
+                        <forename>Ariane</forename>
+                        <surname>Pinche</surname>
+                    </name>
+                    <name>
+                        <forename>Marianne</forename>
+                        <surname>Reboul</surname>
+                    </name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Publié dans le cadre de Biblissima-textes à partir de
+                    matériaux publiés auparavant.</publisher>
+                <availability status="restricted">
+                    <licence
+                        target="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+                        >Creative Commons Attribution Non Commercial Share Alike
+                        4.0 International</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <!--La source premi&#232;re: le projet OSTA-->
+                <bibl xml:id="SJI" type="source-transcription">
+                    <title>TEXT.SJI.txt</title>
+                    <editor>
+                        <forename>Francisco</forename>
+                        <surname>Gago Jover</surname>
+                    </editor>
+                    <editor>
+                        <forename>Javier</forename>
+                        <surname>Pueyo Mena</surname>
+                    </editor>
+                    <publisher>Hispanic Seminary of Medieval Studies</publisher>
+                    <date when="2026-03-07"/>
+                    <availability status="restricted">
+                        <licence
+                            target="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+                            >Creative Commons Attribution Non Commercial Share
+                            Alike 4.0 International</licence>
+                    </availability>
+                    <note>Projet OSTA (Old Spanish Textual Archive). Source des
+                        données: <ptr
+                            target="https://raw.githubusercontent.com/hispanicseminary/OSTA/refs/heads/main/transcriptions/TEXT.SJI.txt"
+                        />, v 2.0.</note>
+                </bibl>
+                <!--La source premi&#232;re: le projet OSTA-->
+
+                <!--L'oeuvre abstraite = work-->
+                <!--On va cat&#233;goriser la classe frbr et la forme<-->
+                <bibl ana="#frbr.work" type="work">
+                    <title>Vida de la Madre Juana Inés de la Cruz</title>
+                    <author>
+                        <surname>Calleja</surname>
+                        <forename>Diego</forename>
+                        <roleName>S.J.</roleName>
+                    </author>
+                    <date notBefore-iso="1663" notAfter-iso="1725">1663 - 1725</date>
+                    <idno type="HSMS-WORK">HSMS-0467-0001</idno>
+                    <idno type="beta-texid"/>
+                    <idno type="factgrid-id"/>
+                    <idno type="biblissima-id"/>
+                    <idno type="BNF-id"/>
+                    <idno type="BNE-id"/>
+                    <idno type="VIAF-id"/>
+                </bibl>
+                <!--L'oeuvre abstraite-->
+
+                <!--Exemplaire / manuscrit = frbr.item (imprim&#233;) ou frbr.manifestation_singleton (manuscrit). Attribut ajout&#233; automatiquement.-->
+                <msDesc ana="#frbr.manifestation_singleton">
+                    <msIdentifier
+                        facs="http://bdh.bne.es/bnesearch/detalle/bdh0000234973">
+                        <settlement>Madrid</settlement>
+                        <!--Un identifiant de biblioth&#232;que id&#233;alement-->
+                        <repository
+                            corresp="https://data.biblissima.fr/w/Item:Q79880"
+                            >Biblioteca Nacional de España</repository>
+                        <!--Un identifiant de biblioth&#232;que id&#233;alement-->
+                        <idno type="cote">MSS/18734/5</idno>
+                        <idno type="HSMS-ID">HSMS-0467</idno>
+                        <idno type="factgrid-id"/>
+                        <idno type="biblissima-id"/>
+                        <!--Manuscrit-->
+                        <idno type="beta-manid"/>
+                        <!--Manuscrit-->
+                        <!--Imprim&#233;-->
+                        <idno type="beta-copid"/>
+                        <!--Imprim&#233;-->
+                        <msName/>
+                    </msIdentifier>
+                    <history>
+                        <!--Le corresp permet de lier la date &#224; l'unit&#233; codicologique, dans le cas de recueils organis&#233;s-->
+                        <origin>
+                            <origDate corresp="#HSMS-0467-0001" notBefore-iso="1663"
+                                notAfter-iso="1725">1663 - 1725</origDate>
+                        </origin>
+                        <!--Le corresp permet de lier la date &#224; l'unit&#233; codicologique -->
+                    </history>
+
+                    <msContents>
+                        <msItem xml:id="HSMS-0467-0001">
+                            <locus>1r-9r</locus>
+                            <idno type="beta-cnum"
+                                ><!--identifiant de contr&#244;le
+                                philobiblon du t&#233;moin (witness):
+                                "Una copia espec&#237;fica de esta obra (texid) dentro de una fuente primaria (manid)"--></idno>
+                            <idno type="factgrid-cnum"
+                                ><!--identifiant de contr&#244;le
+                                philobiblon du t&#233;moin (witness), identifiant factgrid--></idno>
+                            <incipit/>
+                            <explicit/>
+                            <colophon/>
+                        </msItem>
+                    </msContents>
+                </msDesc>
+                <!--Exemplaire-->
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="osp-x-med">castellano</language>
+            </langUsage>
+            <textClass>
+                <catRef target="#prose #didactica #religiosa #hagiografia"/>
+            </textClass>
+        </profileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>Ce document est le fruit d'une conversion automatisée de la
+                    transcription originale, qui utilise des normes d'encodages
+                    propres au projet OSTA (Old Spanish Textual Archive).</p>
+                <p>Transcription de type graphématique: réduction des
+                    allographes au graphème. Tous les graphèmes sont conservés
+                    excepté pour les abréviations qui sont développées sans
+                    conservation de la graphie originale, en indiquant cependant
+                    qu'il s'agit d'une expansion. Les transcriptions ne sont ni
+                    ponctuées, ni accentuées selon les normes actuelles. La
+                    césure à la ligne est indiquée.</p>
+                <p>La description des phénomènes matériels et/ou non textuels
+                    est conservée: sauts de ligne, changements de colonne,
+                    espaces en blanc, miniatures, illustrations, diagrammes,
+                    etc.</p>
+                <p>Le texte est structuré en divisions minimales, en fonction de
+                    son genre. La division en paragraphes, pour la prose, n'est
+                    pas réalisée.</p>
+                <p>Pour plus d'informations, voir l'ODD.</p>
+            </editorialDecl>
+            <refsDecl>
+                <!--Doit &#234;tre adapt&#233; &#224; chaque structure de document, &#224; reprendre-->
+                <citeStructure match="/text/body/pb" use="@n"/>
+                <citeStructure unit="page" match="//body//pb" use="@n">
+                    <citeStructure unit="column" match=".//cb" use="@n"
+                        delim=".">
+                        <citeStructure unit="line" match=".//lb" use="@n"
+                            delim="."/>
+                    </citeStructure>
+                </citeStructure>
+                <!--Doit &#234;tre adapt&#233; &#224; chaque structure de document-->
+            </refsDecl>
+            <classDecl>
+                <!--Merci &#224; Morgane PICA pour son aide sur l'adaptation &#224; la mod&#233;lisation FRBR-->
+                <taxonomy xml:id="frbr"
+                    sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/">
+                    <bibl>
+                        <title>Catégories FRBRoo</title>
+                    </bibl>
+                    <category xml:id="frbr.work"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F1">
+                        <catDesc>Work</catDesc>
+                    </category>
+                    <category xml:id="frbr.expression"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F2">
+                        <catDesc>Expression</catDesc>
+                    </category>
+                    <category xml:id="frbr.manifestation"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F3">
+                        <catDesc>Manifestation</catDesc>
+                    </category>
+                    <category xml:id="frbr.manifestation_singleton"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F4">
+                        <catDesc>Manifestation Singleton</catDesc>
+                    </category>
+                    <category xml:id="frbr.item"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F5">
+                        <catDesc>Item</catDesc>
+                    </category>
+                </taxonomy>
+                <taxonomy xml:id="categorisation_formelle">
+                    <bibl>
+                        <title>Catégorisation formelle</title>
+                    </bibl>
+                    <category xml:id="prose">
+                        <catDesc xml:lang="es">prosa</catDesc>
+                        <catDesc xml:lang="fr">prose</catDesc>
+                    </category>
+                    <category xml:id="vers">
+                        <catDesc xml:lang="es">verso</catDesc>
+                        <catDesc xml:lang="fr">vers</catDesc>
+                    </category>
+                </taxonomy>
+                <taxonomy xml:id="matiere_textuelle">
+                    <bibl>
+                        <title>Matière textuelle</title>
+                    </bibl>
+                    <category xml:id="didactica">
+                        <catDesc xml:lang="es">Didáctica</catDesc>
+                        <catDesc xml:lang="fr">Didactique</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="section">
+                <p>
+                    <pb n="1r"/>
+                    <lb break="yes"/>
+                    <cb type="single-column"/><lb break="yes"/>Vida <lb
+                        break="yes"/>Dela<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Madre Juana Ynes dela Cruz Religiosa Professa <lb
+                        break="yes"/>En el convento de San Geronimo dela Ciudad
+                    Ymperial de <lb break="yes"/>Mexico.</p>
+                <p><lb break="yes"/>quarenta, y quatro años, cinco meses, cinco
+                    dias, y cinco horas <lb break="yes"/>illustró su duracion al
+                    tiempo la vida de esta rara muger, <lb break="yes"/>que
+                    nacio al mundo para lograr á la naturaleza las va<lb
+                        break="no"/>nidades de prodigiosa. Refiero su vida con
+                    lisa sencillez, le<lb break="no"/>jos de que el gasto delas
+                    palabras me suponga desconfiar de <lb break="yes"/>la
+                    inteligencia en el Le<choice>
+                        <corr>c</corr>
+                        <sic/>
+                    </choice>tor: y mas, de que las ponderaciones <lb
+                        break="yes"/>usurpen su derecho á los Panegyristas. <lb
+                        break="yes"/>A doce leguas dela Ciudad de<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Mexico, Metropoli de la <lb break="yes"/>Nueva
+                    España, estan casi contiguos dos montes, que no obstan<lb
+                        break="no"/>do lo diverso de sus calidades, en estar
+                    siempre, cubierto de <lb break="yes"/>succesivas nieves el
+                    uno, y manar el otro perenne fuego, <lb break="yes"/>no se
+                    hacen mala vecindad entre si; antes conservar en paz <lb
+                        break="yes"/>sus estremos, y en un templo benigno la
+                    poca distancia, que <lb break="yes"/>los divide. Tiene su
+                    asiento á la falta de estos dos mon<lb break="no"/>tes una
+                    bien capaz Alqueria, muy conocida con el titulo <lb
+                        break="yes"/>de San Miguel de Nepantla, que confinante á
+                    los excessos <lb break="yes"/>de colores, y frios, áfuera de
+                    primavera, huvo de ser Damian <lb break="yes"/>de esta
+                    Maravilla. Aquí nacio la Madre Juana Ynes <lb break="yes"
+                    />el año de mil seiscientos, y cinquenta y uno, el día doce
+                        <lb break="yes"/>de<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Noviembre, Viernes á las once dela noche. Nacio en
+                        <lb break="yes"/>un aposento, que dentro dela misma
+                    Alqueria llaman la <lb break="yes"/>Celda, casualidad que
+                    con el primer aliento la enamoró <lb break="yes"/>de la vida
+                    Monastica: y la enseño, á que eso era vivir, <lb break="yes"
+                    />respirar aires de clausura. Fue un Padre D. Pedro Ma<lb
+                        break="no"/>nuel de Asvaje, natural de la villa de
+                    Vergara, en la <pb n="1v"/>
+                    <lb break="yes"/>
+                    <cb type="single-column"/><lb break="yes"/>Provincia de
+                    Guipuzcoa, que con deseo de corregir los cerros á <lb
+                        break="yes"/>las entrañas de su<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>tierra, dan de nobleza prodigas, como <lb
+                        break="yes"/>esteriles de caudal, passó a Yndias, donde
+                    cassó este dichoso <lb break="yes"/>Vizcaino con
+                        D<ex>oñ</ex>a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Ysabel Ramirez de Cantillana, hija de <lb
+                        break="yes"/>padre<choice>
+                        <corr>s</corr>
+                        <sic/>
+                    </choice> Españoles, y natural de Y<choice>
+                        <corr>a</corr>
+                        <sic>a</sic>
+                    </choice>capistla, Pueblo de Nueba <lb break="yes"/>España,
+                    de cuia legitima union tuvieron entre otros hijos <lb
+                        break="yes"/>á nuestra Poetissa Unica, que fue posible
+                    admitir igualdad <lb break="yes"/>enla sangre, la que
+                    parecio, no tener parentesco humano con <lb break="yes"
+                    />otras almas.</p>
+                <p><lb break="yes"/>Alos tres años de su edad, con ocasion de ir
+                        <lb break="yes"/>á hurto de su Madre, con una hermanita
+                    suia á la Maestra; <lb break="yes"/>dio su entendimiento la primer<choice>
+                        <corr>a</corr>
+                        <sic/>
+                    </choice> respiracion de vivo: vio, que <lb break="yes"
+                    />daban leccion á su Hermana, y como si ya entonces supiera,
+                        <lb break="yes"/>que no es mayoria enlas almas el
+                    excesso enlos años, se <lb break="yes"/>creio habil de
+                    enseñanza, y pidió, que tambien á ella la dies<lb break="no"
+                    />sen leccion: la Maestra lo reussaba, porque en el balbucin
+                        <lb break="yes"/>dela niña aun no era posible discernir,
+                    si los ierros, que pro<lb break="no"/>nunciasse, serian del
+                    pico, á la rudeza, hasta que el usso la <lb break="yes"
+                    />desengañó: porque ala<choice>
+                        <corr>s</corr>
+                        <sic/>
+                    </choice> primera<choice>
+                        <corr>s</corr>
+                        <sic/>
+                    </choice> lecciones, sin haverla podido <lb break="yes"
+                    />sugetar á las perezas del deletro, leia de corrido: y al
+                    fin <lb break="yes"/>en dos años aprendio á leer, escrivir,
+                    contar, y todas las menu<lb break="no"/>dencias curiosas de
+                    Labor blanca: estas con tal esmero, que <lb break="yes"
+                    />huvieran sido su heredad, si huviera havido menester, que
+                        fues<lb break="no"/>sen su tarea. La primera luz, que
+                    rayó de su ingenio, fue <lb break="yes"/>azia los versos
+                    españoles, y era mui racional admiracion de quan<lb
+                        break="no"/>tos la trataron en aquella edad tierna, ven
+                    la facilidad, con que <lb break="yes"/>salian á su voca, ó
+                    su pluma los consonantes, y los nume<lb break="no"/>ros:
+                    assi los producia, como si no<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>los buscara en su cuidado, <lb break="yes"/>sino
+                    es, que se los hallaba de valde en su memoria. Esta <lb
+                        break="yes"/>habilidad dela poesia, que, quando en si,
+                    prescinde para <lb break="yes"/>ser de buen Numen, de
+                    expresar con ella conceptos subtiles <lb break="yes"/>
+                    <fw type="réclame">ni</fw>
+                    <pb n="2r"/>
+                    <lb break="yes"/>
+                    <cb type="single-column"/><lb break="yes"/>ni altos
+                    pensamientos, y menos de tratar materias heroicas, <lb
+                        break="yes"/>porque, sin parar delas aprehensiones de
+                    una fantasia cla<lb break="no"/>vada, puede llegar á la
+                    esfera de su perfeccion sobre qual<lb break="no"/>quiera
+                    assumpto, quando se acompaña de un entendimiento <lb
+                        break="yes"/>profundo, y claro, á que se á de añadir lo
+                    perspicaz de <lb break="yes"/>un discurso mui fertil, y con
+                    el lustre de noticias varias, en <lb break="yes"/>que
+                    entren, no como las menos principales, las del idioma, en
+                        <lb break="yes"/>que se escribe, á hecho los sugetos mas
+                    celebrados en todas <lb break="yes"/>edades. No llegaba á
+                    ocho años la dela<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Madre<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Juana <lb break="yes"/>Ynes, quando, porque la
+                    ofrecieron por premio un libro, riquezas <lb break="yes"/>de
+                    que huvo siempre sedienta codicia, compuso para una fiesta
+                        <lb break="yes"/>del Sanctissimo Sacramento una Loa con
+                    las calidades, que <lb break="yes"/>requiere un cabal Poema:
+                    testigo en el muy Rev<ex>eren</ex>do P<ex>adre</ex> Maestro
+                        <lb break="yes"/>Fr<ex>ay</ex> Francisco Muñiz
+                    Dominicano, Vicario entonces del pue<lb break="no"/>blo de
+                    Mecamessa, que esta <choice>
+                        <corr>a</corr>
+                        <sic/>
+                    </choice> quatro leguas dela Caseria, en <lb break="yes"
+                    />que nacio la Madre<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Juana Ynes. Ella misma refiere de si, <lb
+                        break="yes"/>que si en esta edad oia decir, que alguna
+                    golosina causaba ru<lb break="no"/>deza, huia de ella, como
+                    de un veneno, que comido, huviesse <lb break="yes"/>de
+                    inficionarla su razon. Ymportunaba entonces mucho á sus <lb
+                        break="yes"/>Padres sobre que, mudado su trage en el de
+                    hombre, la em<lb break="no"/>biassen á estudiar muchas
+                    ciencias, que oió decir, que enla <lb break="yes"
+                    />Universidad de<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Mexico se enseñaban: y mostrando su espi<lb
+                        break="no"/>ritu el impetuoso caudal, que encerraba en
+                    aquel corpecico, <lb break="yes"/>se impacientaba con la
+                    orilla, que la naturaleza le pusso. No <lb break="yes"
+                    />prevenia entonces, que ingenios de cathegoria tan superior
+                    pueden <lb break="yes"/>en la perspicacia de su
+                    entendimiento contener las ciencias, <lb break="yes"/>como
+                    en semilla, que da copioso fruto á cultivo ligero, para que
+                        <lb break="yes"/>solo les hace falta la arbitraria
+                    propriedad delos terminos, <lb break="yes"/>que si tal vez
+                    no sirbe á la inteligencia substancial, apro<lb break="no"
+                    />vecha siempre de explicarsse al usso los Maestros. Estos
+                        <lb break="yes"/>la faltaron siempre á esta Prodigiosa
+                    Muger; pero nunca la <lb break="yes"/>hicieron falta: dentro
+                    de sola su capacidad cupieron Cathedras, <pb n="2v"/>
+                    <lb break="yes"/>
+                    <cb type="single-column"/><lb break="yes"/>y Auditorio para
+                    emprender las maiores Ciencias, y para sa<lb break="no"
+                    />berlas con la cabal inteligencia, que tantas veces se
+                    asoma á sus <lb break="yes"/>escritos, ella se fue á su sola
+                    á un mismo tiempo, argumen<lb break="no"/>to, respuesta,
+                    replica, y satisfaccion, como si huviera hecho to<lb
+                        break="no"/>das las facultades de calidad de Poesia, que
+                    se sabe sin ense<lb break="no"/>ñanza.</p>
+                <p><lb break="yes"/>En edad de ocho años la llebaron sus Padres
+                    a Mexico, <lb break="yes"/>á que viviesse con un Abuelo
+                    suio, donde cebó su ansia de saber <lb break="yes"/>en unos
+                    pocos libros, que halló en su casa, sin mas destino, que <lb
+                        break="yes"/>embarazar adornando un bufete; penuria, que
+                    muchos años pa<lb break="no"/>decio, estudiar á mexico delos
+                    libros, que hallaba, fuera de <lb break="yes"/>su deseo.
+                    Solas diez lecciones de la lengua Latina testifica <lb
+                        break="yes"/>el Bachiller Martin de Olivas, que la dio,
+                    y la supo con <lb break="yes"/>eminencia: porque haviendola
+                    dejado por Maestro en manos <lb break="yes"/>de solo su
+                    discurso, añadio ella por decision su empeño, cor<lb
+                        break="no"/>tandosse del cabello algo, y notificandosse,
+                    que si hasta cierta <lb break="yes"/>medida del hombro
+                    crecia otra vez, sin haver aprendido lo <lb break="yes"/>que
+                    se tassaba, se le havia de volver á cortar: cosa que no <lb
+                        break="yes"/>tal vez la executó: valiendosse para
+                    despertar su poco dor<lb break="no"/>mida memoria de tan
+                    costosa Vacardina, que otras mugeres <lb break="yes"
+                    />perdieran los sentidos con ella.</p>
+                <p><lb break="yes"/>Bolaba<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>la fama de habilidad <lb break="yes"/>tan nunca
+                    vista en tan pocos años, y al passo, que crecia la <lb
+                        break="yes"/>edad, se augmentaban en ella la discrecion
+                    con los cuidados de <lb break="yes"/>su estudio, y su buen
+                    parecer con los dela naturaleza sola: que <lb break="yes"
+                    />no quiso esta vez encerrar tanta sutileza de espiritu en
+                        <lb break="yes"/>cuerpo, que<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>la embidiasse mucho, ni disimular, como avarienta,
+                        <lb break="yes"/>tesoro tan rico escondido entre tierra
+                    tosca. Luego que co<lb break="no"/>nocieron sus Parientes el
+                    riesgo, que podía correr de desgra<lb break="no"/>ciada por
+                    discreta, y con desgracia no menor de perseguida <lb
+                        break="yes"/>por hermosa, aseguraron ambos estremos de
+                    una vez, <lb break="yes"/>y la introdujeron en el Palacio
+                    del ex<ex>celentisi</ex>mo Señor Marques <lb break="yes"/>
+                    <fw type="réclame">de</fw>
+                    <pb n="3r"/>
+                    <lb break="yes"/>
+                    <cb type="single-column"/><lb break="yes"/>de<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Mancera, Virrey, que era entonces de<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Mexico, y en<lb break="no"/>traba con el titulo de
+                    mui querida dela Señora Virreyna. <lb break="yes"/>Aquí me
+                    pesa el descarte, que hice al estilo de Panegyristas, <lb
+                        break="yes"/>porque no se hara sin hiperbole verisimil
+                    quanto cariño, y <lb break="yes"/>porque no veneracion, si
+                    ai modos de servir, que dominan <lb break="yes"/>su alvedrio
+                    á los dueños? La cobraron sus excelencias, vi<lb break="no"
+                    />endola, que acertaba, como por uso, en quanto, sin
+                    mandarselo, <lb break="yes"/>obedecia. La señora Virreyna no
+                    parece que podia vivir un <lb break="yes"/>instante sin su<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Juana Ynes, y ella no perdía por esso el tiempo <lb
+                        break="yes"/>á su estudio: porque antes era proseguirle,
+                    hablar con la seño<lb break="no"/>ra<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Virreyna. Aqui referire con certitud no disputable
+                    (tanta <lb break="yes"/>fé se debe al testigo) un sucesso,
+                    que sin igual apoio le callava, <lb break="yes"/>ó por no
+                    asospecharme de apasionado credulo, ó por limpiar de <lb
+                        break="yes"/>dudas lo que é dicho, y me resta. El
+                        S<ex>eñor</ex> Marques de<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Mancera, <lb break="yes"/>que oi vive, y viva
+                    muchos años, que tras es de favorecido, <lb break="yes"/>me
+                    contó varias veces, que estando con no vulgar admiracion <lb
+                        break="yes"/>(era de su exc<ex>elenci</ex>a ) de ver en
+                    Juana Ynes tanta variedad de <lb break="yes"/>noticias, las
+                    escholasticas, tan al parecer puntuales, y bien fun<lb
+                        break="no"/>dadas las demas, quiso desengañarsse de una
+                    vez, y saber, si <lb break="yes"/>era sabiduria tan
+                    admirable, ó infusa, ó adquirida, ó artificio, <lb
+                        break="yes"/>ó no natural, y juntó un dia en su Palacio
+                    quantos hombres <lb break="yes"/>professaban letras en la
+                    Universidad, y Ciudad de<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Mexico. <lb break="yes"/>El numero de todos
+                    llegaria á quarenta, y en las profession<lb break="no"/>nes
+                    eran varios, como, Theologos, Escripturarios, Philosofos,
+                        <lb break="yes"/>Mathematicos, Historiadores, Poetas,
+                    Humanistas, y no pocos <lb break="yes"/>delos que, por
+                    alusivo gracejo, llamamos Tertulios, que sin <lb break="yes"
+                    />haber cursado por destino las facultades, con su mucho
+                        inge<lb break="no"/>nio, y alguna aplicacion, suelen
+                    hacer, no en vano, muy buen <lb break="yes"/>juicio de todo.
+                    No desdeñaron la niñez (tenia entonces <lb break="yes"
+                    />Juana Ynes no mas que diez y siete años) dela, no
+                        combati<lb break="no"/>ente, sino examinada tan
+                    señalados hombres, que eran <lb break="yes"/>discretos: ni
+                    aun esquivaran descorteses la cientifica lid por <pb n="3v"/>
+                    <lb break="yes"/>
+                    <cb type="single-column"/><lb break="yes"/>Muger, que eran
+                    Españoles. Concurrieron pues el dia señalado <lb break="yes"
+                    />al certamen de tan curiosa admiracion: y atestigua el
+                    señor <lb break="yes"/>Marques, que no cabe en humano juicio
+                    creer lo que vio: pues <lb break="yes"/>dice que á la
+                    manera, que un Galeon Real (traslado las <lb break="yes"
+                    />palabras de su Exc<ex>elenci</ex><hi rend="superscript"
+                        >a</hi>) se defenderia de pocas chalupas, que le <lb
+                        break="yes"/>embistieran, assi se desembarazaba Juana<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Ynes de las pre<lb break="no"/>guntas, argumentos,
+                    y replicas, que tantos, cada uno en su classe, <lb
+                        break="yes"/>la propusieron. Que estudio, que
+                    entendimiento, que discurso, <lb break="yes"/>y que memoria
+                    seria menester para esto? El lector lo discurra <lb
+                        break="yes"/>por si: que quien lo escribe, solo puede
+                    afirmar, que de tanto <lb break="yes"/>triunfo quedó Juana
+                    Ynes con la poca satisfaccion de si, que <lb break="yes"/>si
+                    enla Maestra huviera labrado con mas curiosidad el <lb
+                        break="yes"/>filete de una vainica.</p>
+                <p><lb break="yes"/>Entrelas lisonjas de esta no popular aura<lb
+                        break="yes"/>vivía esta discretissima muger, quando
+                    quiso, que viessen todos <lb break="yes"/>el entendimiento
+                    que havian oido: porque conociendo, que el <lb break="yes"
+                    />verdor delos pocos años tiene su ternura por amenaza de su
+                        du<lb break="no"/>racion: que no ai Abril, que passe de
+                    un Mes, ni mañana que <lb break="yes"/>llegue á un dia: que
+                    lo hermoso es un bien de tan ruin <lb break="yes"/>sobervia,
+                    que sino se permite ajar, no se estima: que la buena <lb
+                        break="yes"/>cara de una muger pobre es una pared
+                    blanca, donde no ai <lb break="yes"/>necio, que no quiera
+                    hechar su borron: que aun la mesma <lb break="yes"/>dela
+                    honestidad sirbe de riesgo, porque ai ojos, que en el hielo
+                        <lb break="yes"/>deslizan mas: y finalmente que las
+                    flores mas bellas mano<lb break="no"/>seadas son
+                    desperdicio, y culto divino enlas macetas del altar, <lb
+                        break="yes"/>desde esta todo tan floreciente se dedicó á
+                    servir á Dios en <lb break="yes"/>una clausura Religiosa;
+                    sin haver jamas amagado su <lb break="yes"/>pensamiento á
+                    dar oidos á las licencias del Matrimonio: quizas <lb
+                        break="yes"/>persuadida de secreto la Americana Fenix á
+                    que era impo<lb break="no"/>sible este lazo, en quien no
+                    podía hallar pan en el mundo.</p>
+                <p><lb break="yes"/>Tomó este acuerdo la Madre Juana Ynes á
+                    pesar <lb break="yes"/>dela contradiccion, que la hizo
+                    conocer tan entrañada en si <lb break="yes"/>la inclinacion
+                    vehemente al estudio. Temia, que un coro <pb n="4r"/>
+                    <lb break="yes"/>
+                    <cb type="single-column"/><lb break="yes"/>indispensable, ni
+                    la podía dejar tiempo, ni quitar la ansia <lb break="yes"
+                    />de emplearsse toda en los libros; y meter en la Religion
+                    un <lb break="yes"/>deseo estorvado, seria llebar por alivio
+                    un continuo arrepenti<lb break="no"/>miento, torcedor, que á
+                    las mas rigorosas almas no las deja en <lb break="yes"/>toda
+                    la vida respirar, sino aier: en especial, quando el deseo
+                        <lb break="yes"/>reprimido no se aprende por especie de
+                    culpa: que entonces con <lb break="yes"/>lo anchuroso dela
+                    permision hallan los grandes juicios <lb break="yes"/>mui á
+                    tras mano la resistencia del deseo. Era por aquel tiempo <lb
+                        break="yes"/>el P<ex>adre</ex> Antonio Nuñez dela
+                    Compañia de<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Jesus, en la Ciudad <lb break="yes"/>de<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Mexico, por virtuoso, y sabio, veneracion de todos,
+                    y confesor <lb break="yes"/>delos señores Virreyes.
+                    Communicó los recelos de su vocacion <lb break="yes"/>Juana
+                    Ynes con varon tan illustre, que a fuer<choice>
+                        <corr>a</corr>
+                        <sic/>
+                    </choice> de luz la <lb break="yes"/>quitó el miedo: porque
+                    siendo el consultado de tal Familia <lb break="yes"/>claro
+                    estaba, que no le havia de parecer dificil caber dentro <lb
+                        break="yes"/>de un alma grandes talentos de sabiduria
+                    hermanados con <lb break="yes"/>grandes virtudes Religiosas:
+                    y que si se oponian á estas, la dijo, <lb break="yes"/>era
+                    mucha ganancia, esconder los talentos; con que depuesta la
+                        <lb break="yes"/>repugnancia resolvio Juana<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Ynes con denuedo piadoso, dejar en <lb break="yes"
+                    />su mundo su inclinacion á la sabiduria humana, y en cada
+                        <lb break="yes"/>libro, que abandonaba, degollarle á
+                    Dios un Ysaac, fineza, que <lb break="yes"/>su Magestad la
+                    pagó, con sobre añadir á su entendimiento ca<lb break="no"
+                    />pacidad, para aprender enla Religion, á ratos breves, que
+                        ha<lb break="no"/>vian de ser, ú ocio, ú descanso, mas
+                    noticias, que tantos, como <lb break="yes"/>enlas escuelas á
+                    puro gastar tiempo, y macear, acepillan fi<lb break="no"
+                    />nalmente su tronco.</p>
+                <p><lb break="yes"/>El convento delas Religiosas de San Gero<lb
+                        break="no"/>nimo dela Ymperial Ciudad de<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Mexico fue el mas pacifico, en que, <lb break="yes"
+                    />para ser peregrina, se encerró á crecer esta perla: allí
+                    professó fa<lb break="no"/>voreciendosse D<ex>o</ex>n Pedro
+                    Velazquez dela Cadena, en pagarla el <lb break="yes"/>dote,
+                    que tales gastos enriquecen; merced, á que siempre estubo la
+                        <lb break="yes"/>Madre<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Juana Ynes, como á Patron, por quien se havia
+                        guare<lb break="no"/>cido de tanta prevista tormenta,
+                    agradecidissima: que como <lb break="yes"/>tenia su grande
+                    entendimiento esmaltado de igualmente <pb n="4v"/>
+                    <lb break="yes"/>
+                    <cb type="single-column"/><lb break="yes"/>calidades
+                    preciosas, fuera mengua notable, que emvileciese la ingra<lb
+                        break="no"/>titud por el tan rico: por esso pareciendola
+                    quelas ciencias, que <lb break="yes"/>avia estudiado, no
+                    podian ser de provecho á su femenil Religiosa <lb
+                        break="yes"/>Familia, donde se professa con esmero tan
+                    edificativo el antes <lb break="yes"/>dela Musica, por
+                    agradecer á sus carissimas Hermanas el <lb break="yes"
+                    />hospedaje cariñoso, que todas la hicieron, estudio el arte
+                    mui <lb break="yes"/>de proposito, y le alcanzó con tal
+                    felicidad, que compuso otro <lb break="yes"/>nuebo, y mas
+                    facil, en que se llega á su perfecto uso, sin <lb
+                        break="yes"/>los rodeos del antiguo metodo: obra de los
+                    que esto entienden <lb break="yes"/>tan alabada, que bastaba
+                    ella sola, dicen, para hacerla famo<lb break="no"/>sa en el
+                    mundo.</p>
+                <p><lb break="yes"/>Veinte y siete años vivio enla Religion, sin
+                    los <lb break="yes"/>retiros, á que empeña el estruendoso, y
+                    buen nombre de estaticas ; <lb break="yes"/>mas con el
+                    cumplimiento substancial á que obliga el estado de <lb
+                        break="yes"/>Religiosa: en cuya observancia comun
+                    guardaba la Madre Juana <lb break="yes"/>Ynes su puesto,
+                    como la que mejor. Su mas intimo, y familiar <lb break="yes"
+                    />comercio eran los libros, en que tan bien lograba el
+                    tiempo; pe<lb break="no"/>ro á los del Coro, en que ganaba
+                    eternidad, todos cedian. La <lb break="yes"/>caridad era su
+                    virtud Reyna: sino es para guisarla la comida, <lb
+                        break="yes"/>ú disponerla los remedios á la que
+                    enfermaban, no se apar<lb break="no"/>taba de su cabecera.
+                    De muchos regalos continuos, y presca<lb break="no"/>ricas,
+                    quela presentaban, las Religiosas pobres eran acreedo<lb
+                        break="no"/>ras primeras, y despues personas en la
+                    Ciudad necesitada. <lb break="yes"/>Graduaba bien el
+                    socorro: que en furia de que tienen (y <lb break="yes"
+                        />quan<del hand="#self">do</del> dudosa en la
+                    seguridad!) la comida, algunas Religiosas <lb break="yes"
+                    />padecen en todo penurias muy graves: sin que en esto la
+                        <lb break="yes"/>Madre<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Juana Ynes guardasse para si, ni aun la venera<lb
+                        break="no"/>cion de limosnera, ni aun la vanidad de
+                    dadivosa: tan sin <lb break="yes"/>ruido era liberal.</p>
+                <p><lb break="yes"/>Ya se sabe, que la fortuna se la tiene
+                    jurada <lb break="yes"/>ála naturaleza: y que el gran lustre
+                    de una habilidad <lb break="yes"/>en el blanco, á que
+                    endereza sus tiros la fuente: mereciendo <lb break="yes"/>
+                    <fw type="réclame">los</fw>
+                    <pb n="5r"/>
+                    <lb break="yes"/>
+                    <cb type="single-column"/><lb break="yes"/>los que vuelan
+                    mas alto enla esfera de una Comunidad. La <lb break="yes"/>con<choice>
+                        <sic>c</sic>
+                        <corr/>
+                    </choice>miseracion, que se suele tener de Ciceron, y de
+                    Aristoteles, <lb break="yes"/>porque son afligidos adonde
+                    estan, y alabados á donde no. So<lb break="no"/>bre componer
+                    versos hubo la Madre Juana Ynes bien autho<lb break="no"
+                    />rizadas contradicciones, de que no debemos aqui
+                    lastimarnos: ó <lb break="yes"/>porque ya los Aprobantes de
+                    su primer tomo vinieron por <lb break="yes"/>ella este
+                    duelo; ó porque el buen gusto delos espiritus Poeticos <lb
+                        break="yes"/>suelen convertir en sazon donossa estos
+                    pesares, que referidos en <lb break="yes"/>consonantes de
+                    alegre queja, hacen risueña la pesadumbre: <lb break="yes"
+                    />solo nos debemos compadecer del tiempo, en que hubo
+                        entre<lb break="no"/>dicho la Madre Juana es estudio de
+                    las Ciencias maiores por <lb break="yes"/>precepto casero,
+                    Aconsejado, sin quizas, de algunos animos, cu<lb break="no"
+                    />ios juicios no saben descansar el dictamen, si no en lo
+                    mas <lb break="yes"/>seguro, como si esto en el trato humano
+                    pudiese tener limite <lb break="yes"/>ó como sino pudiera
+                    ser aun laudable, lo que es competente<lb break="no"/>mente
+                    seguro: en especial, haviendo pareceres doctissimos, de <lb
+                        break="yes"/>que entre dos extremos seguros, el mas, y
+                    el menos, haran <lb break="yes"/>differencia en la
+                    perfeccion; no en la legalidad. Enfermó en<lb break="no"
+                    />tonces esta prodigiosa Muger, de no trabajar con el
+                    estudio: <lb break="yes"/>assi lo testificaban los Medicos,
+                    y la huvieron los superiores <lb break="yes"/>de dar
+                    licencia, para que de fatigarsse, viviesse. Bolvio á <lb
+                        break="yes"/>sus libros con sed de prohibida,
+                    poniendosse rigurosos preceptos, <lb break="yes"/>de no
+                    entrar á celda ninguna, porque en todas era tan <lb
+                        break="yes"/>bien querida, que no podia entrar, á salir
+                    presto. En las <lb break="yes"/>visitas dela red avia
+                    menester gastar mas paciencia, porq<ex>ue</ex>
+                    <lb break="yes"/>mas tiempo, como los personages, que
+                    frequentaban su con<lb break="no"/>versacion, no acertaban á
+                    dejar la luego, ni los podia perder <lb break="yes"/>el
+                    respeto con escusarsse. Solo para responder a las cartas,
+                        <lb break="yes"/>que en versos, y prosa de las dos
+                    Españas recivia, aun <lb break="yes"/>dictados al oido los
+                    pensamientos, tuviera el amanuense <lb break="yes"/>mas
+                    despejado bien, en que trabajar. No se rendian á tanto <lb
+                        break="yes"/>pero los hombres de esta nobilissima alma:
+                    siempre estudiaba, <pb n="5v"/>
+                    <lb break="yes"/>
+                    <cb type="single-column"/><lb break="yes"/>y siempre
+                    componia: uno, y otro tan bien, como si fuera poco, <lb
+                        break="yes"/>y de espacio.</p>
+                <p><lb break="yes"/>Desden seria no hazer aquí alguna reflexion
+                    sobre <lb break="yes"/>dos solos escritos suios, que la
+                    suponer igualmente ingeniosa, y <lb break="yes"/>sabia. Uno
+                    es la Crisis, en que con puntualidades de rigor es<lb
+                        break="no"/>cholastico contradice assumpto, y razones á
+                    un sermon del P<ex>adr</ex>e <lb break="yes"/>Antonio
+                    Vieyra. Lo primero, que arguie bien este escrito, es <lb
+                        break="yes"/>que el mas vezado enla forma syllogistica
+                    delas escuelas <lb break="yes"/>no puede aventajar á la
+                    puntualidad, clara, formal, y limpia, <lb break="yes"/>con
+                    que sus syllogismos distribuie sus terminos al argu<lb
+                        break="no"/>ir la Madre Juana. Y lo bien, que convence
+                    sobre la <lb break="yes"/>materia lo entenderan todos por el
+                    siguiente parecer. El <lb break="yes"
+                        />Rev<ex>erendisi</ex><hi rend="superscript">mo</hi>
+                        P<ex>adr</ex><hi rend="superscript">e</hi><choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Maestro Francisco Morejon, cuia sabiduria, y de<lb
+                        break="no"/>mas prendas son tan conocidas en<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Madrid: y en especial, <lb break="yes"/>cuia subtil
+                    robustez en las consequencias á sido siempre <lb break="yes"
+                    />tan dolorosa para muchos, haviendo leido este escrito de
+                        <lb break="yes"/>la<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Madre Juana en contradiccion del assumpto del
+                        P<ex>adr</ex>e <lb break="yes"/>Vieyra, dixo, que
+                    quatro, ó cinco veces le concluia con <lb break="yes"
+                    />evidencia: esto le oió á este formalissimo ingenio quien
+                    esto <lb break="yes"/>escrive: y porque sobrados los apoios
+                    no enflaquezcan el cre<lb break="no"/>dito dela Poetissa,
+                    entre los que han menester darsele de <lb break="yes"
+                    />escholastica por ageno informe, no refiere otros muchos,
+                    doctos, <lb break="yes"/>entendidos, y de gusto discreto,
+                    que, haviendo leido este papel <lb break="yes"/>del Crisis,
+                    se deshacian en su alabanza: y aun rehusan <lb break="yes"
+                    />desdeñan al Erostrato, que con un ímpetu cerril, y con un
+                        <lb break="yes"/>mal encendido tizon de estilo causidico
+                    se quiso amenazar <lb break="yes"/>de famoso, y quemar esta
+                    Maravilla. Quien á las obje<lb break="no"/>ciones delos que
+                    pasan la simple aprehension por juicio he<lb break="no"
+                    />cho, quisiese ver una satisfaccion cabal, lea la
+                        respues<lb break="no"/>ta dela Madre Juana á la
+                    Yllustrissima Philotea, que <lb break="yes"/>va impresa para
+                    honra unica de este tercer tomo. Alli <pb n="6r"/>
+                    <lb break="yes"/>
+                    <cb type="single-column"/><lb break="yes"/>reza, que la
+                    objeción de que se atreba una<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>muger á pre<lb break="no"/>sumir de formal
+                    escholastica, es tan irracional, como si zi-ñe<lb break="no"
+                    />ra con alguna mina de hierro, porque fuera de su natura<lb
+                        break="no"/>leza se avia <subst hand="#self">
+                        <del><gap reason="illegible" extent="subword"/></del>
+                        <add>entremetido</add>
+                    </subst>, á producir oro. Alli reza que la <lb break="yes"
+                    />Madre Juana Ynes no destinó este escrito para notorio,
+                    sino <lb break="yes"/>es que Yllustrissima Pluma la offrecio
+                    la impression á su <lb break="yes"/>mano, antes que á su
+                    esperanza. Alli reza, que con la sa<lb break="no"
+                    />tisfaccion, que da la Poetisa al P<ex>adr</ex><hi
+                        rend="superscript">e</hi> Vieyra, queda mas illustra<lb
+                        break="no"/>do, que con la defensa, que le hizo, quien
+                    labó con tintas <lb break="yes"/>la niebe. Y alli finalmente
+                    reza en esta<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Muger admirable <lb break="yes"/>una humildad de
+                    candidez tan mesurada, que no rehusa dar <lb break="yes"
+                    />satisfacciones de su misma offensa.</p>
+                <p><lb break="yes"/>Otro Papel, de que es fuerza no <lb
+                        break="yes"/>desentendernos, es el sueño: obra, de que
+                    dice ella misma, que <lb break="yes"/>á sola contemplacion
+                    suya escrivio. En este elevadissimo Poema <lb break="yes"
+                    />se suponen sabidas quantas materias en los Libros de<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Animas <lb break="yes"/>se establecen, muchas delas
+                    que tratan los Mithologicos, los <lb break="yes"/>Physicos,
+                    aun en quando Medicos, las Historias profanas, y na<lb
+                        break="no"/>turales, y otras no <del hand="#self"
+                        >de</del> vulgares erudiciones. El metro es de <lb
+                        break="yes"/>sylva, vuelta de tasar los consonantes á
+                    cierto numero de <lb break="yes"/>versos, como el que
+                    arbitró el principe numen de D<ex>o</ex>n Luys <lb
+                        break="yes"/>de Gongora en sus Soledades: á cuya
+                    imitacion sin duda se <lb break="yes"/>animó en este Sueño la<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Madre Juana: y sino tan sublime, <lb break="yes"
+                    />ninguno, quelo entienda bien, negará, que vuelan ambos por
+                        <lb break="yes"/>una esfera misma. No le disputemos
+                    alguna ventaja á Don <lb break="yes"/>Luis; pero es menester
+                    balancear tambien las materias, pues <lb break="yes"/>aunque
+                    la Poesia, quanto es de su parte, la prescinde, ai <lb
+                        break="yes"/>unas, mas que otras, capaces de que en
+                    ellas vuele la plu<lb break="no"/>ma con desahogo: de esta
+                    calidad fueron quantas tomó Don <lb break="yes"/>Luis para
+                    componer sus Soledades; pero la mas, que para <lb
+                        break="yes"/>su Sueño la Madre<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Juana<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Ynes escogio, son materias <pb n="6v"/>
+                    <lb break="yes"/>
+                    <cb type="single-column"/><lb break="yes"/>por su naturaleza
+                    tan arida, que havenla hecho florecer <lb break="yes"
+                    />tanto, arguie maravillosa fecundidad en el cultivo. que
+                    cosa <lb break="yes"/>mas agena de podersse decir con airoso
+                    numen poetico, que los <lb break="yes"/>principios, medios,
+                    y fines, con que se cuece en el estomago el <lb break="yes"
+                    />manjar, hasta hacersse substancia del alimentado? Lo que
+                        <lb break="yes"/>passa enlas especies sensibles desde el
+                    sentido externo al <lb break="yes"/>comun, al entendimiento
+                    agente, á ser intelleccion? Y otras <lb break="yes"/>cosas
+                    de esta ralea con tan mustio fondo, que causa admi<lb
+                        break="no"/>racion justissima, haver sobre ella labrado
+                    Nuestra Poetissa <lb break="yes"/>primer de tan valiente
+                    garbo? Si el espiritu de D<ex>o</ex>n Luis <lb break="yes"
+                    />es alabado con tanta razon, de que á dos Asumptos tan <lb
+                        break="yes"/>poco estendidos de sucesos, los adornasse
+                    con tan copiosa elegan<lb break="no"/>cia de perifrases, y
+                    fantasias; la Madre Juana Ynes no <lb break="yes"/>tuvo en
+                    este escrito mas campo, que este. Siendo de noche <lb
+                        break="yes"/>que dormí: soñé, que de una vez, queria
+                    comprehender todas <lb break="yes"/>las cosas, de que el
+                    Universo se compone: no pude, ni aun <lb break="yes"
+                    />divisas por sus cathegorias, ni aun solo un individuo:
+                        de<lb break="no"/>sengañada, amaneció, y desperté. A
+                    este angostissimo cauce <lb break="yes"/>redujo grande golfo
+                    de erudiciones, de subtilezas, y de elegan<lb break="no"
+                    />cias, con que huvo por fuerza de salir profundo, y por <lb
+                        break="yes"/>consequencia, difficil de entender, delos
+                    que pasan la hondura <lb break="yes"/>por obscuridad; pero
+                    los que saben los puntos delas facultades, <lb break="yes"
+                    />historias, y fabulas, que toca, y entienden en sus
+                    translaciones <lb break="yes"/>los terminos allegorizado, y
+                    allegorizante, con el que resulta <lb break="yes"/>de el
+                    careo de ambos, estan bien ciertos, de que no escrivio <lb
+                        break="yes"/>nuestra Poetissa otro Papel, que con
+                    claridad semejante nos <lb break="yes"/>dejasse ver la
+                    grandeza de tan subtil espiritu.</p>
+                <p><lb break="yes"/>En estos empleos, <lb break="yes"/>que
+                    hacian á la Madre Juana<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Ynes amada con ve<lb break="no"/>neracion de<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>personages mui insignes, vivía ella tan igno<lb
+                        break="no"/>rante de sus prendas, como si huviera
+                    entrado entre tantas <pb n="7r"/>
+                    <lb break="yes"/>
+                    <cb type="single-column"/><lb break="yes"/>Monjas á ser no
+                    mas de Una, sin querer para si, ni <lb break="yes"
+                    />Prelacia, ni mi Conveniencia, ni singularidad: que á
+                        sabidu<lb break="no"/>rias tan ventajosas les suele ser
+                    por ojeriza delas suerte <lb break="yes"/>vedado el dominio:
+                    pues aun á los esclavos los marcamos <lb break="yes"/>con
+                    letras, como quien dice, este nacio para ser mandado. A<lb
+                        break="no"/>firman los que la trataron, que<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>jamas se avra visto igual <lb break="yes"
+                    />perspicacia de entendimiento junta con tan limpissima
+                        can<lb break="no"/>didez de buen natural. Nadie la oió
+                    jamás quejosa, ni <lb break="yes"/>impaciente: su quita<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>pesares era su libreria, donde se entraba <lb
+                        break="yes"/>á consolar con quatro mil amigos, que
+                    tantos eran los libros, <lb break="yes"/>de quela compuso,
+                    casi sin costa, porque no havia quien <lb break="yes"
+                    />imprimiesse, que no<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>la contribuiesse uno, como á la fé de <lb
+                        break="yes"/>erratas.</p>
+                <p><lb break="yes"/>Estas disposiciones de natural tan limpio, y
+                    compuesto <lb break="yes"/>halló el año de 1693 la divina
+                    gracia de Dios, para hacer <lb break="yes"/>en el corazon
+                    dela Madre Juana su morada de asiento. <lb break="yes"
+                    />Entró ella en quentas consigo, y halló que la paga <lb
+                        break="yes"/>solo puntual enla observancia dela Ley, que
+                    havia buenamente <lb break="yes"/>procurado hasta entonces,
+                    hacerle á Dios, no era generosa satisfac<lb break="no"/>cion
+                    á tantas mercedes divinas, de que se reconocia adeudadas:
+                        <lb break="yes"/>con que trató de no errar, para en
+                    adelante los motivos de bu<lb break="no"/>ena, de escusar lo
+                    licito, y empezar las obras de superogacion <lb break="yes"
+                    />con tal cuidado, como si fueran de precepto.</p>
+                <p><lb break="yes"/>La primer<choice>
+                        <corr>a</corr>
+                        <sic/>
+                    </choice> diligencia, <lb break="yes"/>que hizo, para
+                    declararsse la<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>guerra, y con<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>quistarsse del todo <lb break="yes"/>á si misma,
+                    sin dejar á las espaldas enemig<choice>
+                        <corr>a</corr>
+                        <sic>a</sic>
+                    </choice>s, fue una Con<lb break="no"/>fesion general de
+                    toda su vida pasada, valiendosse, para des<lb break="no"
+                    />coger lo vivido sin algun<choice>
+                        <corr>a</corr>
+                        <sic/>
+                    </choice> doblez, de aquella su, nunca mas <lb break="yes"
+                    />que para este fin, memoria felicissima. En esta confesión
+                        ge<lb break="no"/>neral gastó algunos días, y ni de
+                    condicion, ni ignorancia <lb break="yes"/>era escrupulosa;
+                    pero no le parecio á entendimiento tan <pb n="7v"/>
+                    <lb break="yes"/>
+                    <cb type="single-column"/><lb break="yes"/>illustrado
+                    sobrada ninguna exacción, para examinar una <lb break="yes"
+                    />vida, en que las tibiezas, las confianzas, las omisiones,
+                    y los des<lb break="no"/>cuidos suelen hechar enla
+                    conciencia no leves manchas de <lb break="yes"/>secreto: y
+                    finalmente no ai pureza de aire, si la vaña el <lb
+                        break="yes"/>sol, que no se sienta hervir en atomos.
+                    Luego que, aun á <lb break="yes"/>satisfaccion dela medrosa
+                    penitente, fenecio esta confesion <lb break="yes"/>general,
+                    presentó al tribunal divino en forma de peticion cau<lb
+                        break="no"/>sidica una supplica, en que no se estorban
+                    lo discreto, y lo <lb break="yes"/>mui fervoroso, que en
+                    este tercer libro era impressa, con otros <lb break="yes"
+                    />tratados espirituales, y dos Protestas, que escrivio con
+                    su san<lb break="no"/>gre, sacada sin lastima, pero
+                    repasada, no sin ternura, todos <lb break="yes"/>los
+                    dias.</p>
+                <p>
+                    <lb break="yes"/>La amargura, que mas sin estremecer el
+                    semblante <lb break="yes"/>passó la Madre<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Juana, fue deshacersse de sus amados libros, <lb
+                        break="yes"/>como el que en amaneciendo el dia claro,
+                    apaga la luz ar<lb break="no"/>tificial, por inutil: dejó
+                    algunos para el uso desus Herma<lb break="no"/>nas, y
+                    remetió copiosa cantidad al s<ex>eñor</ex> Arzobispo de<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Mexico <lb break="yes"/>para que vendidos, hiciesse
+                    limosna á<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>los pobres, y aun mas <lb break="yes"/>que
+                    estudiados, aprovechassen á su entendimiento en este uso.
+                        <lb break="yes"/>Esta buena fortuna corrieron también
+                    los instrumentos musi<lb break="no"/>cos, y mathematicos,
+                    quelos tenia muchos, preciosos, y ex<lb break="no"
+                    />quisitos. Las preseas, y brujerías, y demas bienes, que
+                    aun <lb break="yes"/>de mui lejos la presentaban ilustres
+                    Personages aficionados <lb break="yes"/>á su famoso nombre,
+                    todo lo redujo á dinero, con que, socor<lb break="no"
+                    />riendo á muchos pobres, compró paciencia para ellos, y
+                    Cielo <lb break="yes"/>par si: no dejó en su celda mas que
+                    solos tres libritos de <lb break="yes"/>devocion, y muchos
+                    silicios, y disciplinas.</p>
+                <p><lb break="yes"/>Armada de esta desnudez en<lb break="no"
+                    />tró en campo con<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>sigo, y fue la victoria mas continua, que <lb
+                        break="yes"/>consiguió de sí, no querer entre sus
+                    Hermanas Religiosas <pb n="8r"/>
+                    <lb break="yes"/>
+                    <cb type="single-column"/><lb break="yes"/>parecer mui
+                    espiritual en nada, procurando lo ser en todo: <lb
+                        break="yes"/>mas siendo fuerza, que tantos aiunos, y
+                    penitencias, como ha<lb break="no"/>cia, pintasen azia el
+                    rostro, se esforzaba mas, á bañarle <lb break="yes"/>de su
+                    agrado antiguo, y dulcissima labia: porque no<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>fuesse <lb break="yes"/>que la estimacion de<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>virtuosa la empeorasse con la vanidad <lb
+                        break="yes"/>el estado de tibia.</p>
+                <p><lb break="yes"/>Solo <del hand="#self">á</del> su director,
+                    á quien no fuera posible, <lb break="yes"/>ni bien,
+                    escondale los rigores despiadados, con que se trataba, <lb
+                        break="yes"/>los sabia: mas procuraba persuadirla, á que<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>fuesen menos. <lb break="yes"/>Era este el
+                    virtuosissimo, y sapientissimo D<ex>on</ex><choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Antonio Nu<lb break="no"/>ñez, de quien ia dijimos
+                    que desde Niña la encaminó á <lb break="yes"/>dejar el
+                    siglo, y persuadio á que el modo mejor de depre<lb
+                        break="no"/>ciar el mundo, era no pisarle; mas es digno
+                    de admiracion, <lb break="yes"/>que haviendo este hombre
+                    ilustre recabado tan luego de <lb break="yes"/>Juana<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Ynes, que al principio de su juventud segasse en
+                    ierva <lb break="yes"/>sus esperanzas, apenas pudiese á
+                    razones, a persuasivas, y <lb break="yes"/>aun á ruegos,
+                    conseguir dela misma, ya otra, que templas<lb break="no"/>se
+                    en sus penitencias el rigor! Circo seria de bien de<lb
+                        break="no"/>seable atencion, oir las conclusiones, en
+                    que la venerable an<lb break="no"/>cianidad de varon tan
+                    experimentado en governar espiritus <lb break="yes"
+                    />arguiria de indiscrecion los fervores, que amaba con miedo
+                        <lb break="yes"/>enla penitenta; y á ella responden en
+                    su favor, tan contra <lb break="yes"/>si, algunas soluciones
+                    mui fervorosas, que aun el arguiente <lb break="yes"
+                    />estimara, quele concluieran: saliendo ambos dela paci<lb
+                        break="no"/>fica contienda, ella desconsolada del
+                    alivio, y el, alabando <lb break="yes"/>a Dios de que
+                    huviesse hecho una<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Muger con entendimi<lb break="no"/>ento tan
+                    profundo, con tal sabiduria, y docil de<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>juicio no <lb break="yes"/>obstante.</p>
+                <p><lb break="yes"/>Una vez le preguntaron los Padres de su
+                    docta, y <lb break="yes"/>santa familia al P<ex>adr</ex>e<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Antonio Nuñez, que como la <lb break="yes"/>iba á
+                    la Madre Juana de anhelar á la perfeccion? <pb n="8v"/>
+                    <lb break="yes"/>
+                    <cb type="single-column"/><lb break="yes"/>Y respondio, es
+                    menester mortificarla, para que no se mortifique <lb
+                        break="yes"/>mucho, yendola á la mano en sus
+                    penitencias, porque no piensa <lb break="yes"/>la salud, y
+                    se inhabilite: porque Juana Ynes no corre en la vir<lb
+                        break="no"/>tud, sino es que vuela.</p>
+                <p><lb break="yes"/>En esta ferviente intimidad con Dios, tan
+                        <lb break="yes"/>deseable para esperar la muerte, quien
+                    nola teme como <lb break="yes"/>fin dela vida, sino como
+                    principio dela eternidad, passó la <lb break="yes"/>Madre<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Juana sus dos ultimos años, y llegó al fin el de
+                        <lb break="yes"/>noventa y cinco, muy fertil para el
+                    Cielo, que del Convento <lb break="yes"/>de San Geronimo
+                    dela Ciudad de<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Mexico encerró gran <lb break="yes"/>cosecha de
+                    purissimas almas: una<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>fue, como aun sin el <lb break="yes"/>deseo lo
+                    puede esperar la razon piadosa, la dela<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Madre <lb break="yes"/>Juana<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Ynes, que como<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>la esposa delos Cantares en <lb break="yes"/>la
+                    cercanía de otras flores enfermó de caritativa.</p>
+                <p><lb break="yes"/>Entró en el Convento <lb break="yes"/>una
+                    epidemia tan pestilencial, que diez Religiosas, que en<lb
+                        break="no"/>fermassen, apenas convalecia una. Era (mal
+                    pecado!) mui <lb break="yes"/>contagiosa la enfermedad, la<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Madre Juana de natural <lb break="yes"/>muy
+                    compasiva, y charitativa de celo: con que asistia á todas
+                        <add hand="#other">sin fatigarse dela continuidad</add>
+                    <lb break="yes"/>ni relevarsse dela cercanía. Decirla
+                    entonces (como tantos <lb break="yes"/>selo aconsejaban) que
+                    si quiera no se acercasse á las mui <lb break="yes"
+                    />dolientes, era vestirla alas de aveja, para hacerla huir
+                    de <lb break="yes"/>las flores. enfermó al fin: y al punto,
+                    que se reconocio su <lb break="yes"/>peligro, se llenó
+                    Convento, y Ciudad de plegarias, y victimas <lb break="yes"
+                    />por su salud: solo ella estaba conforme con las esperanzas
+                        <lb break="yes"/>de su muerte <add hand="#other">que
+                        todos temían</add>, las medicinas fueron mui
+                    continuadas, y <lb break="yes"/>penosas, con quela sufria la<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Madre<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Juana, como elegidas <lb break="yes"/>y que no
+                    innobaban el estilo por penosas, y continuadas, á <lb
+                        break="yes"/>sus penitencias. Recivio mui á punto los
+                    Sacramentos con su <lb break="yes"/>celo catholicissimo: y
+                    en el dela eucharistia mostró confi<lb break="no"/>anza de
+                    gran ternura, despidiendosse de su esposo á mas <pb n="9r"/>
+                    <lb break="yes"/>
+                    <cb type="single-column"/><lb break="yes"/>ven, y presto. El
+                    rigor dela enfermedad, que bastó á <lb break="yes"/>quitarla
+                    la vida, no la pudo causar la turbacion <lb break="yes"/>mas
+                    leve en el entendimiento, y como amigo fiel <lb break="yes"
+                    />la hizo compañia asta los ultimos suspiros, que rece<lb
+                        break="no"/>bida la extrema uncion, arrojaba ya frios, y
+                    tantos; <lb break="yes"/>menos en las jaculatorias a
+                    Christo, y su Bendita <lb break="yes"/>Madre, que no los
+                    apartaba, ni de su mano, ni de su <lb break="yes"/>voca;
+                    Mostró al fin, quan sobre aviso estaba en <lb break="yes"
+                    />todo, respondiendo muy aproposito y, con puntualidad <lb
+                        break="yes"/>á las oraciones de la recomendacion del
+                    Alma, <lb break="yes"/>que fenecida, restituyó la suya, no
+                    solo con serena con<lb break="no"/>formidad; pero aun con
+                    vivas señales de deseo, en las <lb break="yes"/>manos de su
+                    Criador, á las quatro de la Mañana, <lb break="yes"/>en
+                    diez, y siete de Abril, Dominica del Buen Pastor <lb
+                        break="yes"/>A<choice>
+                        <sic>n</sic>
+                        <corr>ñ</corr>
+                    </choice>o de 1695. </p>
+            </div>
+        </body>
+    </text>
+</TEI>

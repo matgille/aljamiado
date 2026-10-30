@@ -1,0 +1,1703 @@
+<?xml-model href="/home/mgl/Bureau/Travail/projets/Biblissima-Text/Transform/schemata/out/ODD_gold.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Tercer viaje de Cristóbal Colón</title>
+                <respStmt>
+                    <resp>Transcrit par</resp>
+                    <name><surname/><forename>Francisco Gago
+                        Jover</forename></name>
+                </respStmt>
+                <respStmt>
+                    <resp>Textes édités et rassemblés par </resp>
+                    <name>
+                        <forename>Francisco</forename>
+                        <surname>Gago Jover</surname>
+                    </name>
+                    <name>
+                        <forename>Javier</forename>
+                        <surname>Pueyo Mena</surname>
+                    </name>
+                </respStmt>
+                <respStmt>
+                    <resp>Modélisation, encodage et structuration XML-TEI
+                        par</resp>
+                    <name xml:id="mgl">
+                        <forename>Matthias</forename>
+                        <surname>Gille Levenson</surname>
+                    </name>
+                </respStmt>
+                <respStmt>
+                    <resp>Responsabilité du projet Biblissima-Textes: </resp>
+                    <name>
+                        <forename>Thibault</forename>
+                        <surname>Clérice</surname>
+                    </name>
+                    <name>
+                        <forename>Olivier</forename>
+                        <surname>Brisville-Fertin</surname>
+                    </name>
+                    <name>
+                        <forename>Ariane</forename>
+                        <surname>Pinche</surname>
+                    </name>
+                    <name>
+                        <forename>Marianne</forename>
+                        <surname>Reboul</surname>
+                    </name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Publié dans le cadre de Biblissima-textes à partir de
+                    matériaux publiés auparavant.</publisher>
+                <availability status="restricted">
+                    <licence
+                        target="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+                        >Creative Commons Attribution Non Commercial Share Alike
+                        4.0 International</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <!--La source premi&#232;re: le projet OSTA-->
+                <bibl xml:id="VCC" type="source-transcription">
+                    <title>TEXT.VCC.txt</title>
+                    <editor>
+                        <forename>Francisco</forename>
+                        <surname>Gago Jover</surname>
+                    </editor>
+                    <editor>
+                        <forename>Javier</forename>
+                        <surname>Pueyo Mena</surname>
+                    </editor>
+                    <publisher>Hispanic Seminary of Medieval Studies</publisher>
+                    <date when="2026-03-07"/>
+                    <availability status="restricted">
+                        <licence
+                            target="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+                            >Creative Commons Attribution Non Commercial Share
+                            Alike 4.0 International</licence>
+                    </availability>
+                    <note>Projet OSTA (Old Spanish Textual Archive). Source des
+                        données: <ptr
+                            target="https://raw.githubusercontent.com/hispanicseminary/OSTA/refs/heads/main/transcriptions/TEXT.VCC.txt"
+                        />, v 3.0.</note>
+                </bibl>
+                <!--La source premi&#232;re: le projet OSTA-->
+
+                <!--L'oeuvre abstraite = work-->
+                <!--On va cat&#233;goriser la classe frbr et la forme<-->
+                <bibl ana="#frbr.work" type="work">
+                    <title>Tercer viaje de Cristóbal Colón</title>
+                    <author><surname>de las
+                            Casas</surname><forename>Bartolomé</forename></author><date
+                        notBefore-iso="1498-05-30" notAfter-iso="1500-11-25"
+                        >1498-05-30 - 1500-11-25</date>
+                    <idno type="HSMS-WORK">HSMS-0550-0002</idno>
+                    <idno type="beta-texid"/>
+                    <idno type="factgrid-id"/>
+                    <idno type="biblissima-id"/>
+                    <idno type="BNF-id"/>
+                    <idno type="BNE-id"/>
+                    <idno type="VIAF-id"/>
+                </bibl>
+                <!--L'oeuvre abstraite-->
+
+                <!--Exemplaire / manuscrit = frbr.item (imprim&#233;) ou frbr.manifestation_singleton (manuscrit). Attribut ajout&#233; automatiquement.-->
+                <msDesc ana="#frbr.manifestation_singleton">
+                    <msIdentifier
+                        facs="http://bdh.bne.es/bnesearch/detalle/bdh0000048660">
+                        <settlement>Madrid</settlement>
+                        <!--Un identifiant de biblioth&#232;que id&#233;alement-->
+                        <repository>Biblioteca Nacional</repository>
+                        <!--Un identifiant de biblioth&#232;que id&#233;alement-->
+                        <idno type="cote">VITR/6/7</idno>
+                        <idno type="HSMS-ID">HSMS-0550</idno>
+                        <idno type="factgrid-id"/>
+                        <idno type="biblissima-id"/>
+                        <!--Manuscrit-->
+                        <idno type="beta-manid"/>
+                        <!--Manuscrit-->
+                        <!--Imprim&#233;-->
+                        <idno type="beta-copid"/>
+                        <!--Imprim&#233;-->
+                        <msName/>
+                    </msIdentifier>
+                    <history>
+                        <!--Le corresp permet de lier la date &#224; l'unit&#233; codicologique, dans le cas de recueils organis&#233;s-->
+                        <origin>
+                            <origDate corresp="#HSMS-0550-0002" cert="medium"
+                                notBefore-iso="1552" notAfter-iso="1552">1552
+                                ca. - 1552 ca.</origDate>
+                        </origin>
+                        <!--Le corresp permet de lier la date &#224; l'unit&#233; codicologique -->
+                    </history>
+
+                    <msContents>
+                        <msItem xml:id="HSMS-0550-0002">
+                            <locus>67v-76r</locus>
+                            <idno type="beta-cnum"
+                                ><!--identifiant de contr&#244;le
+                                philobiblon du t&#233;moin (witness):
+                                "Una copia espec&#237;fica de esta obra (texid) dentro de una fuente primaria (manid)"--></idno>
+                            <idno type="factgrid-cnum"
+                                ><!--identifiant de contr&#244;le
+                                philobiblon du t&#233;moin (witness), identifiant factgrid--></idno>
+                            <incipit/>
+                            <explicit/>
+                            <colophon/>
+                        </msItem>
+                    </msContents>
+                </msDesc>
+                <!--Exemplaire-->
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="osp-x-med">castellano</language>
+            </langUsage>
+            <textClass>
+                <catRef target="#prose #narrativa #historica #viajes"/>
+            </textClass>
+        </profileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>Ce document est le fruit d'une conversion automatisée de la
+                    transcription originale, qui utilise des normes d'encodages
+                    propres au projet OSTA (Old Spanish Textual Archive).</p>
+                <p>Transcription de type graphématique: réduction des
+                    allographes au graphème. Tous les graphèmes sont conservés
+                    excepté pour les abréviations qui sont développées sans
+                    conservation de la graphie originale, en indiquant cependant
+                    qu'il s'agit d'une expansion. Les transcriptions ne sont ni
+                    ponctuées, ni accentuées selon les normes actuelles. La
+                    césure à la ligne est indiquée.</p>
+                <p>La description des phénomènes matériels et/ou non textuels
+                    est conservée: sauts de ligne, changements de colonne,
+                    espaces en blanc, miniatures, illustrations, diagrammes,
+                    etc.</p>
+                <p>Le texte est structuré en paragraphes, de façon automatique,
+                    en suivant les pieds-de-mouche qui le ponctuent.</p>
+                <p>Pour plus d'informations, voir l'ODD.</p>
+            </editorialDecl>
+            <refsDecl n="physical">
+                <!--Doit &#234;tre adapt&#233; &#224; chaque structure de document, &#224; reprendre-->
+                <citeStructure unit="page" match="//body//pb" use="@n">
+                    <citeStructure unit="column" match=".//cb" use="@n"
+                        delim=".">
+                        <citeStructure unit="line" match=".//lb" use="@n"
+                            delim="."/>
+                    </citeStructure>
+                </citeStructure>
+                <refsDecl n="default">
+                    <citeStructure match="/TEI/text/body/div" use="@n"
+                        unit="chapter">
+                        <citeStructure match=".//milestone[@unit='section']"
+                            use="@n" unit="section" delim="."/>
+                    </citeStructure>
+                </refsDecl>
+                <!--Doit &#234;tre adapt&#233; &#224; chaque structure de document-->
+            </refsDecl>
+            <classDecl>
+                <taxonomy>
+                    <bibl>
+                        <title>Catégories de segments annotés</title>
+                    </bibl>
+                    <category xml:id="glose">
+                        <catDesc>Segment glosé</catDesc>
+                    </category>
+                    <category xml:id="addendum">
+                        <catDesc>Ajout intellectuel</catDesc>
+                    </category>
+                </taxonomy>
+                <!--Merci &#224; Morgane PICA pour son aide sur l'adaptation &#224; la mod&#233;lisation FRBR-->
+                <taxonomy xml:id="frbr"
+                    sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/">
+                    <bibl>
+                        <title>Catégories FRBRoo</title>
+                    </bibl>
+                    <category xml:id="frbr.work"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F1">
+                        <catDesc>Work</catDesc>
+                    </category>
+                    <category xml:id="frbr.expression"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F2">
+                        <catDesc>Expression</catDesc>
+                    </category>
+                    <category xml:id="frbr.manifestation"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F3">
+                        <catDesc>Manifestation</catDesc>
+                    </category>
+                    <category xml:id="frbr.manifestation_singleton"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F4">
+                        <catDesc>Manifestation Singleton</catDesc>
+                    </category>
+                    <category xml:id="frbr.item"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F5">
+                        <catDesc>Item</catDesc>
+                    </category>
+                </taxonomy>
+                <taxonomy xml:id="categorisation_formelle">
+                    <bibl>
+                        <title>Catégorisation formelle</title>
+                    </bibl>
+                    <category xml:id="prose">
+                        <catDesc xml:lang="es">prosa</catDesc>
+                        <catDesc xml:lang="fr">prose</catDesc>
+                    </category>
+                    <category xml:id="vers">
+                        <catDesc xml:lang="es">verso</catDesc>
+                        <catDesc xml:lang="fr">vers</catDesc>
+                    </category>
+                </taxonomy>
+                <taxonomy xml:id="matiere_textuelle">
+                    <bibl>
+                        <title>Matière textuelle</title>
+                    </bibl>
+                    <category xml:id="didactica">
+                        <catDesc xml:lang="es">Didáctica</catDesc>
+                        <catDesc xml:lang="fr">Didactique</catDesc>
+                    </category>
+                    <category xml:id="juridica">
+                        <catDesc xml:lang="es">Jurídica</catDesc>
+                        <catDesc xml:lang="fr">Juridique</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <div type="prologue">
+                <p><cb type="single-column"/>
+                    <hi rend="rubrique"><g ref="#calderon1"/> la hystoria
+                            d<ex>e</ex>l viaje q<ex>ue</ex> almj<ex>rant</ex><hi
+                            rend="superscript">e</hi> don xp<ex>isto</ex>ual <lb
+                            break="yes"/>Colon hizo la terçera vez q<ex>ue</ex>
+                        vino alas yn<lb break="no"/>dias qua<ex>n</ex>do
+                        descubrio la t<ex>ie</ex>rra firme <lb break="yes"/>como
+                        lo enbio alos reyes d<ex>e</ex>sde la jsla <lb
+                            break="yes"/>española.</hi>
+                    <lb break="yes"/>Serenisimos e muy altos e muy poderosos <lb
+                        break="yes"/>prinçipes Rey e reyna n<ex>uest</ex>ros
+                    señores <lb break="yes"/><g ref="#calderon1"/> La sancta
+                    trinjdad movio a v<ex>uest</ex>ras altezas a esta empre<lb
+                        break="no"/>sa d<ex>e</ex>las yndias: y por su infinjta
+                    bondad hizo amj <lb break="yes"/>me<ex>n</ex>sajero
+                        d<ex>e</ex>llo al qual vine con el embaxada a su <lb
+                        break="yes"/>real conspetu movido como alos mas altos
+                    prinçipes <lb break="yes"/>de xp<ex>ist</ex>ianos/ y
+                        q<ex>ue</ex> tanto se exercitava<ex>n</ex> enla fe y
+                        acreçe<ex>n</ex><lb break="no"/>tamj<ex>ent</ex><hi
+                        rend="superscript">o</hi> d<ex>e</ex>lla/. las
+                        p<ex>er</ex>sonas q<ex>ue</ex> entendiero<ex>n</ex>
+                    enello lo tu<lb break="no"/>viero<ex>n</ex> por jmpossible y
+                    el caudal hazian sobre bienes <lb break="yes"/>de fortuna y
+                    alli echaro<ex>n</ex> el clavo/. puse en esto seys <lb
+                        break="yes"/>o siete años de grave pena
+                        amostra<ex>n</ex>do lo mejor q<ex>ue</ex>
+                    <lb break="yes"/>yo sabia qua<ex>n</ex>to
+                        s<ex>er</ex>vj<ex>ci</ex><hi rend="superscript">o</hi>
+                    se podia hazer a n<ex>uest</ex>ro señor <lb break="yes"/>en
+                    esto en diuulgar su santo no<ex>m</ex>bre y fe a tantos <lb
+                        break="yes"/>pueblos/. lo qual todo era cosa de tanta
+                        exçele<ex>n</ex>çia <lb break="yes"/>y buena fama y
+                        gra<ex>n</ex> memoria p<ex>ar</ex>a gra<ex>n</ex>des
+                    prinçipes/. <lb break="yes"/>fue tanbien necessario de
+                    hablar d<ex>e</ex>l temporal adonde <lb break="yes"/>seles
+                    amostro el escrevir de tantos sabios dignos de <lb
+                        break="yes"/>fe: los quales escriviero<ex>n</ex>
+                    hystorias/. los quales <lb break="yes"/>contava<ex>n</ex>
+                        q<ex>ue</ex> enestas p<ex>ar</ex>tes avia muchas
+                    riquezas/. <lb break="yes"/>y asimjsmo fue neçessario traer
+                    a esto el dezir e <lb break="yes"/>opinjon de
+                    aq<ex>ue</ex>llos q<ex>ue</ex>scriviero<ex>n</ex> e
+                        situaro<ex>n</ex> el mu<ex>n</ex>do/. <lb break="yes"
+                    />en fin v<ex>uest</ex>ras altezas determjnaro<ex>n</ex>
+                        q<ex>ue</ex>sto se <del hand="#self">supiese</del>
+                    <lb break="yes"/>pusiese en obra/. aquj mostraro<ex>n</ex>
+                    el gra<ex>n</ex>de coraço<ex>n</ex>
+                    <lb break="yes"/>q<ex>ue</ex> siemp<ex>r</ex><hi
+                        rend="superscript">e</hi> fiçiero<ex>n</ex> en toda cosa
+                        gra<ex>n</ex>de: porq<ex>ue</ex> todos los q<ex>ue</ex>
+                    <lb break="yes"/>avian entendido enello y oydo esta platica:
+                    todos a vna <lb break="yes"/>mano lo tenjan a burla saluo
+                    dos frayles q<ex>ue</ex> siemp<ex>r</ex><hi
+                        rend="superscript">e</hi>
+                    <lb break="yes"/>fuero<ex>n</ex> constantes/. yo bien
+                        q<ex>ue</ex> llevase fatiga estava <lb break="yes"/>bien
+                    seguro q<ex>ue</ex>sto no vernja a menos: y estoy de <lb
+                        break="yes"/>contino porq<ex>ue</ex> es v<ex>er</ex>dad
+                        q<ex>ue</ex> todo pasara y no la palabra <lb break="yes"
+                    />de dios y se complira todo lo q<ex>ue</ex> dixo/. El qual
+                        ta<ex>n</ex>
+                    <lb break="yes"/>claro hablo destas t<ex>ie</ex>rras por la
+                    boca de Jsayas en ta<ex>n</ex><lb break="no"/>tos lugares de
+                    su escriptura: afirma<ex>n</ex>do q<ex>ue</ex> de españa <lb
+                        break="yes"/>les seria diuulgado su Sancto
+                    no<ex>m</ex>bre/. e parti en no<ex>m</ex><lb break="no"/>bre
+                        d<ex>e</ex>la sancta trinjdad: y bolvi muy presto con la
+                        <lb break="yes"/>experiençia de todo qua<ex>n</ex>to yo
+                    avia dicho enla mano/. <lb break="yes"/>tornaro<ex>n</ex> me
+                    a enviar v<ex>uest</ex>ras altezas: y en poco espa<lb
+                        break="no"/>çio digo no de <space/>le descubri<del
+                        hand="#self">r</del> por virtud di<lb break="no"/>vjnal
+                    trezientas y treynta y tres leguas d<ex>e</ex>la
+                        t<ex>ie</ex>rra fir<lb break="no"/>me fin de oriente: y set<choice>
+                        <corr>ec</corr>
+                        <sic/>
+                    </choice>ientas jslas de no<ex>m</ex>bre: alle<ex>n</ex>de
+                        <pb n="68r"/>
+                    <fw rend="titre-courant">.68.</fw>
+                    <cb type="single-column"/><lb break="yes"/>d<ex>e</ex>lo
+                    descubierto enel primero viaje y le allane <lb break="yes"
+                    />la jsla española q<ex>ue</ex> boja mas q<ex>ue</ex>spaña:
+                    en que la <lb break="yes"/>gente d<ex>e</ex>lla es sin
+                    cuento: y q<ex>ue</ex> todos le pagasen <lb break="yes"
+                    />tributo/. Naçio alli mal dezir y menospre<lb break="no"
+                    />çio d<ex>e</ex>la empresa come<ex>n</ex>çada enello:
+                        porq<ex>ue</ex> no avia <lb break="yes"/>yo enbiado
+                    luego los navios cargados de oro <lb break="yes"/>sin
+                    considerar la brevedad del t<ex>iem</ex>po/ y lo otro
+                        q<ex>ue</ex> yo <lb break="yes"/>dixe de tantos
+                    jnconvenjentes: y enesto <del hand="#self">creo que</del>
+                    <lb break="yes"/>por mjs pecados o por mj saluaçion creo
+                        q<ex>ue</ex> sera: <lb break="yes"/>fue puesto en
+                        aborreçimj<ex>ent</ex><hi rend="superscript">o</hi> y
+                    dado jmpedime<ex>n</ex>to <lb break="yes"/>a qua<ex>n</ex>to
+                    yo dezia y dema<ex>n</ex>dava/. por lo qual a<lb break="no"
+                    />corde de venjr a v<ex>uest</ex>ras altezas y maravillarme
+                        <lb break="yes"/>de todo y mostrarles la razo<ex>n</ex>
+                        q<ex>ue</ex> en todo avia/. <lb break="yes"/>y les dixe
+                        d<ex>e</ex>los pueblos q<ex>ue</ex> yo avia visto en
+                        q<ex>ue</ex>
+                    <lb break="yes"/>o de que se podrian saluar muchas anjmas: y
+                        <lb break="yes"/>les truxe las obligaçiones
+                    d<ex>e</ex>la gente d<ex>e</ex>la jsla <lb break="yes"
+                    />española: de como se obligava<ex>n</ex> a pagar tributo:
+                        <lb break="yes"/>e les tenjan por sus reyes y señores: y
+                    les <lb break="yes"/>truxe abastante muestra de oro: y que
+                    ay mj<lb break="no"/>neros y granos muy gra<ex>n</ex>des/. y
+                    asi mjsmo de <lb break="yes"/>cobre: y les truxe de muchas
+                        ma<ex>ne</ex>ras de espeçe<lb break="no"/>rias de que
+                    seria largo de escrevir/. y les dixe <lb break="yes"
+                        />d<ex>e</ex>la grande cantidad de brasil y otras
+                    infinjtas co<lb break="no"/>sas/. todo no aprovech<subst
+                        hand="#self">
+                        <del>ado</del>
+                        <add>o</add>
+                    </subst> p<ex>ar</ex>a con algunas p<ex>er</ex>sonas <lb
+                        break="yes"/>q<ex>ue</ex> tenjan gana/ y dado comjenço a
+                    maldezir del <lb break="yes"/>negoçio nj entrar con fabla
+                        d<ex>e</ex>l s<ex>er</ex>uj<ex>ci</ex><hi
+                        rend="superscript">o</hi> de n<ex>uest</ex>ro señor <lb
+                        break="yes"/>con se saluar tantas anjmas nj a dezir
+                        q<ex>ue</ex>sto era <lb break="yes"/>gra<ex>n</ex>deza
+                    de v<ex>uest</ex>ras altezas d<ex>e</ex>la mejor calidad
+                        q<ex>ue</ex> ha<lb break="no"/>sta oy aya vsado
+                    prinçipe/. porq<ex>ue</ex>l exerçiçio e gasto <lb
+                        break="yes"/>era p<ex>ar</ex>a el esp<ex>irit</ex>ual y
+                        t<ex>em</ex>p<ex>or</ex>al y q<ex>ue</ex> no podia ser
+                        q<ex>ue</ex> an<lb break="no"/>dando el t<ex>iem</ex>po
+                    no oviese la españa de aquj gra<ex>n</ex><lb break="no"/>des
+                    provechos pues q<ex>ue</ex> se veya<ex>n</ex> las señales
+                        q<ex>ue</ex>
+                    <del hand="#self">no</del>
+                    <lb break="yes"/>escriviero<ex>n</ex> delo de estas
+                        p<ex>ar</ex>tidas tan manjfiestas: q<ex>ue</ex>
+                    <lb break="yes"/>ta<ex>m</ex>bien se llegaria a ver todo el
+                    otro complimj<ex>ent</ex><hi rend="superscript">o</hi>/. <lb
+                        break="yes"/>nj a dezir cosas q<ex>ue</ex> vsaron
+                        gra<ex>n</ex>des prinçipes enel <lb break="yes"
+                        />mu<ex>n</ex>do p<ex>ar</ex>a creçer su fama/ asi como
+                    de Salamo<ex>n</ex>
+                    <lb break="yes"/>q<ex>ue</ex> embio desde hjerusalem en fin
+                    de oriente a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>ver <lb break="yes"/>el mo<ex>n</ex>te sopora en
+                        q<ex>ue</ex> se detoviero<ex>n</ex> los navios <lb
+                        break="yes"/>tres años: el qual tiene<ex>n</ex>
+                        v<ex>uest</ex>ras altezas agora en <lb break="yes"/>la
+                    jsla española/. nj de alexa<ex>n</ex>dre q<ex>ue</ex> enbio
+                    a ver <lb break="yes"/>el regimj<ex>ent</ex><hi
+                        rend="superscript">o</hi> d<ex>e</ex>la jsla <add
+                        hand="#self">de</add> trapobana en yndia: y Nero <lb
+                        break="yes"/>Çesar a ver las fuentes del njlo: y la
+                        razo<ex>n</ex> porq<ex>ue</ex>
+                    <lb break="yes"/>creçian enel verano qua<ex>n</ex>do las
+                    aguas son pocas <lb break="yes"/>y otras muchas
+                        gra<ex>n</ex>dezas q<ex>ue</ex> hiziero<ex>n</ex>
+                    prinçipes/ y <lb break="yes"/>q<ex>ue</ex> a prinçipes son
+                    estas cosas dadas de hazer/. nj <lb break="yes"/>valia dezir
+                        q<ex>ue</ex> yo nu<ex>n</ex>ca avia leydo q<ex>ue</ex>
+                    prinçipes de <lb break="yes"/>castilla Jamas oviesen ganado
+                        t<ex>ie</ex>rra fuera della <pb n="68v"/>
+                    <cb type="single-column"/><lb break="yes"/>y q<ex>ue</ex>
+                    esta de aca es otro mundo en q<ex>ue</ex> se
+                        trabajaro<ex>n</ex> Ro<lb break="no"/>manos y
+                        alexa<ex>n</ex>dre y griegos <seg ana="#glose"><add
+                            hand="#self">no<ex>t</ex><hi rend="superscript"
+                                >a</hi></add></seg> p<ex>ar</ex>a la aver con
+                        gra<ex>n</ex><lb break="no"/>des <del hand="#self"
+                        >exerçitos</del> exerciçios: nj dezir del presente <lb
+                        break="yes"/>d<ex>e</ex>los reyes de portugal
+                        q<ex>ue</ex> toviero<ex>n</ex> coraçon p<ex>ar</ex>a
+                        soste<lb break="no"/>ner a gujnea y d<ex>e</ex>l
+                    descobrir d<ex>e</ex>lla y q<ex>ue</ex> gastaro<ex>n</ex>
+                    <lb break="yes"/>oro y gente a tanta q<ex>ue</ex> qujen
+                    contase toda la <lb break="yes"/>d<ex>e</ex>l reyno: se
+                    hallaria q<ex>ue</ex> otra tanta como la mjtad <lb
+                        break="yes"/>son muertos en gujnea: y todavia la
+                        continua<lb break="no"/>ro<ex>n</ex> hasta q<ex>ue</ex>
+                    les salio d<ex>e</ex>llo lo q<ex>ue</ex> pareçe/. lo qual
+                        <lb break="yes"/>todo començaro<ex>n</ex> de largo
+                        t<ex>iem</ex>po y a muy poco q<ex>ue</ex> les <lb
+                        break="yes"/>da renta/. los quales ta<ex>m</ex>bien
+                        osaro<ex>n</ex> conquistar <lb break="yes"/>en africa y
+                    sostener la empresa a cepta/ tanjar <lb break="yes"/>y
+                    arcilla e alcaçar: y de contino dar guerra <lb break="yes"
+                    />alos moros/. y todo esto con gra<ex>n</ex>de gasto solo
+                    por <lb break="yes"/>hazer cosa de prinçipes/ servir a dios
+                    y acreçentar <lb break="yes"/>su señorio/. <lb break="yes"
+                    />Quanto yo mas dezia tanto mas se doblava a <lb break="yes"
+                    />poner esto a vituperio amostra<ex>n</ex>do enello
+                        aborre<lb break="no"/>çimj<ex>ent</ex><hi
+                        rend="superscript">o</hi> sin considerar qua<ex>n</ex>to
+                    bien pareçio en todo <lb break="yes"/>el mu<ex>n</ex>do y
+                        qua<ex>n</ex>to bien se dixo en todos los
+                        xp<ex>ist</ex>ia<lb break="no"/>nos de v<ex>uest</ex>ras
+                    altezas por aver tomado esta Em<lb break="no"/>presa
+                        q<ex>ue</ex> no ovo gra<ex>n</ex>de nj pequeño
+                        q<ex>ue</ex> no qujsie<choice>
+                        <corr>se</corr>
+                        <sic/>
+                    </choice>
+                    <lb break="yes"/>dello carta/.
+                        respo<ex>n</ex>diero<ex>n</ex>me v<ex>uest</ex>ras
+                    altezas riendo<lb break="no"/>se <del hand="#self"
+                            >v<ex>uest</ex>ras altezas</del> y diziendo
+                        q<ex>ue</ex> yo no curase de <lb break="yes"/>nada
+                        porq<ex>ue</ex> no davan auctoridad nj creençia a <lb
+                        break="yes"/>qujen les mal dezia de esta empresa/. </p>
+            </div>
+        </front>
+        <body>
+            <lb break="yes"/>
+            <p><g ref="#calderon1"/> Parti <seg ana="#glose"><add hand="#self"
+                        >la partida d<ex>e</ex>l <lb break="yes"
+                            />almj<ex>rant</ex><hi rend="superscript">e</hi>
+                            p<ex>ar</ex>a d<ex>e</ex>scu<lb break="no"/>brir la
+                            t<ex>ie</ex>rra fir<lb break="no"/>me</add></seg> en
+                    no<ex>m</ex>bre dela sanctissima trinjdad mjercoles <lb
+                    break="yes"/>treynta de mayo d<ex>e</ex>la villa de San
+                lucar bien fa<lb break="no"/>tigado de mj viaje q<ex>ue</ex>
+                <del hand="#self"><gap reason="illegible" extent="subword"
+                    /></del>adonde esperava descanso <lb break="yes"
+                    />qua<ex>n</ex>do yo p<ex>ar</ex>ti destas yndias se me
+                doblo la pena/. <lb break="yes"/>y navegue a la jsla
+                d<ex>e</ex>la madera por camjno no a<lb break="no"
+                    />costu<ex>m</ex>brado por evitar escandalo q<ex>ue</ex>
+                pudiera n<add hand="#self">a</add>çer <lb break="yes"/>con vn
+                armada de françia q<ex>ue</ex> me aguardava al cabo <lb
+                    break="yes"/>de San Viçeynte y de alli alas jslas de Canaria
+                de <lb break="yes"/>adonde me p<ex>ar</ex>ti con vna nao y dos
+                caravelas: <lb break="yes"/>y enbie los otros navios a derecho
+                Camjno alas <lb break="yes"/>yndias ala jsla española y yo
+                navegue al austro <lb break="yes"/>co<ex>n</ex> proposito de
+                llegar ala linea equjnoçial y de <lb break="yes"/>alli segujr al
+                ponjente hasta q<ex>ue</ex> la jsla española me <lb break="yes"
+                />quedase al setentrion/. y llegado alas jslas de <lb
+                    break="yes"/>Cabo Verde <seg ana="#glose"><add hand="#self"
+                        >falso <del hand="#self"><gap reason="illegible"
+                                extent="subword"/></del> dize q<ex>ue</ex>s el
+                            <lb break="yes"/>no<ex>m</ex>bre d<ex>e</ex>las
+                        jslas <lb break="yes"/>de cabo v<ex>er</ex>de
+                            porq<ex>ue</ex>
+                        <lb break="yes"/>son secas</add></seg> falso
+                    no<ex>m</ex>bre porq<ex>ue</ex> son a tan secas q<ex>ue</ex>
+                <lb break="yes"/>no vi cosa verde enellas: y toda la gente
+                    enfer<lb break="no"/>ma q<ex>ue</ex> no ose detenerme
+                enellas/. y navegue <lb break="yes"/>al sudueste quatroçientas y
+                ochenta mjllas q<ex>ue</ex> son <lb break="yes"/>çiento y veynte
+                leguas adonde en anocheçiendo <lb break="yes"/>tenja la estrella
+                del norte en çinco grados/. alli me <lb break="yes"/>desamparo
+                el viento y entre en tanto ardor y <lb break="yes"/>tan
+                    gra<ex>n</ex>de <seg ana="#glose"><add hand="#self"
+                            >quemava<ex>n</ex>se de <lb break="yes"
+                    />calor</add></seg> q<ex>ue</ex> crey q<ex>ue</ex> se me
+                quemasen los navios <lb break="yes"/>y gente: q<ex>ue</ex> todo
+                de vn golpe y no a tan desordena<lb break="no"/>do: q<ex>ue</ex>
+                no avia p<ex>er</ex>sona q<ex>ue</ex> osase desçender debaxo de
+                    <lb break="yes"/><add hand="#self">cu</add>-bierta <pb
+                    n="69r"/>
+                <fw rend="titre-courant">.69.</fw>
+                <cb type="single-column"/><lb break="yes"/>a Remediar la vasija
+                y ma<ex>n</ex>tenjmjento/. <lb break="yes"/>Duro esta ardor ocho
+                dias al primer dia fue <lb break="yes"/>claro: y los siete dias
+                sigujentes llovio e hizo <lb break="yes"/>ñublado y co<ex>n</ex>
+                todo no fallamos remedio que <lb break="yes"/>çierto si asi
+                fuera de sol como el primero: yo <lb break="yes"/>creo
+                    q<ex>ue</ex> no pudiera escapar en njngu<ex>n</ex><hi
+                    rend="superscript">a</hi> ma<ex>ne</ex>ra. <lb break="yes"
+                /></p>
+            <p><g ref="#calderon1"/> Acordome q<ex>ue</ex> navega<ex>n</ex>do
+                alas yndias siemp<ex>r</ex><hi rend="superscript">e</hi>
+                    q<ex>ue</ex> yo <lb break="yes"/>passo al ponjente
+                    d<ex>e</ex>las jslas d<ex>e</ex>los açores çient <lb
+                    break="yes"/>leguas alli fallo mudar la
+                tempera<ex>n</ex>ça// y esto <lb break="yes"/>es todo de
+                septentrion en austro/. y determjne <lb break="yes"
+                    />q<ex>ue</ex> si a n<ex>uest</ex>ro señor le plugujese de
+                me dar vien<lb break="no"/>to y buen t<ex>iem</ex>po
+                    q<ex>ue</ex> pudiese salir de adonde esta<lb break="no"/>va:
+                de dexar de yr mas al austro nj bolver <lb break="yes"
+                    />ta<ex>n</ex> poco atras saluo de navegar al ponjente: a
+                    <lb break="yes"/>tanto q<ex>ue</ex> yo llegasse a estar
+                    co<ex>n</ex> esta raya/ con espe<lb break="no"/>rança
+                    q<ex>ue</ex> yo fallaria alli asi temperamjento: <lb
+                    break="yes"/>como avia fallado qua<ex>n</ex>do yo navegaba
+                enel <lb break="yes"/>paralelo de Canaria/. E que si asi fuese
+                    q<ex>ue</ex> esto<ex>n</ex><lb break="no"/>çes yo podria yr
+                mas al austro/. y plugo <lb break="yes"/>a n<ex>uest</ex>ro
+                señor q<ex>ue</ex> al cabo de estos ocho dias de me <lb
+                    break="yes"/>dar buen viento levante y yo seguj al ponjente
+                    <lb break="yes"/>mas no ose declinar abaxo al austro
+                    porq<ex>ue</ex>
+                <lb break="yes"/>falle gra<ex>n</ex>dissimo
+                    mudamj<ex>ent</ex><hi rend="superscript">o</hi> enel çielo y
+                enlas estre<lb break="no"/>llas: mas no<ex>n</ex> falle
+                mudamjento enla tempe<lb break="no"/>ra<ex>n</ex>çia/ asi acorde
+                de prosegujr ad<ex>e</ex>lante siem<lb break="no"/>pre justo al
+                ponjente en aq<ex>ue</ex>l derecho d<ex>e</ex>la sierra <lb
+                    break="yes"/><del hand="#self">de</del> lioa/ con proposito
+                de no<ex>n</ex> mudar derro<lb break="no"/>ta fasta adonde yo
+                avia pensado q<ex>ue</ex> fallaria tier<lb break="no"/>ra/ y
+                alli adobar los navios/ y Remediar <lb break="yes"/>si pudiese
+                los ma<ex>n</ex>tenjmje<ex>n</ex>tos/ y tomar agua <lb
+                    break="yes"/>q<ex>ue</ex> no tenja y al cabo de .17. dias
+                los qua<lb break="no"/>les n<ex>uest</ex>ro señor me dio de
+                    prosp<ex>er</ex>o viento martes <lb break="yes"/>treynta y
+                vno de julio a medio dia nos a<lb break="no"/>mostro
+                    t<ex>ie</ex>rra: e yo la esperava el lunes antes <lb
+                    break="yes"/>y tuve aq<ex>ue</ex>l camjno fasta entonçes
+                    q<ex>ue</ex> en salie<ex>n</ex>do <lb break="yes"/>el sol
+                por defecto d<ex>e</ex>l agua q<ex>ue</ex> no tenja deter<lb
+                    break="no"/>mjne de andar alas jslas d<ex>e</ex>los
+                Canjbales y <lb break="yes"/>tome esa buelta/. y como su alta
+                maiestad aya <lb break="yes"/>siemp<ex>r</ex><hi
+                    rend="superscript">e</hi> vsado de mjsericordia comjgo por
+                    açer<lb break="no"/>tamje<ex>n</ex>to subio vn marinero ala
+                gavia: <seg ana="#glose"><add hand="#self">viero<ex>n</ex>
+                            t<ex>ie</ex>rra</add></seg> y vido <lb break="yes"
+                />al ponjente <subst hand="#self">
+                    <del>dos</del>
+                    <add>tres</add>
+                </subst> montañas juntas/. deximos la <lb break="yes"/>Salue
+                regina y otras prosas y dimos todos mu<lb break="no"/>chas
+                    gr<ex>aci</ex>as a n<ex>uest</ex>ro señor/: y despues dexe
+                el ca<lb break="no"/>mjno de septentrion y bolvi hazia la
+                    t<ex>ie</ex>rra <add hand="#self">a</add> do<ex>n</ex>-de
+                    <pb n="69v"/>
+                <cb type="single-column"/><lb break="yes"/>yo llegue a ora de
+                completas a vn cabo <lb break="yes"/>a que dixe d<ex>e</ex>la
+                galera despues de aver no<ex>m</ex><lb break="no"/>brado ala
+                jsla dela trinjdad: y alli oviera muy <lb break="yes"/>buen
+                puerto si fuera fondo: y avia casas y ge<ex>n</ex><lb break="no"
+                />te y muy lindas tierras a tan fermosas y ver<lb break="no"
+                />des como las guertas de valençia en março/. <lb break="yes"
+                />pesome qua<ex>n</ex>do no pude entrar enel puerto <lb
+                    break="yes"/>y corri la costa desta t<ex>ie</ex>rra
+                    d<ex>e</ex>l lue<ex>n</ex>go fasta el ponjen<lb break="no"
+                />te: y andadas çinco leguas falle muy bue<ex>n</ex> fondo <lb
+                    break="yes"/>y surgi/. y enel otro dia di la vela a este
+                camjno <lb break="yes"/>buscando puerto p<ex>ar</ex>a adobar los
+                navios y tomar <lb break="yes"/>agua y remediar el trigo y los
+                    bastime<ex>n</ex>tos q<ex>ue</ex>
+                <lb break="yes"/>llevava solame<ex>n</ex>te/. alli tome vna pipa
+                de agua <lb break="yes"/>y conella anduve ansi hasta llegar al
+                cabo: y <lb break="yes"/>alli falle abrigo de levante y
+                    bue<ex>n</ex> fondo: y asi <lb break="yes"/>ma<ex>n</ex>de
+                surgir y adobar la vasija y tomar agua <lb break="yes"/>y leña y
+                desçendir la gente a descansar de tan<lb break="no"/>to
+                    t<ex>iem</ex>po q<ex>ue</ex> andava<ex>n</ex>
+                pena<ex>n</ex>do/. <lb break="yes"/></p>
+            <p><g ref="#calderon1"/> A esta punta llame d<ex>e</ex>l arenal y
+                alli se fallo <lb break="yes"/>toda la t<ex>ie</ex>rra follada
+                de vnas anjmalias q<ex>ue</ex> tenja<ex>n</ex>
+                <lb break="yes"/>la pata <seg ana="#glose"><add hand="#self"
+                        >estas patas era<ex>n</ex>
+                        <lb break="yes"/>de venados q<ex>ue</ex> ay <lb
+                            break="yes"/>muchos por alli</add></seg> como de
+                cabra/. y bien que segu<ex>n</ex> pa<lb break="no"/>reçe ser
+                alli aya muchas: no se vido sino <lb break="yes"/>vna muerta/.
+                El dia sigujente vino de <lb break="yes"/>hazia Oriente vna
+                    gra<ex>n</ex>de Canoa con veynte <lb break="yes"/>y quatro
+                    ho<ex>m</ex>bres todos ma<ex>n</ex>çebos e muy ata<lb
+                    break="no"/>viados de armas arcos y flechas y tabla<lb
+                    break="no"/>chinas: y ellos como dixe todos mançebos <lb
+                    break="yes"/>de buena disposiçion y no negros saluo <del
+                    hand="#self">bla<ex>n</ex><lb break="no"/>cos</del> mas
+                blancos q<ex>ue</ex> otros q<ex>ue</ex> aya visto en <lb
+                    break="yes"/>las yndias/ y de muy lindo gesto y fermosos <lb
+                    break="yes"/>cuerpos: y los cabellos largos y llanos <lb
+                    break="yes"/>cortados ala gujsa de Castilla y trayan la <lb
+                    break="yes"/>Cabeça atada con vn pañuelo de algodon <lb
+                    break="yes"/>texido a labores y colores: el qual creya yo
+                    <lb break="yes"/>q<ex>ue</ex> era almayzar/. Otro destos
+                pañuelos <lb break="yes"/>trayan çeñjdo e se cobijavan conel en
+                    lu<lb break="no"/>gar de pañetes/. Qua<ex>n</ex>do llego
+                esta canoa <lb break="yes"/>hablo de muy lexos: e yo nj otro
+                njnguno <lb break="yes"/>no los entendiamos saluo q<ex>ue</ex>
+                yo les ma<ex>n</ex>da<lb break="no"/>va hazer señas q<ex>ue</ex>
+                se allegasen/ y enesto se <lb break="yes"/>passo mas de dos
+                oras/ y si se llegaban <lb break="yes"/>vn poco/ luego se
+                desviavan/. yo les hazia <lb break="yes"/>mostrar baçines y
+                otras cosas q<ex>ue</ex> luzian por <lb break="yes"/>enamorarlos
+                    porq<ex>ue</ex> vinjesen: y a cabo de <lb break="yes"
+                    />bue<ex>n</ex> rato se allegaro<ex>n</ex> mas q<ex>ue</ex>
+                hasta entonçes <lb break="yes"/>no avian/. y yo deseava mucho
+                aver lengua <pb n="70r"/>
+                <fw rend="titre-courant">.70.</fw>
+                <cb type="single-column"/><lb break="yes"/>y no tenja ya cosa
+                    q<ex>ue</ex> me pareciese q<ex>ue</ex> era de <lb
+                    break="yes"/>mostrarles p<ex>ar</ex>a q<ex>ue</ex> vinjesen:
+                saluo q<ex>ue</ex> hize sobir <lb break="yes"/>vn tamborin enel
+                castillo de popa q<ex>ue</ex> tañesen <lb break="yes"/>e vnos
+                    ma<ex>n</ex>çebos q<ex>ue</ex> dançasen: creyendo
+                    q<ex>ue</ex> se <lb break="yes"/>allegarian a ver la
+                fiesta/. y luego q<ex>ue</ex> viero<ex>n</ex>
+                <lb break="yes"/>tañer y dançar todos dexaro<ex>n</ex> los remos
+                    <lb break="yes"/>y echaro<ex>n</ex> mano a los arcos y los
+                    encordaro<ex>n</ex>
+                <lb break="yes"/>y embraço cada vno su tablachina y comen<lb
+                    break="no"/>çaro<ex>n</ex> a tirarnos flechas/. çesso luego
+                el <lb break="yes"/>tañer y dançar y ma<ex>n</ex>de luego sacar
+                vnas <lb break="yes"/>ballestas: y ellos dexaro<ex>n</ex>me y
+                    fuero<ex>n</ex> a <lb break="yes"/>mas andar a otra
+                caravela: y de golpe se fue<lb break="no"/>ron debaxo la popa
+                della/ y el piloto entro co<ex>n</ex>
+                <lb break="yes"/>ellos y dio vn sayo e vn bonete a vn
+                    ho<ex>m</ex><lb break="no"/>bre prinçipal q<ex>ue</ex> le
+                pareçio d<ex>e</ex>llos: y quedo con<lb break="no"/>çertado
+                    q<ex>ue</ex> le yria a hablar alli enla playa <lb
+                    break="yes"/>adonde ellos luego fuero<ex>n</ex> con la canoa
+                    <lb break="yes"/>espera<ex>n</ex>dole y el como no quisso yr
+                sin mj <lb break="yes"/>liçençia como ellos le viero<ex>n</ex>
+                venir ala nao <lb break="yes"/>co<ex>n</ex>la barca
+                    tornaro<ex>n</ex> a entrar enla canoa e <lb break="yes"/>se
+                    fuero<ex>n</ex> e nunca mas los vide nj a otros <lb
+                    break="yes"/>desta jsla/. <lb break="yes"/></p>
+            <p><g ref="#calderon1"/> Qua<ex>n</ex>do yo llegue a esta punta <seg
+                    ana="#glose"><add hand="#self">esta punta de<lb break="no"
+                        />vio de ser la <lb break="yes"/>de la trinjdad <lb
+                            break="yes"/><del hand="#self">de
+                    punta</del></add></seg> del arenal <lb break="yes"/>alli se
+                haze vna boca gra<ex>n</ex>de de dos leguas de <lb break="yes"
+                />ponjente a<choice>
+                    <corr> </corr>
+                    <sic/>
+                </choice>leva<ex>n</ex>te: la jsla d<ex>e</ex>la trinjdad conla
+                    <lb break="yes"/>t<ex>ie</ex>rra de graçia/ <seg
+                    ana="#glose"><add hand="#self">aquj entro en<lb break="no"/><choice>
+                            <sic>n</sic>
+                            <corr/>
+                        </choice>el golpho</add></seg> y q<ex>ue</ex>
+                    p<ex>ar</ex>a aver de entrar dentro <lb break="yes"
+                    />p<ex>ar</ex>a passar al septentrion avia vnos hyleros de
+                    cor<lb break="no"/>rientes q<ex>ue</ex> atravesava<ex>n</ex>
+                    aq<ex>ue</ex>lla boca y trayan vn <lb break="yes"/>rugir muy
+                    gra<ex>n</ex>de y crey yo q<ex>ue</ex> seria vn arraçi<lb
+                    break="no"/>fe de baxos e peñas por el qual no se podria <lb
+                    break="yes"/>entrar dentro enella/. y <del hand="#self"
+                    >dej</del> detras deste hi<lb break="no"/>lero avia otro y
+                otro q<ex>ue</ex> todos trayan vn rugir <lb break="yes"
+                    />gra<ex>n</ex>de como ola d<ex>e</ex>la mar q<ex>ue</ex> va
+                a Romper y dar <lb break="yes"/>en peñas/. Surgi alli ala
+                    d<ex>ic</ex>ha punta del are<lb break="no"/>nal fuera
+                    d<ex>e</ex>la d<ex>ic</ex>ha boca: y falle q<ex>ue</ex>
+                venja el agua <lb break="yes"/>d<ex>e</ex>l oriente fasta el
+                ponjente con tanta furia como <lb break="yes"/>haze guadalqujujr
+                en t<ex>iem</ex>po de avenjda y esto de <lb break="yes"
+                />continuo noche y dia q<ex>ue</ex> crey q<ex>ue</ex> no podria
+                bolver <lb break="yes"/>atras por la corrie<ex>n</ex>te nj yr
+                adelante por los ba<lb break="no"/>xos/. y enla noche ya muy
+                tarde estando al <lb break="yes"/>bordo d<ex>e</ex>la nao oy vn
+                    r<subst hand="#self">
+                    <del>o</del>
+                    <add>u</add>
+                </subst>gir terrible q<ex>ue</ex> venja <lb break="yes"
+                    />d<ex>e</ex>la p<ex>ar</ex>te del austro <del hand="#self"
+                        >q<ex>ue</ex> venja</del> hazia la nao y me <lb
+                    break="yes"/>pare a mjrar y vi levanta<ex>n</ex>do la mar de
+                    ponj<lb break="no"/>ente a leva<ex>n</ex>te en
+                ma<ex>ne</ex>ra de vna loma tan alta <lb break="yes"/>como la
+                nao: y todavia venja hazia mj poco a <pb n="70v"/>
+                <cb type="single-column"/><lb break="yes"/>poco/. y ençima de
+                ella venja vn f<subst hand="#self">
+                    <del>e</del>
+                    <add>i</add>
+                </subst>l<subst hand="#self">
+                    <del>i</del>
+                    <add>e</add>
+                </subst>ro de corrie<ex>n</ex><lb break="no"/>te q<ex>ue</ex>
+                venja rugiendo con muy gra<ex>n</ex>de estrepito <lb break="yes"
+                    />co<ex>n</ex> aq<ex>ue</ex>lla furia de aq<ex>ue</ex>l
+                rugir q<ex>ue</ex> d<ex>e</ex>los otros hileros <lb break="yes"
+                    />q<ex>ue</ex> yo dixe q<ex>ue</ex> me parecian ondas de mar
+                que <lb break="yes"/>dava<ex>n</ex> en peñas: que oy en dia
+                tengo el mjedo <lb break="yes"/>enel cuerpo q<ex>ue</ex> no me
+                trabucasen la nao qua<ex>n</ex><lb break="no"/>do llegasen
+                debaxo della/. y passo y llego <lb break="yes"/><subst
+                    hand="#self">
+                    <del>h</del>
+                    <add>f</add>
+                </subst>asta la boca a donde alli se detuvo grande espa<lb
+                    break="no"/>çio/. y el otro dia sigujente enbie las barcas
+                    <lb break="yes"/>a sondar: y <subst hand="#self">
+                    <del>f</del>
+                    <add>h</add>
+                </subst>alle en el mas baxo d<ex>e</ex>la boca <lb break="yes"
+                    />q<ex>ue</ex> avia seys o siete braças de fondo: y de
+                    con<lb break="no"/>tino andava<ex>n</ex> aq<ex>ue</ex>llos
+                hileros vnos por entrar <lb break="yes"/>y otros por salir/. y
+                plugo a n<ex>uest</ex>ro señor de me <lb break="yes"/>dar buen
+                viento: y atravese por esa boca ade<ex>n</ex><lb break="no"
+                />tro/ y luego halle tranqujlidad: y por açertamj<ex>ent</ex><hi
+                    rend="superscript">o</hi>
+                <lb break="yes"/>se saco d<ex>e</ex>l agua d<ex>e</ex>la mar y
+                la halle dulçe/. Nave<lb break="no"/>gue al septentrion fasta
+                vna sierra muy alta/ a <lb break="yes"/>donde serian veynte y
+                seys leguas desta punta del <lb break="yes"/>arenal: y alli avia
+                dos cabos de t<ex>ie</ex>rra muy alta el <lb break="yes"/>vno
+                    d<ex>e</ex>la parte del oriente y era d<ex>e</ex>la misma
+                jsla <lb break="yes"/>d<ex>e</ex>la trinjdad: y el otro
+                    d<ex>e</ex>l ocçidente d<ex>e</ex>la tierra <lb break="yes"
+                />que dixe de graçia: y alli hazia vna boca muy <lb break="yes"
+                />angosta/ mas q<ex>ue</ex> aq<ex>ue</ex>lla d<ex>e</ex>la punta
+                del arenal: y <lb break="yes"/>alli avia los mjsmos hileros y
+                    aq<ex>ue</ex>l rugir fuer<lb break="no"/>te d<ex>e</ex>l
+                agua como era la punta del arenal: y asi <lb break="yes"/>mjsmo
+                alli la mar era agua dulçe/. y <subst hand="#self">
+                    <del>h</del>
+                    <add>f</add>
+                </subst>asta <lb break="yes"/>entonçes yo no avia avido lengua
+                con njngu<ex>n</ex><hi rend="superscript">a</hi>
+                <lb break="yes"/>gente destas t<ex>ie</ex>rras: y lo deseava en<choice>
+                    <corr> </corr>
+                    <sic/>
+                </choice>gra<ex>n</ex> manera/. <lb break="yes"/>y por esto
+                navegue al luengo d<ex>e</ex>la costa desta t<ex>ie</ex>rra <lb
+                    break="yes"/>hazia el ponjente: y quanto <add hand="#self"
+                    >mas</add> andava hallava el <lb break="yes"/>agua
+                    d<ex>e</ex>la mar mas dulçe y mas sabrosa/. y an<lb
+                    break="no"/>dando vna gra<ex>n</ex> parte llegue a vn lugar
+                    don<lb break="no"/>de me pareçia<ex>n</ex> las
+                t<ex>ie</ex>rras labradas: y surgi: y <lb break="yes"/>envie las
+                barcas a t<ex>ie</ex>rra/ y fallaron q<ex>ue</ex> de fresco <lb
+                    break="yes"/>se avia ydo de alli gente: y fallaro<ex>n</ex>
+                todo el mo<ex>n</ex>te <lb break="yes"/>cubierto de gatos
+                paules/. bolviero<ex>n</ex>se/. <lb break="yes"/>y como esta
+                fuese sierra me pareçio q<ex>ue</ex> mas alla <lb break="yes"
+                />al ponjente las tierras eran mas llanas y q<ex>ue</ex>
+                <lb break="yes"/>alli seria poblado y por esto seria poblado/. y
+                    ma<ex>n</ex><lb break="no"/>de levantar las anclas y corri
+                esta costa fasta <lb break="yes"/><del hand="#self">d</del>el
+                cabo desta sierra y alli a vn rio surgi: y lue<lb break="no"/>go
+                vino mucha gente <seg ana="#glose"><add hand="#self">hallo gente
+                            <lb break="yes"/>y tomo q<ex>u</ex><hi
+                            rend="superscript">a</hi>tro</add></seg> y me
+                dixeron como lla<lb break="no"/>mava<ex>n</ex> a esta
+                    t<ex>ie</ex>rra paria: y q<ex>ue</ex> de alli mas al
+                    ponje<ex>n</ex><lb break="no"/>te era mas poblado/. tome
+                dellos quatro y des<lb break="no"/>pues navegue al ponjente/ y
+                andadas ocho leguas <pb n="71r"/>
+                <fw rend="titre-courant">.71.</fw>
+                <cb type="single-column"/><lb break="yes"/>mas al ponjente <del
+                    hand="#self">era mas poblado</del> allende vna <lb
+                    break="yes"/>punta a q<ex>ue</ex> yo llame del aguja halle
+                vnas tierras <lb break="yes"/>las mas hermosas del
+                mu<ex>n</ex>do y muy pobladas <lb break="yes"/>llegue alli vna
+                mañana a ora de terçia y por <lb break="yes"/>ver esta verdura y
+                esta hermosura acorde surgir <lb break="yes"/>y ver esta gente
+                    d<ex>e</ex>los quales luego vinjeron <lb break="yes"/>en
+                canoas ala nao a Rogarme de p<ex>ar</ex>tes de su <lb
+                    break="yes"/>Rey q<ex>ue</ex> descendiese en tierra/. e
+                    qua<ex>n</ex>do viero<ex>n</ex>
+                <lb break="yes"/>q<ex>ue</ex> no cure dellos vinjero<ex>n</ex>
+                ala nao jnfinjtissimos <lb break="yes"/>en canoas y muchos
+                trayan pieças de oro al pes<lb break="no"/>cueço: y algunos
+                atados alos braços algunas per<lb break="no"/>las/. holgue mucho
+                    qua<ex>n</ex>do las vi e procure <lb break="yes"/>mucho de
+                saber donde las hallavan: y me dixero<ex>n</ex>
+                <lb break="yes"/>que alli: y d<ex>e</ex>la p<ex>ar</ex>te del
+                norte de aquella t<ex>ie</ex>rra/. <lb break="yes"/>Qujsiera
+                detenerme mas estos bastime<ex>n</ex>tos q<ex>ue</ex> yo traya
+                    <lb break="yes"/>trigo y vino e carne p<ex>ar</ex>a esta
+                gente q<ex>ue</ex> aca esta se <lb break="yes"/>me
+                    acabava<ex>n</ex> de perder: los quales ove alla
+                    co<ex>n</ex>
+                <lb break="yes"/>tanta fatiga: y por esto yo no buscava sino a
+                mas <lb break="yes"/>andar a venjr a poner enellos cobro y no me
+                    <lb break="yes"/>detener p<ex>ar</ex>a cosa alguna/. procure
+                de aver <lb break="yes"/>de aq<ex>ue</ex>llas perlas: y enbie
+                las <subst hand="#self">
+                    <del>v</del>
+                    <add>b</add>
+                </subst>arcas a t<ex>ie</ex>rra/. <lb break="yes"/>Esta gente es
+                muy mucha/ y toda de muy bue<ex>n</ex> pare<lb break="no"/>çer
+                    d<ex>e</ex>la mjsma color q<ex>ue</ex> los otros de antes y
+                muy tra<lb break="no"/>tables/. la gente n<ex>uest</ex>ra
+                    q<ex>ue</ex> fue a t<ex>ie</ex>rra los halla<lb break="no"
+                    />ro<ex>n</ex> tan convenjbles y los reçibiero<ex>n</ex> muy
+                    ho<ex>n</ex>rra<lb break="no"/>damente/. dizen q<ex>ue</ex>
+                luego q<ex>ue</ex> llegaro<ex>n</ex> las bar<lb break="no"/>cas
+                a tierra: q<ex>ue</ex> vinjero<ex>n</ex> dos p<ex>er</ex>sonas
+                prinçipales <lb break="yes"/>con todo el pueblo: creen
+                    q<ex>ue</ex>l vno el padre y <lb break="yes"/>el otro era su
+                hijo: y los llevaro<ex>n</ex> a vna casa muy <lb break="yes"
+                />grande hecha a dos aguas y no redonda como tien<lb break="no"
+                />da del campo: como son estas otras: y alli tenjan <lb
+                    break="yes"/>muchas sillas adonde los fi<choice>
+                    <orig>ƽ</orig>
+                    <reg>z</reg>
+                </choice>iero<ex>n</ex> assentar y <lb break="yes"/>otras donde
+                ellos se assentaro<ex>n</ex>: y hiziero<ex>n</ex> traer <lb
+                    break="yes"/>pan y de muchas ma<ex>ne</ex>ras frutas e vino
+                de <lb break="yes"/>muchas ma<ex>ne</ex>ras blanco e tinto mas
+                no de <lb break="yes"/>vvas: deve el de ser de diuersas
+                    ma<ex>ne</ex>ras vno <lb break="yes"/>de vna fruta y otro de
+                otra/. y asimjsmo deve <lb break="yes"/>de ser dello de mahiz:
+                que es vna simjente q<ex>ue</ex>
+                <lb break="yes"/>haze vna espiga como vna maçorca de
+                    q<ex>ue</ex> lleve yo <lb break="yes"/>alla y ay ya mucho en
+                castilla: y pareçe q<ex>ue</ex> aq<ex>ue</ex>l <lb break="yes"
+                    />q<ex>ue</ex> lo tenja mejor lo traya por mayor exçelençia
+                    <lb break="yes"/>y lo dava en gra<ex>n</ex> preçio/. los
+                    ho<ex>m</ex>bres todos esta<lb break="no"/>van juntos a vn
+                cabo d<ex>e</ex>la casa y las mugeres <lb break="yes"/>en otro/.
+                    Recibiero<ex>n</ex> ambas las partes gra<ex>n</ex> pena <lb
+                    break="yes"/>porq<ex>ue</ex> no se entendian/. Ellos
+                    p<ex>ar</ex>a preguntar alos <lb break="yes"/>otros de
+                    n<ex>uest</ex>ra patria: y los n<ex>uest</ex>ros por saber
+                    d<ex>e</ex>la <pb n="71v"/>
+                <cb type="single-column"/><lb break="yes"/>suya/. e despues que
+                    oviero<ex>n</ex> resçebido colaçion <lb break="yes"/>alli en
+                casa d<ex>e</ex>l mas viejo los llevo el moço ala <lb
+                    break="yes"/>suya e fizo otro tanto/. e despues se pusieron
+                    <lb break="yes"/>enlas barcas e se vinjeron ala nao e yo
+                luego <lb break="yes"/>levante las anclas porq<ex>ue</ex> andava
+                mucho de priesa <lb break="yes"/>por remediar los
+                    mantenjmj<ex>ent</ex><hi rend="superscript">os</hi>
+                    q<ex>ue</ex> se me perdian <lb break="yes"/>q<ex>ue</ex> yo
+                avia avido con tanta fatiga: y ta<ex>m</ex>bien por re<lb
+                    break="no"/>mediarme a mj q<ex>ue</ex> avia adolesçido por
+                el desvelar <lb break="yes"/>d<ex>e</ex>los ojos q<ex>ue</ex>
+                bien q<ex>ue</ex>l viaje q<ex>ue</ex> yo fui a descubrir <lb
+                    break="yes"/>la t<ex>ie</ex>rra firme estoviese treynta y
+                tres dias sin conçe<lb break="no"/>bir sueño: y estoviese tanto
+                    t<ex>iem</ex>po sin vista: <seg ana="#glose"><add
+                        hand="#self">no<ex>t</ex><hi rend="superscript"
+                        >a</hi></add></seg> no<ex>n</ex> se me <lb break="yes"
+                    />dañaro<ex>n</ex> los ojos nj se me ro<ex>m</ex>pieron de
+                sangre y con <lb break="yes"/>tantos dolores como agora/. <lb
+                    break="yes"/></p>
+            <p><g ref="#calderon1"/> Esta gente como ya dixe son todos de muy
+                linda <lb break="yes"/>estatura altos de cuerpos e de muy lindos
+                gestos <lb break="yes"/>los cabellos muy largos e llanos: y
+                traen las <lb break="yes"/>cabeças atadas con vnos pañuelos
+                labrados <lb break="yes"/>como ya dixe hermosos q<ex>ue</ex>
+                pareçen de lexos de <lb break="yes"/>seda y almayzares/. otro
+                traen çeñjdo mas largo <lb break="yes"/>q<ex>ue</ex> se cobijan
+                conel en lugar de pañetes ansi ho<ex>m</ex><lb break="no"/>bres
+                como mugeres/. la Color desta <del hand="#self"
+                    >t<ex>ie</ex>rra</del> gente <lb break="yes"/>es mas blanca
+                    q<ex>ue</ex> otra q<ex>ue</ex> aya visto enlas yndias/. <lb
+                    break="yes"/>todos trayan al pescueço y a los braços algo
+                ala <lb break="yes"/>gujsa destas t<ex>ie</ex>rras/. y muchos
+                trayan pieças de <lb break="yes"/>oro baxo colgado al pescueço/.
+                las Canoas dellos <lb break="yes"/>son muy gra<ex>n</ex>des: y
+                de mejor hechura q<ex>ue</ex> no son <lb break="yes"/>estas
+                otras y mas livianas: y en el medio de <lb break="yes"/>cada vna
+                    tiene<ex>n</ex> vn apartamj<ex>ent</ex><hi
+                    rend="superscript">o</hi> como camara en q<ex>ue</ex>
+                <lb break="yes"/>vi que andavan los prinçipales con sus muge<lb
+                    break="no"/>res/. <seg ana="#glose"><add hand="#self"
+                        >jardines</add></seg> llame alli a este lugar Jardines:
+                    porq<ex>ue</ex>
+                <lb break="yes"/>asi conforma<ex>n</ex> por el no<ex>m</ex>bre/.
+                procure mucho de <lb break="yes"/>saber donde cogian
+                    aq<ex>ue</ex>l oro y todos me aseña<lb break="no"/>lavan vna
+                    t<ex>ie</ex>rra frontera d<ex>e</ex>llos al ponjente que <lb
+                    break="yes"/>era muy alta mas no lexos/. mas todos me de<lb
+                    break="no"/>zian q<ex>ue</ex> no fuese alla porq<ex>ue</ex>
+                alli comjan los ho<ex>m</ex><lb break="no"/>bres y entendi
+                entonçes q<ex>ue</ex> dezian q<ex>ue</ex> era<ex>n</ex>
+                    ho<ex>m</ex>bres <lb break="yes"/>canjbales e que serian
+                como los otros/. y despues <lb break="yes"/>e pensado
+                    q<ex>ue</ex> podria ser q<ex>ue</ex> lo dezian
+                    porq<ex>ue</ex> alli avria <lb break="yes"/>anjmalias/.
+                    ta<ex>m</ex>bien les pregunte adonde cogia<ex>n</ex>
+                <lb break="yes"/>las perlas: y me señalaron ta<ex>m</ex>bien
+                    q<ex>ue</ex> al ponjente <lb break="yes"/>y al norte detras
+                desta t<ex>ie</ex>rra donde estavan/. <del hand="#self"
+                        >d<ex>e</ex>l</del>
+                <lb break="yes"/>dexelo de probar por esto d<ex>e</ex>los
+                    mantenjmj<ex>ent</ex><hi rend="superscript">os</hi> y del
+                    <lb break="yes"/>mal de mjs ojos: y por vna <add
+                    hand="#self">nao</add> grande q<ex>ue</ex> traygo
+                    q<ex>ue</ex> no <lb break="yes"/>es p<ex>ar</ex>a semejante
+                hecho/. <lb break="yes"/></p>
+            <p><g ref="#calderon1"/> y como el t<ex>iem</ex>po fue breve se
+                passo todo en preguntas <lb break="yes"/>y se bolviero<ex>n</ex>
+                alos navios q<ex>ue</ex> seria ora de bisperas <lb break="yes"
+                />como ya dixe/. y luego levante las anclas: y na<lb break="no"
+                />vegue al ponjente: y asimesmo el dia sigujente <lb break="yes"
+                />fasta q<ex>ue</ex> me falle q<ex>ue</ex> no avia sinon tres
+                braças de <lb break="yes"/>fondo: con creençia q<ex>ue</ex>
+                todavia esta seria jsla y que <pb n="72r"/>
+                <fw rend="titre-courant">.72.</fw>
+                <cb type="single-column"/><lb break="yes"/>yo podria salir al
+                norte/. y asi visto enbie vna <lb break="yes"/>caravela sotil
+                adelante a<choice>
+                    <corr> </corr>
+                    <sic/>
+                </choice>ver si avia salida/ o si estava <lb break="yes"
+                />çerrado: y ansi anduvo mucho camjno fasta vn gol<lb break="no"
+                />fo muy grande en el qual pareçia q<ex>ue</ex> avia otros
+                quatro <lb break="yes"/>medianos/. y d<ex>e</ex>l vno salia vn
+                rio grandissimo: fallaro<ex>n</ex>
+                <lb break="yes"/>siemp<ex>r</ex><hi rend="superscript">e</hi>
+                çinco braças de fondo y el agua muy dulçe en ta<ex>n</ex>ta <lb
+                    break="yes"/><choice>
+                    <sic>en tanta</sic>
+                    <corr/>
+                </choice> cantidad q<ex>ue</ex> yo jamas bevi la pareja della/.
+                fuy <lb break="yes"/>yo muy d<ex>e</ex>scontento della
+                    qua<ex>n</ex>do vi q<ex>ue</ex> no podia salir al <lb
+                    break="yes"/>norte nj podia ya andar al austro nj al
+                ponjente/ por<lb break="no"/>q<ex>ue</ex> yo estava cercado por
+                todas partes d<ex>e</ex>la t<ex>ie</ex>rra/. y asi le<lb
+                    break="no"/>vante las anclas y torne atras p<ex>ar</ex>a
+                salir al norte por <lb break="yes"/>la boca q<ex>ue</ex> yo
+                arriba dixe y no pude bolver por la pobla<lb break="no"/>çion a
+                donde yo avia estado: por causa d<ex>e</ex>las corrientes
+                    q<ex>ue</ex>
+                <lb break="yes"/>me avian desviado d<ex>e</ex>lla/. y siempre en
+                todo cabo halla<lb break="no"/>va el agua dulçe y clara: y
+                    q<ex>ue</ex> me llevava al oriente <lb break="yes"/>muy
+                rezio facia las dos bocas q<ex>ue</ex> arriba dixe/. y enton<lb
+                    break="no"/>çes conjeture q<ex>ue</ex> los hilos
+                d<ex>e</ex>la corriente: y aq<ex>ue</ex>llas <lb break="yes"
+                />lomas q<ex>ue</ex> salian y entrava<ex>n</ex> en estas bocas
+                con aq<ex>ue</ex>l rugir <lb break="yes"/>tan fuerte
+                    q<ex>ue</ex> era pelea d<ex>e</ex>l agua dulçe conla
+                salada/. la <lb break="yes"/>dulçe empuxava ala otra
+                    porq<ex>ue</ex> no entrasse: y la salada <lb break="yes"
+                    />porq<ex>ue</ex> la otra no saliese/. y conjeture
+                    q<ex>ue</ex> alli donde son <lb break="yes"/>estas dos bocas
+                    q<ex>ue</ex> algun t<ex>iem</ex>po seria t<ex>ie</ex>rra
+                continua ala jsla <lb break="yes"/>d<ex>e</ex>la trinjdad conla
+                    t<ex>ie</ex>rra de graçia como podran ver v<ex>uest</ex>ras
+                    <lb break="yes"/>altezas por la pintura delo q<ex>ue</ex>
+                con esta les enbio/. Sa<lb break="no"/>li yo por esta boca
+                    d<ex>e</ex>l norte/ y halle q<ex>ue</ex>l agua dulçe
+                    siemp<ex>r</ex><hi rend="superscript">e</hi>
+                <lb break="yes"/>vençia: y qua<ex>n</ex>do passe q<ex>ue</ex>
+                fue con fuerça de viento: estan<lb break="no"/>do en vna de
+                    aq<ex>ue</ex>llas lomas/ halle en aq<ex>ue</ex>llos hylos
+                    <lb break="yes"/>d<ex>e</ex>la parte de dentro el agua dulçe
+                y de fuera salada/. <lb break="yes"/></p>
+            <p><g ref="#calderon1"/> Qua<ex>n</ex>do yo navegue despaña alas
+                yndias fallo luego <lb break="yes"/>en passando çient leguas a
+                ponjente d<ex>e</ex>los açores gra<ex>n</ex><lb break="no"
+                />dissimo mudamj<ex>ent</ex><hi rend="superscript">o</hi> enel
+                çielo e enlas estrellas y enla <lb break="yes"
+                    />tempera<ex>n</ex>çia del ayre y enlas aguas d<ex>e</ex>la
+                mar: y en <lb break="yes"/>esto e tenjdo mucha
+                dilige<ex>n</ex>çia en la experiençia/. <lb break="yes"/></p>
+            <p><g ref="#calderon1"/> Fallo q<ex>ue</ex> de septentrion en austro
+                passando las d<ex>ic</ex>has çient <lb break="yes"/>leguas
+                    d<ex>e</ex>las d<ex>ic</ex>has jslas: q<ex>ue</ex> luego
+                enlas agujas de <lb break="yes"/>marear q<ex>ue</ex> fasta
+                entonçes nordesteava<ex>n</ex>: noruestean <lb break="yes"/>vna
+                quarta de viento todo entero/. y esto es en alle<lb break="no"
+                />gando alli a aq<ex>ue</ex>lla linea como qujen traspone vna
+                    <lb break="yes"/>cuesta/. y asimesmo fallo la mar toda llena
+                de <lb break="yes"/>yerva de vna calidad q<ex>ue</ex> pareçe
+                ramitos de pino y <lb break="yes"/>muy cargada de fruta como de
+                lantisco/. <seg ana="#glose"><add hand="#self">no<ex>t</ex><hi
+                            rend="superscript">a</hi></add></seg> y es tan <lb
+                    break="yes"/>espessa q<ex>ue</ex> al primer viaje pense
+                    q<ex>ue</ex> era baxo <lb break="yes"/>y q<ex>ue</ex> daria
+                en seco con los navios/. y hasta lle<lb break="no"/>gar con esta
+                raya no se falla vn solo ramito/. fa<lb break="no"/>llo tambien
+                en llega<ex>n</ex>do alli la mar muy suave <lb break="yes"/>y
+                llana y bien q<ex>ue</ex>
+                <del hand="#self">viene</del>
+                <add hand="#self">vente</add> rezio nu<ex>n</ex>ca se levanta/.
+                    <lb break="yes"/>Asimesmo hallo dentro d<ex>e</ex>la
+                    d<ex>ic</ex>ha raya hazia ponje<ex>n</ex><lb break="no"/>te
+                la tempera<ex>n</ex>çia d<ex>e</ex>l çielo muy suave y no
+                    discre<lb break="no"/>pa d<ex>e</ex>la cantidad qujer sea
+                invierno qujer sea en <lb break="yes"/>verano/. Qua<ex>n</ex>do
+                alli estoy hallo q<ex>ue</ex> la estrella del <pb n="72v"/>
+                <cb type="single-column"/><lb break="yes"/>norte escrive vn
+                çirculo el qual tiene enel Diametro <lb break="yes"/>çinco
+                grados: y estando las guardas enel braço <lb break="yes"
+                />derecho entonçes esta la estrella enel mas baxo <lb
+                    break="yes"/>y se va alçando fasta q<ex>ue</ex> llega al
+                braço izqujerdo: <lb break="yes"/>y entonçes esta çinco grados y
+                de alli se va abaxa<ex>n</ex><lb break="no"/>do fasta llegar a
+                bolver otra vez al braço dere<lb break="no"/>cho/. <lb
+                    break="yes"/></p>
+            <p><g ref="#calderon1"/> yo allegue agora d<ex>e</ex>spaña ala jsla
+                    d<ex>e</ex>la madera <lb break="yes"/>y de alli a canaria y
+                dende alas jslas de cabo <lb break="yes"/>verde de adonde cometi
+                el viaje p<ex>ar</ex>a navegar al <lb break="yes"/>austro fasta
+                debaxo la linea equjnoçial como yo <lb break="yes"/>dixe/.
+                allegado a estar en derecho con el paralelo <lb break="yes"
+                    />q<ex>ue</ex> passa por la sierra leoa en gujnea fallo tan
+                    gra<ex>n</ex><lb break="no"/>de ardor y los rayos del sol
+                tan calientes q<ex>ue</ex> pen<lb break="no"/>sava de quemar/. y
+                bien q<ex>ue</ex> lloviese y el çielo <lb break="yes"/>fuese muy
+                turbado: siemp<ex>r</ex><hi rend="superscript">e</hi> yo estava
+                en esta fatiga <lb break="yes"/>fasta q<ex>ue</ex>
+                    n<ex>uest</ex>ro señor proveyo de bue<ex>n</ex> viento: y a
+                mj <lb break="yes"/>puso en volu<ex>n</ex>tad q<ex>ue</ex> yo
+                navegase al occidente/. co<ex>n</ex>
+                <lb break="yes"/>este esfuerço q<ex>ue</ex> en llega<ex>n</ex>do
+                ala raya de q<ex>ue</ex> yo dixe q<ex>ue</ex>
+                <lb break="yes"/>alli fallaria mudamj<ex>ent</ex><hi
+                    rend="superscript">o</hi> enla tempera<ex>n</ex>çia/.
+                despues <lb break="yes"/>q<ex>ue</ex> yo empareje a estar en
+                derecho desta raya luego <lb break="yes"/>falle la
+                    tempera<ex>n</ex>çia d<ex>e</ex>l çielo muy suave: y
+                    qua<ex>n</ex>to <lb break="yes"/>mas andava
+                ad<ex>e</ex>lante/ mas multiplicava: mas <lb break="yes"/>no
+                halle conforme a esto las estrellas/. <lb break="yes"/></p>
+            <p><g ref="#calderon1"/> falle <seg ana="#glose"><add hand="#other"
+                        >ojo</add></seg> alli q<ex>ue</ex> en anocheçiendo tenja
+                yo la estrella d<ex>e</ex>l <lb break="yes"/>norte alta çinco
+                grados: y entonces las guardas <lb break="yes"/>estava<ex>n</ex>
+                ençima d<ex>e</ex>la Cabeça: y despues ala media <lb break="yes"
+                />noche fallava la estrella alta diez grados: y <lb break="yes"
+                />en amaneçiendo q<ex>ue</ex> las guardas estava<ex>n</ex> en
+                los <lb break="yes"/>pies qujnze/. <lb break="yes"/></p>
+            <p><g ref="#calderon1"/> la suav<choice>
+                    <sic>el</sic>
+                    <corr/>
+                </choice>idad d<ex>e</ex>la mar falle conforme mas no <lb
+                    break="yes"/>enla yerva. enesto d<ex>e</ex>la estrella
+                    d<ex>e</ex>l norte tome <lb break="yes"/>gra<ex>n</ex>de
+                admjraçion y por esto muchas noches con <lb break="yes"/>mucha
+                    dilige<ex>n</ex>çia tornava yo a repricar la vista <lb
+                    break="yes"/>d<ex>e</ex>lla con el quadrante: y
+                    siemp<ex>r</ex><hi rend="superscript">e</hi> falle
+                    q<ex>ue</ex> caya el <lb break="yes"/>plomo y hilo a vn
+                punto/. <lb break="yes"/></p>
+            <p><g ref="#calderon1"/> por cosa nueva tengo yo esto y podra ser
+                    q<ex>ue</ex> sera <lb break="yes"/>tenjda q<ex>ue</ex> en
+                poco espaçio <del hand="#self">hasta</del> haga tanta
+                    differe<ex>n</ex><lb break="no"/>çia el çielo/. <lb
+                    break="yes"/></p>
+            <p><g ref="#calderon1"/> yo siemp<ex>r</ex><hi rend="superscript"
+                    >e</hi> ley q<ex>ue</ex>l mu<ex>n</ex>do t<ex>ie</ex>rra e
+                agua era esperico <lb break="yes"/>e las auctoridades y
+                experiençias q<ex>ue</ex> ptolomeo y todos <lb break="yes"/>los
+                otros q<ex>ue</ex>scriviero<ex>n</ex> deste sitio davan e
+                amostraban <lb break="yes"/>p<ex>ar</ex>a ello asi por ecclipses
+                    d<ex>e</ex>la luna y otras demo<ex>n</ex><lb break="no"
+                />straçiones q<ex>ue</ex> hazen de oriente fasta ocçidente: <del
+                    hand="#self">como</del>
+                <lb break="yes"/>como d<ex>e</ex>la Elevaçion d<ex>e</ex>l polo
+                de septentrio<ex>n</ex> en <lb break="yes"/>austro/. agora vi
+                    ta<ex>n</ex>ta disformjdad como ya dixe/. <lb break="yes"/>y
+                por esto me puse a tener esto d<ex>e</ex>l mu<ex>n</ex>do: y
+                falle <lb break="yes"/>q<ex>ue</ex> no era redondo enla forma
+                    q<ex>ue</ex>scriven: saluo q<ex>ue</ex> es <lb break="yes"
+                    />d<ex>e</ex>la <seg ana="#glose"><add hand="#self"
+                            >no<ex>t</ex><hi rend="superscript"
+                    >a</hi></add></seg> forma de vna <del hand="#self"
+                    >spera</del> pera q<ex>ue</ex> sea toda muy <lb break="yes"
+                />redonda saluo alli donde tiene el peçon q<ex>ue</ex> alli
+                tiene <lb break="yes"/>mas alto: o como qujen tiene vna pelota
+                muy <pb n="73r"/>
+                <fw rend="titre-courant">.73.</fw>
+                <cb type="single-column"/><lb break="yes"/>redonda: y en vn
+                lugar d<ex>e</ex>lla fuesse como vna teta <lb break="yes"/>de
+                muger alli puesta: y q<ex>ue</ex>sta parte deste peçon sea <lb
+                    break="yes"/>la mas alta e mas propinca al çielo: y sea
+                    de<lb break="no"/>baxo la linea equjnoçial/. y enesta mar
+                ocçeana <lb break="yes"/>en fin d<ex>e</ex>l oriente/ llamo yo
+                fin de orie<ex>n</ex>te adon<lb break="no"/>de acaba toda la
+                tierra e jslas e p<ex>ar</ex>a esto allego to<lb break="no"/>das
+                las razones sobre <del hand="#self">d<ex>ic</ex>has</del>
+                escriptas d<ex>e</ex>la raya <lb break="yes"/>q<ex>ue</ex> passa
+                al ocçidente d<ex>e</ex>las jslas d<ex>e</ex>los açores çient
+                    <lb break="yes"/>leguas de septentrion en austro/
+                    q<ex>ue</ex> en passando <lb break="yes"/>de alli al
+                ponjente: ya va<ex>n</ex> los navios alçandose ha<lb break="no"
+                />zia el çielo suaueme<ex>n</ex>te: y entonçes se goza de mas
+                    <lb break="yes"/>suaue tempera<ex>n</ex>çia y se muda el
+                aguja d<ex>e</ex>l marear <lb break="yes"/>por causa
+                d<ex>e</ex>la suaujdad desa quarta de viento y qua<ex>n</ex><lb
+                    break="no"/>to mas va adelante e alçandose: mas noruestea/.
+                    <lb break="yes"/>y esta altura causa el desvariar
+                    d<ex>e</ex>l <del hand="#self">çielo</del> çirculo
+                    q<ex>ue</ex>
+                <lb break="yes"/>escrive la estrella d<ex>e</ex>l norte
+                    co<ex>n</ex>las guardas/. y qua<ex>n</ex><lb break="no"/>to
+                mas passare junto co<ex>n</ex>la linea equjnoçial: mas <lb
+                    break="yes"/>se subira<ex>n</ex> en alto y mas differençia
+                avra enlas <lb break="yes"/>d<ex>ic</ex>has estrellas y enlos
+                çirculos dellas/. y ptolomeo <lb break="yes"/>y los otros sabios
+                    q<ex>ue</ex>scriviero<ex>n</ex> deste mu<ex>n</ex>do
+                    creyero<ex>n</ex>
+                <lb break="yes"/>q<ex>ue</ex> era esperico creyendo
+                q<ex>ue</ex>ste hemjsperio q<ex>ue</ex> fuese re<lb break="no"
+                />dondo como aq<ex>ue</ex>l de alla donde ellos estavan/. <lb
+                    break="yes"/>el qual tiene el çentro enla jsla de arin
+                    q<ex>ue</ex>s deba<lb break="no"/>xo la linea equjnoçial
+                entre el sino arabico y aq<ex>ue</ex>l <lb break="yes"/>de
+                persia/. y el çirculo passa sobre el cabo de <lb break="yes"
+                />san Viçeynte en portogal <del hand="#self">p<ex>ar</ex>a</del>
+                <add hand="#self">por</add> el ponjente/. y passa <lb
+                    break="yes"/>en oriente por <del hand="#self">pagara</del>
+                cangara y por las seras/. <lb break="yes"/>enel qual hemjsperio
+                no hago yo q<ex>ue</ex> ay njngu<ex>n</ex><hi rend="superscript"
+                    >a</hi>
+                <lb break="yes"/>dificultad saluo q<ex>ue</ex> sea esperico
+                redondo como ellos <lb break="yes"/>dizen/. mas este otro digo
+                    q<ex>ue</ex> es como seria la mj<lb break="no"/>tad
+                    d<ex>e</ex>la pera bien redonda: la qual toviese el <lb
+                    break="yes"/>peçon alto como yo dixe: o como vna teta de <lb
+                    break="yes"/>muger en vna pelota redonda/. asi q<ex>ue</ex>
+                desta <del hand="#self">man<ex>er</ex>a</del>
+                <lb break="yes"/>media p<ex>ar</ex>te no<ex>n</ex> ovo notiçia
+                ptolomeo nj los otros <lb break="yes"/>q<ex>ue</ex>
+                    escriviero<ex>n</ex> d<ex>e</ex>l mu<ex>n</ex>do por ser muy
+                ignoto/. Sola<lb break="no"/>me<ex>n</ex>te hiziero<ex>n</ex>
+                rayz sobre el hemjsperio/ adonde <lb break="yes"/>ellos estavan
+                    q<ex>ue</ex>s redondo esperico como arriba dixe/. <lb
+                    break="yes"/>y agora q<ex>ue</ex> v<ex>uest</ex>ras
+                    al<ex>tezas</ex> lo an ma<ex>n</ex>dado navegar y <lb
+                    break="yes"/>buscar y descobrir: se amuestra
+                evide<ex>n</ex>tissimo/. porq<ex>ue</ex>
+                <lb break="yes"/>estando yo en este viaje al septentrion veynte
+                grados <lb break="yes"/>d<ex>e</ex>la linea equjnocial: alli era
+                en derecho de hargin <lb break="yes"/>e de aq<ex>ue</ex>llas
+                    t<ex>ie</ex>rras: e alli es la gente negra e la <lb
+                    break="yes"/>tierra muy quemada/. y despues q<ex>ue</ex> fui
+                alas jslas <lb break="yes"/>de Cabo verde: alli en
+                aq<ex>ue</ex>llas t<ex>ie</ex>rras es la gente mu<lb break="no"
+                />cho mas negra: y qua<ex>n</ex>to mas baxo se va<ex>n</ex> al
+                austro: <lb break="yes"/>tanto mas llega<ex>n</ex> al extremo/.
+                en manera q<ex>ue</ex> alli <lb break="yes"/>en derecho donde yo
+                estava q<ex>ue</ex>s la sierra leoa ado<ex>n</ex>de <lb
+                    break="yes"/><fw type="signature">F</fw>
+                <pb n="73v"/>
+                <cb type="single-column"/><lb break="yes"/>se me alçava la
+                estrella del norte en anochecie<ex>n</ex>do <lb break="yes"
+                />çinco grados: alli es la gente negra en estrema <lb
+                    break="yes"/>Cantidad/. y despues q<ex>ue</ex> de alli
+                navegue al ocçi<lb break="no"/>dente tan extremos calores/. y
+                passada la raya <lb break="yes"/>de q<ex>ue</ex> yo dixe: falle
+                    <del hand="#self">multi</del> multiplicar la tem<lb
+                    break="no"/><subst hand="#self">
+                    <del>planç</del>
+                    <add>pera<ex>n</ex>çia</add>
+                </subst> andando en tanta cantidad que <lb break="yes"
+                    />qua<ex>n</ex>do yo llegue ala jsla d<ex>e</ex>la trinjdad
+                adonde <lb break="yes"/>la estrella d<ex>e</ex>l norte en
+                anocheçiendo ta<ex>m</ex>bien se <lb break="yes"/>me al<choice>
+                    <corr>ç</corr>
+                    <sic/>
+                </choice>ava çinco grados alli/. y enla t<ex>ie</ex>rra de
+                    gra<lb break="no"/>çia halle tempera<ex>n</ex>çia
+                suaujssima: y las tierras <lb break="yes"/>y arboles muy
+                    v<ex>er</ex>des y ta<ex>n</ex> hermosos como en a<lb
+                    break="no"/>bril enlas guertas de valencia/ y la gente de
+                    <lb break="yes"/>alli de muy linda estatura: y blancos mas
+                    <lb break="yes"/>q<ex>ue</ex> otros q<ex>ue</ex> aya visto
+                enlas yndias: e los cabe<lb break="no"/>llos muy largos e llanos
+                e gente mas astu<lb break="no"/>ta e de mayor ingenjo e no
+                cobardes/. esto<ex>n</ex><lb break="no"/>ces <seg ana="#glose"
+                        ><add hand="#self">no<ex>t</ex><hi rend="superscript"
+                            >a</hi></add></seg> era el sol en virgen ençima de
+                    n<ex>uest</ex>ras cabe<lb break="no"/>ças e suyas/. ansi que
+                todo esto procede por la <lb break="yes"/>suaujssima
+                    tempera<ex>n</ex>çia q<ex>ue</ex> alli es/. la qual proçe<lb
+                    break="no"/>de por estar mas alto enel mu<ex>n</ex>do mas
+                çerca <lb break="yes"/>d<ex>e</ex>l ayre que cuento/. y asi me
+                afirmo q<ex>ue</ex>l mu<ex>n</ex><lb break="no"/>do no es <seg
+                    ana="#glose"><add hand="#self">dize q<ex>ue</ex>l
+                            mu<ex>n</ex>do <lb break="yes"/>no es esperico <lb
+                            break="yes"/>etc<ex>eter</ex><hi rend="superscript"
+                            >a</hi></add></seg> esperico: saluo q<ex>ue</ex>
+                tiene esta differe<ex>n</ex>çia q<ex>ue</ex> ya <lb break="yes"
+                />dixe/. la qual es en este hemjsperio adonde <lb break="yes"
+                />caen las yndias e la ma<add hand="#self">r</add> occeana/. y
+                el estre<lb break="no"/>mo dello es debaxo la linea equjnoçial/.
+                y <lb break="yes"/>ayuda mucho a e<subst hand="#self">
+                    <del>ll</del>
+                    <add>st</add>
+                </subst>o q<ex>ue</ex> sea ansi: porq<ex>ue</ex>l sol
+                    qua<ex>n</ex>do <lb break="yes"/>n<ex>uest</ex>ro señor lo
+                hizo fue enel primer punto de <lb break="yes"/>oriente/ o la
+                primera luz que fue aquj en oriente: <lb break="yes"/>alli donde
+                es el estremo d<ex>e</ex>la altura deste mu<ex>n</ex><lb
+                    break="no"/>do/. y bien quel pareçer de Aristotel fuese
+                    q<ex>ue</ex>
+                <lb break="yes"/>el polo antartico: o la t<ex>ie</ex>rra
+                    q<ex>ue</ex>s debaxo del: sea <lb break="yes"/>la mas alta
+                    p<ex>ar</ex>te enel mu<ex>n</ex>do y mas propinqua <lb
+                    break="yes"/>al çielo: otros sabios le jmpugna<ex>n</ex>
+                diziendo q<ex>ue</ex>
+                <lb break="yes"/>es esta ques debaxo d<ex>e</ex>l artico/.
+                porlas quales <lb break="yes"/>razones pareçe q<ex>ue</ex>
+                entendian q<ex>ue</ex> vna parte deste <lb break="yes"
+                    />mu<ex>n</ex>do devia de ser mas propinqua y noble <lb
+                    break="yes"/>al çielo q<ex>ue</ex> otra: y no
+                    cayero<ex>n</ex> enesto q<ex>ue</ex> sea deba<lb break="no"
+                />xo d<ex>e</ex>l<del hand="#self">a</del> equjnoçial por la
+                forma q<ex>ue</ex> yo dixe/. y <lb break="yes"/>no es maravilla
+                    porq<ex>ue</ex> deste hemjsperio no<ex>n</ex>
+                <lb break="yes"/>se oviese notiçia çierta saluo muy liviana y
+                por <lb break="yes"/>argume<ex>n</ex>to/. porq<ex>ue</ex> nadie
+                    nu<ex>n</ex>ca lo a andado nj <lb break="yes"/>enbiado a
+                buscar hasta agora q<ex>ue</ex> v<ex>uest</ex>ras
+                    alte<ex>zas</ex> le <lb break="yes"
+                    />ma<ex>n</ex>daro<ex>n</ex> explorar e d<ex>e</ex>scubrir
+                la mar y la t<ex>ie</ex>rra/. <lb break="yes"/></p>
+            <p><g ref="#calderon1"/> fallo q<ex>ue</ex> de alli destas dos
+                bocas/ las quales como <lb break="yes"/>dixe estan
+                fro<ex>n</ex>tero por linea de septentrion en au<lb break="no"
+                />stro: q<ex>ue</ex> aya d<ex>e</ex>la <add hand="#self"
+                    >vna</add> ala otra veynte y seys leguas y <lb break="yes"
+                />no pudo aver enello yerro/ porq<ex>ue</ex> se
+                    mjdiero<ex>n</ex>
+                <pb n="74r"/>
+                <fw rend="titre-courant">.74.</fw>
+                <cb type="single-column"/><lb break="yes"/>con quadrante/. y
+                destas dos bocas d<ex>e</ex>l ocçidente fasta <lb break="yes"
+                />el golpho q<ex>ue</ex> yo dixe al qual llame d<ex>e</ex>las
+                    p<ex>er</ex>las q<ex>ue</ex> son <lb break="yes"/>sesenta e
+                ocho leguas de quatro mjllas cada vna <lb break="yes"/>como
+                    acostu<ex>m</ex>bramos enla mar y q<ex>ue</ex> de alla de
+                este gol<lb break="no"/>fo corre de contino el agua muy fuerte
+                hazia el <lb break="yes"/>oriente y q<ex>ue</ex> por esto
+                    tiene<ex>n</ex> aq<ex>ue</ex>l combate estas dos <lb
+                    break="yes"/>bocas conla salada/. enesta boca d<ex>e</ex>l
+                austro a q<ex>ue</ex>
+                <lb break="yes"/>yo llame d<ex>e</ex>l<add hand="#self">a</add>
+                <del hand="#self">drago drago</del>
+                <seg ana="#glose"><add hand="#self">de la sierpe <lb break="yes"
+                        />o del drago</add></seg> sierpe falle en ano<lb
+                    break="no"/>checiendo q<ex>ue</ex> yo tenja la estrella del
+                norte alta qua<lb break="no"/>si çinco grados: y en
+                    aq<ex>ue</ex>lla otra d<ex>e</ex>l septentrion a <lb
+                    break="yes"/>q<ex>ue</ex> yo llame d<ex>e</ex>l drago:
+                    era<ex>n</ex> quasi siete: y fallo q<ex>ue</ex>l <lb
+                    break="yes"/>d<ex>ic</ex>ho golpho d<ex>e</ex>las
+                    p<ex>er</ex>las esta ocçide<ex>n</ex>tal al
+                    occide<ex>n</ex><lb break="no"/>te de el an <space/> de
+                ptolomeo quasi tres mjll e <lb break="yes"/>noveçientas <del
+                    hand="#self">leguas</del> mjllas q<ex>ue</ex> son quasi se<choice>
+                    <sic>p</sic>
+                    <corr/>
+                </choice>ten<lb break="no"/>ta grados equjnoçiales: contando por
+                cada vno <lb break="yes"/>çinque<ex>n</ex>ta y seys mjllas e dos
+                tercios/. <lb break="yes"/></p>
+            <p><g ref="#calderon1"/> La Sacra escriptura testifica q<ex>ue</ex>
+                    n<ex>uest</ex>ro señor hizo al <lb break="yes"/>paraiso
+                terrenal <seg ana="#glose"><add hand="#self">parayso terre<lb
+                            break="no"/>nal</add></seg> y enel puso el arbol
+                    d<ex>e</ex>la vida <lb break="yes"/>y del sale vna
+                    fue<ex>n</ex>te de donde resultan eneste mu<ex>n</ex><lb
+                    break="no"/>do quatro rios prinçipales: ganges en yndia:
+                    ty<lb break="no"/>gris y Eufrates en <space/> los quales
+                    apar<lb break="no"/>tan la <del hand="#self">tierra</del>
+                sierra y hazen la mesopotamja y <lb break="yes"/>van a tener en
+                persia y el njlo q<ex>ue</ex> nace en Ethio<lb break="no"/>pia y
+                va enla mar en Alexa<ex>n</ex>dria/. <lb break="yes"/></p>
+            <p><g ref="#calderon1"/> yo no hallo nj jamas e hallado escriptura
+                de la<lb break="no"/>tinos nj <add hand="#self">de</add> griegos
+                    q<ex>ue</ex> çertificadame<ex>n</ex>te diga al si<lb
+                    break="no"/>no eneste mu<ex>n</ex>do d<ex>e</ex>l parayso
+                terrenal: nj e visto <lb break="yes"/>en njngu<ex>n</ex> mapa
+                    mu<ex>n</ex>do: saluo situado con au<lb break="no"/>toridad
+                de argume<ex>n</ex>to/. algunos le ponian alli don<lb break="no"
+                />de son las fuentes d<ex>e</ex>l njlo en Ethiopia/. mas <lb
+                    break="yes"/>otros anduviero<ex>n</ex> todas estas
+                    t<ex>ie</ex>rras y no hallaro<ex>n</ex>
+                <lb break="yes"/>conf<choice>
+                    <corr>o</corr>
+                    <sic>o</sic>
+                </choice>rmjdad dello enla temp<ex>er</ex>ançia d<ex>e</ex>l
+                çielo enla <lb break="yes"/>altura hazia el çielo:
+                    porq<ex>ue</ex> se pudiese compre<lb break="no"/>hender que
+                el era alli/. nj q<ex>ue</ex> las aguas del diluvio <lb
+                    break="yes"/>oviesen llegado all<subst hand="#self">
+                    <del>a</del>
+                    <add>i</add>
+                </subst> las quales subiero<ex>n</ex> encima <lb break="yes"
+                    />etc<ex>eter</ex><hi rend="superscript">a</hi>. algunos
+                gentiles qujsiero<ex>n</ex> dezir por argu<lb break="no"
+                    />me<ex>n</ex>tos que el era enlas jslas fortunate
+                    q<ex>ue</ex> son las <lb break="yes"/>canarias
+                    etc<ex>eter</ex><hi rend="superscript">a</hi>. <lb
+                    break="yes"/></p>
+            <p><g ref="#calderon1"/> Sant jsidro y Beda y strabo/ y el maestro
+                    d<ex>e</ex>la hystoria <lb break="yes"/>scolastica/ y Sant
+                Ambrosio y Scoto y todos los san<choice>
+                    <corr>ct</corr>
+                    <sic/>
+                </choice>os <lb break="yes"/>theologos co<ex>n</ex>çiertan
+                    q<ex>ue</ex>l parayso terrenal es enel orie<ex>n</ex>te <lb
+                    break="yes"/>etc<ex>eter</ex><hi rend="superscript">a</hi>.
+                    <lb break="yes"/></p>
+            <p><g ref="#calderon1"/> ya dixe lo q<ex>ue</ex> yo hallava deste
+                hemjsperio y d<ex>e</ex>la he<lb break="no"/>chura y creo
+                    q<ex>ue</ex> si yo passara por debaxo d<ex>e</ex>la linea
+                    <lb break="yes"/>equjnoçial q<ex>ue</ex> en
+                llega<ex>n</ex>do alli enesto mas alto q<ex>ue</ex>
+                <lb break="yes"/>fallara muy mayor te<ex>m</ex>p<ex>er</ex>ançia
+                y diuersidad enlas estre<lb break="no"/>llas y enlas aguas/. no
+                    porq<ex>ue</ex> yo crea q<ex>ue</ex> alli donde es <lb
+                    break="yes"/>el altura d<ex>e</ex>l estremo sea navegable nj
+                agua nj que <lb break="yes"/>se pueda subir alla:
+                    porq<ex>ue</ex> creo q<ex>ue</ex>
+                <seg ana="#glose"><add hand="#self">no<ex>t</ex><hi
+                            rend="superscript">a</hi></add></seg> alli es el
+                parayso ter<lb break="no"/>renal adonde no puede llegar nadie
+                saluo <lb break="yes"/>por volu<ex>n</ex>tad diujna/. y creo
+                    q<ex>ue</ex>sta t<ex>ie</ex>rra q<ex>ue</ex> agora
+                    ma<ex>n</ex>daro<ex>n</ex> descu-brir <pb n="74v"/>
+                <cb type="single-column"/><lb break="yes"/>v<ex>uest</ex>ras
+                altezas sea gra<ex>n</ex>dissima y aya otras <lb break="yes"
+                />muchas enel austro de que jamas se ovo notiçia/. <lb
+                    break="yes"/></p>
+            <p><g ref="#calderon1"/> yo no tomo q<ex>ue</ex>l <seg ana="#glose"
+                        ><add hand="#self">estimava q<ex>ue</ex>
+                        <lb break="yes"/>aq<ex>ue</ex>lla mucha <lb break="yes"
+                        />agua de aq<ex>ue</ex>llos <lb break="yes"/>golphos
+                            salie<lb break="no"/>se del parayso <lb break="yes"
+                        />terrenal y q<ex>ue</ex>sta<lb break="no"/>va por
+                        alli/.</add></seg> parayso terrenal sea en forma <lb
+                    break="yes"/>de mo<ex>n</ex>taña aspera como el escrevir de
+                ellos nos <lb break="yes"/>amuestra: saluo q<ex>ue</ex>l sea
+                enel colmo: alli don<lb break="no"/>de di<subst hand="#self">
+                    <del>z</del>
+                    <add>x</add>
+                </subst>e la figura d<ex>e</ex>l peçon d<ex>e</ex>la pera: y
+                    q<ex>ue</ex> poco <lb break="yes"/>a poco andando hazia alli
+                desde muy lexos <lb break="yes"/>se va subiendo a el/. y creo
+                    q<ex>ue</ex> nadie no podria <lb break="yes"/>llegar al
+                colmo como yo dixe: y creo q<ex>ue</ex> pueda <lb break="yes"
+                />salir de alli esa agua/ bien q<ex>ue</ex> sea lexos y
+                    ve<ex>n</ex><lb break="no"/>ga a parar alli donde yo vengo:
+                y faga este <lb break="yes"/>lago/. gra<ex>n</ex>des indiçios
+                son estos d<ex>e</ex>l parayso ter<lb break="no"/>renal:
+                    porq<ex>ue</ex>l sitio es conforme ala opinjon <lb
+                    break="yes"/>destos sanctos e sacros theologos/. y asimjsmo
+                las <lb break="yes"/>señales son muy conformes que yo jamas ley
+                    <lb break="yes"/>nj oy q<ex>ue</ex> tanta cantidad de agua
+                dulçe fuese asi <lb break="yes"/>adentro e vezina co<ex>n</ex>la
+                salada/. y enello ayuda <lb break="yes"/>asi mjsmo la suaujssima
+                    te<ex>m</ex>p<ex>er</ex>ançia/. y si de alli <lb break="yes"
+                    />d<ex>e</ex>l parayso no sale: pareçe avn mayor mara<lb
+                    break="no"/>villa: <seg ana="#glose"><add hand="#self">dize
+                            v<ex>er</ex>dad</add></seg> porq<ex>ue</ex> no creo
+                    q<ex>ue</ex> se sepa enel mu<ex>n</ex>do de rio <lb
+                    break="yes"/>ta<ex>n</ex> gra<ex>n</ex>de y tan fondo/. <lb
+                    break="yes"/></p>
+            <p><g ref="#calderon1"/> Despues q<ex>ue</ex> yo sali d<ex>e</ex>la
+                boca d<ex>e</ex>l dragon: q<ex>ue</ex>s la vna <lb break="yes"
+                    />d<ex>e</ex>las dos/ aq<ex>ue</ex>lla d<ex>e</ex>l
+                    septe<ex>n</ex>trion ala qual asi puse <lb break="yes"
+                    />no<ex>m</ex>bre: el dia sigujente q<ex>ue</ex> fue dia de
+                    n<ex>uest</ex>ra señora <lb break="yes"/>de agosto: falle
+                    q<ex>ue</ex> corria tanto la mar al ponje<ex>n</ex><lb
+                    break="no"/>te q<ex>ue</ex> despues de ora de mjssa
+                    q<ex>ue</ex> entre en camjno: <lb break="yes"/>anduve fasta
+                ora de co<ex>m</ex>pletas <seg ana="#glose"><add hand="#self"
+                            >no<ex>t</ex><hi rend="superscript"
+                    >a</hi></add></seg> sesenta y çinco le<lb break="no"/>guas
+                de quatro mjllas cada vna y el viento no <lb break="yes"/>era
+                demasiado saluo muy suave/. y esto ayuda <lb break="yes"/>el
+                    cognoscimj<ex>ent</ex><hi rend="superscript">o</hi>
+                    q<ex>ue</ex> de alli yendo al austro: se va mas <lb
+                    break="yes"/>alto: y andando hazia el septentrion como
+                    enton<lb break="no"/>çes <del hand="#self">yva</del> se va
+                descendiendo/. <lb break="yes"/></p>
+            <p><g ref="#calderon1"/> muy cognosçido tengo <del hand="#self"
+                    >tengo</del> q<ex>ue</ex>las aguas d<ex>e</ex>la <lb
+                    break="yes"/>mar lleva<ex>n</ex> su curso de oriente a
+                ocçidente con <lb break="yes"/>los çielos: y q<ex>ue</ex> alli
+                en esta comarca qua<ex>n</ex>do passan <lb break="yes"/>lievan
+                mas veloçe camjno: y por esto an comjdo <lb break="yes"/>tanta
+                    p<ex>ar</ex>te d<ex>e</ex>la t<ex>ie</ex>rra/.
+                    porq<ex>ue</ex> por <del hand="#self">ello</del> eso son aca
+                    tan<lb break="no"/>tas jslas/ y ellas mjsmas hazen desto
+                    testimo<lb break="no"/>njo/. porq<ex>ue</ex> todas a vna
+                mano son largas de <lb break="yes"/>ponjente a leva<ex>n</ex>te:
+                y norueste <choice>
+                    <corr>a</corr>
+                    <sic>a</sic>
+                </choice> sueste q<ex>ue</ex>s vn <lb break="yes"/>poco mas alto
+                e <del hand="#self">pa</del> baxo: y angostas de nor<lb
+                    break="no"/>te a<choice>
+                    <corr> </corr>
+                    <sic/>
+                </choice>sur y nordeste sudueste q<ex>ue</ex> son en contra<lb
+                    break="no"/>rio d<ex>e</ex>los otros d<ex>ic</ex>hos
+                vientos/. y aquj enellas <lb break="yes"/>todas nasçen cosas
+                preçiosas: porla suaue te<ex>m</ex>pe<lb break="no"
+                    />ra<ex>n</ex>çia q<ex>ue</ex> les proçede d<ex>e</ex>l
+                çielo por estar hazia <lb break="yes"/>el mas alto d<ex>e</ex>l
+                    mu<ex>n</ex>do/. V<ex>er</ex>dad es q<ex>ue</ex> pareçe<del
+                    hand="#self">n</del>
+                <add hand="#self">en</add>
+                <lb break="yes"/>algunos lugares: q<ex>ue</ex>las aguas no
+                    haga<ex>n</ex> este <lb break="yes"/>curso: mas esto no es
+                saluo particularmente <pb n="75r"/>
+                <fw rend="titre-courant">.75.</fw>
+                <cb type="single-column"/><lb break="yes"/>en algunos lugares
+                donde alguna t<ex>ie</ex>rra le esta al encue<ex>n</ex><lb
+                    break="no"/>tro: y haze pareçer q<ex>ue</ex> andan diversos
+                camjnos/. <lb break="yes"/></p>
+            <p><g ref="#calderon1"/> Plinjo escrive q<ex>ue</ex> la mar e la
+                tierra haze todo vna <lb break="yes"/>esp<ex>er</ex>a: y pone
+                    q<ex>ue</ex>sta mar occeana sea la mayor Canti<lb break="no"
+                />dad d<ex>e</ex>l agua y esta hazia el çielo: y q<ex>ue</ex> la
+                    t<ex>ie</ex>rra sea <lb break="yes"/>debaxo: y q<ex>ue</ex>
+                le sostenga: y mezclado es vno con otro <lb break="yes"/>como el
+                amago d<ex>e</ex>la nuez con vna tela gorda q<ex>ue</ex> va <lb
+                    break="yes"/>abraçado enello/. El maestro d<ex>e</ex>la
+                hystoria scolastica <lb break="yes"/>sobre el genesis: dize
+                    q<ex>ue</ex> las aguas son muy pocas: <lb break="yes"
+                    />q<ex>ue</ex> bien q<ex>ue</ex> qua<ex>n</ex>do fueron
+                criadas que cobijasen toda <lb break="yes"/>la t<ex>ie</ex>rra
+                que entonçes era<ex>n</ex> vaporables en ma<ex>ne</ex>ra de <lb
+                    break="yes"/>njebla: y que despues q<ex>ue</ex>
+                    fuero<ex>n</ex>
+                <del hand="#self">salidas</del> solidas e <lb break="yes"
+                />juntadas q<ex>ue</ex> ocuparo<ex>n</ex> muy poco lugar/ y
+                enesto <lb break="yes"/>conçierta Nicolao de lyra/. El aristotel
+                dize que <lb break="yes"/>este mu<ex>n</ex>do es pequeño y es el
+                agua muy poca: y <lb break="yes"/>q<ex>ue</ex>
+                facilme<ex>n</ex>te se puede passar despaña alas yndias <lb
+                    break="yes"/>y esto confirma el avenruyz: y le <seg
+                    ana="#glose"><add hand="#self">no<ex>t</ex><hi
+                            rend="superscript">a</hi></add></seg> alega el
+                    Car<lb break="no"/>denal <seg ana="#glose"><add hand="#self"
+                        >alega a pedro de <lb break="yes"/>aliaco</add></seg>
+                pedro de Aliaco autorizando este dezir: y aq<ex>ue</ex>l <lb
+                    break="yes"/>de Seneca el qual conforma co<ex>n</ex> estos:
+                diziendo q<ex>u</ex>el <lb break="yes"/>aristoteles pudo saber
+                muchos secretos d<ex>e</ex>l mu<ex>n</ex>do a <lb break="yes"
+                />causa de Alexandre magno y Seneca a causa de <lb break="yes"
+                />Çesar nero: y plinjo por respecto d<ex>e</ex>los romanos/. <lb
+                    break="yes"/>los quales todos gastaro<ex>n</ex> dineros e
+                gente: y pu<lb break="no"/>siero<ex>n</ex> mucha
+                    dilige<ex>n</ex>çia en saber los secretos d<ex>e</ex>l
+                    mu<ex>n</ex>do <lb break="yes"/>y darlos a entender alos
+                pueblos/. El qual <lb break="yes"/>Cardenal da a estos
+                    gra<ex>n</ex>de auctoridad mas que <lb break="yes"/>a
+                ptolomeo nj a otros griegos nj Arabes/. y a con<lb break="no"
+                />firmaçion de dezir q<ex>ue</ex>l agua sea poca: y quel <lb
+                    break="yes"/>cubierto d<ex>e</ex>l mu<ex>n</ex>do della sea
+                poco/ al respecto delo q<ex>ue</ex> se <lb break="yes"/>dezia
+                por auctoridad de ptolomeo y de sus sequaçes: <lb break="yes"/>a
+                esto trae vna auctoridad de Esdras d<ex>e</ex>l .3<hi
+                    rend="superscript">o</hi>. libro <seg ana="#glose"><add
+                        hand="#self">no esta sino <lb break="yes"/>enel 4<hi
+                            rend="superscript">o</hi></add></seg>
+                <lb break="yes"/>suyo: adonde dize q<ex>ue</ex> de siete
+                    p<ex>ar</ex>tes d<ex>e</ex>l mundo: las <lb break="yes"
+                />seys son d<ex>e</ex>scubiertas e la vna es cubierta de agua/.
+                    <lb break="yes"/>la qual auctoridad es aprovada por sanctos
+                los qua<lb break="no"/>les dan auctoridad al .3<hi
+                    rend="superscript">o</hi>. e .4<hi rend="superscript"
+                >o</hi>. libro de Esdras: asi <lb break="yes"/>como es sant
+                Agustin e S<ex>ant</ex> ambrosio en su exa<lb break="no"
+                    />mero<ex>n</ex> adonde alega alli vendra mj hijo jesu <lb
+                    break="yes"/>e morira mj hijo xp<ex>ist</ex>o/. y
+                    dize<ex>n</ex> q<ex>ue</ex> Esdras fue pro<lb break="no"
+                />pheta: y asimjsmo Zacharias padre de S<ex>ant</ex>
+                    ju<ex>a</ex><hi rend="superscript">n</hi> y <lb break="yes"
+                />el <seg ana="#glose"><add hand="#self">esto esta mal <lb
+                            break="yes"/>escripto</add></seg> beato
+                    symo<ex>n</ex>: las quales auctoridades ta<ex>m</ex>bien
+                    ale<lb break="no"/>ga fr<ex>a</ex>n<ex>cis</ex><hi
+                    rend="superscript">co</hi> de Mayrones/. en qua<ex>n</ex>to
+                enesto d<ex>e</ex>l en<lb break="no"/>xuto d<ex>e</ex>la
+                    t<ex>ie</ex>rra: mucho se<choice>
+                    <corr> </corr>
+                    <sic/>
+                </choice>a experime<ex>n</ex>tado: q<ex>ue</ex>s mucho <lb
+                    break="yes"/>mas d<ex>e</ex>lo q<ex>ue</ex> el vulgo era/. y
+                no es maravilla por<lb break="no"/>que andando mas/ mas se
+                sabe/. <lb break="yes"/></p>
+            <p><g ref="#calderon1"/> Torno a mj proposito d<ex>e</ex>la
+                    t<ex>ie</ex>rra de graçia y rio y la<lb break="no"/>go
+                    q<ex>ue</ex> alli falle atan gra<ex>n</ex>de q<ex>ue</ex>
+                mas se le puede <lb break="yes"/>llamar mar q<ex>ue</ex> lago/.
+                    porq<ex>ue</ex>l lago es lugar <pb n="75v"/>
+                <cb type="single-column"/><lb break="yes"/>de agua y en seyendo
+                    gra<ex>n</ex>de se dize mar <lb break="yes"/>como se dixo
+                ala mar de galilea y al mar <lb break="yes"/>muerto/. y digo
+                    q<ex>ue</ex> si no procede del paray<lb break="no"/>so
+                terrenal: q<ex>ue</ex> viene este rio y proçede de <lb
+                    break="yes"/>tierra jnfinita: <seg ana="#glose"><add
+                        hand="#self">bue<ex>n</ex> inferir</add></seg> pues al
+                austro d<ex>e</ex>la qual <lb break="yes"/>fasta agora no <del
+                    hand="#self">salia</del> se a avido notiçia/. mas <lb
+                    break="yes"/>yo muy assentado tengo el anima q<ex>ue</ex>
+                alli adonde <lb break="yes"/>dixe es el parayso terrenal y
+                descanso sobre <lb break="yes"/>las razones y autoridades
+                sobrescriptas/. <lb break="yes"/></p>
+            <p><g ref="#calderon1"/> plega a n<ex>uest</ex>ro señor de dar mucha
+                vida y salud <lb break="yes"/>y descanso a v<ex>uest</ex>ras
+                altezas p<ex>ar</ex>a q<ex>ue</ex> puedan prose<lb break="no"
+                />gujr esta tan noble empresa enla qual me <lb break="yes"
+                />pareçe q<ex>ue</ex> Rescibe n<ex>uest</ex>ro señor mucho
+                    s<ex>er</ex>uj<ex>ci</ex><hi rend="superscript">o</hi> y la
+                    espa<lb break="no"/>ña creçe de mucha gra<ex>n</ex>deza y
+                todos los xp<ex>ist</ex>ianos <lb break="yes"/>mucha consolacion
+                y plazer: porq<ex>ue</ex> aquj se diuul<lb break="no"/>gara el
+                    no<ex>m</ex>bre de n<ex>uest</ex>ro señor/. <seg
+                    ana="#glose"><add hand="#self">no<ex>t</ex><hi
+                            rend="superscript">a</hi></add></seg> y en todas las
+                    <lb break="yes"/>t<ex>ie</ex>rras adonde los navios de
+                    v<ex>uest</ex>ras al<ex>tezas</ex> van y en to<lb break="no"
+                />do cabo ma<ex>n</ex>do plantar vna alta cruz y a toda la <lb
+                    break="yes"/>gente q<ex>ue</ex> hallo notifico el estado de
+                    v<ex>uestras</ex> al<ex>tezas</ex> y <lb break="yes"/>como
+                su asiento es en españa y les digo de n<ex>uest</ex>ra <lb
+                    break="yes"/>sancta fe todo lo q<ex>ue</ex> yo puedo: y
+                    d<ex>e</ex>la creençia d<ex>e</ex>la <lb break="yes"/>sancta
+                madre yglesia: la qual tiene sus mjen<lb break="no"/>bros en
+                todo el mu<ex>n</ex>do y les digo la poliçia <lb break="yes"/>y
+                nobleza de todos los xp<ex>ist</ex>ianos: y la fe que <lb
+                    break="yes"/>enla sancta trinjdad tiene<ex>n</ex>/. y plega
+                a n<ex>uest</ex>ro se<lb break="no"/>ñor de tyrar de memoria
+                alas p<ex>er</ex>sonas que <lb break="yes"/>an jmpugnado y
+                    jmpugna<ex>n</ex> tan exçelente em<lb break="no"/>presa y
+                jmpiden y jmpidieron porq<ex>ue</ex> no vaya <lb break="yes"
+                />adelante: sin considerar qua<ex>n</ex>ta honrra y gran<lb
+                    break="no"/>deza es d<ex>e</ex>l real estado de
+                    v<ex>uest</ex>ras al<ex>tezas</ex> en todo el <lb
+                    break="yes"/>mu<ex>n</ex>do/. no saben q<ex>ue</ex>
+                entreponer a maldezir <lb break="yes"/>desto: saluo q<ex>ue</ex>
+                se haze gasto <del hand="#self">ell</del> enello/. <seg
+                    ana="#glose"><add hand="#self">no<ex>t</ex><hi
+                            rend="superscript">a</hi></add></seg> y
+                    porq<ex>ue</ex>
+                <lb break="yes"/>luego no enbiaro<ex>n</ex> los navios cargados
+                de oro <lb break="yes"/>sin considerar la <del hand="#self"
+                    >verdad</del>
+                <add hand="#self">brevedad</add> del t<ex>iem</ex>po/ y tantos
+                    jn<lb break="no"/>convinjentes como aca se an avido: y no
+                    consi<lb break="no"/>derar q<ex>ue</ex> en castilla en casa
+                de v<ex>uestras</ex> al<ex>tezas</ex> salen cada <lb break="yes"
+                />año <seg ana="#glose"><add hand="#self">no<ex>t</ex><hi
+                            rend="superscript">a</hi></add></seg>
+                p<ex>er</ex>sonas q<ex>ue</ex> por su mereçimj<ex>ent</ex><hi
+                    rend="superscript">o</hi> ganaro<ex>n</ex> enella <lb
+                    break="yes"/>mas de renta cada vno dellos: mas delo ques <lb
+                    break="yes"/>neçessario q<ex>ue</ex> se gaste enesto/. ansi
+                mesmo sin co<ex>n</ex><lb break="no"/>siderar q<ex>ue</ex>
+                njngunos prinçipes despaña jamas <lb break="yes"
+                    />ganaro<ex>n</ex> t<ex>ie</ex>rra alguna fuera della saluo
+                agora q<ex>ue</ex>
+                <lb break="yes"/>v<ex>uest</ex>ras al<ex>tezas</ex>
+                    tiene<ex>n</ex> aca otro mu<ex>n</ex>do: de adonde pue<lb
+                    break="no"/>de ser tan acreçe<ex>n</ex>tada n<ex>uest</ex>ra
+                sancta fe/ y de donde <lb break="yes"/>se podran sacar tantos
+                provechos: q<ex>ue</ex> bien q<ex>ue</ex> no se <lb break="yes"
+                    />aya<ex>n</ex> enbiado los navios cargados de oro: se an
+                    <lb break="yes"/>enbiado suffiçientes muestras dello y de
+                otras <lb break="yes"/>cosas de valor/. por donde se puede
+                juzgar q<ex>ue</ex>
+                <lb break="yes"/>en breve t<ex>iem</ex>po se podra aver mucho
+                provecho: y sin <lb break="yes"/>mjrar el gra<ex>n</ex> coraçon
+                delos prinçipes de portugal <lb break="yes"/>q<ex>ue</ex> a
+                tanto t<ex>iem</ex>po q<ex>ue</ex> prosigue<ex>n</ex> la jmpresa
+                de gujnea <pb n="76r"/>
+                <fw rend="titre-courant">.76.</fw>
+                <cb type="single-column"/><lb break="yes"/>y prosigue<ex>n</ex>
+                    aq<ex>ue</ex>lla de africa: adonde an gastado la <lb
+                    break="yes"/>mjtad d<ex>e</ex>la gente d<ex>e</ex>su reyno /
+                y agora esta el rey <lb break="yes"/>mas determjnado a ello
+                    q<ex>ue</ex> nu<ex>n</ex>ca/. n<ex>uest</ex>ro señor pro<lb
+                    break="no"/>vea enesto como yo dixe y les ponga en me<lb
+                    break="no"/>moria de considerar de todo esto q<ex>ue</ex> va
+                escripto q<ex>ue</ex>
+                <lb break="yes"/>no es de mjll p<ex>ar</ex>tes la vna
+                    d<ex>e</ex>lo q<ex>ue</ex> yo podria escrevir <lb
+                    break="yes"/>de cosas de prinçipes q<ex>ue</ex> se
+                    ocuparo<ex>n</ex> a saber y con<lb break="no"/>qujstar y
+                sostener/. <lb break="yes"/></p>
+            <p><g ref="#calderon1"/> Todo esto dixe y no porq<ex>ue</ex> crea
+                    q<ex>ue</ex> la voluntad de v<ex>uestras</ex>
+                    al<ex>tezas</ex>
+                <lb break="yes"/>sea saluo prosegujr enello en qua<ex>n</ex>to
+                    biva<ex>n</ex>: y te<ex>n</ex>go <lb break="yes"/>por muy
+                firme lo q<ex>ue</ex> me respo<ex>n</ex>dio v<ex>uestras</ex>
+                    al<ex>tezas</ex> vna vez <lb break="yes"/>q<ex>ue</ex> por
+                palabra le dezia desto/. no porq<ex>ue</ex> yo oviese <lb
+                    break="yes"/>visto mudamj<ex>ent</ex><hi rend="superscript"
+                    >o</hi> njngu<ex>n</ex><hi rend="superscript">o</hi> en
+                    v<ex>uestras</ex> alt<ex>ezas</ex> saluo por temor <lb
+                    break="yes"/>d<ex>e</ex>lo q<ex>ue</ex> yo oya destos
+                    q<ex>ue</ex> yo digo/. y tanto da vna gote<lb break="no"/>ra
+                de agua en vna piedra q<ex>ue</ex> le haze vn agujero/. <lb
+                    break="yes"/>y v<ex>uestras</ex> al<ex>tezas</ex> me
+                    respo<ex>n</ex>dio con aq<ex>ue</ex>l coraçon q<ex>ue</ex>
+                se sabe en <lb break="yes"/>todo el mu<ex>n</ex>do q<ex>ue</ex>
+                    tiene<ex>n</ex> y me dixo q<ex>ue</ex> no curase de <lb
+                    break="yes"/>nada d<ex>e</ex>so porq<ex>ue</ex> su
+                    volu<ex>n</ex>tad era de proseguir esta <lb break="yes"
+                />empresa y sostenerla avnq<ex>ue</ex> no fuese sino piedras <lb
+                    break="yes"/>y peñas/. y q<ex>ue</ex>l gasto q<ex>ue</ex>
+                enello se hazia q<ex>ue</ex> lo tenja <lb break="yes"/>en nada
+                    q<ex>ue</ex> en otras cosas no tan gra<ex>n</ex>des
+                    gastava<ex>n</ex>
+                <lb break="yes"/>mucho mas: y q<ex>ue</ex> lo tenjan todo por
+                muy bien gastado <lb break="yes"/>lo del pasado y lo
+                    q<ex>ue</ex> se gastase en adelante porq<ex>ue</ex> creyan
+                    <lb break="yes"/>q<ex>ue</ex>
+                <seg ana="#glose"><add hand="#self">no<ex>t</ex><hi
+                            rend="superscript">a</hi></add></seg>
+                n<ex>uest</ex>ra sancta fe seria acreçentada y su real señorio
+                    <lb break="yes"/>ensanchado/ y q<ex>ue</ex> no era<ex>n</ex>
+                amjgos de su real estado aq<ex>ue</ex>llos <lb break="yes"
+                    />q<ex>ue</ex> les maldezian desta empresa/. y agora entre
+                    ta<ex>n</ex>to <lb break="yes"/>q<ex>ue</ex> venga<ex>n</ex>
+                a notiçia desto destas t<ex>ie</ex>rras que <choice>
+                    <sic>h</sic>
+                    <corr/>
+                </choice>ago<add hand="#self">ra</add> nueva<lb break="no"
+                    />me<ex>n</ex>te e d<ex>e</ex>scubierto en q<ex>ue</ex>
+                    te<ex>n</ex>go assentado enel anjma <lb break="yes"
+                    />q<ex>ue</ex> alli es el parayso terrenal: yra el
+                adelantado co<ex>n</ex>
+                <lb break="yes"/>tres navios bien ataviados p<ex>ar</ex>a ello a
+                ver mas adela<ex>n</ex><lb break="no"/>te y descubrira<ex>n</ex>
+                todo lo q<ex>ue</ex> pudiere<ex>n</ex> hazia aq<ex>ue</ex>llas
+                    p<ex>ar</ex>tes/. <lb break="yes"/>Entretanto yo enbiare a
+                    v<ex>uestras</ex> al<ex>tezas</ex> esta escriptura y <lb
+                    break="yes"/>la pintura d<ex>e</ex>la t<ex>ie</ex>rra y
+                    acordara<ex>n</ex> lo q<ex>ue</ex> enello se deva <lb
+                    break="yes"/>fazer/ y me enbiara<ex>n</ex> a ma<ex>n</ex>dar
+                y se cu<ex>m</ex>plira con <lb break="yes"/>ayuda dela Santa
+                trinjdad co<ex>n</ex> toda diligençia en <lb break="yes"
+                    />ma<ex>ne</ex>ra q<ex>ue</ex> v<ex>uestras</ex>
+                    al<ex>tezas</ex> sean s<ex>er</ex>ujdos y aya<ex>n</ex>
+                plazer/. </p>
+            <trailer><lb break="yes"/>Deo graçias</trailer>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,1114 @@
+<?xml-model href="/home/mgl/Bureau/Travail/projets/Biblissima-Text/Transform/schemata/out/ODD_gold.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Las virtudes del romero</title>
+                <respStmt>
+                    <resp>Transcrit par</resp>
+                    <name><surname>Capuano</surname><forename>Thomas
+                            M.</forename></name>
+                </respStmt>
+                <respStmt>
+                    <resp>Textes édités et rassemblés par </resp>
+                    <name>
+                        <forename>Francisco</forename>
+                        <surname>Gago Jover</surname>
+                    </name>
+                    <name>
+                        <forename>Javier</forename>
+                        <surname>Pueyo Mena</surname>
+                    </name>
+                </respStmt>
+                <respStmt>
+                    <resp>Modélisation, encodage et structuration XML-TEI
+                        par</resp>
+                    <name>
+                        <forename>Matthias</forename>
+                        <surname>Gille Levenson</surname>
+                    </name>
+                </respStmt>
+                <respStmt>
+                    <resp>Responsabilité du projet Biblissima-Textes: </resp>
+                    <name>
+                        <forename>Thibault</forename>
+                        <surname>Clérice</surname>
+                    </name>
+                    <name>
+                        <forename>Olivier</forename>
+                        <surname>Brisville-Fertin</surname>
+                    </name>
+                    <name>
+                        <forename>Ariane</forename>
+                        <surname>Pinche</surname>
+                    </name>
+                    <name>
+                        <forename>Marianne</forename>
+                        <surname>Reboul</surname>
+                    </name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Publié dans le cadre de Biblissima-textes à partir de
+                    matériaux publiés auparavant.</publisher>
+                <availability status="restricted">
+                    <licence
+                        target="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+                        >Creative Commons Attribution Non Commercial Share Alike
+                        4.0 International</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <!--La source premi&#232;re: le projet OSTA-->
+                <bibl xml:id="M19" type="source-transcription">
+                    <title>TEXT.M19.txt</title>
+                    <editor>
+                        <forename>Francisco</forename>
+                        <surname>Gago Jover</surname>
+                    </editor>
+                    <editor>
+                        <forename>Javier</forename>
+                        <surname>Pueyo Mena</surname>
+                    </editor>
+                    <publisher>Hispanic Seminary of Medieval Studies</publisher>
+                    <date when="2026-03-07"/>
+                    <availability status="restricted">
+                        <licence
+                            target="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+                            >Creative Commons Attribution Non Commercial Share
+                            Alike 4.0 International</licence>
+                    </availability>
+                    <note>Projet OSTA (Old Spanish Textual Archive). Source des
+                        données: <ptr
+                            target="https://raw.githubusercontent.com/hispanicseminary/OSTA/refs/heads/main/transcriptions/TEXT.M19.txt"
+                        />, v 1.0.</note>
+                </bibl>
+                <!--La source premi&#232;re: le projet OSTA-->
+
+                <!--L'oeuvre abstraite = work-->
+                <!--On va cat&#233;goriser la classe frbr et la forme<-->
+                <bibl ana="#frbr.work" type="work">
+                    <title>Las virtudes del romero</title>
+                    <author
+                        corresp="https://database.factgrid.de/entity/Q1076054"
+                            ><surname>de
+                            Vilanova</surname><forename>Arnau</forename></author><date
+                        notBefore-iso="1260" notAfter-iso="1311">1260 -
+                        1311</date>
+                    <idno type="HSMS-WORK">HSMS-0008-0002</idno>
+                    <idno type="beta-texid">1862</idno>
+                    <idno type="factgrid-id"
+                        corresp="https://database.factgrid.de/entity/Q1084078"
+                        >Q1084078</idno>
+                    <idno type="biblissima-id"/>
+                    <idno type="BNF-id"/>
+                    <idno type="BNE-id"/>
+                    <idno type="VIAF-id"/>
+                </bibl>
+                <!--L'oeuvre abstraite-->
+
+                <!--&#201;dition (uniquement pour les sources imprim&#233;es) = manifestation-->
+                <biblStruct type="edition" ana="#frbr.manifestation">
+                    <monogr>
+                        <!--ISTC pour les incunables. Voir ce qu'on fait pour les imprim&#233;s plus tardifs-->
+                        <idno type="ISTC"/>
+                        <title/>
+                        <imprint>
+                            <pubPlace>Granada</pubPlace>
+                            <publisher>Andrés de Burgos</publisher>
+                            <date when="1519-03-12">1519-03-12</date>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+                <!--&#201;dition uniquement pour les sources imprim&#233;es-->
+
+
+                <!--Exemplaire / manuscrit = frbr.item (imprim&#233;) ou frbr.manifestation_singleton (manuscrit). Attribut ajout&#233; automatiquement.-->
+                <msDesc ana="#frbr.item">
+                    <msIdentifier>
+                        <settlement>Bethesda</settlement>
+                        <!--Un identifiant de biblioth&#232;que id&#233;alement-->
+                        <repository
+                            corresp="https://database.factgrid.de/entity/Q743757"
+                            >National Library of Medicine</repository>
+                        <!--Un identifiant de biblioth&#232;que id&#233;alement-->
+                        <idno type="cote">WZ 240 L697 1519</idno>
+                        <idno type="HSMS-ID">HSMS-0008</idno>
+                        <idno type="factgrid-id"
+                            corresp="https://database.factgrid.de/entity/Q1064754"
+                            >Q1064754</idno>
+                        <idno type="biblissima-id"/>
+                        <!--Manuscrit-->
+                        <!--Manuscrit-->
+                        <!--Imprim&#233;-->
+                        <!--Imprim&#233;-->
+                        <msName>Ed.: Bethesda: National Library of Medicine
+                            (History of Medicine Division), WZ 240 L697 1519.
+                            Granada: Andrés de Burgos, para Juan Lorencio,
+                            1519-03-12. Odo de Meung, Macer herbolario (tr.
+                            Gil), traducido 1401 ca. ad quem.</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem xml:id="HSMS-0008-0002">
+                            <locus>29rb-31va</locus>
+                            <idno type="beta-cnum">13381</idno>
+                            <idno type="factgrid-cnum"
+                                corresp="https://database.factgrid.de/entity/Q1056255"
+                                >Q1056255</idno>
+                            <incipit>Dice maestre Arnaldo de Villanova que él
+                                andando por el mundo a buscar las ciencias
+                                filosofales que hubo de llegar a la ciudad de
+                                Babilonia</incipit>
+                            <explicit>por desordenada leche y esto todo con
+                                ayuda de Dios todopoderoso y de su gloriosa
+                                madre</explicit>
+                            <colophon>A gloria de nr̃o redẽptor ihesu xp̃o ⁊ de
+                                subẽdita madre se acaba de
+                                imp&lt;i&gt;ri&lt;/i&gt;mir es-|te noble ⁊
+                                ꝓuechoso libro llamado Maçer. que es para
+                                conseruaciõ dela salud | delos hombres. Por que
+                                habla delos mantenimientos. Quales son malos ⁊
+                                q&lt;sup&gt;a&lt;/sup&gt;|les buenos. Agora
+                                segunda vez enmendado ⁊ corregido: ⁊ puestos los
+                                capitu|los a parte. E puesto en mejor romançe q̃
+                                solia. Porque la primera vez estaua | en romançe
+                                viejo. E mal puesto. E agora esta como deue. E
+                                conlas v&lt;i&gt;ir&lt;/i&gt;tudes q̃l | Romero
+                                tiene que son muy preciosas. E con otras
+                                reçeptas muy buenas. Nue|bamente añadidas. Fue
+                                ympresso enla insigna [!] noble ⁊ muy grande
+                                nombrada | çibdad de Granada en casa de Andres
+                                de Burgos ympressor. Por mandado | de Iuan
+                                lorencio mercader de libros. Acabose a doze de
+                                Março Año del nas-|çimiento de nuestro saluador
+                                ihesu xp̃o de mill ⁊ quiniẽtos ⁊ diez y nuebe
+                                años</colophon>
+                        </msItem>
+                    </msContents>
+                </msDesc>
+                <!--Exemplaire-->
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="osp-x-med">castellano</language>
+            </langUsage>
+            <textClass>
+                <catRef target="#prose #didactica #cientifica #medicina"/>
+            </textClass>
+        </profileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>Ce document est le fruit d'une conversion automatisée de la
+                    transcription originale, qui utilise des normes d'encodages
+                    propres au projet OSTA (Old Spanish Textual Archive).</p>
+                <p>Transcription de type graphématique: réduction des
+                    allographes au graphème. Tous les graphèmes sont conservés
+                    excepté pour les abréviations qui sont développées sans
+                    conservation de la graphie originale, en indiquant cependant
+                    qu'il s'agit d'une expansion. Les transcriptions ne sont ni
+                    ponctuées, ni accentuées selon les normes actuelles. La
+                    césure à la ligne est indiquée.</p>
+                <p>La description des phénomènes matériels et/ou non textuels
+                    est conservée: sauts de ligne, changements de colonne,
+                    espaces en blanc, miniatures, illustrations, diagrammes,
+                    etc.</p>
+                <p>Le texte est structuré en divisions minimales, en fonction de
+                    son genre. La division en paragraphes, pour la prose, n'est
+                    pas réalisée.</p>
+                <p>Pour plus d'informations, voir l'ODD.</p>
+            </editorialDecl>
+            <refsDecl n="physical">
+                <!--Doit &#234;tre adapt&#233; &#224; chaque structure de document, &#224; reprendre-->
+                <citeStructure unit="page" match="//body//pb" use="@n">
+                    <citeStructure unit="column" match=".//cb" use="@n"
+                        delim=".">
+                        <citeStructure unit="line" match=".//lb" use="@n"
+                            delim="."/>
+                    </citeStructure>
+                </citeStructure>
+                <refsDecl n="default">
+                    <citeStructure match="/TEI/text/body/div" use="@n"
+                        unit="chapter">
+                        <citeStructure match=".//milestone[@unit='section']"
+                            use="@n" unit="section" delim="."/>
+                    </citeStructure>
+                </refsDecl>
+                <!--Doit &#234;tre adapt&#233; &#224; chaque structure de document-->
+            </refsDecl>
+            <classDecl>
+                <taxonomy>
+                    <bibl>
+                        <title>Catégories de segments annotés</title>
+                    </bibl>
+                    <category xml:id="glose">
+                        <catDesc>Segment glosé</catDesc>
+                    </category>
+                    <category xml:id="addendum">
+                        <catDesc>Ajout intellectuel</catDesc>
+                    </category>
+                </taxonomy>
+                <!--Merci &#224; Morgane PICA pour son aide sur l'adaptation &#224; la mod&#233;lisation FRBR-->
+                <taxonomy xml:id="frbr"
+                    sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/">
+                    <bibl>
+                        <title>Catégories FRBRoo</title>
+                    </bibl>
+                    <category xml:id="frbr.work"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F1">
+                        <catDesc>Work</catDesc>
+                    </category>
+                    <category xml:id="frbr.expression"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F2">
+                        <catDesc>Expression</catDesc>
+                    </category>
+                    <category xml:id="frbr.manifestation"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F3">
+                        <catDesc>Manifestation</catDesc>
+                    </category>
+                    <category xml:id="frbr.manifestation_singleton"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F4">
+                        <catDesc>Manifestation Singleton</catDesc>
+                    </category>
+                    <category xml:id="frbr.item"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F5">
+                        <catDesc>Item</catDesc>
+                    </category>
+                </taxonomy>
+                <taxonomy xml:id="categorisation_formelle">
+                    <bibl>
+                        <title>Catégorisation formelle</title>
+                    </bibl>
+                    <category xml:id="prose">
+                        <catDesc xml:lang="es">prosa</catDesc>
+                        <catDesc xml:lang="fr">prose</catDesc>
+                    </category>
+                    <category xml:id="vers">
+                        <catDesc xml:lang="es">verso</catDesc>
+                        <catDesc xml:lang="fr">vers</catDesc>
+                    </category>
+                </taxonomy>
+                <taxonomy xml:id="matiere_textuelle">
+                    <bibl>
+                        <title>Matière textuelle</title>
+                    </bibl>
+                    <category xml:id="didactica">
+                        <catDesc xml:lang="es">Didáctica</catDesc>
+                        <catDesc xml:lang="fr">Didactique</catDesc>
+                    </category>
+                    <category xml:id="juridica">
+                        <catDesc xml:lang="es">Jurídica</catDesc>
+                        <catDesc xml:lang="fr">Juridique</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <cb type="double-column"/>
+            <head><lb break="yes"/><hi rend="rubrique"><g ref="#calderon1"/>
+                    Aqui comiençan las reçebtas del ro<lb break="no"/>mero en
+                    que declara las grandes virtu<lb break="no"/>des que tiene:
+                    &amp; otras reçebtas muy <lb break="yes"/>marauillosas.</hi>
+            </head>
+            <div type="section" n="1">
+                <p><lb break="yes"/><hi rend="initiale" n="4">M</hi>Uy
+                    marauillosa re<choice>
+                        <sic>c</sic>
+                        <corr/>
+                    </choice>çebta de <lb break="yes"/>las virtudes del romero
+                    en <lb break="yes"/>especial dela flor del q<ex>u</ex><hi
+                        rend="superscript">a</hi>l se <choice>
+                        <corr>a de</corr>
+                        <sic/>
+                    </choice> ha<lb break="no"/>zer azeyte conel qual obra<lb
+                        break="no"/>ras &amp; curaras infinitas passiones de
+                        en<lb break="no"/>fermedades &amp; primeramente este
+                        confor<lb break="no"/>ta mucho el coraçon &amp; da
+                    fortaleza alos <lb break="yes"/>miembros enflaquecidos &amp;
+                    cura alos q<ex>ue</ex>
+                    <lb break="yes"/>tiemblan la cabeça: &amp; las manos &amp;
+                        qui<lb break="no"/>ta las manzillas dela cara &amp;
+                    conserua a <lb break="yes"/>la persona que se vntare el
+                    rostro en juue<ex>n</ex><lb break="no"/>tud: &amp; si
+                    pusiere vna gota enlos ojos q<ex>ue</ex>
+                    <lb break="yes"/>touieren telas enellos o manzilla o la<lb
+                        break="no"/>grima q<ex>ue</ex> empache la vista todo lo
+                        des<lb break="no"/>haze &amp; sana &amp; ponlo por tres
+                    vezes. O<lb break="no"/>trosy aprouecha mucho a
+                        aq<ex>ue</ex>llos o aq<ex>ue</ex><lb break="no"/>llas
+                        q<ex>ue</ex> touieren enlos miembros algund <lb
+                        break="yes"/>mal &amp; se vntaren con este azeyte seran
+                        sa<lb break="no"/>nos. Otrosy aprouecha<ex>n</ex> a
+                    todos los do<lb break="no"/>lores de frialdad o de humor
+                        descendien<lb break="no"/>tes coyunturas. Otrosy
+                    aprouechan a <lb break="yes"/>los pacientes dela passion de
+                    colica &amp; a<lb break="no"/>prouechan alas enfermedades
+                        d<ex>e</ex>las mu<lb break="no"/>geres de tañimiento
+                    dela madre Otro<lb break="no"/>sy aprouechan a qualesquier
+                    enfermos <lb break="yes"/>de postemas. <lb break="yes"/></p>
+            </div>
+            <div type="section" n="2">
+                <head><hi rend="rubrique"><g ref="#calderon1"/> Otra
+                        reçebta.</hi>
+                </head>
+                <p><lb break="yes"/><hi rend="initiale" n="4">E</hi>Ste es el secre<choice>
+                        <corr>t</corr>
+                        <sic>t</sic>
+                    </choice>o muy ma<lb break="no"/>rauilloso de como se ha de
+                        <lb break="yes"/>sacar el azeyte dela flor del <lb
+                        break="yes"/>romero. Sepas que maestre <lb break="yes"
+                    />arnaldo de villa noua esta<ex>n</ex>do en Bauilo<lb
+                        break="no"/>nia estaua ende vn moro muy grande fi<lb
+                        break="no"/>losofo &amp; maestro en medecina &amp; era
+                    muy <lb break="yes"/>grande astrologo. &amp; rogole muy
+                        ahinca<lb break="no"/>damente quele enseñasse hazer el
+                    olio <lb break="yes"/>d<ex>e</ex>la flor del romero: &amp;
+                    el moro le dixo pu-es <pb n="29v"/>
+                    <fw rend="titre-courant">Las virtudes del Romero.</fw>
+                    <cb type="double-column"/><lb break="yes"/>te he enseñado
+                    las virtudes del rome<lb break="no"/>ro. Plazeme de te
+                    enseñar a hazer el a<lb break="no"/>zeyte dela flor del.
+                    &amp; dixo el moro al chris<lb break="no"/>tiano. Amigo sabe
+                    que vna delas mas <lb break="yes"/>exçelentes virtudes quel
+                    romero tiene <lb break="yes"/>es en flor que se haze assy
+                    como miel ha <lb break="yes"/>manera de balsamo &amp; es muy
+                    grande se<lb break="no"/>creto en medeçina: &amp; la manera
+                    del di<lb break="no"/>cho olio de como se ha de hazer es
+                    esta. <lb break="yes"/><hi rend="initiale" n="4">T</hi>Oma
+                    la flor del romero q<ex>ue</ex> sea <lb break="yes"/>limpia
+                    y pura y metela en v<lb break="no"/>na redoma de vidrio
+                    &amp; hin<lb break="no"/>chela muy bie<ex>n</ex> dela flor
+                    en ma<lb break="no"/>nera que no aya alli otra cosa: saluo
+                        q<ex>ue</ex>
+                    <lb break="yes"/>ella sea pura: &amp; sea bien atapada con
+                        çe<lb break="no"/>ra gomada por manera que no pueda
+                        sa<lb break="no"/>lir ningund licor del vapor si no que
+                    sea <lb break="yes"/>bien cerrada &amp; atapada conla cera.
+                    E <lb break="yes"/>assi preparada la redoma sea puesta en
+                        <lb break="yes"/>arena hasta la meytad &amp; dexela
+                    estar al <lb break="yes"/>sol &amp; al sereno por treynta
+                    dias despues <lb break="yes"/>quitalo de alli &amp; abrela
+                    &amp; colareys lo q<ex>ue</ex>
+                    <lb break="yes"/>dentro hallardes en manera que dela <lb
+                        break="yes"/>flor no caya cosa alguna: con vn paño <lb
+                        break="yes"/>delgado de lino limpio &amp; sea bien
+                        espre<lb break="no"/>mido que no quede cosa alguna de
+                    olio <lb break="yes"/>enla flor &amp; ello sea puesto en vna
+                    redoma <lb break="yes"/>de vidrio &amp; çierrala muy bien
+                    como de <lb break="yes"/>antes estaua &amp; sea puesta al
+                    sol &amp; al sere<lb break="no"/>no por cinquenta dias &amp;
+                    hazer se ha espe<lb break="no"/>so como miel &amp; despues
+                    el dicho olio sea <lb break="yes"/>bien guardado &amp;
+                    coneste olio vntaras <lb break="yes"/>alos pacientes &amp;
+                    enfermos enlos loga<lb break="no"/>res en q<ex>ue</ex> se
+                    sintieren pena &amp; passion. Ansi <lb break="yes"/>al dolor
+                    dela cabeça como al dolor de <lb break="yes"/>todo el cuerpo
+                    &amp; seran muy bien repara<lb break="no"/>dos <choice>
+                        <corr>en su salud. Ansy mesmo seran muy bien
+                            reparados</corr>
+                        <sic/>
+                    </choice>
+                    <choice>
+                        <corr>a</corr>
+                        <sic>a</sic>
+                    </choice>l grand dolor que esta enel cele<lb break="no"
+                    />bro: &amp; avn alos paños delos ojos &amp; ma<lb
+                        break="no"/>culas &amp; lagrima. E ansi mesmo alimpia
+                        <lb break="yes"/>todas &amp; qualesquier ma<choice>
+                        <corr>n</corr>
+                        <sic>n</sic>
+                    </choice>zillas que es<lb break="no"/>te enel rostro. &amp;
+                    assy mesmo tiene virtud <lb break="yes"/>que conserua &amp;
+                    guarda en su jouentud: &amp; <lb break="yes"/><choice>
+                        <sic>&amp;</sic>
+                        <corr/>
+                    </choice> tambien alas nubes que se hazen en <cb
+                        type="double-column"/><lb break="yes"/>los ojos: &amp;
+                    al paño &amp; ala lagrima. E pa<lb break="no"/>ra curar esto
+                    toma ala noche &amp; hecha v<lb break="no"/>na gota de
+                    aqueste olio enel ojo que esta <lb break="yes"/>&amp;
+                    aquesto se haga por tres vezes &amp; lue<lb break="no"/>go
+                    sera sano &amp; guarido el paciente &amp; que<lb break="no"
+                    />da la vista muy clara &amp; buena: &amp; assy cu<lb
+                        break="no"/>ra todos los males del cuerpo maraui<lb
+                        break="no"/>llosamente. E sabed que haze prueua
+                        d<ex>e</ex>l <lb break="yes"/>balsamo que sy vna gota
+                    deste olio lan<lb break="no"/>çares enel agua luego se yra
+                    alo fondo. <lb break="yes"/>juntamente assi como si fuesse
+                    balsamo. <lb break="yes"/>Otrosy dize q<ex>ue</ex> sy la
+                    flor del romero &amp; las <lb break="yes"/>hojas del cañamo
+                    verdes o secas fuere<ex>n</ex>
+                    <lb break="yes"/>puestas en vna caldera llena de agua &amp;
+                        <lb break="yes"/>la pusieren a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>cozer hasta que mengue vn <lb break="yes"/>tercio
+                    &amp; tenga hecha vna estufa de ma<lb break="no"/>dera o en
+                    vn baño arteficial: &amp; se lauare <lb break="yes"/>enel
+                    mes dos vezes: &amp; lo continuare se<lb break="no"/>pa que
+                    biuira sano enlos dias que dios <lb break="yes"/>le prometio
+                    &amp; sin ninguna enfermedad &amp; <lb break="yes"
+                    />renouarse ha su carne en juuentud del a<lb break="no"
+                    />guila. E secreto es de fuera dela medeci<lb break="no"
+                    />na. <lb break="yes"/></p>
+            </div>
+            <div type="section" n="3">
+                <head><hi rend="rubrique"><g ref="#calderon1"/> Otra
+                        reçepta.</hi>
+                </head>
+                <p><lb break="yes"/><hi rend="initiale" n="4">O</hi>Trosy di<choice>
+                        <corr>x</corr>
+                        <sic>x</sic>
+                    </choice>o este moro que <lb break="yes"/>la flor del romero
+                    echada <lb break="yes"/>enla miel: E primero sea <lb
+                        break="yes"/>espumada la miel. Antes <lb break="yes"
+                    />que la dicha flor sea echada. &amp; assi que <lb
+                        break="yes"/>despues sea hecho letuario della ha ma<lb
+                        break="no"/>nera de miel rosada. &amp; assy que la
+                        perso<lb break="no"/>na que lo continuare a comer ala
+                        maña<lb break="no"/>na en ayunas y ala noche quando se
+                        he<lb break="no"/>chare que tenga el estomago breue
+                        or<lb break="no"/>denado de vianda sera guardado de
+                        en<lb break="no"/>fermedad encubierta. &amp; por
+                        consiguien<lb break="no"/>te delas enfermedades que se
+                        demues<lb break="no"/>tran &amp; hasta que hazen todas
+                        operacio<lb break="no"/>nes de fina atriaca: o de
+                    balsamo: &amp; vsar <lb break="yes"/>este letuario es cosa
+                    muy marauillosa pa<lb break="no"/>ra toda sanidad delas
+                    personas. <pb n="30r"/>
+                    <fw rend="titre-courant">Las virtudes del Romero. Fo.
+                        xxx</fw>
+                    <cb type="double-column"/><lb break="yes"/></p>
+            </div>
+            <div type="section" n="4">
+                <head><hi rend="rubrique"><g ref="#calderon1"/> Otra
+                        recepta.</hi>
+                </head>
+                <p><lb break="yes"/><hi rend="initiale" n="4">D</hi>Ize maestre
+                    Arnaldo d<ex>e</ex> villa <lb break="yes"/>noua que el
+                    andando por el <lb break="yes"/>mundo a buscar las sciencias
+                        <lb break="yes"/>filosofales q<ex>ue</ex> ouo de llegar
+                    ala <lb break="yes"/>çibdad de Babilonia y dize q<ex>ue</ex>
+                    ende ha<lb break="no"/>llo vn moro muy grande filosofo &amp;
+                    hera <lb break="yes"/>maestro en medecina enla çibdad &amp;
+                    era <lb break="yes"/>muy grande estrologo que se<choice>
+                        <sic>ra</sic>
+                        <corr/>
+                    </choice> trabajo <lb break="yes"/>por auer conel
+                    conuersacion de mucha <lb break="yes"/>amistança &amp; esto
+                    hazia por sacar del mo<lb break="no"/>ro algunos secretos
+                    filosofales &amp; esta<ex>n</ex>do <lb break="yes"/>assi en
+                    su amistança dixole con grand di<lb break="no"/>ligencia
+                    rogandole que por bondad le q<ex>u</ex><hi
+                        rend="superscript">i</hi><lb break="no"/>siesse dezir
+                    &amp; enseñar las virtudes que el <lb break="yes"/>romero
+                    hauia &amp; ha q<ex>ue</ex> enfermedades ap<ex>ro</ex><lb
+                        break="no"/>uechaua: &amp; esso mesmo que lo enseñasse
+                        <lb break="yes"/>a sacar el olio dela flor &amp; para
+                    que enfer<lb break="no"/>medades aprouechaua. E el moro le
+                        res<lb break="no"/>pondio que vno delos grandes secretos
+                        <lb break="yes"/>dela medecina quel tenia eran las
+                        virtu<lb break="no"/>des del romero &amp; de su flor. Lo
+                    qual so<lb break="no"/>piesse de çierto que jamas a ninguno
+                        ha<lb break="no"/>uia reuelado nin enseñado tales cosas.
+                        <lb break="yes"/>Empero pues quel le rogaua &amp;
+                        co<ex>n</ex> muy <lb break="yes"/>grand diligencia de
+                    saber los muchos &amp; <lb break="yes"/>grandes secretos
+                    encerrados &amp; escondi<lb break="no"/>dos delas virtudes
+                    del romero: queria <lb break="yes"/>saber que el con mucho
+                    amor gelo q<ex>ue</ex>ria <lb break="yes"/>enseñar &amp;
+                    declarar. Lo que nunca hasta <lb break="yes"/>oy hauia hecho
+                    a criatura ninguna. E <lb break="yes"/>esto hazia por vn
+                    solo dios en vnidad. <lb break="yes"/>Que todas las cosas
+                    crio para seruidu<ex>m</ex><lb break="no"/>bre delos
+                    hombres. &amp; dixole el sobredi<lb break="no"/>cho moro
+                        q<ex>ue</ex> vna delas mas exçellentes <lb break="yes"
+                    />cosas delas virtudes que el romero en <lb break="yes"/>sy
+                    ha: es que la su flor sy fuere puesta en <lb break="yes"/>el
+                    mosto quando sale delas vbas &amp; her<lb break="no"/>uiere
+                    conella. E si por ventura no houie<lb break="no"/>re mosto.
+                    sea hechada en buen vino pu<lb break="no"/>ro oliente tinto
+                    &amp; hierua hasta que men<lb break="no"/>gue el tercio. E
+                    tome el vino conla flor <lb break="yes"/>&amp; beua dello
+                    hasta que sienta en si su sa-lud <cb type="double-column"
+                        /><lb break="yes"/>E avn assi mismo sana &amp; cura
+                    todas <lb break="yes"/>las enfermedades del dolor del
+                        estoma<lb break="no"/>go que viene por partes de
+                    frialdad: O <lb break="yes"/>por pujamiento de colora. O de
+                    mucha <lb break="yes"/>fleuma: &amp; sana todo gomito: &amp;
+                    avn sa<lb break="no"/>na a todos los que han dolor enla
+                        yja<lb break="no"/>da que es de frialdad. o de
+                        congelamien<lb break="no"/>to de piedra &amp; purga el
+                    estomago &amp; sa<lb break="no"/>na a los que tienen colica
+                    passio: E la cu<lb break="no"/>ra es en vn estante. E ha se
+                    de beuer en <lb break="yes"/>ayunas. O en qualqu<choice>
+                        <corr>i</corr>
+                        <sic>i</sic>
+                    </choice>er tiempo segun <lb break="yes"/>acaesçiere el
+                    accidente. E mas aproue<lb break="no"/>cha alos que pierden
+                    el comer. E el olor <lb break="yes"/>de aquel vino conforta
+                    el celebro &amp; ale<lb break="no"/>gra todos los sentidos
+                    del cuerpo &amp; si ti<lb break="no"/>empo fuere que el
+                    mosto hallares fazlo <lb break="yes"/>heruir conla flor
+                    &amp; demedie el tercio. E <lb break="yes"/>para todas estas
+                    passiones suso dichas <lb break="yes"/>&amp; enfermedades
+                    beua dello assy como <lb break="yes"/>te he dicho del vino
+                    &amp; luego sera cura<lb break="no"/>do &amp; sano de
+                    qualquier enfermedad de <lb break="yes"/>frialdad. o de
+                    qualquier humor corrien<lb break="no"/>te &amp; fortefica
+                    todos los miembros del cu<lb break="no"/>erpo &amp; conserua
+                    &amp; conforta propriamen<lb break="no"/>te la substancia
+                    del cuerpo. &amp; haze soste<lb break="no"/>ner la juuentud
+                    &amp; quien vsare a beuer a<lb break="no"/>queste mosto: o
+                    el vino nunca sera cor<lb break="no"/>rompido su cuerpo de
+                    postemacion. E <lb break="yes"/>sy lauare su rostro
+                        co<ex>n</ex>el vino o conel mo<lb break="no"/>sto
+                    renouara su rostro en juuentud. E <lb break="yes"/>sy lauare
+                    la boca conello nunca le olera <lb break="yes"/>mal &amp;
+                    conseruarle ha la dentadura. Assi <lb break="yes"/>dientes
+                    como muelas: &amp; las enzias le <lb break="yes"/>seran
+                    guardadas &amp; curadas. E mas <lb break="yes"/>guaresçe las
+                    fistolas &amp; otras quales qui<lb break="no"/>er plagas. E
+                    sy alguno estouiere en<lb break="no"/>fermo d<ex>e</ex>
+                    luengo tiempo &amp; estouiere muy <lb break="yes"/>flaco
+                    tome del pan &amp; tuestelo al huego <lb break="yes"/>&amp;
+                    metalo enel vino o mosto &amp; acostum<lb break="no"/>brelo
+                    a comer &amp; dar le ha mucha alegria <lb break="yes"/>enel
+                    coraçon &amp; esfuerço en todo el cuer<lb break="no"/>po
+                    &amp; en todos los miembros dibilita<lb break="no"/>dos y
+                    aqueste vino sea aguado co<ex>n</ex> agua <pb n="30v"/>
+                    <fw rend="titre-courant">Las virtudes del Romero</fw>
+                    <cb type="double-column"/><lb break="yes"/>de luuia cocha
+                    conla flor del romero &amp; <lb break="yes"
+                        />continua<ex>n</ex>dolos a beuer guaresçe alos ti<lb
+                        break="no"/>sicos. E este secreto medicinal es proua<lb
+                        break="no"/>do çiertamente. E mas aprouecha este <lb
+                        break="yes"/>vino alos que han fiebres cotidianas &amp;
+                        <lb break="yes"/>tercianas y quartanas. E vale a otras
+                        <lb break="yes"/>muchas passiones: &amp; aprouecha mucho
+                        <lb break="yes"/>a los que tienen puxo de vientre: y mas
+                        <lb break="yes"/>deste vino ma<choice>
+                        <corr>r</corr>
+                        <sic>r</sic>
+                    </choice>auilloso que no se puede <lb break="yes"/>hazer
+                    fina atriaca sin ello: y aprouecha <lb break="yes"/>contra
+                    las viandas venenosas &amp; contra <lb break="yes"/>todo
+                    venino &amp; ponçoña: y aprouecha a <lb break="yes"/>los que
+                    tiemblan las manos y la cabeça <lb break="yes"/>y aprouecha
+                    mucho alas passiones d<ex>e</ex>las <lb break="yes"/>mugeres
+                    humidas de complexion y ado<lb break="no"/>ua la madre: y
+                    aprouecha mucho p<ex>ar</ex>a co<ex>n</ex><lb break="no"
+                    />cebir y este vino aprouecha mucho a los <lb break="yes"
+                    />gotosos beuiendolo y lauandose conello <lb break="yes"
+                    />los lugares donde touiere la gota. E sy <lb break="yes"
+                    />las hojas tomare y coziere co<ex>n</ex> mosto
+                        bla<ex>n</ex><lb break="no"/>co &amp; se lauare la
+                    cabeça conseruarleha <lb break="yes"/>que no se caygan los
+                    cabellos &amp; hazer te <lb break="yes"/>ha hermoso rostro.
+                    Otrosy toma la flor <lb break="yes"/>del romero &amp; hazla
+                    heruir en agua has<lb break="no"/>ta que mengue la meytad
+                    del agua &amp; be<lb break="no"/>ue della que ha donde te
+                    sentieres em<lb break="no"/>bargado &amp; lleno el estomago
+                    de malos <lb break="yes"/>humores. Sepas que quanto mal
+                        to<lb break="no"/>uieres enel cuerpo de todo seras sano
+                    &amp; <lb break="yes"/>conseruado. <lb break="yes"/></p>
+            </div>
+            <div type="section" n="5">
+                <head><hi rend="rubrique"><g ref="#calderon1"/> Otra
+                        recebta.</hi>
+                </head>
+                <p><lb break="yes"/><hi rend="initiale" n="4">O</hi>Trosy toma
+                    la hoja del rome<lb break="no"/>ro &amp; haz la heruir en
+                    vino bla<ex>n</ex><lb break="no"/>co que sea noble &amp;
+                    laua la ca<lb break="no"/>ra &amp; las sienes y sepas que
+                        nu<ex>n</ex><lb break="no"/>ca te envejeceras nin se te
+                    arrugaran <lb break="yes"/>las arrugas del rostro &amp;
+                    quitar se ha<ex>n</ex> las <lb break="yes"/>manzillas del
+                    rostro &amp; rugas. <lb break="yes"/></p>
+            </div>
+            <div type="section" n="6">
+                <head><hi rend="rubrique"><g ref="#calderon1"/> Otra
+                        recebta.</hi>
+                </head>
+                <p><lb break="yes"/><hi rend="initiale" n="4">T</hi>Oma el astil
+                    del romero &amp; q<ex>ue</ex><lb break="no"/>malo hasta que
+                    se haga car<lb break="no"/>bones &amp; muelelos &amp; haz
+                    los <lb break="yes"/>poluos <choice>
+                        <corr>&amp; ponlos</corr>
+                        <sic/>
+                    </choice> en vn paño delgado <cb type="double-column"/><lb
+                        break="yes"/>nueuo &amp; frega los dientes conello &amp;
+                        tor<lb break="no"/>nar se han blancos &amp;
+                    nu<ex>n</ex>ca cayra en<ex>e</ex>llos <lb break="yes"
+                    />gusano: ni niguijon q<ex>ue</ex> come los die<ex>n</ex>tes
+                        <lb break="yes"/><choice>
+                        <corr>E si los ouiere enlos dientes.</corr>
+                        <sic/>
+                    </choice> cahersehan &amp; no cayra cancer enla bo<lb
+                        break="no"/>ca: ni enfermedad enella &amp; los dientes
+                        <lb break="yes"/>&amp; muelas seran firmes &amp; sanos.
+                        <lb break="yes"/></p>
+            </div>
+            <div type="section" n="7">
+                <head><hi rend="rubrique"><g ref="#calderon1"/> Otra
+                        recebta.</hi>
+                </head>
+                <p><lb break="yes"/><hi rend="initiale" n="4">O</hi>Trosy toma
+                    la flor del ro<lb break="no"/>mero &amp; sacala &amp;
+                    muelela bi<lb break="no"/>en &amp; ponla en vn paño lim<lb
+                        break="no"/>pio delgado de lino &amp; ata <lb
+                        break="yes"/>lo al lado o braço diestro. &amp;
+                        a<ex>n</ex>daras muy <lb break="yes"/>alegre. &amp; sano
+                    &amp; no ayas miedo del ene<lb break="no"/>migo malino. <lb
+                        break="yes"/></p>
+            </div>
+            <div type="section" n="8">
+                <head><hi rend="rubrique"><g ref="#calderon1"/> Otra
+                        recebta.</hi>
+                </head>
+                <p><lb break="yes"/><hi rend="initiale" n="4">E</hi> Otrosy toma
+                    la flor del ro<lb break="no"/>mero &amp; con pan de centeno
+                        <lb break="yes"/>comela ansi en ayunas &amp; to<lb
+                        break="no"/>das las enfermedades de tu <lb break="yes"
+                    />cuerpo seran sanas. Assi de hombre co<lb break="no"/>mo de
+                    muger. E sy las vsares a comer <lb break="yes"/>nunca seras
+                    enfermo. Ni la muger sera <lb break="yes"/>enferma dela
+                    madre. <lb break="yes"/></p>
+            </div>
+            <div type="section" n="9">
+                <head><hi rend="rubrique"><g ref="#calderon1"/> Otra
+                        recebta.</hi>
+                </head>
+                <p><lb break="yes"/><hi rend="initiale" n="4">P</hi>Ara estar
+                    siempre sano: vsate <lb break="yes"/>bañar conel agua del
+                        rome<lb break="no"/>ro que sea bien colorada &amp; ba<lb
+                        break="no"/>ñate todo el cuerpo: &amp; suda <lb
+                        break="yes"/>dentro enel baño. &amp; assy lo vsaras tres
+                        <lb break="yes"/>vezes enel mes: o dos alo<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>menos: &amp; sye<ex>m</ex><lb break="no"/>pre seras
+                    sano: &amp; seras renouado como <lb break="yes"/>el aguila.
+                        <lb break="yes"/></p>
+            </div>
+            <div type="section" n="10">
+                <head><hi rend="rubrique"><g ref="#calderon1"/> Otra
+                        recepta.</hi>
+                </head>
+                <p><lb break="yes"/><hi rend="initiale" n="4">O</hi>Trosy vsaras
+                    sahumar tu ca<lb break="no"/>mara o palacio co<ex>n</ex>el
+                    romero <lb break="yes"/>sepas que fuyra<ex>n</ex> las
+                    culebras <lb break="yes"/>&amp; salama<ex>n</ex>quesas &amp;
+                    todas las <lb break="yes"/>malas cosas
+                        q<ex>ue</ex>sta<ex>n</ex> ala vmidad &amp; faze sa<lb
+                        break="no"/>na la casa. </p>
+            </div>
+            <div type="section" n="11">
+                <head><hi rend="rubrique"><g ref="#calderon1"/> Otra
+                        recepta.</hi>
+                </head>
+                <p><lb break="yes"/><hi rend="initiale" n="4">T</hi>Oma la
+                    corteza d<ex>e</ex>l ro<ex>m</ex>ero &amp; po<ex>n</ex>
+                    <lb break="yes"/>lo sobre el borrajo &amp; atauiate la <lb
+                        break="yes"/>cabeça &amp; r<ex>e</ex>scibe el vmo por
+                    las <lb break="yes"/>narizes q<ex>u</ex><hi
+                        rend="superscript">a</hi>ndo estes arromadi-zado <pb
+                        n="31r"/>
+                    <fw rend="titre-courant">Las virtudes del Romero Fo.
+                        xxxj</fw>
+                    <cb type="double-column"/><lb break="yes"/>&amp; luego
+                    purgaras la cabeça. &amp; se<lb break="no"/>ras sano. <lb
+                        break="yes"/></p>
+            </div>
+            <div type="section" n="12">
+                <head><hi rend="rubrique"><g ref="#calderon1"/> Otra
+                        recebta:</hi>
+                </head>
+                <p><lb break="yes"/><hi rend="initiale" n="4">P</hi>Ara el vino
+                    que no sea azedo <lb break="yes"/>nin aya mal sabor. Toma la
+                        <lb break="yes"/>flor del romero ponla dentro <lb
+                        break="yes"/>enla tinaja &amp; conserualo: E <lb
+                        break="yes"/>esto sea quando se trassiega. <lb
+                        break="yes"/></p>
+            </div>
+            <div type="section" n="13">
+                <head><hi rend="rubrique"><g ref="#calderon1"/> Otra
+                        recebta.</hi>
+                </head>
+                <p><lb break="yes"/><hi rend="initiale" n="4">A</hi>Sy que
+                    puesta la flor del Ro<lb break="no"/>mero entre la ropa
+                    nunca po<lb break="no"/>lilla la comera ni se gastara. <lb
+                        break="yes"/></p>
+            </div>
+            <div type="section" n="14">
+                <head><hi rend="rubrique"><g ref="#calderon1"/> Otra
+                        recebta.</hi>
+                </head>
+                <p><lb break="yes"/><hi rend="initiale" n="4">S</hi>Y alguna
+                    persona se tolliere <lb break="yes"/>que sea de frialdad: o
+                    por su<lb break="no"/>dor que le de ayre tome las <lb
+                        break="yes"/>hojas del romero &amp; pongalas <lb
+                        break="yes"/>enel ag<choice>
+                        <corr>u</corr>
+                        <sic>u</sic>
+                    </choice>a fasta que mengue el tercio: &amp; <lb break="yes"
+                    />haganle baño con ella &amp; sude conel &amp; gu<lb
+                        break="no"/>arde bie<choice>
+                        <sic>ñ</sic>
+                        <corr>n</corr>
+                    </choice> el sudor &amp; vselo por algunos <lb break="yes"
+                    />dias &amp; sera guarido: <lb break="yes"/></p>
+            </div>
+            <div type="section" n="15">
+                <head><hi rend="rubrique"><g ref="#calderon1"/> Otra
+                        reçebta.</hi>
+                </head>
+                <p><lb break="yes"/><hi rend="initiale" n="4">M</hi>Uchas
+                    virtudes ay enel Ro<lb break="no"/>mero &amp; en su flor que
+                    aqui no <lb break="yes"/>te las digo: Mas creed señor <lb
+                        break="yes"/>que si alos niños bañaren conel agua bi<lb
+                        break="no"/>en cocha sepas que seran bien criados <lb
+                        break="yes"/>muy limpios sin sarna: ni algu<ex>n</ex>os
+                    otros <lb break="yes"/>accidentes que vienen por parte de
+                    mal <lb break="yes"/>regimiento delas madres &amp; dela mala
+                        <lb break="yes"/>ordenança en que los crian por
+                        deshor<lb break="no"/>denada leche. <lb break="yes"
+                    /></p>
+            </div>
+            <div type="section" n="16">
+                <head><hi rend="rubrique"><g ref="#calderon1"/> Reçepta real
+                        para purgar la fleuma <lb break="yes"/><choice>
+                            <sic>ma</sic>
+                            <corr/>
+                        </choice>. &amp; colera &amp; otros humores.</hi>
+                </head>
+                <p><lb break="yes"/><hi rend="initiale" n="4">M</hi>Uy real
+                    reçepta para purgar <lb break="yes"/>la fleuma &amp; la
+                    colera &amp; los o<lb break="no"/>tros humores sobrepujantes
+                        <lb break="yes"/>de que hazen enfermedad al <lb
+                        break="yes"/>cuerpo humano &amp; el dia que purgare:
+                        co<lb break="no"/>ma de buena gallina que sea aguisada
+                        <lb break="yes"/>sin espeçias. Saluo sy fuere canela y
+                        a<lb break="no"/>çafran enla salsa: &amp; la canela sea
+                        hecha<lb break="no"/>da enel caldo conlas sopas. <cb
+                        type="double-column"/><lb break="yes"/><hi
+                        rend="initiale" n="4">T</hi>Oma hermodatiles monda<lb
+                        break="no"/>dos de dentro y d<ex>e</ex> fuera &amp;
+                        me<lb break="no"/>dia onça de Turbit monda<lb break="no"
+                    />do de dentro y de fuera. Jten <lb break="yes"/>vna onça de
+                    dragant: &amp; medio adarme <lb break="yes"/>de almastiga de
+                    peso de diez granos de <lb break="yes"/>trigo y de agengibre
+                    blanco peso de ve<lb break="no"/>ynte granos de trigo de
+                    açucar blanco <lb break="yes"/>peso de siete adarmes. Todo
+                    sea moli<lb break="no"/>do &amp; cernido &amp; sea todo
+                    mezclado en v<lb break="no"/>no: &amp; toma deste poluo:
+                    peso de vna bla<ex>n</ex><lb break="no"/>ca &amp; ponla en
+                    vn poco de vino blanco &amp; <lb break="yes"/>assy lo
+                    tomaras ala ora delos maytines <lb break="yes"/>&amp; no
+                    duermas sobrello. <lb break="yes"/></p>
+            </div>
+            <div type="section" n="17">
+                <head><hi rend="rubrique"><g ref="#calderon1"/> Recepta para
+                        sanar los <lb break="yes"/>potrosos o quebrados.</hi>
+                </head>
+                <p><lb break="yes"/><hi rend="initiale" n="4">D</hi>Eues tomar
+                    las hojas del ro<lb break="no"/>mero &amp; ponla massa
+                    dellas a <lb break="yes"/>escalentar &amp; assy emplaste
+                        fe<lb break="no"/>cho ponlo enla quebradura. <lb
+                        break="yes"/>Por nueue dias &amp; luego seras sano &amp;
+                        su<lb break="no"/>elda la quebradura. Para esto mismo
+                        <lb break="yes"/>toma los pelos d<ex>e</ex>la liebre
+                        co<ex>n</ex>facionados <lb break="yes"/>conla miel.
+                    &amp; hazlos pildoras &amp; dalos <lb break="yes"/>a comer.
+                    &amp; sabe q<ex>ue</ex> muy ayna consuelda. <lb break="yes"
+                    />E dixo el dicho moro que sy el dicho ro<lb break="no"
+                    />mero de su hoja echares enel vino tinto <lb break="yes"
+                    />&amp; sacares ag<choice>
+                        <corr>u</corr>
+                        <sic>u</sic>
+                    </choice>a ardiente que sea fina. cu<lb break="no"/>ra toda
+                    fleuma: &amp; toda sarna: E lauan<lb break="no"/>do conella
+                    el cancer curalo: E la fistola <lb break="yes"
+                    />marauillosamente. <lb break="yes"/></p>
+            </div>
+            <div type="section" n="18">
+                <head><hi rend="rubrique"><g ref="#calderon1"/> Recebta para
+                        sanar las <lb break="yes"/>quebraduras.</hi>
+                </head>
+                <p><lb break="yes"/><hi rend="initiale" n="4">E</hi> Assy toma
+                    pesso de vna o<lb break="no"/>chaua de piedra yma<ex>n</ex>
+                    y sea <lb break="yes"/>bien molida: y toma peso d<ex>e</ex>
+                    <lb break="yes"/>vn tomin de limadura de A<lb break="no"
+                    />zero: y confacionalo en vno y dalo a be<lb break="no"/>uer
+                    con vna poca de miel al que esta en<lb break="no"/>fermo por
+                    espacio de treynta dias: &amp; lue<lb break="no"/>go haras
+                    emplasto para que le pongas <lb break="yes"/>enla
+                        q<ex>ue</ex>bradura en aquesta manera. To<lb break="no"
+                    />ma vna parte de sangre de Drago: E <pb n="31v"/>
+                    <fw rend="titre-courant">Decima Distincion</fw>
+                    <cb type="double-column"/><lb break="yes"/>otra de almastiga
+                    &amp; otra parte de enci<lb break="no"/>enso macho &amp;
+                    otra parte de pez griega: <lb break="yes"/>&amp; todo esto
+                    sea muy bien molido cada v<lb break="no"/>no sobre sy: &amp;
+                    desque sean bien molidos <lb break="yes"/>todos aquestos
+                    materiales &amp; sea<ex>n</ex> todos <lb break="yes"/>muy
+                    bien encorporados en vno. &amp; avn se<lb break="no"/>an
+                    todos ellos hechos pesos yguales ta<ex>n</ex><lb break="no"
+                    />to de vno como de otro. &amp; assy que de<lb break="no"
+                    />ues de hazer de todo lo sobre dicho em<lb break="no"
+                    />plasto en vna caçuela en<ex>e</ex>l huego: &amp; haz <lb
+                        break="yes"/>emplasto &amp; po<ex>n</ex>lo enla
+                    quebradura &amp; sea <cb type="double-column"/><lb
+                        break="yes"/>renouado de diez en diez dias hasta tre<lb
+                        break="no"/>ynta dias &amp; sera sano el paciente. <lb
+                        break="yes"/><hi rend="initiale" n="4">Y</hi>Ten para
+                    esta enfermedad d<ex>e</ex>
+                    <lb break="yes"/>los quebrados toma la ra<lb break="no"/>yz
+                    de vna yerua que se lla<lb break="no"/>ma brusco. &amp;
+                    muelela bien &amp; <lb break="yes"/>çernida &amp; dala a
+                    beuer al quebrado dos <lb break="yes"/>vezes cada dia en vn
+                    huebo y este quin<lb break="no"/>ze dias enla cama que no se
+                        leua<ex>n</ex>te &amp; lue<lb break="no"/>go sera sano.
+                        <foreign xml:lang="lat"><g ref="#calderon1"/> Deo
+                        gratias.</foreign>
+                </p>
+            </div>
+        </body>
+        <back>
+            <div type="sommaire">
+                <p><cb type="double-column"/><lb break="yes"/><hi
+                        rend="rubrique">Aqui comiença la tabla del presente
+                            li<lb break="no"/>bro llamado Maçer q<ex>ue</ex>
+                        habla delos man<lb break="no"/>tenimie<ex>n</ex>tos. El
+                            q<ex>u</ex><hi rend="superscript">a</hi>l
+                            co<ex>n</ex>tiene .x. distincio<ex>n</ex>es.</hi>
+                    <lb break="yes"/><g ref="#calderon1"/> El prohemio.
+                        fo<ex>lio</ex>. j. <lb break="yes"/>El prologo
+                        fo<ex>lio</ex>. ii. <lb break="yes"/>Por q<ex>u</ex><hi
+                        rend="superscript">a</hi>l razon fue menester de ser
+                        halla<lb break="no"/>da la fisica fo<ex>lio</ex>. ii.
+                        <lb break="yes"/>De como fue hallada la sciencia dela fi<choice>
+                        <corr>sica fo<ex>lio</ex>. iij.</corr>
+                        <sic/>
+                    </choice>
+                    <lb break="yes"/><g ref="#calderon1"/> La .j.
+                        distincio<ex>n</ex> tiene vi. cap<ex>itu</ex>los.
+                        fo<ex>lio</ex>. iiii. <lb break="yes"/>Capitulo .j. del
+                    trigo fo<ex>lio</ex>. v: <lb break="yes"/>Capitulo .ii. del
+                    çenteno. fo<ex>lio</ex>. v. <lb break="yes"/>Capitulo .iii.
+                    dela çebada. fo<ex>lio</ex>. vi. <lb break="yes"/>Capitulo
+                    .iiij. dela auena. fo<ex>lio</ex>. vi. <lb break="yes"
+                    />Capitulo .v. del mijo. fo<ex>lio</ex>. vi. <lb break="yes"
+                    />Capitulo .vi. del arroz fo<ex>lio</ex>. vi. <lb
+                        break="yes"/><g ref="#calderon1"/> La segunda tiene
+                    .iiii. cap<ex>itu</ex>los. fo vi. <lb break="yes"/>Capitulo
+                    .j. delas hauas. fo<ex>lio</ex>. vi <lb break="yes"
+                    />Capitulo .ii. delos garuanços fo<ex>lio</ex>. vi. <lb
+                        break="yes"/>Ca<ex>pitulo</ex> .iii. d<ex>e</ex>los
+                    aruejones &amp; aruejas: fo<ex>lio</ex>. vii: <lb
+                        break="yes"/>Capitulo .iiij. delas lantejas.
+                        fo<ex>lio</ex>. vii. <lb break="yes"/><g
+                        ref="#calderon1"/> La .iii. distincion .vii.
+                        cap<ex>itu</ex>los. fo<ex>lio</ex>. vii. <lb break="yes"
+                        />Ca<ex>pitulo</ex> .j. d<ex>e</ex>las
+                        co<ex>n</ex>dicio<ex>n</ex>es d<ex>e</ex>las yeruas.
+                        fo<ex>lio</ex>. vii <lb break="yes"/>Capitulo .ii. delas
+                    coles. fo<ex>lio</ex>. vii. <lb break="yes"/>Capitulo .iii.
+                    delas espinacas. fo<ex>lio</ex>. vii. <lb break="yes"
+                        />Ca<ex>pitulo</ex> .iiii d<ex>e</ex>las vorrajas o
+                        le<ex>n</ex>guabuey. fo<ex>lio</ex>. vii <lb break="yes"
+                        />Cap<ex>itulo</ex> .v. delas lechugas. fo<ex>lio</ex>.
+                    viii <lb break="yes"/>Cap<ex>itulo</ex> .vi. delas
+                    verdolagas. fo<ex>lio</ex>. viii. <lb break="yes"
+                        />Cap<ex>itulo</ex> .vii. delas hortigas.
+                    fo<ex>lio</ex>. viii. <lb break="yes"/><g ref="#calderon1"/>
+                    La .iiii. distincion .vii. cap<ex>itu</ex>los.
+                        fo<ex>lio</ex>. viii. <lb break="yes"/>Cap<ex>itulo</ex>
+                    .j. delos rauanos fo<ex>lio</ex>. viii. <lb break="yes"
+                        />Cap<ex>itulo</ex> .ii. delas çanahorias
+                    fo<ex>lio</ex>. viii. <lb break="yes"/>Cap<ex>itulo</ex>
+                    .iii. delos nabos: fo<ex>lio</ex>. vii. <cb
+                        type="double-column"/><lb break="yes"/>Cap<ex>itulo</ex>
+                    .iiii. delas cebollas. fo<ex>lio</ex>. ix. <lb break="yes"
+                    />Capitulo .v. delos puerros. fo<ex>lio</ex>. ix. <lb
+                        break="yes"/>Capitulo .vi. delos ajos. fo: ix. <lb
+                        break="yes"/>Capitulo .vii. delas cheriuias.
+                        fo<ex>lio</ex>. ix. <lb break="yes"/><g ref="#calderon1"
+                    /> La .v. distincion .xxx. cap<ex>itu</ex>los.
+                        fo<ex>lio</ex>. ix. <lb break="yes"/>Ca<ex>pitulo</ex>
+                    .i. de todas las frutas. fo<ex>lio</ex>. ix. <lb break="yes"
+                    />Capitulo .ii. d<ex>e</ex>las calabaças. fo<ex>lio</ex>.
+                    xi. <lb break="yes"/>Capitulo .iii. delas alcaparras.
+                        fo<ex>lio</ex>. xii. <lb break="yes"/>Capitu<ex>lo</ex>
+                    .iiii. delas verengenas. fo<ex>lio</ex>. xii. <lb
+                        break="yes"/>Capitulo .v. delos esparragos.
+                        fo<ex>lio</ex>. xii. <lb break="yes"/>Ca<ex>pitulo</ex>
+                    .vi. d<ex>e</ex>los pepinos &amp; coho<ex>m</ex>bros.
+                        fo<ex>lio</ex>. xii. <lb break="yes"/>Ca<ex>pitulo</ex>
+                    .vii. delas vadeas &amp; melones. fo<ex>lio</ex>. xii. <lb
+                        break="yes"/>Ca<ex>pitulo</ex> .viii. d<ex>e</ex> higos
+                    frescos &amp; pasad<ex>os</ex>. fo<ex>lio</ex>. xiii. <lb
+                        break="yes"/>Ca<ex>pitulo</ex> .ix. d<ex>e</ex> vuas
+                    frescas &amp; pasadas. fo<ex>lio</ex>. xiii. <lb break="yes"
+                    />Capitulo .x. delas moras. fo: xiii. <lb break="yes"
+                    />Capitulo .xi. delas mançanas. fo<ex>lio</ex>. xiii. <lb
+                        break="yes"/>Cap<ex>itulo</ex> .xii. delas peras.
+                        fo<ex>lio</ex>. xiii <lb break="yes"/>Ca<ex>pitulo</ex>
+                    .xiii. delos membrillos. fo<ex>lio</ex>. xiiii. <lb
+                        break="yes"/>Cap<ex>itulo</ex> .xiiii. delas seruas.
+                        fo<ex>lio</ex>. xiiii <lb break="yes"/>Ca<ex>pitulo</ex>
+                    .xv: d<ex>e</ex>los duraznos &amp; p<ex>ri</ex>scos.
+                        fo<ex>lio</ex>. xiiii. <lb break="yes"
+                        />Ca<ex>pitulo</ex> .xvi. delos aluarcoques.
+                        fo<ex>lio</ex>. xiiii. <lb break="yes"
+                        />Ca<ex>pitulo</ex> .xvii. delas ciruelas
+                    fo<ex>lio</ex>. xiiii. <lb break="yes"/>Ca<ex>pitulo</ex>
+                    .xviii. delas cerezas fo<ex>lio</ex>. xiiii. <lb break="yes"
+                        />Ca<ex>pitulo</ex> .xix. delas guindas. fo<ex>lio</ex>.
+                    xiiii. <lb break="yes"/>Ca<ex>pitulo</ex> .xx. delos
+                    datiles. fo<ex>lio</ex>. xiiii. <lb break="yes"
+                        />Ca<ex>pitulo</ex> .xxi. delas azeytunas.
+                        fo<ex>lio</ex>. <choice>
+                        <corr>x</corr>
+                        <sic>x</sic>
+                    </choice>v. <lb break="yes"/>Cap<ex>itulo</ex> .xxii. delas
+                    jujubas. fo<ex>lio</ex>. xv. <lb break="yes"
+                        />Ca<ex>pitulo</ex> .xxiii. delos niesperos:
+                        fo<ex>lio</ex>. xv. <lb break="yes"/>Ca<ex>pitulo</ex> .xx<choice>
+                        <sic>.</sic>
+                        <corr/>
+                    </choice>iiii. delas granadas. fo<ex>lio</ex>. <choice>
+                        <corr>x</corr>
+                        <sic>x</sic>
+                    </choice>v <lb break="yes"/>Ca<ex>pitulo</ex> .xxv.
+                        d<ex>e</ex>las castañas &amp; vellotas. fo<ex>lio</ex>.
+                    xv <lb break="yes"/>Ca<ex>pitulo</ex> .xxvi. delas nuezes
+                        fo<ex>lio</ex>. xv. <lb break="yes"/>Ca<ex>pitulo</ex>
+                    .xxvii. delas almendras. fo<ex>lio</ex>. xv: <lb break="yes"
+                        />Ca<ex>pitulo</ex> .xxviii. delas auellanas.
+                        fo<ex>lio</ex>. xvi <pb n="32r"/>
+                    <fw rend="titre-courant">Tabla Fo. xxxij</fw>
+                    <cb type="double-column"/><lb break="yes"/>Cap<ex>itulo</ex>
+                    .xxix. d<ex>e</ex>los piñones. fo<ex>lio</ex>. xvi <lb
+                        break="yes"/>Cap<ex>itulo</ex>: xxx. Delas alfostigas.
+                        fo<ex>lio</ex>. xvi. <lb break="yes"/><g
+                        ref="#calderon1"/> Sesta distincion tiene .x.
+                        cap<ex>itulos</ex>. fo<ex>lio</ex>. xvi. <lb break="yes"
+                        />Cap<ex>itulo</ex> .j. d<ex>e</ex>las carnes
+                        d<ex>e</ex>las a<ex>n</ex>i<ex>m</ex>alias.
+                        fo<ex>lio</ex>. xvi <lb break="yes"/>Ca<ex>pitulo</ex>
+                    .ii. d<ex>e</ex>las carnes d<ex>e</ex>las aues.
+                        fo<ex>lio</ex>. xviii. <lb break="yes"/>Capitulo .iii.
+                    delas gallinas &amp; capones y <lb break="yes"/>pollos &amp;
+                    pollas. fo<ex>lio</ex>. xviii. <lb break="yes"
+                        />Cap<ex>itulo</ex> .iiii. d<ex>e</ex>las
+                    p<ex>er</ex>dizes &amp; p<ex>er</ex>digones. fo<ex>lio</ex>.
+                    xix. <lb break="yes"/>Cap<ex>itulo</ex> .v delas tortolas.
+                        fo<ex>lio</ex>. xix. <lb break="yes"/>Cap<ex>itulo</ex>
+                    .vi. Delas codornizes. fo: xix. <lb break="yes"
+                        />Cap<ex>itulo</ex> .vii. Delas palomas. fo<ex>lio</ex>.
+                    xix. <lb break="yes"/>Ca<ex>pitulo</ex> .viii.
+                    d<ex>e</ex>los tordos &amp; gurriones. fo<ex>lio</ex>. xix
+                        <lb break="yes"/>Ca<ex>pitulo</ex> .ix d<ex>e</ex>las
+                    ansares &amp; anades. fo<ex>lio</ex>. xix. <lb break="yes"
+                    />Capitulo .x. delas garças &amp; grullas &amp; <lb
+                        break="yes"/>gallinas ciegas &amp; otras aues de ca<lb
+                        break="no"/>ça. fo<ex>lio</ex>. xx. <lb break="yes"/><g
+                        ref="#calderon1"/> Septima distincion tiene vn capitu<lb
+                        break="no"/>lo: el q<ex>u</ex><hi rend="superscript"
+                        >a</hi>l trata delos hueuos. fo xx. <lb break="yes"/><g
+                        ref="#calderon1"/> Octaua distincio<ex>n</ex>
+                        tien<ex>e</ex> .xxii. cap<ex>itulos</ex> fo<ex>lio</ex>.
+                    xxi. <lb break="yes"/>Ca<ex>pitulo</ex> .j. d<ex>e</ex>los
+                    ojos d<ex>e</ex>las a<ex>n</ex>i<ex>m</ex>alias.
+                        fo<ex>lio</ex>. xxi. <lb break="yes"/>Cap<ex>itulo</ex>
+                    .ii. delas orejas. fo<ex>lio</ex>. xxi. <lb break="yes"
+                        />Ca<ex>pitulo</ex> .iii. d<ex>e</ex>las cabeças &amp;
+                    carrillos. fo<ex>lio</ex>. xxi. <lb break="yes"
+                        />Cap<ex>itulo</ex> .iiii. delas lenguas.
+                    fo<ex>lio</ex>. xxi. <lb break="yes"/>Cap<ex>itulo</ex> .v.
+                    delos pescueços. fo<ex>lio</ex>. xxi. <lb break="yes"
+                        />Cap<ex>itulo</ex> .vi. delos pulmones. fo<ex>lio</ex>.
+                    xxi. <lb break="yes"/>Cap<ex>itulo</ex> .vii. delos
+                    coraçones. fo<ex>lio</ex>. xxi. <cb type="double-column"
+                        /><lb break="yes"/>Ca<ex>pitulo</ex> .viii. delos
+                    estomagos. fo<ex>lio</ex>. xxii. <lb break="yes"
+                        />Cap<ex>itulo</ex> .ix. del higado fo<ex>lio</ex>.
+                    xxii. <lb break="yes"/>Cap<ex>itulo</ex> .x. del baço.
+                        fo<ex>lio</ex>. xxii. <lb break="yes"/>Cap<ex>itulo</ex>
+                    .xi. delos riñones fo<ex>lio</ex>. xxii. <lb break="yes"
+                        />Cap<ex>itulo</ex> .xii. delas tripas. fo<ex>lio</ex>.
+                    xxii. <lb break="yes"/>Cap<ex>itulo</ex> .xiii. dela
+                    grossura: fo<ex>lio</ex>. xxii. <lb break="yes"
+                        />Cap<ex>itulo</ex> .xiiii. delos neruios.
+                        fo<ex>lio</ex>. xxii. <lb break="yes"/>Cap<ex>itulo</ex>
+                    .xv. delos jarretes &amp; pies. fo<ex>lio</ex>. xxii. <lb
+                        break="yes"/>Ca<ex>pitulo</ex> .xvi. dela vbre.
+                        fo<ex>lio</ex>. xxii. <lb break="yes"/>Ca<choice>
+                        <corr>p</corr>
+                        <sic>p</sic>
+                    </choice><ex>itulo</ex> xvii. dela carne delos cabritos
+                        le<lb break="no"/>chares fo<ex>lio</ex>. xxii. <lb
+                        break="yes"/>Ca<ex>pitulo</ex> .xviii. d<ex>e</ex>l
+                    carnero <choice>
+                        <corr>de</corr>
+                        <sic/>
+                    </choice> .ii. die<ex>n</ex>tes. fo<ex>lio</ex>. xxiii. <lb
+                        break="yes"/>Ca<ex>pitulo</ex> .xix. d<ex>e</ex>los
+                    puercos q<ex>ue</ex> no so<ex>n</ex> ver<ex>racos</ex>.
+                        fo<ex>lio</ex>. xxiii <lb break="yes"/>Ca<ex>pitulo</ex>
+                    .xx. d<ex>e</ex>la carne d<ex>e</ex>las vacas.
+                        fo<ex>lio</ex>. xxiii. <lb break="yes"
+                        />Ca<ex>pitulo</ex> .xxi. delos çieruos. fo<ex>lio</ex>.
+                    xxiiii. <lb break="yes"/>Cap<ex>itulo</ex> .xxii. delos
+                    conejos. fo<ex>lio</ex>. xxiiii: <lb break="yes"/><g
+                        ref="#calderon1"/> La .ix. distincion q<ex>ue</ex> trata
+                    dela leche &amp; <lb break="yes"/>q<ex>ue</ex>sos
+                        q<ex>ue</ex> tiene q<ex>u</ex><hi rend="superscript"
+                        >a</hi>tro cap<ex>itulos</ex>. fo<ex>lio</ex>. xxiiii.
+                        <lb break="yes"/>Ca<ex>pitulo</ex> .j. d<ex>e</ex>la
+                    leche d<ex>e</ex>las mugeres. fo<ex>lio</ex>. xxiiii. <lb
+                        break="yes"/>Ca<ex>pitulo</ex> .ii. dela leche delas
+                        a<ex>n</ex>i<ex>m</ex>alias. fo<ex>lio</ex>. xxv. <lb
+                        break="yes"/>Ca<ex>pitulo</ex> .iii. del queso
+                        fo<ex>lio</ex>. xxv. <lb break="yes"/>Ca<ex>pitulo</ex>
+                    .iiii. delas mantecas. fo<ex>lio</ex>. xxv. <lb break="yes"
+                        /><g ref="#calderon1"/> La dezena distincion &amp;
+                    vltima deste li<lb break="no"/>bro trata dela manera
+                        d<ex>e</ex>los pescados <lb break="yes"/>la qual tiene
+                    vn capitulo. fo<ex>lio</ex>. xxvi. <lb break="yes"/><g
+                        ref="#calderon1"/> Las v<ex>ir</ex>tudes d<ex>e</ex>l
+                    romero. fo<ex>lio</ex>. xxix. <cb type="single-column"/><lb
+                        break="yes"/><g ref="#calderon1"/>
+                    <foreign xml:lang="lat">Deo gratias.</foreign>
+                    <lb break="yes"/><g ref="#calderon1"/> A gloria de
+                        n<ex>uest</ex>ro rede<ex>m</ex>ptor ihesu
+                    xp<ex>ist</ex>o &amp; de su be<ex>n</ex>dita madre se acaba
+                    de imp<ex>ri</ex>mir es<lb break="no"/>te noble &amp;
+                        p<ex>ro</ex>uechoso libro llamado Maçer. que es para
+                        conseruacio<ex>n</ex> dela salud <lb break="yes"/>delos
+                    hombres. Por que habla delos mantenimientos. Quales son
+                    malos &amp; q<ex>u</ex><hi rend="superscript">a</hi><lb
+                        break="no"/>les buenos. Agora segunda vez enmendado
+                    &amp; corregido: &amp; puestos los capitu<lb break="no"/>los
+                    a parte. E puesto en mejor romançe q<ex>ue</ex> solia.
+                    Porque la primera vez estaua <lb break="yes"/>en romançe
+                    viejo. E mal puesto. E agora esta como deue. E conlas
+                        v<ex>ir</ex>tudes q<ex>ue</ex>l <lb break="yes"/>Romero
+                    tiene que son muy preciosas. E con otras reçeptas muy
+                    buenas. Nue<lb break="no"/>bamente añadidas.</p>
+            </div>
+            <div type="colophon">
+                <p>Fue ympresso enla insigne noble &amp; muy grande nombrada <lb
+                        break="yes"/>çibdad de Granada en casa de Andres de
+                    Burgos ympressor. Por mandado <lb break="yes"/>de Juan
+                    lorencio mercader de libros. Acabose a doze de Março Año del
+                        nas<lb break="no"/>çimiento de nuestro saluador ihesu
+                        xp<ex>ist</ex>o de mill &amp; quinie<ex>n</ex>tos &amp;
+                    diez y nuebe años</p>
+            </div>
+        </back>
+    </text>
+</TEI>

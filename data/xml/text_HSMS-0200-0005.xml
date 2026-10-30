@@ -1,0 +1,446 @@
+<?xml-model href="/home/mgl/Bureau/Travail/projets/Biblissima-Text/Transform/schemata/out/ODD_gold.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Los gozos de Nuestra Señora</title>
+                <respStmt>
+                    <resp>Transcrit par</resp>
+                    <name><surname>Taylor</surname><forename>Aaron
+                        C.</forename></name>
+                </respStmt>
+                <respStmt>
+                    <resp>Textes édités et rassemblés par </resp>
+                    <name>
+                        <forename>Francisco</forename>
+                        <surname>Gago Jover</surname>
+                    </name>
+                    <name>
+                        <forename>Javier</forename>
+                        <surname>Pueyo Mena</surname>
+                    </name>
+                </respStmt>
+                <respStmt>
+                    <resp>Modélisation, encodage et structuration XML-TEI
+                        par</resp>
+                    <name xml:id="mgl">
+                        <forename>Matthias</forename>
+                        <surname>Gille Levenson</surname>
+                    </name>
+                </respStmt>
+                <respStmt>
+                    <resp>Responsabilité du projet Biblissima-Textes: </resp>
+                    <name>
+                        <forename>Thibault</forename>
+                        <surname>Clérice</surname>
+                    </name>
+                    <name>
+                        <forename>Olivier</forename>
+                        <surname>Brisville-Fertin</surname>
+                    </name>
+                    <name>
+                        <forename>Ariane</forename>
+                        <surname>Pinche</surname>
+                    </name>
+                    <name>
+                        <forename>Marianne</forename>
+                        <surname>Reboul</surname>
+                    </name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Publié dans le cadre de Biblissima-textes à partir de
+                    matériaux publiés auparavant.</publisher>
+                <availability status="restricted">
+                    <licence
+                        target="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+                        >Creative Commons Attribution Non Commercial Share Alike
+                        4.0 International</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <!--La source premi&#232;re: le projet OSTA-->
+                <bibl xml:id="TVZ" type="source-transcription">
+                    <title>TEXT.TVZ.txt</title>
+                    <editor>
+                        <forename>Francisco</forename>
+                        <surname>Gago Jover</surname>
+                    </editor>
+                    <editor>
+                        <forename>Javier</forename>
+                        <surname>Pueyo Mena</surname>
+                    </editor>
+                    <publisher>Hispanic Seminary of Medieval Studies</publisher>
+                    <date when="2026-03-07"/>
+                    <availability status="restricted">
+                        <licence
+                            target="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+                            >Creative Commons Attribution Non Commercial Share
+                            Alike 4.0 International</licence>
+                    </availability>
+                    <note>Projet OSTA (Old Spanish Textual Archive). Source des
+                        données: <ptr
+                            target="https://raw.githubusercontent.com/hispanicseminary/OSTA/refs/heads/main/transcriptions/TEXT.TVZ.txt"
+                        />, v 1.0.</note>
+                </bibl>
+                <!--La source premi&#232;re: le projet OSTA-->
+
+                <!--L'oeuvre abstraite = work-->
+                <!--On va cat&#233;goriser la classe frbr et la forme<-->
+                <bibl ana="#frbr.work" type="work">
+                    <title>Los gozos de Nuestra Señora</title>
+                    <author
+                        corresp="https://database.factgrid.de/entity/Q425410"
+                            ><surname>López de
+                            Mendoza</surname><forename>Íñigo</forename></author><date
+                        notAfter-iso="1458-03-25">1458-03-25 ad quem</date>
+                    <idno type="HSMS-WORK">HSMS-0200-0005</idno>
+                    <idno type="beta-texid">4742</idno>
+                    <idno type="factgrid-id"
+                        corresp="https://database.factgrid.de/entity/Q1086680"
+                        >Q1086680</idno>
+                    <idno type="biblissima-id"/>
+                    <idno type="BNF-id"/>
+                    <idno type="BNE-id"/>
+                    <idno type="VIAF-id"/>
+                </bibl>
+                <!--L'oeuvre abstraite-->
+
+                <!--Exemplaire / manuscrit = frbr.item (imprim&#233;) ou frbr.manifestation_singleton (manuscrit). Attribut ajout&#233; automatiquement.-->
+                <msDesc ana="#frbr.manifestation_singleton">
+                    <msIdentifier>
+                        <settlement>Milán</settlement>
+                        <!--Un identifiant de biblioth&#232;que id&#233;alement-->
+                        <repository
+                            corresp="https://database.factgrid.de/entity/Q1061187"
+                            >Biblioteca Trivulziana dell’Archivio
+                            Storico-Civico</repository>
+                        <!--Un identifiant de biblioth&#232;que id&#233;alement-->
+                        <idno type="cote">Cod. Triv. 940</idno>
+                        <idno type="HSMS-ID">HSMS-0200</idno>
+                        <idno type="factgrid-id"
+                            corresp="https://database.factgrid.de/entity/Q1040395"
+                            >Q1040395</idno>
+                        <idno type="biblissima-id"/>
+                        <!--Manuscrit-->
+                        <idno type="beta-manid"
+                            corresp="https://philobiblon.upf.edu/xtf/servlet/org.cdlib.xtf.dynaXML.DynaXML?source=/unified/Display/2696BETA.MsEd.xml&amp;style=MsEd.xsl"
+                            >2696</idno>
+                        <!--Manuscrit-->
+                        <!--Imprim&#233;-->
+                        <!--Imprim&#233;-->
+                        <msName>MS: Milano: Trivulziana, Cod. Triv. 940. 1512 a
+                            quo - 1546-06-13 ad quem. Colectivo… Cancionero de
+                            la Trivulziana (MT1), compilado 1546-06-13 ad
+                            quem.</msName>
+                    </msIdentifier>
+                    <history>
+                        <!--Le corresp permet de lier la date &#224; l'unit&#233; codicologique, dans le cas de recueils organis&#233;s-->
+                        <origin>
+                            <origDate corresp="#HSMS-0200-0005"
+                                notBefore-iso="1512" notAfter-iso="1546-06-13"
+                                >1512 a quo- 1546-06-13 ad quem</origDate>
+                        </origin>
+                        <!--Le corresp permet de lier la date &#224; l'unit&#233; codicologique -->
+                    </history>
+
+                    <msContents>
+                        <msItem xml:id="HSMS-0200-0005">
+                            <locus>89v-92r</locus>
+                            <idno type="beta-cnum">9504</idno>
+                            <idno type="factgrid-cnum"
+                                corresp="https://database.factgrid.de/entity/Q1052603"
+                                >Q1052603</idno>
+                            <incipit>Gozate gozate madre | gozo de la
+                                humanidad</incipit>
+                            <explicit>a los bienaventurados | señora entre las
+                                mujeres</explicit>
+                            <colophon/>
+                        </msItem>
+                    </msContents>
+                </msDesc>
+                <!--Exemplaire-->
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="osp-x-med">castellano</language>
+            </langUsage>
+            <textClass>
+                <catRef target="#vers #lirica #culta #cancionero"/>
+            </textClass>
+        </profileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>Ce document est le fruit d'une conversion automatisée de la
+                    transcription originale, qui utilise des normes d'encodages
+                    propres au projet OSTA (Old Spanish Textual Archive).</p>
+                <p>Transcription de type graphématique: réduction des
+                    allographes au graphème. Tous les graphèmes sont conservés
+                    excepté pour les abréviations qui sont développées sans
+                    conservation de la graphie originale, en indiquant cependant
+                    qu'il s'agit d'une expansion. Les transcriptions ne sont ni
+                    ponctuées, ni accentuées selon les normes actuelles. La
+                    césure à la ligne est indiquée.</p>
+                <p>La description des phénomènes matériels et/ou non textuels
+                    est conservée: sauts de ligne, changements de colonne,
+                    espaces en blanc, miniatures, illustrations, diagrammes,
+                    etc.</p>
+                <p>Le texte est structuré en divisions minimales, en fonction de
+                    son genre. La division en paragraphes, pour la prose, n'est
+                    pas réalisée.</p>
+                <p>Pour plus d'informations, voir l'ODD.</p>
+            </editorialDecl>
+            <refsDecl n="physical">
+                <!--Doit &#234;tre adapt&#233; &#224; chaque structure de document, &#224; reprendre-->
+                <citeStructure unit="page" match="//body//pb" use="@n">
+                    <citeStructure unit="column" match=".//cb" use="@n"
+                        delim=".">
+                        <citeStructure unit="line" match=".//lb" use="@n"
+                            delim="."/>
+                    </citeStructure>
+                </citeStructure>
+                <refsDecl n="default">
+                    <citeStructure match="/TEI/text/body/div" use="@n"
+                        unit="chapter">
+                        <citeStructure match=".//milestone[@unit='section']"
+                            use="@n" unit="section" delim="."/>
+                    </citeStructure>
+                </refsDecl>
+                <!--Doit &#234;tre adapt&#233; &#224; chaque structure de document-->
+            </refsDecl>
+            <classDecl>
+                <taxonomy>
+                    <bibl>
+                        <title>Catégories de segments annotés</title>
+                    </bibl>
+                    <category xml:id="glose">
+                        <catDesc>Segment glosé</catDesc>
+                    </category>
+                    <category xml:id="addendum">
+                        <catDesc>Ajout intellectuel</catDesc>
+                    </category>
+                </taxonomy>
+                <!--Merci &#224; Morgane PICA pour son aide sur l'adaptation &#224; la mod&#233;lisation FRBR-->
+                <taxonomy xml:id="frbr"
+                    sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/">
+                    <bibl>
+                        <title>Catégories FRBRoo</title>
+                    </bibl>
+                    <category xml:id="frbr.work"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F1">
+                        <catDesc>Work</catDesc>
+                    </category>
+                    <category xml:id="frbr.expression"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F2">
+                        <catDesc>Expression</catDesc>
+                    </category>
+                    <category xml:id="frbr.manifestation"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F3">
+                        <catDesc>Manifestation</catDesc>
+                    </category>
+                    <category xml:id="frbr.manifestation_singleton"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F4">
+                        <catDesc>Manifestation Singleton</catDesc>
+                    </category>
+                    <category xml:id="frbr.item"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F5">
+                        <catDesc>Item</catDesc>
+                    </category>
+                </taxonomy>
+                <taxonomy xml:id="categorisation_formelle">
+                    <bibl>
+                        <title>Catégorisation formelle</title>
+                    </bibl>
+                    <category xml:id="prose">
+                        <catDesc xml:lang="es">prosa</catDesc>
+                        <catDesc xml:lang="fr">prose</catDesc>
+                    </category>
+                    <category xml:id="vers">
+                        <catDesc xml:lang="es">verso</catDesc>
+                        <catDesc xml:lang="fr">vers</catDesc>
+                    </category>
+                </taxonomy>
+                <taxonomy xml:id="matiere_textuelle">
+                    <bibl>
+                        <title>Matière textuelle</title>
+                    </bibl>
+                    <category xml:id="didactica">
+                        <catDesc xml:lang="es">Didáctica</catDesc>
+                        <catDesc xml:lang="fr">Didactique</catDesc>
+                    </category>
+                    <category xml:id="juridica">
+                        <catDesc xml:lang="es">Jurídica</catDesc>
+                        <catDesc xml:lang="fr">Juridique</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <head><cb type="single-column"/>
+                <hi rend="rubrique">Gozos fechos a n<ex>uest</ex>re señora la
+                        virge<ex>n</ex>
+                    <lb break="yes"/>Maria por el Marq<ex>ue</ex>s de
+                        sa<ex>n</ex>tillana</hi></head>
+            <lg n="1">
+                <l><lb break="yes"/>Gozate gozate madre </l>
+                <l><lb break="yes"/>gozo de la humandidad </l>
+                <l><lb break="yes"/>tenplo de la trenidad </l>
+                <l><lb break="yes"/>elegida por dios padre </l>
+                <l><lb break="yes"/>virgen que por el oydo </l>
+                <l><lb break="yes"/>Conzebisti </l>
+                <l><lb break="yes"/>grande virgo Mater xp<ex>ist</ex>i </l>
+                <l><lb break="yes"/>y n<ex>uest</ex>ro gozo ynfinido <pb n="90r"/>
+                    <cb type="single-column"/></l>
+            </lg>
+            <lg n="2">
+                <l><lb break="yes"/>Gozate ya reparida </l>
+                <l><lb break="yes"/>segu<ex>n</ex>d el euangelista </l>
+                <l><lb break="yes"/>por la muerte del bautista </l>
+                <l><lb break="yes"/>anu<ex>n</ex>ciando la venida </l>
+                <l><lb break="yes"/>de v<ex>uest</ex>ro gozo señora </l>
+                <l><lb break="yes"/>que trayas </l>
+                <l><lb break="yes"/>vaso de n<ex>uest</ex>ro mesias </l>
+                <l><lb break="yes"/>gozate pura y cora </l>
+            </lg>
+            <lg n="3">
+                <l><lb break="yes"/>Gozate por q<ex>ue</ex> pariste </l>
+                <l><lb break="yes"/>dios y ho<ex>n</ex>bre por misterio </l>
+                <l><lb break="yes"/>nuestro bie<ex>n</ex> y refrigerio </l>
+                <l><lb break="yes"/>ynuiolada p<ex>er</ex>mansiste </l>
+                <l><lb break="yes"/>syn ni<ex>n</ex>gun dolor y pena </l>
+                <l><lb break="yes"/>pues gozosa </l>
+                <l><lb break="yes"/>gozate Candida rosa </l>
+                <l><lb break="yes"/>Señora de gracia plena </l>
+            </lg>
+            <lg n="4">
+                <l><lb break="yes"/>Gozate ca p<ex>re</ex>stamente </l>
+                <l><lb break="yes"/>de Rabbes sin mas tardar </l>
+                <l><lb break="yes"/>Lo vinieron adorar<del hand="#self">e</del>
+                </l>
+                <l><lb break="yes"/>Los tres Reyes de oriente <pb n="90v"/>
+                    <cb type="single-column"/></l>
+                <l><lb break="yes"/>Oro y mirra le ofrecieron </l>
+                <l><lb break="yes"/>con encienso </l>
+                <l><lb break="yes"/>pues gozate n<ex>uest</ex>ro acenso </l>
+                <l><lb break="yes"/>por los gozos q<ex>ue</ex> le dieron </l>
+            </lg>
+            <lg n="5">
+                <l><lb break="yes"/>Gozate n<ex>uest</ex>ro dulzor </l>
+                <l><lb break="yes"/>por aquel gozo ynfinito </l>
+                <l><lb break="yes"/>q<ex>ue</ex> te revelo en egito </l>
+                <l><lb break="yes"/>el celeste enperador </l>
+                <l><lb break="yes"/>y la nueva deseada </l>
+                <l><lb break="yes"/>de la paz </l>
+                <l><lb break="yes"/>gozate batalla y haz </l>
+                <l><lb break="yes"/>de hueste bie<ex>n</ex> ordenada </l>
+            </lg>
+            <lg n="6">
+                <l><lb break="yes"/>Gozate n<ex>uest</ex>ro clamor </l>
+                <l><lb break="yes"/>por aq<ex>ue</ex>l alto diuino </l>
+                <l><lb break="yes"/>q<ex>ue</ex> por tu ruego te vino </l>
+                <l><lb break="yes"/>el tu fijo fazedor </l>
+                <l><lb break="yes"/>fizo qua<ex>n</ex>do el agua vino </l>
+                <l><lb break="yes"/>conuertyo </l>
+                <l><lb break="yes"/>y hartando consola </l>
+                <l><lb break="yes"/>Las bodas de Artecheclino <pb n="91r"/>
+                    <cb type="single-column"/></l>
+            </lg>
+            <lg n="7">
+                <l><lb break="yes"/>Gozate flor de las flores </l>
+                <l><lb break="yes"/>por el gozo q<ex>ue</ex> sentiste </l>
+                <l><lb break="yes"/>qua<ex>n</ex>do al santo niño viste </l>
+                <l><lb break="yes"/>entre los sabios dotores </l>
+                <l><lb break="yes"/>y disputando e<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>nel tenplo </l>
+                <l><lb break="yes"/>Los venzia </l>
+                <l><lb break="yes"/>gozate virgen maria </l>
+                <l><lb break="yes"/>vna sola por enxenplo </l>
+            </lg>
+            <lg n="8">
+                <l><lb break="yes"/>Gozate de dios ma<ex>n</ex>sion </l>
+                <l><lb break="yes"/>del cielo felize puerta </l>
+                <l><lb break="yes"/>por aq<ex>ue</ex>lla santa oferta </l>
+                <l><lb break="yes"/>que al sacerdote Symeon </l>
+                <l><lb break="yes"/>graciosame<ex>n</ex>te venia </l>
+                <l><lb break="yes"/>ofreciste </l>
+                <l><lb break="yes"/>gozate pues meresciste </l>
+                <l><lb break="yes"/>ser dicha Reyna diuina </l>
+            </lg>
+            <lg n="9">
+                <l><lb break="yes"/>Gozate n<ex>uest</ex>ra esperanza </l>
+                <l><lb break="yes"/>fontana de saluacion </l>
+                <l><lb break="yes"/>por la su resurecion </l>
+                <l><lb break="yes"/><del hand="#self">y de tus dolores
+                        Calma</del>
+                    <add hand="#self">reposo suyo y folganza</add>
+                    <pb n="91v"/>
+                    <cb type="single-column"/></l>
+                <l><lb break="yes"/><del hand="#self">resposo suyo y
+                        folganza</del>
+                    <add hand="#self">y de tus dolores Calma</add>
+                </l>
+                <l><lb break="yes"/>perdurable </l>
+                <l><lb break="yes"/>gozo n<ex>uest</ex>ro i<ex>n</ex>estimable </l>
+                <l><lb break="yes"/>grande virgo mater alma </l>
+            </lg>
+            <lg n="10">
+                <l><lb break="yes"/>Gozate <del hand="#self">vna</del>
+                    <add hand="#self">strella</add> serena </l>
+                <l><lb break="yes"/>bendita por elecion </l>
+                <l><lb break="yes"/>por la santa a<del hand="#self"
+                        >s</del>ce<ex>n</ex>sion </l>
+                <l><lb break="yes"/>entre los santos </l>
+                <l><lb break="yes"/>gozate por la nobleza </l>
+                <l><lb break="yes"/>Mater dei </l>
+                <l><lb break="yes"/>principio de n<ex>uest</ex>re ley </l>
+                <l><lb break="yes"/>gozate por tu gra<ex>n</ex>deza </l>
+            </lg>
+            <lg n="11">
+                <l><lb break="yes"/>Gozate virgen de espanto </l>
+                <l><lb break="yes"/>y cometa de l<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>infierno </l>
+                <l><lb break="yes"/>g<subst hand="#self">
+                        <del>a</del>
+                        <add>o</add>
+                    </subst>zate santa en eterno </l>
+                <l><lb break="yes"/>por aquel resplendor santo </l>
+                <l><lb break="yes"/>de q<ex>u</ex><hi rend="superscript"
+                    >i</hi>en fuyste co<ex>n</ex>solada </l>
+                <l><lb break="yes"/>y fauoryda </l>
+                <l><lb break="yes"/>gozate daflytos vyda </l>
+                <l><lb break="yes"/>desde ab Inicio criada <pb n="92r"/>
+                    <cb type="single-column"/></l>
+            </lg>
+            <lg n="12">
+                <l><lb break="yes"/>Gozate santa patrona </l>
+                <l><lb break="yes"/>por gracia de dios asunta </l>
+                <l><lb break="yes"/>no dyu<subst hand="#self">
+                        <del>a</del>
+                        <add>i</add>
+                    </subst>dida mas junta </l>
+                <l><lb break="yes"/>fue la tu diña persona </l>
+                <l><lb break="yes"/>en los cielos asentada </l>
+                <l><lb break="yes"/>a la diestra </l>
+                <l><lb break="yes"/>de dios vos Reyna n<ex>uest</ex>ra </l>
+                <l><lb break="yes"/>y de strellas coronada </l>
+            </lg>
+            <lg n="13">
+                <l><lb break="yes"/>Por los quales gozos doze </l>
+                <l><lb break="yes"/>donzella de sol vestida </l>
+                <l><lb break="yes"/>y por tu gl<ex>o</ex>ria ynfenida </l>
+                <l><lb break="yes"/>me faz señora q<ex>ue</ex> goze </l>
+                <l><lb break="yes"/>de los gozos y plazeres </l>
+                <l><lb break="yes"/>otorgados </l>
+                <l><lb break="yes"/>a los bienave<ex>n</ex>turados </l>
+                <l><lb break="yes"/>Señora entre las mujeres</l>
+            </lg>
+        </body>
+    </text>
+</TEI>

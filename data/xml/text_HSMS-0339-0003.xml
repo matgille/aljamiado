@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="/home/mgl/Bureau/Travail/projets/Biblissima-Text/Transform/schemata/out/ODD_gold.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Carta a don Álvaro de Luna</title>
+                <respStmt>
+                    <resp>Transcrit par</resp>
+                    <name><surname>Larkin</surname><forename>James
+                        B.</forename></name>
+                </respStmt>
+                <respStmt>
+                    <resp>Textes édités et rassemblés par </resp>
+                    <name>
+                        <forename>Francisco</forename>
+                        <surname>Gago Jover</surname>
+                    </name>
+                    <name>
+                        <forename>Javier</forename>
+                        <surname>Pueyo Mena</surname>
+                    </name>
+                </respStmt>
+                <respStmt>
+                    <resp>Modélisation, encodage et structuration XML-TEI
+                        par</resp>
+                    <name xml:id="mgl">
+                        <forename>Matthias</forename>
+                        <surname>Gille Levenson</surname>
+                    </name>
+                </respStmt>
+                <respStmt>
+                    <resp>Responsabilité du projet Biblissima-Textes: </resp>
+                    <name>
+                        <forename>Thibault</forename>
+                        <surname>Clérice</surname>
+                    </name>
+                    <name>
+                        <forename>Olivier</forename>
+                        <surname>Brisville-Fertin</surname>
+                    </name>
+                    <name>
+                        <forename>Ariane</forename>
+                        <surname>Pinche</surname>
+                    </name>
+                    <name>
+                        <forename>Marianne</forename>
+                        <surname>Reboul</surname>
+                    </name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Publié dans le cadre de Biblissima-textes à partir de
+                    matériaux publiés auparavant.</publisher>
+                <availability status="restricted">
+                    <licence
+                        target="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+                        >Creative Commons Attribution Non Commercial Share Alike
+                        4.0 International</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <!--La source premi&#232;re: le projet OSTA-->
+                <bibl xml:id="LUN" type="source-transcription">
+                    <title>TEXT.LUN.txt</title>
+                    <editor>
+                        <forename>Francisco</forename>
+                        <surname>Gago Jover</surname>
+                    </editor>
+                    <editor>
+                        <forename>Javier</forename>
+                        <surname>Pueyo Mena</surname>
+                    </editor>
+                    <publisher>Hispanic Seminary of Medieval Studies</publisher>
+                    <date when="2026-03-07"/>
+                    <availability status="restricted">
+                        <licence
+                            target="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+                            >Creative Commons Attribution Non Commercial Share
+                            Alike 4.0 International</licence>
+                    </availability>
+                    <note>Projet OSTA (Old Spanish Textual Archive). Source des
+                        données: <ptr
+                            target="https://raw.githubusercontent.com/hispanicseminary/OSTA/refs/heads/main/transcriptions/TEXT.LUN.txt"
+                        />, v 1.0. Notes (codex): <quote>los textos están
+                            numerados de forma consecutiva siguiendo el
+                            códice.</quote></note>
+                </bibl>
+                <!--La source premi&#232;re: le projet OSTA-->
+
+                <!--L'oeuvre abstraite = work-->
+                <!--On va cat&#233;goriser la classe frbr et la forme<-->
+                <bibl ana="#frbr.work" type="work">
+                    <title>Carta a don Álvaro de Luna</title>
+                    <author
+                        corresp="https://database.factgrid.de/entity/Q1075771"
+                            ><surname>Juan II</surname><forename/></author><date
+                        cert="medium" notBefore-iso="1453" notAfter-iso="1453"
+                        >1453 ca. - 1453 ca.</date>
+                    <idno type="HSMS-WORK">HSMS-0339-0003</idno>
+                    <idno type="beta-texid">3433</idno>
+                    <idno type="factgrid-id"
+                        corresp="https://database.factgrid.de/entity/Q1085435"
+                        >Q1085435</idno>
+                    <idno type="biblissima-id"/>
+                    <idno type="BNF-id"/>
+                    <idno type="BNE-id"/>
+                    <idno type="VIAF-id"/>
+                </bibl>
+                <!--L'oeuvre abstraite-->
+
+                <!--Exemplaire / manuscrit = frbr.item (imprim&#233;) ou frbr.manifestation_singleton (manuscrit). Attribut ajout&#233; automatiquement.-->
+                <msDesc ana="#frbr.manifestation_singleton">
+                    <msIdentifier facs="https://uvadoc.uva.es/handle/10324/592">
+                        <settlement>Valladolid</settlement>
+                        <!--Un identifiant de biblioth&#232;que id&#233;alement-->
+                        <repository
+                            corresp="https://database.factgrid.de/entity/Q946896"
+                            >Biblioteca Histórica de Santa Cruz</repository>
+                        <!--Un identifiant de biblioth&#232;que id&#233;alement-->
+                        <idno type="cote">U/Bc Ms 434</idno>
+                        <idno type="HSMS-ID">HSMS-0339</idno>
+                        <idno type="factgrid-id"
+                            corresp="https://database.factgrid.de/entity/Q1041378"
+                            >Q1041378</idno>
+                        <idno type="biblissima-id"/>
+                        <!--Manuscrit-->
+                        <idno type="beta-manid"
+                            corresp="https://philobiblon.upf.edu/xtf/servlet/org.cdlib.xtf.dynaXML.DynaXML?source=/unified/Display/3728BETA.MsEd.xml&amp;style=MsEd.xsl"
+                            >3728</idno>
+                        <!--Manuscrit-->
+                        <!--Imprim&#233;-->
+                        <!--Imprim&#233;-->
+                        <msName>MS: Valladolid: Universidad (Santa Cruz), 434.
+                            Jerónimo Zurita, cronista de Aragó, 1501 - 1600.
+                            Desconocido, Abreviación del Halconero, escrito 1489
+                            a quo - 1517 ad quem.</msName>
+                    </msIdentifier>
+                    <history>
+                        <!--Le corresp permet de lier la date &#224; l'unit&#233; codicologique, dans le cas de recueils organis&#233;s-->
+                        <origin>
+                            <origDate corresp="#HSMS-0339-0003"
+                                notBefore-iso="1501" notAfter-iso="1600">1501 -
+                                1600</origDate>
+                        </origin>
+                        <!--Le corresp permet de lier la date &#224; l'unit&#233; codicologique -->
+                    </history>
+
+                    <msContents>
+                        <msItem xml:id="HSMS-0339-0003">
+                            <locus>309r-310v</locus>
+                            <idno type="beta-cnum">6130</idno>
+                            <idno type="factgrid-cnum"
+                                corresp="https://database.factgrid.de/entity/Q1049302"
+                                >Q1049302</idno>
+                            <incipit>Maestre vuestra cedula vi por la qual
+                                dezides que ha quarenta e cinco años</incipit>
+                            <explicit>mandare de vuestros bienes restituyr
+                                porque ellos sean satisfechos</explicit>
+                            <colophon/>
+                        </msItem>
+                    </msContents>
+                </msDesc>
+                <!--Exemplaire-->
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="osp-x-med">castellano</language>
+            </langUsage>
+            <textClass>
+                <catRef target="#prose #narrativa #historica #carta"/>
+            </textClass>
+        </profileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>Ce document est le fruit d'une conversion automatisée de la
+                    transcription originale, qui utilise des normes d'encodages
+                    propres au projet OSTA (Old Spanish Textual Archive).</p>
+                <p>Transcription de type graphématique: réduction des
+                    allographes au graphème. Tous les graphèmes sont conservés
+                    excepté pour les abréviations qui sont développées sans
+                    conservation de la graphie originale, en indiquant cependant
+                    qu'il s'agit d'une expansion. Les transcriptions ne sont ni
+                    ponctuées, ni accentuées selon les normes actuelles. La
+                    césure à la ligne est indiquée.</p>
+                <p>La description des phénomènes matériels et/ou non textuels
+                    est conservée: sauts de ligne, changements de colonne,
+                    espaces en blanc, miniatures, illustrations, diagrammes,
+                    etc.</p>
+                <p>Le texte est structuré en divisions minimales, en fonction de
+                    son genre. La division en paragraphes est réalisée.</p>
+                <p>Pour plus d'informations, voir l'ODD.</p>
+            </editorialDecl>
+            <refsDecl n="physical">
+                <!--Doit &#234;tre adapt&#233; &#224; chaque structure de document, &#224; reprendre-->
+                <citeStructure unit="page" match="//body//pb" use="@n">
+                    <citeStructure unit="column" match=".//cb" use="@n"
+                        delim=".">
+                        <citeStructure unit="line" match=".//lb" use="@n"
+                            delim="."/>
+                    </citeStructure>
+                </citeStructure>
+                <refsDecl n="default">
+                    <citeStructure match="/TEI/text/body/div" use="@n"
+                        unit="chapter">
+                        <citeStructure match=".//milestone[@unit='section']"
+                            use="@n" unit="section" delim="."/>
+                    </citeStructure>
+                </refsDecl>
+                <!--Doit &#234;tre adapt&#233; &#224; chaque structure de document-->
+            </refsDecl>
+            <classDecl>
+                <taxonomy>
+                    <bibl>
+                        <title>Catégories de segments annotés</title>
+                    </bibl>
+                    <category xml:id="glose">
+                        <catDesc>Segment glosé</catDesc>
+                    </category>
+                    <category xml:id="addendum">
+                        <catDesc>Ajout intellectuel</catDesc>
+                    </category>
+                </taxonomy>
+                <!--Merci &#224; Morgane PICA pour son aide sur l'adaptation &#224; la mod&#233;lisation FRBR-->
+                <taxonomy xml:id="frbr"
+                    sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/">
+                    <bibl>
+                        <title>Catégories FRBRoo</title>
+                    </bibl>
+                    <category xml:id="frbr.work"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F1">
+                        <catDesc>Work</catDesc>
+                    </category>
+                    <category xml:id="frbr.expression"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F2">
+                        <catDesc>Expression</catDesc>
+                    </category>
+                    <category xml:id="frbr.manifestation"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F3">
+                        <catDesc>Manifestation</catDesc>
+                    </category>
+                    <category xml:id="frbr.manifestation_singleton"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F4">
+                        <catDesc>Manifestation Singleton</catDesc>
+                    </category>
+                    <category xml:id="frbr.item"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F5">
+                        <catDesc>Item</catDesc>
+                    </category>
+                </taxonomy>
+                <taxonomy xml:id="categorisation_formelle">
+                    <bibl>
+                        <title>Catégorisation formelle</title>
+                    </bibl>
+                    <category xml:id="prose">
+                        <catDesc xml:lang="es">prosa</catDesc>
+                        <catDesc xml:lang="fr">prose</catDesc>
+                    </category>
+                    <category xml:id="vers">
+                        <catDesc xml:lang="es">verso</catDesc>
+                        <catDesc xml:lang="fr">vers</catDesc>
+                    </category>
+                </taxonomy>
+                <taxonomy xml:id="matiere_textuelle">
+                    <bibl>
+                        <title>Matière textuelle</title>
+                    </bibl>
+                    <category xml:id="didactica">
+                        <catDesc xml:lang="es">Didáctica</catDesc>
+                        <catDesc xml:lang="fr">Didactique</catDesc>
+                    </category>
+                    <category xml:id="juridica">
+                        <catDesc xml:lang="es">Jurídica</catDesc>
+                        <catDesc xml:lang="fr">Juridique</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="section">
+                <pb n="309r"/>
+                <cb type="single-column"/>
+                <lb break="yes"/>
+                <head><hi rend="rubrique">El Rey.</hi></head>
+                <p>
+                    <lb break="yes"/><hi rend="initiale" n="1">M</hi>aestre
+                        v<ex>uest</ex>ra cedula vi por la qual dezides que ha
+                        <lb break="yes"/>quarenta e cinco años que me servides e
+                    que alg<ex>un</ex>as <lb break="yes"/>vezes me sacastes de
+                    prisiones. Verdad es que de <lb break="yes"/>assas
+                        t<ex>iem</ex>po aca avedes estado en mi casa, e el
+                    estado e <lb break="yes"/>habito &amp; fazienda con que a
+                    ella venistes muchos <lb break="yes"/>lo saben e vos mas. E
+                    si algunos serui<ex>cio</ex>s me fezistes <lb break="yes"
+                    />devese vos membrar que yo vos puse en grande <lb
+                        break="yes"/>estado e altas dignidades e vos fize muchas
+                    e seña<lb break="no"/>ladas m<ex>erce</ex>d<ex>e</ex>s e
+                    recebistes de mi grandes e altos benef<ex>ici</ex><hi
+                        rend="superscript">o</hi>s <lb break="yes"/>e vos di mas
+                    lugar en mi casa e corte e Regnos <lb break="yes"/>que se
+                    falla en estoria ninguna que emp<ex>erad</ex><hi
+                        rend="superscript">or</hi> nin Rey <lb break="yes"
+                    />diesse a seruidor suyo e aunq<ex>ue</ex> si vos por bien
+                        to<lb break="no"/>vierades vos mas acatar <seg
+                        ana="#glose"><add hand="#self">attentar</add></seg> e
+                    templar de <lb break="yes"/>como lo <lb break="yes"
+                    />fezistes e non entorcer <seg ana="#glose"><add
+                            hand="#self">esta enternecer <lb break="yes"/>y
+                            parece que ha de <lb break="yes"/>dezir
+                            estorcer</add></seg> e exceder toda manera e <lb
+                        break="yes"/>terminos como excedistes en el
+                        t<ex>iem</ex>po de v<ex>uest</ex>ra privança <lb
+                        break="yes"/>en muchas e diuersas cosas que a todos son
+                    notorias <lb break="yes"/>las quales serian largas de
+                    escriuir e a mi non poco <lb break="yes"/>enojosas de
+                    recontar e por la honestidad quiero que <lb break="yes"
+                    />cesse al p<ex>rese</ex>nte en esto la pendola.</p>
+                <p>Dezides otrosi que <lb break="yes"/>pues vos me sacastes de
+                    prisiones e ponervos yo en ellas <pb n="309v"/>
+                    <cb type="single-column"/><lb break="yes"/>sea como a mi
+                    pluguiesse. Devierades vos acordar que si al<lb break="no"
+                    />gunas destas cosas fueron contra mi fechas aquellas por
+                        <lb break="yes"/>la mayor parte fueron por
+                        v<ex>uest</ex>ra causa. E desto non <lb break="yes"/>mas
+                    al p<ex>rese</ex>nte. E si vos mande detener dios e todo <lb
+                        break="yes"/>el mundo sabe que esto es e fue con gran
+                    razon e just<ex>ici</ex><hi rend="superscript">a</hi>
+                    <lb break="yes"/>ca ya non se podia tolerar la manera que
+                    assi cer<lb break="no"/>ca de mi persona real e en grande
+                        abaxami<ex>ent</ex><hi rend="superscript">o</hi> de <lb
+                        break="yes"/>ella como en mi casa e corte, e en mis
+                    regnos e en <lb break="yes"/>daño de la cosa
+                        pub<ex>li</ex><hi rend="superscript">ca</hi> dellos e
+                    non menos contra <lb break="yes"/>mi just<ex>ici</ex><hi
+                        rend="superscript">a</hi> vos e los v<ex>uest</ex>ros
+                    teniades. E desto al p<ex>rese</ex>nte <lb break="yes"/>non
+                    mas: que al que entiende pocas palabras le <lb break="yes"
+                    />abastan. E si vos a mi creyerades e obedesciera<lb
+                        break="no"/>des mi mandami<ex>ent</ex><hi
+                        rend="superscript">o</hi> como estaua en razon por
+                        vent<ex>ur</ex><hi rend="superscript">a</hi>
+                    <lb break="yes"/>fuerades escusado deste trabajo. E porende
+                        no<ex>n</ex> bos <lb break="yes"/>podedes quexar que
+                        no<ex>n</ex> vos escuse poco mas o menos <lb break="yes"
+                    />deste fecho como en fin de v<ex>uest</ex>ra letra dezides:
+                    e <lb break="yes"/>assi tornad vos a vos mesmo. Mas creo que
+                        v<ex>uest</ex>ros peca<lb break="no"/>dos vos embargaron
+                    que non fiziessedes en esta par<lb break="no"/>te lo que
+                    tanto vos era non solam<ex>en</ex><hi rend="superscript"
+                        >te</hi> saludable e <lb break="yes"/>complidero mas
+                    mucho necess<ex>ari</ex><hi rend="superscript">o</hi> de lo
+                    qual yo so sin gra<ex>n</ex>
+                    <pb n="310r"/>
+                    <cb type="single-column"/><lb break="yes"/>cargo ante dios e
+                    el mundo.</p>
+                <p>E deuedes acatar q<ex>ue</ex>
+                    <lb break="yes"/>por el lugar que tengo de dios en la
+                        t<ex>ie</ex>rra e la just<ex>ici</ex><hi
+                        rend="superscript">a</hi> que <lb break="yes"/>por el me
+                    es encomendada yo sin gran cargo de <lb break="yes"/>mi
+                    consciencia e peligro de mi anima non puedo ni<ex>n</ex>
+                    <lb break="yes"/>deuo dexar de administrar e fazer
+                        just<ex>ici</ex><hi rend="superscript">a</hi> quanto <lb
+                        break="yes"/>mas en cosa que tanto es complidera a
+                        serui<ex>ci</ex><hi rend="superscript">o</hi> de <lb
+                        break="yes"/>dios e mio e al bien pub<ex>li</ex><hi
+                        rend="superscript">co</hi> e paz e sossiego de <lb
+                        break="yes"/>mis Reynos e al buen regimi<ex>ent</ex><hi
+                        rend="superscript">o</hi> dellos: pues que <lb
+                        break="yes"/>esto es principalm<ex>en</ex><hi
+                        rend="superscript">te</hi> mi officio e lo que dios me
+                        en<lb break="no"/>comendo. E dezides mas que de cinco o
+                    seys <lb break="yes"/>años aca veyendo mis grandes
+                    necessidades e <lb break="yes"/>las v<ex>uest</ex>ras por
+                        consigui<ex>ent</ex><hi rend="superscript">e</hi> avedes
+                    tomado de mis reg<lb break="no"/>nos fasta dies o dose mil
+                    doblas las quales de<lb break="no"/>zides que dexades en vna
+                    arca suplicando me <lb break="yes"/>con dios que como
+                        v<ex>uest</ex>ro s<ex>eñ</ex><hi rend="superscript"
+                        >or</hi> e Rey quiera vsar de <lb break="yes"
+                        />just<ex>ici</ex><hi rend="superscript">a</hi> e mande
+                    saber de quien las recibistes <lb break="yes"/>e de quales e
+                    de quantos e que por descargo de <lb break="yes"
+                        />v<ex>uest</ex>ra anima gelas mande tornar. Ploguie<lb
+                        break="no"/>ra a dios que mis necessidades no<ex>n</ex>
+                    ovieran mas <lb break="yes"/>seydo que las
+                    v<ex>uest</ex>ras. Ca despues que yo vos puse <lb
+                        break="yes"/>en estado siempre vos sobro e nunca menguo: </p>
+                <p><pb n="310v"/>
+                    <cb type="single-column"/><lb break="yes"/>E si vos
+                    quisierades attentar e poner termino e alg<lb break="no"/>un
+                    freno a la cobdicia que es rayz de todos los <lb break="yes"
+                    />males. E q<ex>u</ex><hi rend="superscript">a</hi>nto a mis
+                    necessidades non se puede <lb break="yes"/>negar que en
+                    estos t<ex>iem</ex>pos assaz dellas me an corri<lb
+                        break="no"/>do por las quales vos sabedes si teniades
+                    con que <lb break="yes"/>mejor me poder socorrer si
+                    quisierades assi de lo q<ex>ue</ex>
+                    <lb break="yes"/>vos avia dado como de lo que vos aviades
+                    tomado <lb break="yes"/>por el gran lugar que cerca de mi
+                    teniades como <lb break="yes"/>todos saben: e fablando
+                        <ex>ver</ex>dad segun se dize mayor <lb break="yes"/>es
+                    el num<ex>er</ex><hi rend="superscript">o</hi> que tomastes
+                    de mis regnos que non el q<ex>ue</ex>
+                    <lb break="yes"/>dezides por v<ex>uest</ex>ra letra. Ca
+                    segun la fama vos tenedes <lb break="yes"/>todo el thesoro
+                    de mis reynos por la mayor parte. <lb break="yes"/>E aun
+                    estas dies o doze mil doblas q<ex>ue</ex> dezides <lb
+                        break="yes"/>no<ex>n</ex> se fallan en v<ex>uest</ex>ras
+                    arcas con gran parte: porende <lb break="yes"/>ved quien
+                    tomo el restante. Ca aquello pues vos <lb break="yes"/>lo
+                    tomastes de mis regnos bien se vos deue enten<lb break="no"
+                    />der que me yo puedo seruir dello como de lo mio <lb
+                        break="yes"/>propio. E aun sabiendo de quien se tomo
+                        porq<ex>ue</ex>
+                    <lb break="yes"/>non quede cargo a v<ex>uest</ex>ra anima yo
+                    gelo mandare <lb break="yes"/>de v<ex>uest</ex>ros bienes
+                    restituyr porque ellos sean satis<lb break="no"/>fechos.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

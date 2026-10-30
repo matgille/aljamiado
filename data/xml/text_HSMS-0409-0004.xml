@@ -1,0 +1,4306 @@
+<?xml-model href="/home/mgl/Bureau/Travail/projets/Biblissima-Text/Transform/schemata/out/ODD_gold.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Farsa o cuasi comedia 2</title>
+                <respStmt>
+                    <resp>Transcrit par</resp>
+                    <name><surname/><forename>Francisco Gago
+                        Jover</forename></name>
+                </respStmt>
+                <respStmt>
+                    <resp>Textes édités et rassemblés par </resp>
+                    <name>
+                        <forename>Francisco</forename>
+                        <surname>Gago Jover</surname>
+                    </name>
+                    <name>
+                        <forename>Javier</forename>
+                        <surname>Pueyo Mena</surname>
+                    </name>
+                </respStmt>
+                <respStmt>
+                    <resp>Modélisation, encodage et structuration XML-TEI
+                        par</resp>
+                    <name>
+                        <forename>Matthias</forename>
+                        <surname>Gille Levenson</surname>
+                    </name>
+                </respStmt>
+                <respStmt>
+                    <resp>Responsabilité du projet Biblissima-Textes: </resp>
+                    <name>
+                        <forename>Thibault</forename>
+                        <surname>Clérice</surname>
+                    </name>
+                    <name>
+                        <forename>Olivier</forename>
+                        <surname>Brisville-Fertin</surname>
+                    </name>
+                    <name>
+                        <forename>Ariane</forename>
+                        <surname>Pinche</surname>
+                    </name>
+                    <name>
+                        <forename>Marianne</forename>
+                        <surname>Reboul</surname>
+                    </name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Publié dans le cadre de Biblissima-textes à partir de
+                    matériaux publiés auparavant.</publisher>
+                <availability status="restricted">
+                    <licence
+                        target="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+                        >Creative Commons Attribution Non Commercial Share Alike
+                        4.0 International</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <!--La source premi&#232;re: le projet OSTA-->
+                <bibl xml:id="FEG" type="source-transcription">
+                    <title>TEXT.FEG.txt</title>
+                    <editor>
+                        <forename>Francisco</forename>
+                        <surname>Gago Jover</surname>
+                    </editor>
+                    <editor>
+                        <forename>Javier</forename>
+                        <surname>Pueyo Mena</surname>
+                    </editor>
+                    <publisher>Hispanic Seminary of Medieval Studies</publisher>
+                    <date when="2026-03-07"/>
+                    <availability status="restricted">
+                        <licence
+                            target="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+                            >Creative Commons Attribution Non Commercial Share
+                            Alike 4.0 International</licence>
+                    </availability>
+                    <note>Projet OSTA (Old Spanish Textual Archive). Source des
+                        données: <ptr
+                            target="https://raw.githubusercontent.com/hispanicseminary/OSTA/refs/heads/main/transcriptions/TEXT.FEG.txt"
+                        />, v 1.0.</note>
+                </bibl>
+                <!--La source premi&#232;re: le projet OSTA-->
+
+                <!--L'oeuvre abstraite = work-->
+                <!--On va cat&#233;goriser la classe frbr et la forme<-->
+                <bibl ana="#frbr.work" type="work">
+                    <title>Farsa o cuasi comedia 2</title>
+                    <author
+                        corresp="https://database.factgrid.de/entity/Q1078188"
+                            ><surname>Fernández</surname><forename>Lucas</forename></author><date
+                        when="1499">1499</date>
+                    <idno type="HSMS-WORK">HSMS-0409-0004</idno>
+                    <idno type="beta-texid">4130</idno>
+                    <idno type="factgrid-id"
+                        corresp="https://database.factgrid.de/entity/Q1086095"
+                        >Q1086095</idno>
+                    <idno type="biblissima-id"/>
+                    <idno type="BNF-id"/>
+                    <idno type="BNE-id"/>
+                    <idno type="VIAF-id"/>
+                </bibl>
+                <!--L'oeuvre abstraite-->
+
+                <!--&#201;dition (uniquement pour les sources imprim&#233;es) = manifestation-->
+                <biblStruct type="edition" ana="#frbr.manifestation">
+                    <monogr>
+                        <!--ISTC pour les incunables. Voir ce qu'on fait pour les imprim&#233;s plus tardifs-->
+                        <idno type="ISTC"/>
+                        <title>FArsas y Eglogas al modo y estilo pastoril y
+                            castellano Fechas por Lucas fernandez Salmantino
+                            Nueuamente impressas</title>
+                        <imprint>
+                            <pubPlace>Salamanca</pubPlace>
+                            <publisher>Lorenzo de Liomdedei</publisher>
+                            <date when="1514-11-10">1514-11-10</date>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+                <!--&#201;dition uniquement pour les sources imprim&#233;es-->
+
+
+                <!--Exemplaire / manuscrit = frbr.item (imprim&#233;) ou frbr.manifestation_singleton (manuscrit). Attribut ajout&#233; automatiquement.-->
+                <msDesc ana="#frbr.item">
+                    <msIdentifier
+                        facs="http://bdh.bne.es/bnesearch/detalle/bdh0000064193">
+                        <settlement>Madrid</settlement>
+                        <!--Un identifiant de biblioth&#232;que id&#233;alement-->
+                        <repository
+                            corresp="https://database.factgrid.de/entity/Q390927"
+                            >Biblioteca Nacional de España</repository>
+                        <!--Un identifiant de biblioth&#232;que id&#233;alement-->
+                        <idno type="cote">R/9018</idno>
+                        <idno type="HSMS-ID">HSMS-0409</idno>
+                        <idno type="factgrid-id"
+                            corresp="https://database.factgrid.de/entity/Q1041823"
+                            >Q1041823</idno>
+                        <idno type="biblissima-id"/>
+                        <!--Manuscrit-->
+                        <idno type="beta-manid"
+                            corresp="https://philobiblon.upf.edu/xtf/servlet/org.cdlib.xtf.dynaXML.DynaXML?source=/unified/Display/4189BETA.MsEd.xml&amp;style=MsEd.xsl"
+                            >4189</idno>
+                        <!--Manuscrit-->
+                        <!--Imprim&#233;-->
+                        <!--Imprim&#233;-->
+                        <msName>Ed.: Madrid: Nacional (BNE), R/9018. Salamanca:
+                            Lorenzo de Liomdedei, 1514-11-10. Lucas Fernández,
+                            Comedia de Bras-Gil, escrito 1496.</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem xml:id="HSMS-0409-0004">
+                            <locus>11r-16v</locus>
+                            <idno type="beta-cnum">7488</idno>
+                            <idno type="factgrid-cnum"
+                                corresp="https://database.factgrid.de/entity/Q1050633"
+                                >Q1050633</idno>
+                            <incipit/>
+                            <explicit/>
+                            <colophon/>
+                        </msItem>
+                    </msContents>
+                </msDesc>
+                <!--Exemplaire-->
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="osp-x-med">castellano</language>
+            </langUsage>
+            <textClass>
+                <catRef target="#vers #dramatica #comedia #amatoria"/>
+            </textClass>
+        </profileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>Ce document est le fruit d'une conversion automatisée de la
+                    transcription originale, qui utilise des normes d'encodages
+                    propres au projet OSTA (Old Spanish Textual Archive).</p>
+                <p>Transcription de type graphématique: réduction des
+                    allographes au graphème. Tous les graphèmes sont conservés
+                    excepté pour les abréviations qui sont développées sans
+                    conservation de la graphie originale, en indiquant cependant
+                    qu'il s'agit d'une expansion. Les transcriptions ne sont ni
+                    ponctuées, ni accentuées selon les normes actuelles. La
+                    césure à la ligne est indiquée.</p>
+                <p>La description des phénomènes matériels et/ou non textuels
+                    est conservée: sauts de ligne, changements de colonne,
+                    espaces en blanc, miniatures, illustrations, diagrammes,
+                    etc.</p>
+                <p>Le texte est structuré en divisions minimales, en fonction de
+                    son genre. La division en paragraphes, pour la prose, n'est
+                    pas réalisée. Les interventions des personnages est marquée,
+                    sans toutefois qu'ils soient identifiés. La division des
+                    vers en strophe n'est pas indiquée.</p>
+                <p>Pour plus d'informations, voir l'ODD.</p>
+            </editorialDecl>
+            <refsDecl n="physical">
+                <!--Doit &#234;tre adapt&#233; &#224; chaque structure de document, &#224; reprendre-->
+                <citeStructure unit="page" match="//body//pb" use="@n">
+                    <citeStructure unit="colonne" match=".//cb" use="@n"
+                        delim=".">
+                        <citeStructure unit="ligne" match=".//lb" use="@n"
+                            delim="."/>
+                    </citeStructure>
+                </citeStructure>
+                <!--Doit &#234;tre adapt&#233; &#224; chaque structure de document-->
+            </refsDecl>
+            <classDecl>
+                <!--Merci &#224; Morgane PICA pour son aide sur l'adaptation &#224; la mod&#233;lisation FRBR-->
+                <taxonomy xml:id="frbr"
+                    sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/">
+                    <bibl>
+                        <title>Catégories FRBRoo</title>
+                    </bibl>
+                    <category xml:id="frbr.work"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F1">
+                        <catDesc>Work</catDesc>
+                    </category>
+                    <category xml:id="frbr.expression"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F2">
+                        <catDesc>Expression</catDesc>
+                    </category>
+                    <category xml:id="frbr.manifestation"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F3">
+                        <catDesc>Manifestation</catDesc>
+                    </category>
+                    <category xml:id="frbr.manifestation_singleton"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F4">
+                        <catDesc>Manifestation Singleton</catDesc>
+                    </category>
+                    <category xml:id="frbr.item"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F5">
+                        <catDesc>Item</catDesc>
+                    </category>
+                </taxonomy>
+                <taxonomy xml:id="categorisation_formelle">
+                    <bibl>
+                        <title>Catégorisation formelle</title>
+                    </bibl>
+                    <category xml:id="prose">
+                        <catDesc xml:lang="es">prosa</catDesc>
+                        <catDesc xml:lang="fr">prose</catDesc>
+                    </category>
+                    <category xml:id="vers">
+                        <catDesc xml:lang="es">verso</catDesc>
+                        <catDesc xml:lang="fr">vers</catDesc>
+                    </category>
+                </taxonomy>
+                <taxonomy xml:id="matiere_textuelle">
+                    <bibl>
+                        <title>Matière textuelle</title>
+                    </bibl>
+                    <category xml:id="didactica">
+                        <catDesc xml:lang="es">Didáctica</catDesc>
+                        <catDesc xml:lang="fr">Didactique</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="piece">
+                <pb n="11r"
+                    facs="/home/mgl/Bureau/Travail/projets/Biblissima-Text/data/Biblissima-Textes/facsimiles/HSMS-0409/pg_0028.pdf"/>
+                <cb type="single-column"/>
+                <argument>
+                    <p><hi rend="rubrique"><hi rend="initiale" n="2">F</hi>Arsa
+                            o quasi comedia hecha por Lucas fernandez: Enla
+                                q<ex>u</ex><hi rend="superscript">a</hi>l se
+                            introduzen q<ex>u</ex><hi rend="superscript"
+                            >a</hi>tro <lb break="yes"/>persona<choice>
+                                <sic> </sic>
+                                <corr/>
+                            </choice>s combiene a saber dos pastores &amp; vn
+                            Soldado &amp; vna pastora. El primer <lb break="yes"
+                            />pastor llamado Prauos entra primero muy fatigado
+                            de amores de vna zagala llama<lb break="no"/>da
+                            Antona. El q<ex>u</ex><hi rend="superscript">a</hi>l
+                            pastor arrojado enel suelo conten<choice>
+                                <sic> </sic>
+                                <corr/>
+                            </choice>plando y hablando en su mal lle<lb
+                                break="no"/>ga el Soldado: El qual estando
+                            platicando conel pastor en su pena: entra el segundo
+                                <lb break="yes"/>pastor &amp; tercera persona el
+                            qual se llama Pascual: Con el qual el Soldado ha
+                            ciertas <lb break="yes"/>barajas y el otro pastor
+                            namorado los pone en paz. &amp; despues el Pascual
+                            sabiendo d<ex>e</ex>
+                            <lb break="yes"/>sus amores llama a la zagala &amp;
+                            el Soldado y el los desposan &amp; se van al lugar
+                                canta<ex>n</ex>do.</hi></p>
+                </argument>
+                <cb type="double-column"/>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pra-uos +</hi>
+                    </speaker>
+                    <lg>
+                        <l> Ay de mi triste cuytado </l>
+                        <l><lb break="yes"/>llazerado y aborrigo </l>
+                        <l><lb break="yes"/>perdido e ya mi sentido </l>
+                        <l><lb break="yes"/>del todo punto agenado </l>
+                        <l><lb break="yes"/>o desdichado zagal </l>
+                        <l><lb break="yes"/>mayoral </l>
+                        <l><lb break="yes"/>de tan terribre rebaño </l>
+                        <l><lb break="yes"/>como me acossa este mal </l>
+                        <l><lb break="yes"/>tan mortal </l>
+                        <l><lb break="yes"/>a mi mesmo haciendo estraño </l>
+                        <l><lb break="yes"/>Ya ño soy quien ser solia </l>
+                        <l><lb break="yes"/>del todo voy debrocado </l>
+                        <l><lb break="yes"/>ya ño ay huzia mal pecado </l>
+                        <l><lb break="yes"/>lleno estoy de medrosia </l>
+                        <l><lb break="yes"/>ya me llate el coraçon </l>
+                        <l><lb break="yes"/>con passion </l>
+                        <l><lb break="yes"/>traygo dos mill torcijones </l>
+                        <l><lb break="yes"/>por medio desta intencio<ex>n</ex>
+                        </l>
+                        <l><lb break="yes"/>y laficion </l>
+                        <l><lb break="yes"/>me desmuele estos pulmones </l>
+                        <l><lb break="yes"/>La greña se me spelunca </l>
+                        <l><lb break="yes"/>toma me pasmo y terito </l>
+                        <l><lb break="yes"/>afraca se me este sprito </l>
+                        <l><lb break="yes"/>el redemio espero ñunca </l>
+                        <l><lb break="yes"/>siempre me esto esperezando </l>
+                        <l><lb break="yes"/>y bocezando </l>
+                        <l><lb break="yes"/>traygo caydos los braços </l>
+                        <l><lb break="yes"/>contino me vo arrojando </l>
+                        <l><lb break="yes"/>y rellanando </l>
+                        <l><lb break="yes"/>quel cuerpo se maz pedaços </l>
+                        <l><lb break="yes"/>A rauia doy tal dollencia </l>
+                        <l><lb break="yes"/>que ño tien nengun sossiego <cb
+                                type="double-column"/></l>
+                        <l><lb break="yes"/>dende aqui della reniego </l>
+                        <l><lb break="yes"/>pues que ño tien resistencia </l>
+                        <l><lb break="yes"/>haz al ho<ex>m</ex>bre andar perdido </l>
+                        <l><lb break="yes"/>y embauido </l>
+                        <l><lb break="yes"/>por cerros y carrascales </l>
+                        <l><lb break="yes"/>medio muerto y desbalido </l>
+                        <l><lb break="yes"/>y aflegido </l>
+                        <l><lb break="yes"/>con terrerias mor<choice>
+                                <corr>t</corr>
+                                <sic>t</sic>
+                            </choice>ales </l>
+                        <l><lb break="yes"/>Ya no ay besibro que saba </l>
+                        <l><lb break="yes"/>decrallar me este rencor </l>
+                        <l><lb break="yes"/>ñi de do mana este ardor </l>
+                        <l><lb break="yes"/>que assi me cuelga la baua </l>
+                        <l><lb break="yes"/>menos la bendizidera </l>
+                        <l><lb break="yes"/>enxalmadera </l>
+                        <l><lb break="yes"/>ques vna sabionda vieja </l>
+                        <l><lb break="yes"/>ni au<ex>n</ex> tampoco la partera </l>
+                        <l><lb break="yes"/>aunque es artera </l>
+                        <l><lb break="yes"/>y sabe cosas de ygreja </l>
+                        <l><lb break="yes"/>O montes valles y cerros </l>
+                        <l><lb break="yes"/>o prados rios y fuentes </l>
+                        <l><lb break="yes"/>perdidas tengo las mientes </l>
+                        <l><lb break="yes"/>ni se de cabras ni perros </l>
+                        <l><lb break="yes"/>ouejas y corderitos </l>
+                        <l><lb break="yes"/>y cabritos </l>
+                        <l><lb break="yes"/>deyuso van debrocados </l>
+                        <l><lb break="yes"/>mis cantilenas y apitos </l>
+                        <l><lb break="yes"/>y mis gritos </l>
+                        <l><lb break="yes"/>del todo son ya oluidados </l>
+                        <l><lb break="yes"/>Ya ño quiero churumbella </l>
+                        <l><lb break="yes"/>los albogues ni el rabe </l>
+                        <l><lb break="yes"/>Alegria aburrire </l>
+                        <l><lb break="yes"/>pues huye de mi yo della </l>
+                        <l>
+                            <lb break="yes"/>
+                            <fw type="signature">C</fw>
+                            <pb n="11v"
+                                facs="/home/mgl/Bureau/Travail/projets/Biblissima-Text/data/Biblissima-Textes/facsimiles/HSMS-0409/pg_0029.pdf"/>
+                            <cb type="double-column"/>
+                        </l>
+                        <l><lb break="yes"/>pues lo que busco ño espero </l>
+                        <l><lb break="yes"/>lo que quiero </l>
+                        <l><lb break="yes"/>jamas lo espero de hallar </l>
+                        <l><lb break="yes"/>es mi dolor tan artero </l>
+                        <l><lb break="yes"/>que me muero </l>
+                        <l><lb break="yes"/>sin saberme quillotrar </l>
+                        <stage>
+                            <lb break="yes"/>
+                            <hi rend="rubrique"><g ref="#calderon1"/> Aqui se
+                                sienta el pastor enel suelo y dize <lb
+                                    break="yes"/>las siguientes coplas</hi>
+                        </stage>
+                        <l><lb break="yes"/>Quiero me aqui rellanar </l>
+                        <l><lb break="yes"/>por perllotrar bien mi pena </l>
+                        <l><lb break="yes"/>de enxelcos perhundos llenas </l>
+                        <l><lb break="yes"/>ñunca osmado sin dudar </l>
+                        <l><lb break="yes"/>questos males y enconijos </l>
+                        <l><lb break="yes"/>son cossijos </l>
+                        <l><lb break="yes"/>que nos traen modorrados </l>
+                        <l><lb break="yes"/>son prazeres con letijos </l>
+                        <l><lb break="yes"/>tropecijos </l>
+                        <l><lb break="yes"/>do caemos piornados </l>
+                        <l><lb break="yes"/>Quien me coñescio soltero </l>
+                        <l><lb break="yes"/>quie<ex>n</ex> me vio estar
+                            libertado </l>
+                        <l><lb break="yes"/>sin pensamiento alterado </l>
+                        <l><lb break="yes"/>con mi seso todo entero </l>
+                        <l><lb break="yes"/>quien me vio con mi ganado. </l>
+                        <l><lb break="yes"/>ay cuytado </l>
+                        <l><lb break="yes"/>quien me vio con alegria </l>
+                        <l><lb break="yes"/>quien me vio mas<choice>
+                                <corr> </corr>
+                                <sic/>
+                            </choice>perchapado </l>
+                        <l><lb break="yes"/>y mas ñotado </l>
+                        <l><lb break="yes"/>que se vio enla serrania </l>
+                        <l><lb break="yes"/>Quien me vio buscar plazeres </l>
+                        <l><lb break="yes"/>quien me vio aborrir pesares </l>
+                        <l><lb break="yes"/>quien me vio entonar cantares </l>
+                        <l><lb break="yes"/>y a baylar cansar mugeres </l>
+                        <l><lb break="yes"/>quien me vio y me vee agora </l>
+                        <l><lb break="yes"/>que no llora </l>
+                        <l><lb break="yes"/>quien me vio enlas romerias </l>
+                        <l><lb break="yes"/>cantar saltar y baylar </l>
+                        <l><lb break="yes"/>sin cansar </l>
+                        <l><lb break="yes"/>regozijar cofradias </l>
+                    </lg>
+                </sp>
+                <stage>
+                    <lb break="yes"/>
+                    <hi rend="rubrique"><g ref="#calderon1"/> Entra el Soldado o
+                        çoyço o Jn<lb break="no"/>fante y razona conel
+                        pastor.</hi>
+                </stage>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Sol<choice>
+                                <corr>dado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> A zagal digo ouejero <cb type="double-column"/></l>
+                        <l><lb break="yes"/>que hazes ay rellanado </l>
+                        <l><lb break="yes"/>tendido en aquese prado </l>
+                        <l><lb break="yes"/>lanudo xeta grosero </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l part="I"> ay no se.</l>
+                    </lg>
+                </sp>
+                <sp>
+                    <speaker>
+                        <hi rend="rubrique">Sol<choice>
+                                <corr>dado</corr>
+                                <sic/>
+                            </choice>.</hi>
+                    </speaker>
+                    <lg>
+                        <l part="F"> pues dime que as </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> que mandas </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Sol<choice>
+                                <corr>dado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> que mires lo que te digo </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> dexayme no me habreys mas </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Sol<choice>
+                                <corr>dado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> porque estas </l>
+                        <l><lb break="yes"/>de pesar tan mal con tigo </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Vos quereys el alcauala </l>
+                        <l><lb break="yes"/>o porque lo pesguntays </l>
+                        <l><lb break="yes"/>cuydo que con mal andays </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Sol<choice>
+                                <corr>dado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> dimelo que dios te vala </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> ño tenia mas que hazer </l>
+                        <l><lb break="yes"/>son poner </l>
+                        <l><lb break="yes"/>mis duelos en vuestra lluengua </l>
+                        <l><lb break="yes"/>hyde puta que prazer </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> a mi ver </l>
+                        <l><lb break="yes"/>hecho te han alguna mengua </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> No es esso miafe senor </l>
+                        <l><lb break="yes"/>son<choice>
+                                <corr> </corr>
+                                <sic/>
+                            </choice>de que soys de ciodade </l>
+                        <l><lb break="yes"/>y andays siempre con ruindade </l>
+                        <l><lb break="yes"/>miafe he de vos temor </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> pues dime ya en dos razones </l>
+                        <l><lb break="yes"/>tus passiones </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> estoy de cordojos lleno </l>
+                        <l><lb break="yes"/>salen me a reborbollones </l>
+                        <l><lb break="yes"/>sospirones </l>
+                        <l><lb break="yes"/>a montones por quien peno </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Por quien penas compañero </l>
+                        <l><lb break="yes"/>declara me ya tu mal </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> ya no vos digo que es tal </l>
+                        <l><lb break="yes"/>que ñunca tien buen tempero </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> ora no puedo acabar </l>
+                        <l><lb break="yes"/>de pensar </l>
+                        <l><lb break="yes"/>la causa de tu dolor </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> yos lo quiero declarar </l>
+                        <l><lb break="yes"/>es amar </l>
+                        <l><lb break="yes"/>grandes quexigos de amor </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> De amores tan mal te sientes </l>
+                        <l><lb break="yes"/>enestas brauas montañas </l>
+                        <l><lb break="yes"/>entre peñas y cabañas <pb n="12r"
+                                facs="/home/mgl/Bureau/Travail/projets/Biblissima-Text/data/Biblissima-Textes/facsimiles/HSMS-0409/pg_0030.pdf"/>
+                            <cb type="double-column"/></l>
+                        <l><lb break="yes"/>no conuersando con gentes </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> es grande mi sobrecejo </l>
+                        <l><lb break="yes"/>y muy sobejo </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> esfuerça ten osadia </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> o pesar de san conejo </l>
+                        <l><lb break="yes"/>es mal tan viejo </l>
+                        <l><lb break="yes"/>ques mas ñuevo cadaldia </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> No te espantes labrador </l>
+                        <l><lb break="yes"/>q<ex>ue</ex> el amor tiene tal maña </l>
+                        <l><lb break="yes"/>que despues que muestra saña </l>
+                        <l><lb break="yes"/>hostiga su disfabor </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> y aun por zagales que vido </l>
+                        <l><lb break="yes"/>y he oydo </l>
+                        <l><lb break="yes"/>que por grimas y cordojos </l>
+                        <l><lb break="yes"/>de amorio se han vencido </l>
+                        <l><lb break="yes"/>so aborrido </l>
+                        <l><lb break="yes"/>verlos muertos por antojos </l>
+                        <l><lb break="yes"/>Delos quales en mamoria </l>
+                        <l><lb break="yes"/>tengo muchos perpassa<choice>
+                                <corr>d</corr>
+                                <sic>d</sic>
+                            </choice>os </l>
+                        <l><lb break="yes"/>que murieron mal llogrados </l>
+                        <l><lb break="yes"/>desta tan gran vanigrolia </l>
+                        <l><lb break="yes"/>phileno el se mato </l>
+                        <l><lb break="yes"/>y murio </l>
+                        <l><lb break="yes"/>por amores de zafira </l>
+                        <l><lb break="yes"/>dezi me que hare yo </l>
+                        <l><lb break="yes"/>muerto so </l>
+                        <l><lb break="yes"/>si este mal ño se me tira </l>
+                        <l><lb break="yes"/>Tambien me ñembra pelayo </l>
+                        <l><lb break="yes"/>aquel quel amor hyrio </l>
+                        <l><lb break="yes"/>que en aquel suelo quedo </l>
+                        <l><lb break="yes"/>tendido con gran desmayo </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> desso no te has de spantar </l>
+                        <l><lb break="yes"/>ni dudar </l>
+                        <l><lb break="yes"/>que su furia muchos mata </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> ños podre hoy acabar </l>
+                        <l><lb break="yes"/>de percontar </l>
+                        <l><lb break="yes"/>zagales que aca maltrata </l>
+                        <l><lb break="yes"/>Que brasgil por beringuella </l>
+                        <l><lb break="yes"/>passo vn monton d<ex>e</ex>
+                            quexumbres </l>
+                        <l><lb break="yes"/>por montes cuestas y c<choice>
+                                <corr>u</corr>
+                                <sic>u</sic>
+                            </choice>mbres </l>
+                        <l><lb break="yes"/>hasta que topo conella <cb
+                                type="double-column"/></l>
+                        <l><lb break="yes"/>y aun mingo si se decrala </l>
+                        <l><lb break="yes"/>por pascuala </l>
+                        <l><lb break="yes"/>mil quillotranças passo </l>
+                        <l><lb break="yes"/>y el que por esta zagala </l>
+                        <l><lb break="yes"/>pompa y gala </l>
+                        <l><lb break="yes"/>dexo y pastor se torno </l>
+                        <l><lb break="yes"/>Y aun christino en religion </l>
+                        <l><lb break="yes"/>se metio y dexo su hato </l>
+                        <l><lb break="yes"/>despues amor de rebato </l>
+                        <l><lb break="yes"/>le saco de su intencion </l>
+                        <l><lb break="yes"/>enbio le mensajera </l>
+                        <l><lb break="yes"/>muy artera </l>
+                        <l><lb break="yes"/>que lo tentasse de amor </l>
+                        <l><lb break="yes"/>ninpha llamada fFebera </l>
+                        <l><lb break="yes"/>muy artera </l>
+                        <l><lb break="yes"/>y boluio le a ser pastor </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Si te comienzo a contar </l>
+                        <l><lb break="yes"/>de caualleros troyanos </l>
+                        <l><lb break="yes"/>y enamorados romanos </l>
+                        <l><lb break="yes"/>sera para no acabar </l>
+                        <l><lb break="yes"/>quanto mas que aun oy padecen </l>
+                        <l><lb break="yes"/>y fenescen </l>
+                        <l><lb break="yes"/>tantos que enellos no ay cuento </l>
+                        <l><lb break="yes"/>y otros la vida aborrescen </l>
+                        <l><lb break="yes"/>y se ofrescen </l>
+                        <l><lb break="yes"/>a morir con gran tormento </l>
+                        <l><lb break="yes"/>Que vnos viven con pesar </l>
+                        <l><lb break="yes"/>y otros mueren con plazer </l>
+                        <l><lb break="yes"/>y otros de grado y querer </l>
+                        <l><lb break="yes"/>se consienten cautiuar </l>
+                        <l><lb break="yes"/>estan mas viuos los muertos </l>
+                        <l><lb break="yes"/>mas despiertos </l>
+                        <l><lb break="yes"/>los que mas estan dormidos </l>
+                        <l><lb break="yes"/>su concierto es desconciertos </l>
+                        <l><lb break="yes"/>y sus puertos </l>
+                        <l><lb break="yes"/>son peligros muy crecidos </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Miafe dessas garatusas </l>
+                        <l><lb break="yes"/>hartas ya por mi pecado </l>
+                        <l><lb break="yes"/>me traen amodorrado </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> dilas ya porque rehusas </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> ño las podre rebossar </l>
+                        <l>
+                            <lb break="yes"/>
+                            <fw type="signature">C ij</fw>
+                            <pb n="12v"
+                                facs="/home/mgl/Bureau/Travail/projets/Biblissima-Text/data/Biblissima-Textes/facsimiles/HSMS-0409/pg_0031.pdf"/>
+                            <cb type="double-column"/>
+                        </l>
+                        <l><lb break="yes"/>ni habrar </l>
+                        <l><lb break="yes"/>que sopilaron nel pancho </l>
+                        <l><lb break="yes"/>sino por el sospirar </l>
+                        <l><lb break="yes"/>sin dudar </l>
+                        <l><lb break="yes"/>ya rebentaria dancho </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Dime donde eres zagal </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> daqui soy de mogarraz </l>
+                        <l><lb break="yes"/>si saber mi ñombre os praz </l>
+                        <l><lb break="yes"/>soy prauos del carrascal </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> dios guarde tu loçania </l>
+                        <l><lb break="yes"/>y mancebia </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> miafe ya yo: yo ya ya </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> quita te dessa porfia </l>
+                        <l><lb break="yes"/>y terreria </l>
+                        <l><lb break="yes"/>cata que te matara </l>
+                        <l><lb break="yes"/>Que enla enfermedad virtud </l>
+                        <l><lb break="yes"/>dizen que es mas alabada </l>
+                        <l><lb break="yes"/>y a tu passion namorada </l>
+                        <l><lb break="yes"/>dios le quiera dar salud </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> ya para mi jouentud </l>
+                        <l><lb break="yes"/>ataud </l>
+                        <l><lb break="yes"/>es lagrima que me duele </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> sossiega ten quietud </l>
+                        <l><lb break="yes"/>solicitud </l>
+                        <l><lb break="yes"/>ten ya porque no te assuele </l>
+                        <l><lb break="yes"/>Que vn contrario cura al otro </l>
+                        <l><lb break="yes"/>al frio cura el calor </l>
+                        <l><lb break="yes"/>y al desamor el amor </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> ño es mi mal desse quillotro </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> la yra cura paciencia </l>
+                        <l><lb break="yes"/>y la sciencia </l>
+                        <l><lb break="yes"/>da salud ala yñorancia </l>
+                        <l><lb break="yes"/>diligencia<choice>
+                                <corr> </corr>
+                                <sic/>
+                            </choice>a negligencia </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> do ay bien querencia </l>
+                        <l><lb break="yes"/>ño aprouecha auer mudancia </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> La luna llena y crescida </l>
+                        <l><lb break="yes"/>no las visto ser menguada </l>
+                        <l><lb break="yes"/>la nieue fria y elada </l>
+                        <l><lb break="yes"/>no las visto derretida </l>
+                        <l><lb break="yes"/>y al heruor con su heruer </l>
+                        <l><lb break="yes"/>descrecer <cb type="double-column"
+                            /></l>
+                        <l><lb break="yes"/>y al toro brauo en melena </l>
+                        <l><lb break="yes"/>y alo verde seco ser </l>
+                        <l><lb break="yes"/>ansi a mi ver </l>
+                        <l><lb break="yes"/>podra ser gloria tu pena </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> La verga nueua del robre </l>
+                        <l><lb break="yes"/>muy facilmente es torcida </l>
+                        <l><lb break="yes"/>mas desques viga crescida </l>
+                        <l><lb break="yes"/>ño ay fuerza que la desdobre </l>
+                        <l><lb break="yes"/>y el principiar del camino </l>
+                        <l><lb break="yes"/>sino ay tino </l>
+                        <l><lb break="yes"/>haze al fin muy gran herror </l>
+                        <l><lb break="yes"/>bien tal soy triste mezquino </l>
+                        <l><lb break="yes"/>pues contino </l>
+                        <l><lb break="yes"/>me acude el viejo dolor </l>
+                        <l>
+                            <lb break="yes"/>
+                            <hi rend="rubrique">Entra Pascual</hi>
+                        </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Ha prauos a zagalejo </l>
+                        <l part="I"><lb break="yes"/>que hazes. </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <speaker>
+                        <hi rend="rubrique">Pra<choice>
+                                <corr>bos</corr>
+                                <sic/>
+                            </choice>.</hi>
+                    </speaker>
+                    <lg>
+                        <l part="F"> a Dios te praha </l>
+                        <l><lb break="yes"/>tengo aca dentro tal llaga </l>
+                        <l><lb break="yes"/>que me rebudia el pel<choice>
+                                <corr>l</corr>
+                                <sic>l</sic>
+                            </choice>ejo </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> que que que que dizes que </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> ño lo se. </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> ñunca te falta ruynda </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> ya le he dicho por mi fe </l>
+                        <l><lb break="yes"/>lo que se </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> senor bueno perdona </l>
+                        <l><lb break="yes"/>Que ños via en mi concencia </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> anda ve que eres matiego </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> a ño pese ora a sampego </l>
+                        <l><lb break="yes"/>con vuestra gran perpotencia </l>
+                        <l><lb break="yes"/>si pensays de me espantar </l>
+                        <l><lb break="yes"/>y vltrajar </l>
+                        <l><lb break="yes"/>quien<choice>
+                                <corr> </corr>
+                                <sic/>
+                            </choice>es este por tu vida </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> veso lo tu a p<choice>
+                                <corr>e</corr>
+                                <sic>e</sic>
+                            </choice>rguntar </l>
+                        <l><lb break="yes"/>y demandar </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> hizo te este la herida </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Es vn valiente hidalgo </l>
+                        <l><lb break="yes"/>que me<choice>
+                                <corr> </corr>
+                                <sic/>
+                            </choice>a dado gra<ex>n</ex> consuelo </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> ño te fies pese al cielo </l>
+                        <l><lb break="yes"/>que ño ay huzia en perrigalgo </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> que hablas auillanado <pb n="13r"
+                                facs="/home/mgl/Bureau/Travail/projets/Biblissima-Text/data/Biblissima-Textes/facsimiles/HSMS-0409/pg_0032.pdf"/>
+                            <cb type="double-column"/></l>
+                        <l><lb break="yes"/>bastardado </l>
+                        <l><lb break="yes"/>bruto tosco melenudo </l>
+                        <l><lb break="yes"/>ya me tienes enojudo </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> tal cuydado </l>
+                        <l><lb break="yes"/>tambien vos a mi sañ<choice>
+                                <corr>u</corr>
+                                <sic><hi rend="inverted-char">u</hi></sic>
+                            </choice>do </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Primo pascual ño te yguales </l>
+                        <l><lb break="yes"/>con quien sabe mas que tu </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> pues dime aqueso que hu </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> aca esta en los mamoriales </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> do te da mas a<choice>
+                                <corr> </corr>
+                                <sic/>
+                            </choice>menudo </l>
+                        <l><lb break="yes"/>esse mal mudo </l>
+                        <l><lb break="yes"/>na cholla o los estentinos </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> ño lo atino ques muy crudo </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> ño lo dudo </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> eas escabroso es que espinos </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Co<ex>n</ex> madresilua y gamones </l>
+                        <l><lb break="yes"/>sanaras y maluarisco </l>
+                        <l><lb break="yes"/>y con rabano gagisco </l>
+                        <l><lb break="yes"/>encienso macho y bayones </l>
+                        <l><lb break="yes"/>flor de sago y doradilla </l>
+                        <l><lb break="yes"/>y mançanilla </l>
+                        <l><lb break="yes"/>es muy chapada hesica </l>
+                        <l><lb break="yes"/>que ño ay vesibro de villa </l>
+                        <l><lb break="yes"/>sin tranquilla </l>
+                        <l><lb break="yes"/>que ansi sane mi borrica </l>
+                        <l><lb break="yes"/>Que andaua bien de tu suerte </l>
+                        <l><lb break="yes"/>medio mustia y mangonera </l>
+                        <l><lb break="yes"/>si aquesto yo no le hiziera </l>
+                        <l><lb break="yes"/>ya debrocaua d<ex>e</ex> muerte </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> que dizes y estas parlando </l>
+                        <l><lb break="yes"/>y hablando </l>
+                        <l><lb break="yes"/>diziendo mil necedades </l>
+                        <l><lb break="yes"/>torpemente comparando </l>
+                        <l><lb break="yes"/>y aprobando </l>
+                        <l><lb break="yes"/>tus mentira<choice>
+                                <corr>s</corr>
+                                <sic>s</sic>
+                            </choice> ser verdades </l>
+                        <l><lb break="yes"/>Aqueste anda penado </l>
+                        <l><lb break="yes"/>no sientes tu su fatiga </l>
+                        <l><lb break="yes"/>es la vida su enemiga </l>
+                        <l><lb break="yes"/>muerte pide su cuidado </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> mas cuydo que anda senor </l>
+                        <l><lb break="yes"/>saluo honor <cb type="double-column"
+                            /></l>
+                        <l><lb break="yes"/>trasijado de correncia </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> anda que aqueste dolor </l>
+                        <l><lb break="yes"/>es de amor </l>
+                        <l><lb break="yes"/>el qual no sufre paciencia </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> nifica amor morteruelo </l>
+                        <l><lb break="yes"/>morcilla o quiças mortaja </l>
+                        <l><lb break="yes"/>murcia muerdago o mordaja </l>
+                        <l><lb break="yes"/>o quiças deue ser muelo </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> que donoso adjetiuar </l>
+                        <l><lb break="yes"/>y acertar </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> vomo que que ño he acertado </l>
+                        <l><lb break="yes"/>llugo amor es el mamar </l>
+                        <l><lb break="yes"/>hasta hartar </l>
+                        <l><lb break="yes"/>las cabras de rellanado </l>
+                        <l>
+                            <lb break="yes"/>
+                            <hi rend="rubrique"><g ref="#calderon1"/>
+                                Diffinicion de amor</hi>
+                        </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Es amor transformacion </l>
+                        <l><lb break="yes"/>del que ama enlo amado </l>
+                        <l><lb break="yes"/>do<choice>
+                                <corr> </corr>
+                                <sic/>
+                            </choice>lo amado es transformado </l>
+                        <l><lb break="yes"/>al amante en aficion </l>
+                        <l><lb break="yes"/>es el peso puesto en fiel </l>
+                        <l><lb break="yes"/>es niuel </l>
+                        <l><lb break="yes"/>que haze ser dos cosas vna </l>
+                        <l><lb break="yes"/>es dulce panal que enel </l>
+                        <l><lb break="yes"/>cera y miel </l>
+                        <l><lb break="yes"/>se contiene sin repuna </l>
+                        <l><lb break="yes"/>Y este amor nel coraçon </l>
+                        <l><lb break="yes"/>nace y crece y reuerdece </l>
+                        <l><lb break="yes"/>y en el deseo florece </l>
+                        <l><lb break="yes"/>y el su fruto es aficion </l>
+                        <l><lb break="yes"/>cogese en toda sazon </l>
+                        <l><lb break="yes"/>con passion </l>
+                        <l><lb break="yes"/>y es sabroso y amargoso </l>
+                        <l><lb break="yes"/>y es de mala digestion </l>
+                        <l><lb break="yes"/>da alteracion </l>
+                        <l><lb break="yes"/>dexa el cuerpo emponçoñoso </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Esse amor es colorado </l>
+                        <l><lb break="yes"/>o verde azul o pardillo </l>
+                        <l><lb break="yes"/>quiças blanco o amarillo </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> es de color muy morado </l>
+                        <l><lb break="yes"/>y es muchacho niño y ciego </l>
+                        <l>
+                            <lb break="yes"/>
+                            <fw type="signature">C iij</fw>
+                            <pb n="13v"
+                                facs="/home/mgl/Bureau/Travail/projets/Biblissima-Text/data/Biblissima-Textes/facsimiles/HSMS-0409/pg_0033.pdf"/>
+                            <cb type="double-column"/>
+                        </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> y es de muy bella facion </l>
+                        <l><lb break="yes"/>tira saetas de huego </l>
+                        <l><lb break="yes"/>sin sossiego </l>
+                        <l><lb break="yes"/>siempre hiere a traycio<ex>n</ex>
+                        </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Dende aqui al diablo do </l>
+                        <l><lb break="yes"/>a rapaz de tan ruyn maña </l>
+                        <l><lb break="yes"/>este cuydo enla mo<ex>n</ex>taña </l>
+                        <l><lb break="yes"/>ogaño a vn pastor hirio </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> y a mi ño me tiene muerto </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> que concierto </l>
+                        <l><lb break="yes"/>do te dio y a do se fue </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> es certero muy despierto </l>
+                        <l><lb break="yes"/>o puto tuerto </l>
+                        <l><lb break="yes"/>su llaga es de amor y fe </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> A<choice>
+                                <corr> </corr>
+                                <sic/>
+                            </choice>buena hu que en sabencia </l>
+                        <l><lb break="yes"/>mas sabe quel ñuestro crego </l>
+                        <l><lb break="yes"/>ño le oteas su sossiego </l>
+                        <l><lb break="yes"/>quien es vuestra reuerencia </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> soy vn hombre de seguida </l>
+                        <l><lb break="yes"/>que la vida </l>
+                        <l><lb break="yes"/>traygo puesta enla ordenança </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> llamo essa vida perdida </l>
+                        <l><lb break="yes"/>y aborrida </l>
+                        <l><lb break="yes"/>pues que enella ño ay holgança </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> quiça soys delos que andays </l>
+                        <l><lb break="yes"/>como grullas en rincrera </l>
+                        <l><lb break="yes"/>dios que traes ruyn manera </l>
+                        <l><lb break="yes"/>si a ello mucho vos days </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> el son de tarabolan </l>
+                        <l><lb break="yes"/>tan tan tan </l>
+                        <l><lb break="yes"/>sabeys senor que decrina </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> que tarde los pagaran </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> o moriran </l>
+                        <l><lb break="yes"/>todos de mala morrina </l>
+                        <l><lb break="yes"/>Essa es vida de holgazanes </l>
+                        <l><lb break="yes"/>aquessa es vida sin ley </l>
+                        <l><lb break="yes"/>ño temeys a dios ni al rey </l>
+                        <l><lb break="yes"/>andays hechos ganapanes </l>
+                        <l><lb break="yes"/>sin verguença y sin concencia </l>
+                        <l><lb break="yes"/>con hemencia </l>
+                        <l><lb break="yes"/>alçays todo lo mal puesto <cb
+                                type="double-column"/></l>
+                        <l><lb break="yes"/>mostrays muy fiera presencia </l>
+                        <l><lb break="yes"/>sin resistencia </l>
+                        <l><lb break="yes"/>tal viuir es desonesto </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Andays de aldea en aldea </l>
+                        <l><lb break="yes"/>comiendo de guadrimaña </l>
+                        <l><lb break="yes"/>quien mas puede mas apaña </l>
+                        <l><lb break="yes"/>viuis de garauatea </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> gallinas pollos ni pollas </l>
+                        <l><lb break="yes"/>ni las ollas </l>
+                        <l><lb break="yes"/>ño escapan de vuestras manos </l>
+                        <l><lb break="yes"/>tocino vino cebollas </l>
+                        <l><lb break="yes"/>bollos bollas </l>
+                        <l><lb break="yes"/>los huebos gueros y sanos </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> No trates dessa manera </l>
+                        <l><lb break="yes"/>alos pobres compañeros </l>
+                        <l><lb break="yes"/>que con falta de dineros </l>
+                        <l><lb break="yes"/>se suel atreuer quienquiera </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> y atreueys os a hurtar </l>
+                        <l><lb break="yes"/>y a robar </l>
+                        <l><lb break="yes"/>y a comer sudor ageno </l>
+                        <l><lb break="yes"/>pues si digo el blasfemar </l>
+                        <l><lb break="yes"/>y reñegar </l>
+                        <l><lb break="yes"/>todo el mundo teneys lleno </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Pues no hazemos tanto mal </l>
+                        <l><lb break="yes"/>que no hagamos algun bien </l>
+                        <l><lb break="yes"/>que ala gran jerusalen </l>
+                        <l><lb break="yes"/>ymos assentar real </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> cuytada dela morcilla </l>
+                        <l><lb break="yes"/>que la lancilla </l>
+                        <l><lb break="yes"/>pudiere deshollinar </l>
+                        <l><lb break="yes"/>nadie de vuestra quadrilla </l>
+                        <l><lb break="yes"/>ha manzilla </l>
+                        <l><lb break="yes"/>de qua<ex>n</ex>to puede aliuiar
+                        </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Soys milanera y langosta </l>
+                        <l><lb break="yes"/>por las tierras donde vays </l>
+                        <l><lb break="yes"/>miafe todo lo dexays </l>
+                        <l><lb break="yes"/>agostado a poca costa </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> ciego lleno de malicia </l>
+                        <l><lb break="yes"/>la justicia </l>
+                        <l><lb break="yes"/>nosotros la sostenemos </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> miafe con vuestra codicia <pb n="14r"
+                                facs="/home/mgl/Bureau/Travail/projets/Biblissima-Text/data/Biblissima-Textes/facsimiles/HSMS-0409/pg_0034.pdf"/>
+                            <cb type="double-column"/></l>
+                        <l><lb break="yes"/>y auaricia </l>
+                        <l><lb break="yes"/>la confundeys segun vemos </l>
+                        <l><lb break="yes"/>Y aun aquesso passaria </l>
+                        <l><lb break="yes"/>mas mucho de ñoramala </l>
+                        <l><lb break="yes"/>ño se os escapa zagala </l>
+                        <l><lb break="yes"/>por toda esta serrania </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> dime quien podra dexar </l>
+                        <l><lb break="yes"/>de amar </l>
+                        <l><lb break="yes"/>no vees que somos humanos </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique"><choice>
+                                <corr>Pascual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> si mas no deueys llegar </l>
+                        <l><lb break="yes"/>ni tocar </l>
+                        <l><lb break="yes"/>las zagalas d<ex>e</ex> serranos
+                        </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Enlos casos del amor </l>
+                        <l><lb break="yes"/>jamas ouo resistencia </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> ay que aquessa pestilencia </l>
+                        <l><lb break="yes"/>me acossa con gran dolor </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> consuela te tu comigo </l>
+                        <l><lb break="yes"/>buen amigo </l>
+                        <l><lb break="yes"/>que tambien yo esto llagado </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> a ño pese a san rodrigo </l>
+                        <l><lb break="yes"/>digo digo </l>
+                        <l><lb break="yes"/>vuestro mal ño me da vado </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Barbudos por espantar </l>
+                        <l><lb break="yes"/>andays y mirays ceñudos </l>
+                        <l><lb break="yes"/>mostrays los gestos sañudos </l>
+                        <l><lb break="yes"/>vuestro oficio es renegar </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> quien bien cree bie<ex>n</ex> reniega </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> dios te prega </l>
+                        <l><lb break="yes"/>ño vos dira aquesso el crego </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> hazeys vida aca matiega </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> y alla ciega </l>
+                        <l><lb break="yes"/>pues co<ex>n</ex> ella os ys al
+                            huego </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Juro a tal si te arrebato </l>
+                        <l><lb break="yes"/>que te buelua del reues </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> soncas ño so de valdres </l>
+                        <l><lb break="yes"/>ni so çamarra o çapato </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">S<choice>
+                                <corr>oldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> pues dar te vna bofetada </l>
+                        <l><lb break="yes"/>tan pegada </l>
+                        <l><lb break="yes"/>que scupas diez años muelas <cb
+                                type="double-column"/></l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> peor sera que pernada </l>
+                        <l><lb break="yes"/>recalcada </l>
+                        <l><lb break="yes"/>con çapato de tres suelas </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">S<choice>
+                                <corr>oldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Hare de tus huessos birlos </l>
+                        <l><lb break="yes"/>desossar te he pieça a pieça </l>
+                        <l><lb break="yes"/>y bola de tu cabeça </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> ay que cosa es chirlos mirlos </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">S<choice>
+                                <corr>oldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> tu no vees que me demudo </l>
+                        <l><lb break="yes"/>di lanudo </l>
+                        <l><lb break="yes"/>dime no sudas de miedo </l>
+                        <l><lb break="yes"/>desgarrarte he todo crudo </l>
+                        <l><lb break="yes"/>don xetudo </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> quitalla ño habres de dedo </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Harete del culo chupas </l>
+                        <l><lb break="yes"/>y de las mangas girones </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> con vn canto y dos mojones </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">S<choice>
+                                <corr>oldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> y como no sufres chufas </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> guarde dios al rey herra<ex>n</ex>do. </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique"><choice>
+                                <corr>Soldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> y estays habrando </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique"><choice>
+                                <corr>Pascual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Ya ño es tiempo de albardanes </l>
+                        <l><lb break="yes"/>que a los que andan hurtando </l>
+                        <l><lb break="yes"/>y aliuia<ex>n</ex>do </l>
+                        <l><lb break="yes"/>cuelga de los passapanes </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">S<choice>
+                                <corr>oldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> No te vean mas mis ojos </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> vos haureys matado ciento </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">S<choice>
+                                <corr>oldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> son tantos que no ay cuento </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> quiças que ño fuessen piojos </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">S<choice>
+                                <corr>oldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> ya me hueles a defunto </l>
+                        <l><lb break="yes"/>bien barrunto </l>
+                        <l><lb break="yes"/>tu morir sin confession </l>
+                        <l><lb break="yes"/>cortar te bofes y el vnto </l>
+                        <l><lb break="yes"/>eneste punto </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> doy al diabro el panfarron </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> O mal grado o despecho </l>
+                        <l><lb break="yes"/>o derreniego y no creo </l>
+                        <l><lb break="yes"/>hago vascas y pateo </l>
+                        <l><lb break="yes"/>o mal villano contrecho </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> passo passo ya senor </l>
+                        <l><lb break="yes"/>por mi amor <pb n="14v"
+                                facs="/home/mgl/Bureau/Travail/projets/Biblissima-Text/data/Biblissima-Textes/facsimiles/HSMS-0409/pg_0035.pdf"/>
+                            <cb type="double-column"/></l>
+                        <l><lb break="yes"/>y tan presto os enojays </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> o hyde puta traydor </l>
+                        <l><lb break="yes"/>burlador </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> pardios presto os ensañays </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Pues arrojar te tan alto </l>
+                        <l><lb break="yes"/>que no acabes de caer </l>
+                        <l><lb break="yes"/>en tres años a mi ver </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> ño salto yo tan gran salto </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> do me haueys de consolar </l>
+                        <l><lb break="yes"/>y curar </l>
+                        <l><lb break="yes"/>armays renzillas y enojos </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> razon tienes sin dudar </l>
+                        <l><lb break="yes"/>de te quexar </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> ora ño haya mas cordojos </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Doy al diabro el galabardo </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> no te sotierre so tierra </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> cuidays que andays e<ex>n</ex>la guerra </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> ay de mi que ansi me ardo </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> diz que me<choice>
+                                <corr> </corr>
+                                <sic/>
+                            </choice>a de hazer saltar </l>
+                        <l><lb break="yes"/>y arrojar </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> mira cata no te espantes </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> ya ño mas son abraçar </l>
+                        <l><lb break="yes"/>y a tornar </l>
+                        <l><lb break="yes"/>a ser amigos como antes </l>
+                        <l><lb break="yes"/>Que lo que este vos dezia </l>
+                        <l><lb break="yes"/>ños lo dezia el por mal </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> ño pardios por sandoual </l>
+                        <l><lb break="yes"/>son por prazer lo hacia </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> si assi es yo soy contento </l>
+                        <l><lb break="yes"/>y consiento </l>
+                        <l><lb break="yes"/>de ser por esso tu amigo </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Pues sus abraçay co<ex>n</ex> tiento </l>
+                        <l><lb break="yes"/>ponte essento </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> de aqui por v<ex>uest</ex>ro me obrigo </l>
+                        <l><lb break="yes"/>Pues esta armadija que es </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> aquesta es vna alabarda </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> que dezis senor albarda </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> alabarda necio es </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l part="F"> y aquessotro.</l>
+                    </lg>
+                </sp>
+                <sp>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice>.</hi>
+                    </speaker>
+                    <lg>
+                        <l part="F"> es vn puñal </l>
+                        <l><lb break="yes"/>y aun que tal </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> mas garrote de recuero <cb type="double-column"
+                            /></l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> es vna arma manual </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> mas destral </l>
+                        <l><lb break="yes"/>paresce de azemilero </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Y esta cuchilla derecha </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> espada es con que matamos </l>
+                        <l><lb break="yes"/>alos conque peleamos </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> juri<choice>
+                                <corr> </corr>
+                                <sic/>
+                            </choice>a mi mucho esta herguecha </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> las ñalgas descobijadas </l>
+                        <l><lb break="yes"/>destapadas </l>
+                        <l><lb break="yes"/>anda<choice>
+                                <sic> </sic>
+                                <corr/>
+                            </choice>ys en guis como mona </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> por traer mas al<choice>
+                                <corr>i</corr>
+                                <sic/>
+                            </choice>uiadas </l>
+                        <l><lb break="yes"/>descansadas </l>
+                        <l><lb break="yes"/>las carnes qualquier persona </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l part="I"> y aquestotro que es.</l>
+                    </lg>
+                </sp>
+                <sp>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice>.</hi>
+                    </speaker>
+                    <lg>
+                        <l part="F">vn peto </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> y a que traes esta cruz </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> a que a nosotros de luz </l>
+                        <l><lb break="yes"/>ya ella el mundo es subjeto </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> que traes enla modorra </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> es vna g<choice>
+                                <corr>o</corr>
+                                <sic>o</sic>
+                            </choice>rra </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> despues sera mollero<ex>n</ex>
+                        </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> ay que ño ay quien me socorra </l>
+                        <l><lb break="yes"/>nin me acorra </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> di que quieres compañon </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Quiero queriendo querella </l>
+                        <l><lb break="yes"/>la muerte si ya vini<choice>
+                                <corr>e</corr>
+                                <sic/>
+                            </choice>sse </l>
+                        <l><lb break="yes"/>ay quien vella ya pudiesse </l>
+                        <l><lb break="yes"/>pues la quiero y no quierella </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> esfuerça y mira moçuelo </l>
+                        <l><lb break="yes"/>a matihuelo </l>
+                        <l><lb break="yes"/>como fue tan esforçado </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> si mas ponme gran recelo </l>
+                        <l><lb break="yes"/>y desconsuelo </l>
+                        <l><lb break="yes"/>macias el mallogrado </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> El vno desespero </l>
+                        <l><lb break="yes"/>y el otro con esperança </l>
+                        <l><lb break="yes"/>y con viua confiança </l>
+                        <l><lb break="yes"/>mira bien lo que alcanço </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> al cabo d<ex>e</ex> mil reñegos </l>
+                        <l><lb break="yes"/>sin sossiegos </l>
+                        <l><lb break="yes"/>vino a vencer el cuytado </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> vencio mill furias y fuegos <pb n="15r"
+                                facs="/home/mgl/Bureau/Travail/projets/Biblissima-Text/data/Biblissima-Textes/facsimiles/HSMS-0409/pg_0036.pdf"/>
+                            <cb type="double-column"/></l>
+                        <l><lb break="yes"/>con sus ruegos </l>
+                        <l><lb break="yes"/>y dio desca<ex>n</ex>so al cuydado </l>
+                        <l><lb break="yes"/>Souerbia cura omildad </l>
+                        <l><lb break="yes"/>justicia cura malicia </l>
+                        <l><lb break="yes"/>la largueza ala auaricia </l>
+                        <l><lb break="yes"/>la razon sensualidad </l>
+                        <l><lb break="yes"/>lealtad a traycion </l>
+                        <l><lb break="yes"/>y ala prision </l>
+                        <l><lb break="yes"/>es salud la libertad </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> y al que tiene enla intencion </l>
+                        <l><lb break="yes"/>confusion </l>
+                        <l><lb break="yes"/>quien le dara sanidad </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Suelen suelen consolar </l>
+                        <l><lb break="yes"/>mal de muchos los dolores </l>
+                        <l><lb break="yes"/>mas atizan se en amores </l>
+                        <l><lb break="yes"/>alos penantes pesar </l>
+                        <l><lb break="yes"/>como es fuego centelloso </l>
+                        <l><lb break="yes"/>y enconoso </l>
+                        <l><lb break="yes"/>mientra mas arde mas quema </l>
+                        <l><lb break="yes"/>con furor muy argulloso </l>
+                        <l><lb break="yes"/>y furioso </l>
+                        <l><lb break="yes"/>mas se encie<ex>n</ex>de su postema </l>
+                        <l><lb break="yes"/>Por esso mientra estouieres </l>
+                        <l><lb break="yes"/>pensando en tu gran tristu<choice>
+                                <corr>r</corr>
+                                <sic>r</sic>
+                            </choice>a </l>
+                        <l><lb break="yes"/>jamas ñunca abras holgura </l>
+                        <l><lb break="yes"/>ni ternas en ti plazeres </l>
+                        <l><lb break="yes"/>sino que deues mi<choice>
+                                <corr>r</corr>
+                                <sic>r</sic>
+                            </choice>ar </l>
+                        <l><lb break="yes"/>y pensar </l>
+                        <l><lb break="yes"/>ques mijor quitarte della </l>
+                        <l><lb break="yes"/>para poder descansar </l>
+                        <l><lb break="yes"/>que no andar </l>
+                        <l><lb break="yes"/>toda tu vida tras ella </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Por san juan que ya he creydo </l>
+                        <l><lb break="yes"/>que diz muy bien el senor </l>
+                        <l><lb break="yes"/>que este diabro de amor </l>
+                        <l><lb break="yes"/>te traye a ti aborrido </l>
+                        <l><lb break="yes"/>que andauas desfigurado </l>
+                        <l><lb break="yes"/>y de<choice>
+                                <corr>s</corr>
+                                <sic>s</sic>
+                            </choice>greñado </l>
+                        <l><lb break="yes"/>que ño decrinauas tu </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> el senor muy bien a habrado <cb type="double-column"
+                            /></l>
+                        <l><lb break="yes"/>mas c<choice>
+                                <corr>u</corr>
+                                <sic><hi rend="inverted-char">u</hi></sic>
+                            </choice>ytado </l>
+                        <l><lb break="yes"/>es mi mal qual ñunca hu </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Estas rizones me ñota </l>
+                        <l><lb break="yes"/>los ahuncos y descrucios </l>
+                        <l><lb break="yes"/>sobrecejos respelluzios </l>
+                        <l><lb break="yes"/>ques amorio remota </l>
+                        <l><lb break="yes"/>ya ño me puedo sufrir </l>
+                        <l><lb break="yes"/>en oyr </l>
+                        <l><lb break="yes"/>al senor alabardero </l>
+                        <l><lb break="yes"/>ayna me querre reyr </l>
+                        <l><lb break="yes"/>sin mentir </l>
+                        <l><lb break="yes"/>como habra tan por entero </l>
+                        <l><lb break="yes"/>Al diabro que xufreria </l>
+                        <l><lb break="yes"/>oyxte ahuera tal debate </l>
+                        <l><lb break="yes"/>por sampego que me llate </l>
+                        <l><lb break="yes"/>ya la cholla de alegria </l>
+                        <l><lb break="yes"/>a prauos di me que tal </l>
+                        <l><lb break="yes"/>estas del mal </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> algo me vo mejorando </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> tu gesto bien da señal </l>
+                        <l><lb break="yes"/>candial </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> algun poco va afroxando </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Muy chapado de entendido </l>
+                        <l><lb break="yes"/>solias tu zagal ser </l>
+                        <l><lb break="yes"/>de gran quillotro y prazer </l>
+                        <l><lb break="yes"/>alegre y galan polido </l>
+                        <l><lb break="yes"/>ño hauia en<choice>
+                                <corr> </corr>
+                                <sic/>
+                            </choice>toda esta tierra </l>
+                        <l><lb break="yes"/>ni enla sierra </l>
+                        <l><lb break="yes"/>zagal mas regozijado </l>
+                        <l><lb break="yes"/>soncas quel amor destierra </l>
+                        <l><lb break="yes"/>y da guerra </l>
+                        <l><lb break="yes"/>al que les aficionado </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> And<choice>
+                                <corr>o</corr>
+                                <sic>o</sic>
+                            </choice> trefe y trasijado </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> cierto tengo te ma<ex>n</ex>zilla </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> di quien es la zagalilla </l>
+                        <l><lb break="yes"/>que te tray assi acossado </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> miafe ño podre dezillo </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> di carillo </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> diños diños quien es ella </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> ño podre con omezillo <pb n="15v"
+                                facs="/home/mgl/Bureau/Travail/projets/Biblissima-Text/data/Biblissima-Textes/facsimiles/HSMS-0409/pg_0037.pdf"/>
+                            <cb type="double-column"/></l>
+                        <l><lb break="yes"/>de sentillo </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> dilo y vamos llugo a vella </l>
+                        <l><lb break="yes"/>Dilo dilo dios te praga </l>
+                        <l><lb break="yes"/>que ño ay mejor çurujano </l>
+                        <l><lb break="yes"/>quel herido ques ya sano </l>
+                        <l><lb break="yes"/>para bien curar la llaga </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> es antona de doñinos </l>
+                        <l><lb break="yes"/>que en<choice>
+                                <corr> </corr>
+                                <sic/>
+                            </choice>gontinos </l>
+                        <l><lb break="yes"/>por mi mal vi enla velada </l>
+                        <l><lb break="yes"/>despues la vi entre los<choice>
+                                <corr> </corr>
+                                <sic/>
+                            </choice>linos </l>
+                        <l><lb break="yes"/>sin padrinos </l>
+                        <l><lb break="yes"/>y huyo me la reuellada </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Ya se donde tu coxeas </l>
+                        <l><lb break="yes"/>tu cuydas que ño lo sabo </l>
+                        <l><lb break="yes"/>yo te p<ex>ro</ex>meto hasta el cabo </l>
+                        <l><lb break="yes"/>ponga yo cuero y correas </l>
+                        <l><lb break="yes"/>quel domingo que vinier </l>
+                        <l><lb break="yes"/>si dios quisier </l>
+                        <l><lb break="yes"/>ha de estar ella enla boda </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> lleuar mas tu alla ala ver </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> y aun hazer </l>
+                        <l><lb break="yes"/>que quede por tuya toda </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> O que gran grolla me has dado </l>
+                        <l><lb break="yes"/>huy ha sus sus ala brega </l>
+                        <l><lb break="yes"/>saltemos que dios te prega </l>
+                        <l><lb break="yes"/>tomemos gran gasajado </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> paso paso por tu vida </l>
+                        <l><lb break="yes"/>ten medida </l>
+                        <l><lb break="yes"/>ño des tales saltejones </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> es me ya grolia venida </l>
+                        <l><lb break="yes"/>tan crecida </l>
+                        <l><lb break="yes"/>que me sal a borbollones </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Y aun yo te digo en verda </l>
+                        <l><lb break="yes"/>que alli cerca haz su majada </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> alli esta la enterriada </l>
+                        <l><lb break="yes"/>pues corre llama laca </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> antonilla antonilla </l>
+                        <l><lb break="yes"/>zagalilla </l>
+                        <l part="I"><lb break="yes"/>ha ha ha </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <speaker>
+                        <hi rend="rubrique">An<choice>
+                                <corr>tona</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l part="F"> ha ha ha ha </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> ven aca presto carilla </l>
+                        <l><lb break="yes"/>ve<ex>n</ex> bobilla <cb
+                                type="double-column"/></l>
+                        <l><lb break="yes"/>dexa el hato y llega aca </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">An<choice>
+                                <corr>tona</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Que me quieres di pascual </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> tu ño ves qual as parado </l>
+                        <l><lb break="yes"/>a prauillos mal tratado </l>
+                        <l><lb break="yes"/>con amorio mortal </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">An<choice>
+                                <corr>tona</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> dime dime di garçon </l>
+                        <l><lb break="yes"/>con tal rizon </l>
+                        <l><lb break="yes"/>me auias tu dengañar </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Zagala ten compassion </l>
+                        <l><lb break="yes"/>de coraçon </l>
+                        <l><lb break="yes"/>del que muere por te amar </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">An<choice>
+                                <corr>tona</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Senor deueys de yñorar </l>
+                        <l><lb break="yes"/>los engaños de pastores </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> ay antona tus amores </l>
+                        <l><lb break="yes"/>mestorcijan sin dudar </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">An<choice>
+                                <corr>tona</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> o falso traydor traydor </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> ay dollor </l>
+                        <l><lb break="yes"/>aun ño me quereys creer </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">An<choice>
+                                <corr>tona</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> anda para engañador </l>
+                        <l><lb break="yes"/>burlador </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> ay que muero por te ver </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Pues zagala eres graciosa </l>
+                        <l><lb break="yes"/>ño quieras ser zahareña </l>
+                        <l><lb break="yes"/>tu amor porque desdeña </l>
+                        <l><lb break="yes"/>quie<ex>n</ex> muere muerte rabiosa
+                        </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> mira a prauos que te quiere </l>
+                        <l><lb break="yes"/>y por ti muere </l>
+                        <l><lb break="yes"/>ño le trates de tal suerte </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">An<choice>
+                                <corr>tona</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> muera si por bien touiere </l>
+                        <l><lb break="yes"/>y si quisiere </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> ay si viniesse la muerte </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> No seas mas porfiada </l>
+                        <l><lb break="yes"/>pastorcica por tu fe </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">An<choice>
+                                <corr>tona</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> pardios yo no lo querre </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> y vera la reuellada </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> como no as mancilla d<ex>e</ex>l </l>
+                        <l><lb break="yes"/>no seas cruel </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">An<choice>
+                                <corr>tona</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> anda senor con engaño </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> ño me embreuajes con yel </l>
+                        <l><lb break="yes"/>pues la miel </l>
+                        <l><lb break="yes"/>de tu gala me dio daño <pb n="16r"
+                                facs="/home/mgl/Bureau/Travail/projets/Biblissima-Text/data/Biblissima-Textes/facsimiles/HSMS-0409/pg_0038.pdf"/>
+                            <cb type="double-column"/></l>
+                        <l><lb break="yes"/>O desdichado de mi </l>
+                        <l><lb break="yes"/>que en mal punto te mire </l>
+                        <l><lb break="yes"/>mi ventura <supplied>ma</supplied>la
+                            fue </l>
+                        <l><lb break="yes"/>pues por ver te me perdi </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">An<choice>
+                                <corr>tona</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> si prauos ño me engañases </l>
+                        <l><lb break="yes"/>ni burlasses </l>
+                        <l><lb break="yes"/>toda via te querria </l>
+                        <l><lb break="yes"/>y si la cruz me jurasses </l>
+                        <l><lb break="yes"/>y me tomasses </l>
+                        <l><lb break="yes"/>por tu esposa me daria </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Yo lo juro en mi concencia </l>
+                        <l><lb break="yes"/>y aun por esta que la beso </l>
+                        <l><lb break="yes"/>destar en tu amor preso </l>
+                        <l><lb break="yes"/>con gran cariño y querencia. </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pa<choice>
+                                <corr>scual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> ora sus sus a juntar </l>
+                        <l><lb break="yes"/>y a tocar </l>
+                        <l><lb break="yes"/>las manos por sacramento </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> que ños praze delas dar </l>
+                        <l><lb break="yes"/>y otorgar </l>
+                        <l><lb break="yes"/>y ñuestro consentimiento </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Yos desposo yos desposo </l>
+                        <l><lb break="yes"/>aunque ño so de corona </l>
+                        <l><lb break="yes"/>atollas ya di me antona </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">An<choice>
+                                <corr>tona</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l part="I">yo si atollo.</l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice>.</hi>
+                    </speaker>
+                    <lg>
+                        <l part="F">y tu goloso </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> yo tambien de ser su esposo </l>
+                        <l><lb break="yes"/>soy dichoso </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> yos calco mi bendicion </l>
+                        <l><lb break="yes"/>con prazer muy gasajoso </l>
+                        <l><lb break="yes"/>y amoroso </l>
+                        <l><lb break="yes"/>ño morras de torçon </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Descansen ya tus cuydados </l>
+                        <l><lb break="yes"/>afloxen ya tus gemidos </l>
+                        <l><lb break="yes"/>tus desseos son cumplidos </l>
+                        <l><lb break="yes"/>y tus males acabados </l>
+                        <l><lb break="yes"/>o pastor afortunado </l>
+                        <l><lb break="yes"/>y bien hadado </l>
+                        <l><lb break="yes"/>y quan dichoso que fuiste </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> harto lo tengo llastrado </l>
+                        <l><lb break="yes"/>y trabajado </l>
+                        <l><lb break="yes"/>en passar vida tan triste </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Plaze me mucho pastor <cb type="double-column"/></l>
+                        <l><lb break="yes"/>de tu plazer y holgura </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> dios vos de buena ventura </l>
+                        <l><lb break="yes"/>y vos guarde del amor </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> como tanto mal te hazia </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> yo diria </l>
+                        <l><lb break="yes"/>que ñunca nadie passo </l>
+                        <l><lb break="yes"/>lo que yo por el sofria </l>
+                        <l><lb break="yes"/>cadaldia </l>
+                        <l><lb break="yes"/>ni se podra creyer ño </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Bien sabes ya como dixe </l>
+                        <l><lb break="yes"/>quel amor y su mudança </l>
+                        <l><lb break="yes"/>nos trae siempre en balança </l>
+                        <l><lb break="yes"/>y por voluntad se rige </l>
+                        <l><lb break="yes"/>ques vna enferma dulçura </l>
+                        <l><lb break="yes"/>cruda y dura </l>
+                        <l><lb break="yes"/>que nos llaga su presencia </l>
+                        <l><lb break="yes"/>vna imperfecta figura </l>
+                        <l><lb break="yes"/>sin ventura </l>
+                        <l><lb break="yes"/>que no tiene resistencia </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Nos llegues vos poco a poco </l>
+                        <l><lb break="yes"/>ala moça de tal son </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> calla nescio bobarron </l>
+                        <l><lb break="yes"/>que en son de bobo eres loco </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> ya fuera transfigurado </l>
+                        <l><lb break="yes"/>y mortajado </l>
+                        <l><lb break="yes"/>si no por vos senor bueno </l>
+                        <l><lb break="yes"/>que me haueys consuelo dado </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> dios loado </l>
+                        <l><lb break="yes"/>pues pesar de ti es ageno </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Mas como me rebolcaua </l>
+                        <l><lb break="yes"/>el traydor del amorio </l>
+                        <l><lb break="yes"/>y quan falso y quan crudio </l>
+                        <l><lb break="yes"/>contra mi se me mostraua </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> pues au<ex>n</ex> pues no te mato </l>
+                        <l><lb break="yes"/>bien te trato. </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> ño cures de rellatar </l>
+                        <l><lb break="yes"/>lo que ya hu y se passo </l>
+                        <l><lb break="yes"/>y se oluido </l>
+                        <l><lb break="yes"/>son tañe hazia el llugar </l>
+                        <l><lb break="yes"/>Y haremos el desposorio </l>
+                        <l><lb break="yes"/>pubrico a todas las gentes <pb
+                                n="16v"
+                                facs="/home/mgl/Bureau/Travail/projets/Biblissima-Text/data/Biblissima-Textes/facsimiles/HSMS-0409/pg_0039.pdf"/>
+                            <cb type="double-column"/></l>
+                        <l><lb break="yes"/>llamaremos los parientes </l>
+                        <l><lb break="yes"/>decendientes de abolorio </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> de todos los rededores </l>
+                        <l><lb break="yes"/>los pastores </l>
+                        <l><lb break="yes"/>vendran a tomar barbeza </l>
+                        <l><lb break="yes"/>y la gayta y bayladores </l>
+                        <l><lb break="yes"/>los mejores </l>
+                        <l><lb break="yes"/>vendran todos sin pereza </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Sol<choice>
+                                <corr>dado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> Ora yo quiero yr a ver </l>
+                        <l><lb break="yes"/>esse vuestro regozijo </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">p<choice>
+                                <corr>a</corr>
+                                <sic>a</sic>
+                            </choice><choice>
+                                <corr>scual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> pues no esteys mas en letijo </l>
+                        <l><lb break="yes"/>ni os querays mas detener </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> pues lleuemos gasajado </l>
+                        <l><lb break="yes"/>perchapado </l>
+                        <l><lb break="yes"/>y entre en medio la moçuela </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> pues cantemos repicado </l>
+                        <l><lb break="yes"/>y entonado </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pra<choice>
+                                <corr>bos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> ora pues sus dios te duela </l>
+                    </lg>
+                </sp>
+            </div>
+            <div type="autre">
+                <head>
+                    <lb break="yes"/>
+                    <hi rend="rubrique">Fin</hi>
+                </head>
+                <sp>
+                    <lg>
+                        <l> </l>
+                        <l><lb break="yes"/>Quien empeçara primero </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> empieçalo tu zagal </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pra<choice>
+                                <corr>bos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> sacudelo tu pascual </l>
+                        <l><lb break="yes"/>que sabes de ca<ex>n</ex>cionero
+                        </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> diga el senor si querra </l>
+                        <l><lb break="yes"/>que sabra </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">So<choice>
+                                <corr>ldado</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> hermanos no se por cierto </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">Pr<choice>
+                                <corr>abos</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> ora que antona dira </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">An<choice>
+                                <corr>tona</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> si hara </l>
+                    </lg>
+                </sp>
+                <sp>
+                    <lb break="yes"/>
+                    <speaker>
+                        <hi rend="rubrique">pas<choice>
+                                <corr>cual</corr>
+                                <sic/>
+                            </choice></hi>
+                    </speaker>
+                    <lg>
+                        <l> yo yo que so mas despierto </l>
+                    </lg>
+                </sp>
+            </div>
+            <div type="autre">
+                <head>
+                    <lb break="yes"/>
+                    <hi rend="rubrique">Villancico</hi>
+                </head>
+                <lg>
+                    <l> </l>
+                    <l><lb break="yes"/><g ref="#calderon1"/> Quien sirue al
+                        amor </l>
+                    <l><lb break="yes"/>con firme esperança </l>
+                    <l><lb break="yes"/>su fe siempre alcança </l>
+                    <l><lb break="yes"/>alegre fauor </l>
+                    <l><lb break="yes"/><g ref="#calderon1"/> Ninguno desuie </l>
+                    <l><lb break="yes"/>do puso su fe </l>
+                    <l><lb break="yes"/>y no desconfie </l>
+                    <l><lb break="yes"/>de ser cuyo fue </l>
+                    <l><lb break="yes"/>y aunque el dolor </l>
+                    <l><lb break="yes"/>le quite esperança </l>
+                    <l><lb break="yes"/>con su confiança </l>
+                    <l><lb break="yes"/>podra auer fabor <cb
+                            type="double-column"/></l>
+                    <l><lb break="yes"/>Y aunque no halle </l>
+                    <l><lb break="yes"/>remedio en su amiga </l>
+                    <l><lb break="yes"/>sufra se y calle </l>
+                    <l><lb break="yes"/>y a nadie lo diga </l>
+                    <l><lb break="yes"/>y aun quel amor </l>
+                    <l><lb break="yes"/>le ponga en valança </l>
+                    <l><lb break="yes"/>tenga esperança </l>
+                    <l><lb break="yes"/>de auer del fabor </l>
+                    <l><lb break="yes"/>Pesares dolores </l>
+                    <l><lb break="yes"/>fatigas y penas </l>
+                    <l><lb break="yes"/>y miedos temores </l>
+                    <l><lb break="yes"/>y graues cadenas </l>
+                    <l><lb break="yes"/>al buen seruidor </l>
+                    <l><lb break="yes"/>no le de mudança </l>
+                    <l><lb break="yes"/>ni pena tardança </l>
+                    <l><lb break="yes"/>ni ansia el dolor </l>
+                    <l><lb break="yes"/>Con largo viuir </l>
+                    <l><lb break="yes"/>se ha lo dudoso </l>
+                    <l><lb break="yes"/>y lo mas penoso </l>
+                    <l><lb break="yes"/>con manso sufrir </l>
+                    <l><lb break="yes"/>y el disfauor </l>
+                    <l><lb break="yes"/>con fe y esperança </l>
+                    <l><lb break="yes"/>haze mudança </l>
+                    <l><lb break="yes"/>bo<choice>
+                            <corr>l</corr>
+                            <sic/>
+                        </choice>uiendo se amor </l>
+                    <l><lb break="yes"/>La fruta mas dura </l>
+                    <l><lb break="yes"/>viene a sazon </l>
+                    <l><lb break="yes"/>ansi el coraçon </l>
+                    <l><lb break="yes"/>mas duro madura </l>
+                    <l><lb break="yes"/>y ansi el amador </l>
+                    <l><lb break="yes"/>no pierda esperança </l>
+                    <l><lb break="yes"/>que siempre se alcança </l>
+                    <l><lb break="yes"/>remedio al dolor </l>
+                    <l><lb break="yes"/>Nadie en poca agua </l>
+                    <l><lb break="yes"/>se deue ahogar </l>
+                    <l><lb break="yes"/>no deue atizar </l>
+                    <l><lb break="yes"/>con priessa la fragua </l>
+                    <l><lb break="yes"/>y el nuevo amador </l>
+                    <l><lb break="yes"/>no pierda esperança </l>
+                    <l><lb break="yes"/>que fe y esperança </l>
+                    <l><lb break="yes"/>es firme primor </l>
+                </lg>
+                <trailer><lb break="yes"/>
+                    <hi rend="rubrique">Fin</hi></trailer>
+            </div>
+        </body>
+    </text>
+</TEI>

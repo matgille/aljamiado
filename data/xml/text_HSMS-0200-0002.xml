@@ -1,0 +1,970 @@
+<?xml-model href="/home/mgl/Bureau/Travail/projets/Biblissima-Text/Transform/schemata/out/ODD_gold.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Doctrinal de privados</title>
+                <respStmt>
+                    <resp>Transcrit par</resp>
+                    <name><surname>Taylor</surname><forename>Aaron
+                        C.</forename></name>
+                </respStmt>
+                <respStmt>
+                    <resp>Textes édités et rassemblés par </resp>
+                    <name>
+                        <forename>Francisco</forename>
+                        <surname>Gago Jover</surname>
+                    </name>
+                    <name>
+                        <forename>Javier</forename>
+                        <surname>Pueyo Mena</surname>
+                    </name>
+                </respStmt>
+                <respStmt>
+                    <resp>Modélisation, encodage et structuration XML-TEI
+                        par</resp>
+                    <name xml:id="mgl">
+                        <forename>Matthias</forename>
+                        <surname>Gille Levenson</surname>
+                    </name>
+                </respStmt>
+                <respStmt>
+                    <resp>Responsabilité du projet Biblissima-Textes: </resp>
+                    <name>
+                        <forename>Thibault</forename>
+                        <surname>Clérice</surname>
+                    </name>
+                    <name>
+                        <forename>Olivier</forename>
+                        <surname>Brisville-Fertin</surname>
+                    </name>
+                    <name>
+                        <forename>Ariane</forename>
+                        <surname>Pinche</surname>
+                    </name>
+                    <name>
+                        <forename>Marianne</forename>
+                        <surname>Reboul</surname>
+                    </name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Publié dans le cadre de Biblissima-textes à partir de
+                    matériaux publiés auparavant.</publisher>
+                <availability status="restricted">
+                    <licence
+                        target="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+                        >Creative Commons Attribution Non Commercial Share Alike
+                        4.0 International</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <!--La source premi&#232;re: le projet OSTA-->
+                <bibl xml:id="TVZ" type="source-transcription">
+                    <title>TEXT.TVZ.txt</title>
+                    <editor>
+                        <forename>Francisco</forename>
+                        <surname>Gago Jover</surname>
+                    </editor>
+                    <editor>
+                        <forename>Javier</forename>
+                        <surname>Pueyo Mena</surname>
+                    </editor>
+                    <publisher>Hispanic Seminary of Medieval Studies</publisher>
+                    <date when="2026-03-07"/>
+                    <availability status="restricted">
+                        <licence
+                            target="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+                            >Creative Commons Attribution Non Commercial Share
+                            Alike 4.0 International</licence>
+                    </availability>
+                    <note>Projet OSTA (Old Spanish Textual Archive). Source des
+                        données: <ptr
+                            target="https://raw.githubusercontent.com/hispanicseminary/OSTA/refs/heads/main/transcriptions/TEXT.TVZ.txt"
+                        />, v 1.0.</note>
+                </bibl>
+                <!--La source premi&#232;re: le projet OSTA-->
+
+                <!--L'oeuvre abstraite = work-->
+                <!--On va cat&#233;goriser la classe frbr et la forme<-->
+                <bibl ana="#frbr.work" type="work">
+                    <title>Doctrinal de privados</title>
+                    <author
+                        corresp="https://database.factgrid.de/entity/Q425410"
+                            ><surname>López de
+                            Mendoza</surname><forename>Íñigo</forename></author><date
+                        notBefore-iso="1453-06-02">1453-06-02 a quo</date>
+                    <idno type="HSMS-WORK">HSMS-0200-0002</idno>
+                    <idno type="beta-texid">1591</idno>
+                    <idno type="factgrid-id"
+                        corresp="https://database.factgrid.de/entity/Q1083850"
+                        >Q1083850</idno>
+                    <idno type="biblissima-id"/>
+                    <idno type="BNF-id"/>
+                    <idno type="BNE-id"/>
+                    <idno type="VIAF-id"/>
+                </bibl>
+                <!--L'oeuvre abstraite-->
+
+                <!--Exemplaire / manuscrit = frbr.item (imprim&#233;) ou frbr.manifestation_singleton (manuscrit). Attribut ajout&#233; automatiquement.-->
+                <msDesc ana="#frbr.manifestation_singleton">
+                    <msIdentifier>
+                        <settlement>Milán</settlement>
+                        <!--Un identifiant de biblioth&#232;que id&#233;alement-->
+                        <repository
+                            corresp="https://database.factgrid.de/entity/Q1061187"
+                            >Biblioteca Trivulziana dell’Archivio
+                            Storico-Civico</repository>
+                        <!--Un identifiant de biblioth&#232;que id&#233;alement-->
+                        <idno type="cote">Cod. Triv. 940</idno>
+                        <idno type="HSMS-ID">HSMS-0200</idno>
+                        <idno type="factgrid-id"
+                            corresp="https://database.factgrid.de/entity/Q1040395"
+                            >Q1040395</idno>
+                        <idno type="biblissima-id"/>
+                        <!--Manuscrit-->
+                        <idno type="beta-manid"
+                            corresp="https://philobiblon.upf.edu/xtf/servlet/org.cdlib.xtf.dynaXML.DynaXML?source=/unified/Display/2696BETA.MsEd.xml&amp;style=MsEd.xsl"
+                            >2696</idno>
+                        <!--Manuscrit-->
+                        <!--Imprim&#233;-->
+                        <!--Imprim&#233;-->
+                        <msName>MS: Milano: Trivulziana, Cod. Triv. 940. 1512 a
+                            quo - 1546-06-13 ad quem. Colectivo… Cancionero de
+                            la Trivulziana (MT1), compilado 1546-06-13 ad
+                            quem.</msName>
+                    </msIdentifier>
+                    <history>
+                        <!--Le corresp permet de lier la date &#224; l'unit&#233; codicologique, dans le cas de recueils organis&#233;s-->
+                        <origin>
+                            <origDate corresp="#HSMS-0200-0002"
+                                notBefore-iso="1512" notAfter-iso="1546-06-13"
+                                >1512 a quo- 1546-06-13 ad quem</origDate>
+                        </origin>
+                        <!--Le corresp permet de lier la date &#224; l'unit&#233; codicologique -->
+                    </history>
+
+                    <msContents>
+                        <msItem xml:id="HSMS-0200-0002">
+                            <locus>77r-87v</locus>
+                            <idno type="beta-cnum">2993</idno>
+                            <idno type="factgrid-cnum"
+                                corresp="https://database.factgrid.de/entity/Q1046627"
+                                >Q1046627</idno>
+                            <incipit>vy tesoros ayuntados | por gran daño de su
+                                dueño</incipit>
+                            <explicit>pues rogad a dios por mi | gentes de todos
+                                estados</explicit>
+                            <colophon/>
+                        </msItem>
+                    </msContents>
+                </msDesc>
+                <!--Exemplaire-->
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="osp-x-med">castellano</language>
+            </langUsage>
+            <textClass>
+                <catRef target="#vers #lirica #culta #satira"/>
+            </textClass>
+        </profileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>Ce document est le fruit d'une conversion automatisée de la
+                    transcription originale, qui utilise des normes d'encodages
+                    propres au projet OSTA (Old Spanish Textual Archive).</p>
+                <p>Transcription de type graphématique: réduction des
+                    allographes au graphème. Tous les graphèmes sont conservés
+                    excepté pour les abréviations qui sont développées sans
+                    conservation de la graphie originale, en indiquant cependant
+                    qu'il s'agit d'une expansion. Les transcriptions ne sont ni
+                    ponctuées, ni accentuées selon les normes actuelles. La
+                    césure à la ligne est indiquée.</p>
+                <p>La description des phénomènes matériels et/ou non textuels
+                    est conservée: sauts de ligne, changements de colonne,
+                    espaces en blanc, miniatures, illustrations, diagrammes,
+                    etc.</p>
+                <p>Le texte est structuré en divisions minimales, en fonction de
+                    son genre. La division en paragraphes, pour la prose, n'est
+                    pas réalisée.</p>
+                <p>Pour plus d'informations, voir l'ODD.</p>
+            </editorialDecl>
+            <refsDecl n="physical">
+                <!--Doit &#234;tre adapt&#233; &#224; chaque structure de document, &#224; reprendre-->
+                <citeStructure unit="page" match="//body//pb" use="@n">
+                    <citeStructure unit="column" match=".//cb" use="@n"
+                        delim=".">
+                        <citeStructure unit="line" match=".//lb" use="@n"
+                            delim="."/>
+                    </citeStructure>
+                </citeStructure>
+                <refsDecl n="default">
+                    <citeStructure match="/TEI/text/body/div" use="@n"
+                        unit="chapter">
+                        <citeStructure match=".//milestone[@unit='section']"
+                            use="@n" unit="section" delim="."/>
+                    </citeStructure>
+                </refsDecl>
+                <!--Doit &#234;tre adapt&#233; &#224; chaque structure de document-->
+            </refsDecl>
+            <classDecl>
+                <taxonomy>
+                    <bibl>
+                        <title>Catégories de segments annotés</title>
+                    </bibl>
+                    <category xml:id="glose">
+                        <catDesc>Segment glosé</catDesc>
+                    </category>
+                    <category xml:id="addendum">
+                        <catDesc>Ajout intellectuel</catDesc>
+                    </category>
+                </taxonomy>
+                <!--Merci &#224; Morgane PICA pour son aide sur l'adaptation &#224; la mod&#233;lisation FRBR-->
+                <taxonomy xml:id="frbr"
+                    sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/">
+                    <bibl>
+                        <title>Catégories FRBRoo</title>
+                    </bibl>
+                    <category xml:id="frbr.work"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F1">
+                        <catDesc>Work</catDesc>
+                    </category>
+                    <category xml:id="frbr.expression"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F2">
+                        <catDesc>Expression</catDesc>
+                    </category>
+                    <category xml:id="frbr.manifestation"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F3">
+                        <catDesc>Manifestation</catDesc>
+                    </category>
+                    <category xml:id="frbr.manifestation_singleton"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F4">
+                        <catDesc>Manifestation Singleton</catDesc>
+                    </category>
+                    <category xml:id="frbr.item"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F5">
+                        <catDesc>Item</catDesc>
+                    </category>
+                </taxonomy>
+                <taxonomy xml:id="categorisation_formelle">
+                    <bibl>
+                        <title>Catégorisation formelle</title>
+                    </bibl>
+                    <category xml:id="prose">
+                        <catDesc xml:lang="es">prosa</catDesc>
+                        <catDesc xml:lang="fr">prose</catDesc>
+                    </category>
+                    <category xml:id="vers">
+                        <catDesc xml:lang="es">verso</catDesc>
+                        <catDesc xml:lang="fr">vers</catDesc>
+                    </category>
+                </taxonomy>
+                <taxonomy xml:id="matiere_textuelle">
+                    <bibl>
+                        <title>Matière textuelle</title>
+                    </bibl>
+                    <category xml:id="didactica">
+                        <catDesc xml:lang="es">Didáctica</catDesc>
+                        <catDesc xml:lang="fr">Didactique</catDesc>
+                    </category>
+                    <category xml:id="juridica">
+                        <catDesc xml:lang="es">Jurídica</catDesc>
+                        <catDesc xml:lang="fr">Juridique</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <cb type="single-column"/>
+            <head><hi rend="rubrique">Dotrinal de los p<ex>r</ex><hi
+                        rend="superscript">i</hi>uados q<ex>ue</ex> fizo el <lb
+                        break="yes"/>Marq<ex>ue</ex>s de Santillana al Maestre
+                        <lb break="yes"/>de Sa<choice>
+                        <sic>ñ</sic>
+                        <corr>n</corr>
+                    </choice>t yago</hi>
+            </head>
+            <lg n="1">
+                <l><lb break="yes"/>Vy tesoros ayu<ex>n</ex>tados</l>
+                <l><lb break="yes"/>por gran daño de su dueño</l>
+                <l><lb break="yes"/>Asy como sombra / o / sueño</l>
+                <l><lb break="yes"/>Son n<ex>uest</ex>ros dias
+                    co<ex>n</ex>tados</l>
+                <l><lb break="yes"/>E sy fuero<ex>n</ex> prorrogados</l>
+                <l><lb break="yes"/>por sus lagrimas a alguno</l>
+                <l><lb break="yes"/>Destos ya no vemos vno</l>
+                <l><lb break="yes"/>por n<ex>uest</ex>ros muchos pecados </l>
+            </lg>
+            <lg n="2">
+                <l><lb break="yes"/>Abrid abrid v<ex>uest</ex>ros ojos</l>
+                <l><lb break="yes"/>gentios mirad a mi</l>
+                <l><lb break="yes"/>q<ex>u</ex><hi rend="superscript">a</hi>ntos
+                    vistos q<ex>u</ex><hi rend="superscript">a</hi>nto vi</l>
+                <l><lb break="yes"/>fa<ex>n</ex>tasmas fuero<ex>n</ex> y
+                    antojos</l>
+                <l><lb break="yes"/>co<ex>n</ex> trabajos y enojos</l>
+                <l><lb break="yes"/>vsurpe tal Señoria</l>
+                <l><lb break="yes"/>Ca si fue no era mia</l>
+                <l><lb break="yes"/>mas en deuidos despojos <pb n="77v"/>
+                    <cb type="single-column"/></l>
+            </lg>
+            <lg n="3">
+                <l><lb break="yes"/>Casa a casa guay de mi</l>
+                <l><lb break="yes"/>Canpo a Canpo allegue</l>
+                <l><lb break="yes"/>Cosa ajena no dexe</l>
+                <l><lb break="yes"/>ta<ex>n</ex>to quixo quanto vi</l>
+                <l><lb break="yes"/>Agora pues ved aqui</l>
+                <l><lb break="yes"/>q<ex>u</ex><hi rend="superscript">a</hi>nto
+                    valen mis riq<ex>ue</ex>zas</l>
+                <l><lb break="yes"/>terras villas fortalezas</l>
+                <l><lb break="yes"/>tras q<ex>u</ex><hi rend="superscript"
+                        >i</hi>en mi tie<ex>n</ex>po perdi</l>
+            </lg>
+            <lg n="4">
+                <l><lb break="yes"/>O fanbre de oro Rauiosa</l>
+                <l><lb break="yes"/>quales son los corazones</l>
+                <l><lb break="yes"/>humanos q<ex>ue</ex> tu
+                    p<ex>er</ex>donas</l>
+                <l><lb break="yes"/>en esta vida engañosa</l>
+                <l><lb break="yes"/>haun q<ex>ue</ex> harta
+                    q<ex>ue</ex>rellosa</l>
+                <l><lb break="yes"/>eres en todos estados</l>
+                <l><lb break="yes"/>no menos alos pasados</l>
+                <l><lb break="yes"/>q<ex>ue</ex> alos p<ex>re</ex>sentes
+                    dañosa</l>
+            </lg>
+            <lg n="5">
+                <l><lb break="yes"/>Que se fizo la moneda</l>
+                <l><lb break="yes"/>q<ex>ue</ex> guarde para mis daños</l>
+                <l><lb break="yes"/>tantos tie<ex>n</ex>pos ta<ex>n</ex>tos
+                    años</l>
+                <l><lb break="yes"/>plata joyas oro y seda <pb n="78r"/>
+                    <cb type="single-column"/></l>
+                <l><lb break="yes"/>ca de todo no me queda</l>
+                <l><lb break="yes"/>nin lo deste cadahalso</l>
+                <l><lb break="yes"/>mu<ex>n</ex>do malo mu<ex>n</ex>do falso</l>
+                <l><lb break="yes"/>no es q<ex>u</ex><hi rend="superscript"
+                        >i</hi>en co<ex>n</ex><choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>tigo pueda</l>
+            </lg>
+            <lg n="6">
+                <l><lb break="yes"/>A dios no referi grado</l>
+                <l><lb break="yes"/>de las gracias y m<ex>er</ex>cedes</l>
+                <l><lb break="yes"/>q<ex>ue</ex> me fizo<ex>n</ex>
+                    qua<ex>n</ex>tas vezes</l>
+                <l><lb break="yes"/>e me sostouo en estado</l>
+                <l><lb break="yes"/>mayos y mas prosperado</l>
+                <l><lb break="yes"/>q<ex>ue</ex> nunca jamas se vyo</l>
+                <l><lb break="yes"/>en españa ni se oyo</l>
+                <l><lb break="yes"/>de ninguno otro priuado</l>
+            </lg>
+            <lg n="7">
+                <l><lb break="yes"/>Pues uos otros q<ex>ue</ex> corredes</l>
+                <l><lb break="yes"/>al gusto deste dulzor</l>
+                <l><lb break="yes"/>temed a n<ex>uest</ex>ro Señor</l>
+                <l><lb break="yes"/>Sy por ve<ex>n</ex>tura
+                    q<ex>ue</ex>redes</l>
+                <l><lb break="yes"/>fabricar v<ex>uest</ex>ras paredes</l>
+                <l><lb break="yes"/>sobre bue<ex>n</ex> cyme<ex>n</ex>to
+                    aosadas</l>
+                <l><lb break="yes"/>e seran v<ex>uest</ex>ras moradas</l>
+                <l><lb break="yes"/>Fortes firmes e no dubdas <pb n="78v"/>
+                    <cb type="single-column"/></l>
+            </lg>
+            <lg n="8">
+                <l><lb break="yes"/>Guardad os de mal biuir</l>
+                <l><lb break="yes"/>pues canes a noche mala</l>
+                <l><lb break="yes"/>no ladra<ex>n</ex> ni es q<ex>u</ex><hi
+                        rend="superscript">i</hi>en vala</l>
+                <l><lb break="yes"/>sy dios nos q<ex>u</ex><hi
+                        rend="superscript">i</hi>er punir</l>
+                <l><lb break="yes"/>que nos p<ex>re</ex>sta refuyr</l>
+                <l><lb break="yes"/>ni co<ex>n</ex>trastatar a su yra</l>
+                <l><lb break="yes"/>sy se al ve<ex>n</ex>ga no se tira</l>
+                <l><lb break="yes"/>ne se puede resist<choice>
+                        <corr>i</corr>
+                        <sic>i</sic>
+                    </choice>r</l>
+            </lg>
+            <lg n="9">
+                <l><lb break="yes"/>Ca si fue desenartado</l>
+                <l><lb break="yes"/>O sy q<ex>u</ex><hi rend="superscript"
+                        >i</hi>siera proueer</l>
+                <l><lb break="yes"/>bie<ex>n</ex> se me deue
+                    ente<ex>n</ex>der</l>
+                <l><lb break="yes"/>mas co<ex>n</ex>trastar lo fadado</l>
+                <l><lb break="yes"/>o forzar lo q<ex>ue</ex> el forzado</l>
+                <l><lb break="yes"/>a dios solo pertenesce</l>
+                <l><lb break="yes"/>pues q<ex>u</ex><hi rend="superscript"
+                        >i</hi>en no ge lo merece</l>
+                <l><lb break="yes"/>pase por lo destinado</l>
+            </lg>
+            <lg n="10">
+                <l><lb break="yes"/>Deste fauore cortesano</l>
+                <l><lb break="yes"/>Lo que nu<ex>n</ex>ca supe se</l>
+                <l><lb break="yes"/>no aduerti nin pense</l>
+                <l><lb break="yes"/>qua<ex>n</ex>to es caduco e vano <pb n="79r"/>
+                    <cb type="single-column"/></l>
+                <l><lb break="yes"/>asy q<ex>ue</ex> de llano en llano</l>
+                <l><lb break="yes"/>syn ni<ex>n</ex>gu<ex>n</ex> temor y
+                    miedo</l>
+                <l><lb break="yes"/>qua<ex>n</ex>do me diero<ex>n</ex> el
+                    dedo</l>
+                <l><lb break="yes"/>abraze toda la mano</l>
+            </lg>
+            <lg n="11">
+                <l><lb break="yes"/>Mal jugar faze q<ex>u</ex><hi
+                        rend="superscript">i</hi>en juega</l>
+                <l><lb break="yes"/>co<ex>n</ex> q<ex>u</ex><hi
+                        rend="superscript">i</hi>en syente maguer calle</l>
+                <l><lb break="yes"/>de lo que fize en la Calle</l>
+                <l><lb break="yes"/>q<ex>u</ex><hi rend="superscript">i</hi>en
+                    es el q<ex>ue</ex> se des<choice>
+                        <corr>n</corr>
+                        <sic>n</sic>
+                    </choice>iega</l>
+                <l><lb break="yes"/>ambicio<ex>n</ex> es cosa ciega</l>
+                <l><lb break="yes"/>E rescibo disoluto</l>
+                <l><lb break="yes"/>poder e ma<ex>n</ex>do absoluto</l>
+                <l><lb break="yes"/>fy de madre es q<ex>u</ex><hi
+                        rend="superscript">i</hi>en lo <subst hand="#self">
+                        <del>m</del>
+                        <add>ni</add>
+                    </subst>ega</l>
+            </lg>
+            <lg n="12">
+                <l><lb break="yes"/>Lo q<ex>ue</ex> no fize fazed</l>
+                <l><lb break="yes"/>fauoridos y priuados</l>
+                <l><lb break="yes"/>sy q<ex>ue</ex>redes ser amados</l>
+                <l><lb break="yes"/>no vos tema<ex>n</ex> mas temed</l>
+                <l><lb break="yes"/>temprad la cupida sed</l>
+                <l><lb break="yes"/>co<ex>n</ex>sejad retos juizios</l>
+                <l><lb break="yes"/>esquiuad los prejuizios</l>
+                <l><lb break="yes"/>La razon obedescede <pb n="79v"/>
+                    <cb type="single-column"/></l>
+            </lg>
+            <lg n="13">
+                <l><lb break="yes"/>Ca si fuerdes me<subst hand="#self">
+                        <del><gap reason="illegible" extent="subword"/></del>
+                        <add>d</add>
+                    </subst>idos</l>
+                <l><lb break="yes"/>en rezebir no dubdedes</l>
+                <l><lb break="yes"/>co<ex>n</ex> mucha razo<ex>n</ex>
+                    faredes</l>
+                <l><lb break="yes"/>a los otros comedidos</l>
+                <l><lb break="yes"/>Los discretos y sentidos</l>
+                <l><lb break="yes"/>pedira<ex>n</ex> qua<ex>n</ex>do
+                    seruieren</l>
+                <l><lb break="yes"/>los otros qua<ex>n</ex>do pidieren</l>
+                <l><lb break="yes"/>de poco le soys tenidos</l>
+            </lg>
+            <lg n="14">
+                <l><lb break="yes"/>Por ta<ex>n</ex>to lo que dire</l>
+                <l><lb break="yes"/>gentes de la n<ex>uest</ex>ra esperia</l>
+                <l><lb break="yes"/>a cerca desta materia</l>
+                <l><lb break="yes"/>aved lo como per fe</l>
+                <l><lb break="yes"/>de todos me enseñoree</l>
+                <l><lb break="yes"/>tanto que de mi señor</l>
+                <l><lb break="yes"/>cuydaua ser el mayor</l>
+                <l><lb break="yes"/>fasta que no lo cuyde</l>
+            </lg>
+            <lg n="15">
+                <l><lb break="yes"/>Aristo<subst hand="#self">
+                        <del>l</del>
+                        <add>ti</add>
+                    </subst>les no creo</l>
+                <l><lb break="yes"/>syntio de filosofia</l>
+                <l><lb break="yes"/>Euclides de geometria</l>
+                <l><lb break="yes"/>ni del Cielo Tholomeo <pb n="80r"/>
+                    <cb type="single-column"/></l>
+                <l><lb break="yes"/>qua<ex>n</ex>do deste deuaneo</l>
+                <l><lb break="yes"/>sy q<ex>ue</ex>redes bie<ex>n</ex> mirar</l>
+                <l><lb break="yes"/>yo uos puedo demostrar</l>
+                <l><lb break="yes"/>nin de la musica dorpheo</l>
+            </lg>
+            <lg n="16">
+                <l><lb break="yes"/>Priuado touo habrahan</l>
+                <l><lb break="yes"/>ahu<ex>n</ex> q<ex>ue</ex> santo
+                    patriarca</l>
+                <l><lb break="yes"/>priuado touo el monarca</l>
+                <l><lb break="yes"/>Ansuer que fue human</l>
+                <l><lb break="yes"/>y Joab su Capitan</l>
+                <l><lb break="yes"/>priuado fue de dauid</l>
+                <l><lb break="yes"/>mas de todos me dezid</l>
+                <l><lb break="yes"/>quales se me ygualaran</l>
+            </lg>
+            <lg n="17">
+                <l><lb break="yes"/>Ca todos los que priuaron</l>
+                <l><lb break="yes"/>con señores y con Reyes</l>
+                <l><lb break="yes"/>no vsaro<ex>n</ex> de tal leyes</l>
+                <l><lb break="yes"/>Como yo ni dominaron</l>
+                <l><lb break="yes"/>por tal guisa ni ma<ex>n</ex>daron</l>
+                <l><lb break="yes"/>en ciuil ni Criminal</l>
+                <l><lb break="yes"/>a todos en general</l>
+                <l><lb break="yes"/>nin pie<ex>n</ex>so que lo pensaron <pb
+                        n="80v"/>
+                    <cb type="single-column"/></l>
+            </lg>
+            <lg n="18">
+                <l><lb break="yes"/>Todo homo sera co<ex>n</ex>tento</l>
+                <l><lb break="yes"/>de ser como fue su padre</l>
+                <l><lb break="yes"/>La mujer qua<ex>n</ex>to su madre</l>
+                <l><lb break="yes"/>y sera deuido cuento</l>
+                <l><lb break="yes"/>bie<ex>n</ex> p<ex>re</ex>mito si
+                        bue<ex>n</ex> uiento</l>
+                <l><lb break="yes"/>Le vinciere de priua<ex>n</ex>za</l>
+                <l><lb break="yes"/>la reziba co<ex>n</ex> tenplanza</l>
+                <l><lb break="yes"/>co<ex>n</ex> seso peso y buen tien<subst
+                        hand="#self">
+                        <del>po</del>
+                        <add>to</add>
+                    </subst>
+                </l>
+            </lg>
+            <lg n="19">
+                <l><lb break="yes"/>E quiera la mediania</l>
+                <l><lb break="yes"/>de las gentes et segure</l>
+                <l><lb break="yes"/>no le plega nin procure</l>
+                <l><lb break="yes"/>estrema soberania</l>
+                <l><lb break="yes"/>et sea por albaquia</l>
+                <l><lb break="yes"/>o sea co<ex>n</ex>ta<ex>n</ex>do luego</l>
+                <l><lb break="yes"/>de raro pasa tal juego</l>
+                <l><lb break="yes"/>syn pagar la demasia</l>
+            </lg>
+            <lg n="20">
+                <l><lb break="yes"/>Que dire si no temedes</l>
+                <l><lb break="yes"/>tan gran clyse de la luna</l>
+                <l><lb break="yes"/>qual ha fecho la fortuna</l>
+                <l><lb break="yes"/>por tal q<ex>ue</ex> vos auisedes <pb
+                        n="81r"/>
+                    <cb type="single-column"/></l>
+                <l><lb break="yes"/>fize gracias y mercedes</l>
+                <l><lb break="yes"/>no comi solo mi gallo</l>
+                <l><lb break="yes"/>mas ensillo mi Cauallo</l>
+                <l><lb break="yes"/>solo como todos uedes</l>
+            </lg>
+            <lg n="21">
+                <l><lb break="yes"/>Pero bien lo meresco</l>
+                <l><lb break="yes"/>pues a q<ex>u</ex><hi rend="superscript"
+                        >i</hi>en tanto me fizo</l>
+                <l><lb break="yes"/>fize por que me desfizo</l>
+                <l><lb break="yes"/>tanto me ensoberuesci</l>
+                <l><lb break="yes"/>pues sy yo no referi</l>
+                <l><lb break="yes"/>las gracias q<ex>ue</ex> me fizieron</l>
+                <l><lb break="yes"/>Sy no me las referieron</l>
+                <l><lb break="yes"/>no pida lo que no di</l>
+            </lg>
+            <lg n="22">
+                <l><lb break="yes"/>Esta es egual mesura</l>
+                <l><lb break="yes"/>pero no digna q<ex>ue</ex>rella</l>
+                <l><lb break="yes"/>la razon asy lo sella</l>
+                <l><lb break="yes"/>E lo afirma la escritura</l>
+                <l><lb break="yes"/>Cuyde toda criatura</l>
+                <l><lb break="yes"/>que segu<ex>n</ex>d en esta vida</l>
+                <l><lb break="yes"/>midier sera medida</l>
+                <l><lb break="yes"/>de lo qual este segura <pb n="81v"/>
+                    <cb type="single-column"/></l>
+            </lg>
+            <lg n="23">
+                <l><lb break="yes"/>Fuy de la Caridad</l>
+                <l><lb break="yes"/>e caridad me fuyo</l>
+                <l><lb break="yes"/>q<ex>u</ex><hi rend="superscript">i</hi>en
+                    es el q<ex>ue</ex> me <del hand="#self">fugyo</del>
+                    siguyo</l>
+                <l><lb break="yes"/>en tanta necesidad</l>
+                <l><lb break="yes"/>buscades amor amad</l>
+                <l><lb break="yes"/>sy buenas obras fazerlas</l>
+                <l><lb break="yes"/>y sy malas atenderlas</l>
+                <l><lb break="yes"/>de cierta certinitad</l>
+            </lg>
+            <lg n="24">
+                <l><lb break="yes"/>Ca si lo <del hand="#self">q</del> ajeno
+                    tome</l>
+                <l><lb break="yes"/>Lo mio me tomaran</l>
+                <l><lb break="yes"/>sy mate no tardaran</l>
+                <l><lb break="yes"/>de matarme bie<ex>n</ex> lo se</l>
+                <l><lb break="yes"/>sy prendi por tal pase</l>
+                <l><lb break="yes"/>sy mal traxe soy mal traydo</l>
+                <l><lb break="yes"/>Andoue busca<ex>n</ex>do Ruydo</l>
+                <l><lb break="yes"/>basta asaz q<ex>ue</ex> lo falle</l>
+            </lg>
+            <lg n="25">
+                <l><lb break="yes"/>Pues el sotil palanciano</l>
+                <l><lb break="yes"/>q<ex>u</ex><hi rend="superscript">a</hi>nto
+                    mas y mas p<ex>r</ex><hi rend="superscript">i</hi>uare</l>
+                <l><lb break="yes"/>por tal yerro no desuare</l>
+                <l><lb break="yes"/>E ser le ha co<ex>n</ex>sejo sano <pb
+                        n="82r"/>
+                    <cb type="single-column"/></l>
+                <l><lb break="yes"/>el Incenso luciferano</l>
+                <l><lb break="yes"/>ya vedes como se paga</l>
+                <l><lb break="yes"/>e q<ex>u</ex><hi rend="superscript">i</hi>en
+                    tal bocado traga</l>
+                <l><lb break="yes"/>gormalo tarde / o / te<ex>n</ex>prano </l>
+            </lg>
+            <lg n="26">
+                <l><lb break="yes"/>Avn a v<ex>uest</ex>ros Conpañeros</l>
+                <l><lb break="yes"/>amigos / o / seruidores</l>
+                <l><lb break="yes"/>q<ex>u</ex><hi rend="superscript">a</hi>nto
+                    mas alos señores</l>
+                <l><lb break="yes"/>e domestigos no fieros</l>
+                <l><lb break="yes"/>Ca n<ex>uest</ex>ros vejos primeros</l>
+                <l><lb break="yes"/>dizen sufrense las cargas</l>
+                <l><lb break="yes"/>pero no las sobrecargas</l>
+                <l><lb break="yes"/>nin los pesos postrimeros</l>
+            </lg>
+            <lg n="27">
+                <l><lb break="yes"/>Son diuersas calidades</l>
+                <l><lb break="yes"/>no menos en los mayores</l>
+                <l><lb break="yes"/>q<ex>ue</ex> en medianos y menores</l>
+                <l><lb break="yes"/>e gra<ex>n</ex>des
+                    co<ex>n</ex>trariedades</l>
+                <l><lb break="yes"/>pue<choice>
+                        <corr>s</corr>
+                        <sic/>
+                    </choice> p<ex>r</ex><hi rend="superscript">i</hi>uados
+                        q<ex>ue</ex> priuades</l>
+                <l><lb break="yes"/>estudiad en los seguir</l>
+                <l><lb break="yes"/>ca no se pueden seruir</l>
+                <l><lb break="yes"/>mejor q<ex>ue</ex> a sus volu<ex>n</ex>tades
+                        <pb n="82v"/>
+                    <cb type="single-column"/></l>
+            </lg>
+            <lg n="28">
+                <l><lb break="yes"/>Vnos q<ex>u</ex><hi rend="superscript"
+                        >i</hi>eren reposar</l>
+                <l><lb break="yes"/>a otros plaze<ex>n</ex> las guerras</l>
+                <l><lb break="yes"/>a otros canpos y syerras</l>
+                <l><lb break="yes"/>o los uenados cazar</l>
+                <l><lb break="yes"/>justas otros y tornear</l>
+                <l><lb break="yes"/>juegos deleytes danzas</l>
+                <l><lb break="yes"/>otros tie<ex>n</ex>pos de
+                    bona<ex>n</ex>zas</l>
+                <l><lb break="yes"/>sacrificios contenplar</l>
+            </lg>
+            <lg n="29">
+                <l><lb break="yes"/>Dexad vuestra volu<ex>n</ex>tad</l>
+                <l><lb break="yes"/>e fazed sus volu<ex>n</ex>tades</l>
+                <l><lb break="yes"/>a<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>q<ex>ue</ex>llos que deseades</l>
+                <l><lb break="yes"/>fauores e prosperidad</l>
+                <l><lb break="yes"/>honores et vtilitad</l>
+                <l><lb break="yes"/>mas guardad en no q<ex>ue</ex>rades</l>
+                <l><lb break="yes"/>estremas estremidades</l>
+                <l><lb break="yes"/>mas sienpre uos moderad</l>
+            </lg>
+            <lg n="30">
+                <l><lb break="yes"/>Ca si uos plaze razon /</l>
+                <l><lb break="yes"/>de lo tal seredes
+                    co<ex>n</ex>te<ex>n</ex>tos</l>
+                <l><lb break="yes"/>q<ex>u</ex><hi rend="superscript">a</hi>ntos
+                    miesen los aume<ex>n</ex>tos</l>
+                <l><lb break="yes"/>tomados por opinion <pb n="83r"/>
+                    <cb type="single-column"/></l>
+                <l><lb break="yes"/><del hand="#self">tomados por opinion</del>
+                </l>
+                <l><lb break="yes"/>apartad uos de tal fanga</l>
+                <l><lb break="yes"/>ca si entra por la manga</l>
+                <l><lb break="yes"/>sale por el cabeszon</l>
+            </lg>
+            <lg n="31">
+                <l><lb break="yes"/>Los v<ex>uest</ex>ros
+                    rasonamie<ex>n</ex>tos</l>
+                <l><lb break="yes"/>sean en loor de todos</l>
+                <l><lb break="yes"/>ca son muy vtiles modos</l>
+                <l><lb break="yes"/>fazer los Reyes co<ex>n</ex>tentos</l>
+                <l><lb break="yes"/>de los suyos y cimie<ex>n</ex>tos</l>
+                <l><lb break="yes"/>De amor y de lealdad</l>
+                <l><lb break="yes"/>casa de seguridad</l>
+                <l><lb break="yes"/>firm<subst hand="#self">
+                        <del>a</del>
+                        <add>e</add>
+                    </subst> contra todos vie<ex>n</ex>tos</l>
+            </lg>
+            <lg n="32">
+                <l><lb break="yes"/>Quanto la benifice<ex>n</ex>cia</l>
+                <l><lb break="yes"/>sea digna de Loar</l>
+                <l><lb break="yes"/>en los que tiene<ex>n</ex> lugar</l>
+                <l><lb break="yes"/>prueualo co<ex>n</ex> esperiencia</l>
+                <l><lb break="yes"/>otra mayor sapie<ex>n</ex>cia</l>
+                <l><lb break="yes"/>que solo por bie<ex>n</ex> fablar</l>
+                <l><lb break="yes"/>obtener hauer cobrar</l>
+                <l><lb break="yes"/>general beniuolencia <pb n="83v"/>
+                    <cb type="single-column"/></l>
+            </lg>
+            <lg n="33">
+                <l><lb break="yes"/>Mal fazer ni maldezir</l>
+                <l><lb break="yes"/>no son honestos seruimie<ex>n</ex>tos</l>
+                <l><lb break="yes"/>nin los q<ex>ue</ex> llaman oficios</l>
+                <l><lb break="yes"/>los q<ex>ue</ex> muestra<ex>n</ex>
+                        bie<ex>n</ex> biuir</l>
+                <l><lb break="yes"/>osaldos redarguir</l>
+                <l><lb break="yes"/>En los co<ex>n</ex>sejos estrechos</l>
+                <l><lb break="yes"/>todos fechos no bie<ex>n</ex> fechos</l>
+                <l><lb break="yes"/>y dignos de correger</l>
+            </lg>
+            <lg n="34">
+                <l><lb break="yes"/>E guardad q<ex>ue</ex> los seruicios</l>
+                <l><lb break="yes"/>sean bie<ex>n</ex> remunerados</l>
+                <l><lb break="yes"/>punidos y castigados</l>
+                <l><lb break="yes"/>los yerros y maleficios</l>
+                <l><lb break="yes"/>tales obras son oficios</l>
+                <l><lb break="yes"/>de los que seruen señores</l>
+                <l><lb break="yes"/>a mayiores y menores</l>
+                <l><lb break="yes"/>abreuiad los beneficios</l>
+            </lg>
+            <lg n="35">
+                <l><lb break="yes"/>Consejad q<ex>ue</ex> los juzgados</l>
+                <l><lb break="yes"/>sean por gra<ex>n</ex>d elecion</l>
+                <l><lb break="yes"/>no se den por galardon</l>
+                <l><lb break="yes"/>de seruicios ni rogados <pb n="84r"/>
+                    <cb type="single-column"/></l>
+                <l><lb break="yes"/>sean legos o letrados</l>
+                <l><lb break="yes"/>mas tales q<ex>ue</ex> la sazon</l>
+                <l><lb break="yes"/>no tuerza<ex>n</ex> por aficion</l>
+                <l><lb break="yes"/>por miedo nin sobornados</l>
+            </lg>
+            <lg n="36">
+                <l><lb break="yes"/>Aqui se me descubren</l>
+                <l><lb break="yes"/>erradas y todas me<ex>n</ex>guas</l>
+                <l><lb break="yes"/>tened lo q<ex>ue</ex> v<ex>uest</ex>ras
+                    lenguas</l>
+                <l><lb break="yes"/>juraro<ex>n</ex> e prometieron</l>
+                <l><lb break="yes"/>ya vedes si me misieron</l>
+                <l><lb break="yes"/>pasa tie<ex>n</ex>pos y dilaciones</l>
+                <l><lb break="yes"/>todas gentes y naciones</l>
+                <l><lb break="yes"/>obra q<ex>u</ex><hi rend="superscript"
+                        >i</hi>eren y q<ex>u</ex><hi rend="superscript"
+                    >i</hi>sicion</l>
+            </lg>
+            <lg n="37">
+                <l><lb break="yes"/>Mas vale prestamente</l>
+                <l><lb break="yes"/>q<ex>ue</ex> si co<ex>n</ex> mucha
+                    pereza</l>
+                <l><lb break="yes"/>pierde gusto de
+                    fra<ex>n</ex>q<ex>ue</ex>za</l>
+                <l><lb break="yes"/>e muestra q<ex>ue</ex> se repiente</l>
+                <l><lb break="yes"/>de liberal no co<ex>n</ex>siente</l>
+                <l><lb break="yes"/>ni la tarda<ex>n</ex>za le plaze</l>
+                <l><lb break="yes"/>Ca desfaze lo que faze</l>
+                <l><lb break="yes"/>E desplaze a toda gente <pb n="84v"/>
+                    <cb type="single-column"/></l>
+            </lg>
+            <lg n="38">
+                <l><lb break="yes"/>Contrautar et co<ex>n</ex>ferir</l>
+                <l><lb break="yes"/>co<ex>n</ex> v<ex>uest</ex>ros y
+                        co<ex>n</ex> ajenos</l>
+                <l><lb break="yes"/>Elegid sye<ex>n</ex>pre por buenos</l>
+                <l><lb break="yes"/>donde se deue seguir</l>
+                <l><lb break="yes"/>bie<ex>n</ex> fazer y bie<ex>n</ex>
+                    dezir</l>
+                <l><lb break="yes"/>o sean mozos / o / vejos</l>
+                <l><lb break="yes"/>tales son los sus co<ex>n</ex>sejos</l>
+                <l><lb break="yes"/>qual es dellos su biuir</l>
+            </lg>
+            <lg n="39">
+                <l><lb break="yes"/>Fasta a<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>qui os e c<ex>on</ex>tanda</l>
+                <l><lb break="yes"/>las causas q<ex>ue</ex> me ha<ex>n</ex>
+                    traydo</l>
+                <l><lb break="yes"/>en ta<ex>n</ex> estrecho partido</l>
+                <l><lb break="yes"/>qual vedes q<ex>ue</ex> soy llegado</l>
+                <l><lb break="yes"/>agora me es forzado</l>
+                <l><lb break="yes"/>de fazer nueva carrera</l>
+                <l><lb break="yes"/>mudaremos la mañera</l>
+                <l><lb break="yes"/>del p<ex>r</ex><hi rend="superscript"
+                    >o</hi>ceso procesado</l>
+            </lg>
+            <lg n="40">
+                <l><lb break="yes"/>Casi de los curiales</l>
+                <l><lb break="yes"/>yerros ta<ex>n</ex>to me
+                    rep<ex>re</ex>ndo</l>
+                <l><lb break="yes"/>que fare sy bie<ex>n</ex> lo
+                    ente<ex>n</ex>do</l>
+                <l><lb break="yes"/>de mis pecados mortales <pb n="85r"/>
+                    <cb type="single-column"/></l>
+                <l><lb break="yes"/>q<ex>ue</ex> fuero<ex>n</ex> ta<ex>n</ex>tos
+                    y tales</l>
+                <l><lb break="yes"/>que syn mas detenimie<ex>n</ex>to</l>
+                <l><lb break="yes"/>no dudo mi p<ex>er</ex>dimie<ex>n</ex>to</l>
+                <l><lb break="yes"/>Señor se tu no me vales</l>
+            </lg>
+            <lg n="41">
+                <l><lb break="yes"/>Pues yo pecador errado</l>
+                <l><lb break="yes"/>mas q<ex>ue</ex> los mas pecadores</l>
+                <l><lb break="yes"/>mis delictos mis errores</l>
+                <l><lb break="yes"/>mis graues culpas culpado</l>
+                <l><lb break="yes"/>confieso muy ynclinado</l>
+                <l><lb break="yes"/>a ti dios eterno padre</l>
+                <l><lb break="yes"/>e ala tu bendita madre</l>
+                <l><lb break="yes"/>e despues de grado en grado</l>
+            </lg>
+            <lg n="42">
+                <l><lb break="yes"/>A todos los celestiales</l>
+                <l><lb break="yes"/>por orden de theologia</l>
+                <l><lb break="yes"/>a la santa gerarchia</l>
+                <l><lb break="yes"/>e coros angelicales</l>
+                <l><lb break="yes"/>en specie de generales</l>
+                <l><lb break="yes"/>los ynojos i<ex>n</ex>clinados</l>
+                <l><lb break="yes"/>vos mañifiesto mis pecados</l>
+                <l><lb break="yes"/>mortales y veniales <pb n="85v"/>
+                    <cb type="single-column"/></l>
+            </lg>
+            <lg n="43">
+                <l><lb break="yes"/>E <subst hand="#self">
+                        <del>e</del>
+                        <add>a</add>
+                    </subst>los q<ex>ue</ex> las humanales</l>
+                <l><lb break="yes"/>uestiduras rescebistes</l>
+                <l><lb break="yes"/>e velando co<ex>n</ex>seguistes</l>
+                <l><lb break="yes"/>Las sesiones eternales</l>
+                <l><lb break="yes"/>mis obras torpes y malas</l>
+                <l><lb break="yes"/>confieso triste gemie<ex>n</ex>do</l>
+                <l><lb break="yes"/>y los mis pechos ferie<ex>n</ex>do</l>
+                <l><lb break="yes"/>dire qua<ex>n</ex>tos son y quales</l>
+            </lg>
+            <lg n="44">
+                <l><lb break="yes"/>De los tus dez
+                    ma<ex>n</ex>damie<ex>n</ex>tos</l>
+                <l><lb break="yes"/>Señor no guarde ni<ex>n</ex>guno</l>
+                <l><lb break="yes"/>y a limosnas ni ayuno</l>
+                <l><lb break="yes"/>y quaresmas ni avientos</l>
+                <l><lb break="yes"/>ni de tales docume<ex>n</ex>tos</l>
+                <l><lb break="yes"/>puestos so xp<ex>ist</ex>iano yugo</l>
+                <l><lb break="yes"/>no los fizo nin me plugo</l>
+                <l><lb break="yes"/>ma todos sus vedamie<ex>n</ex>tos</l>
+            </lg>
+            <lg n="45">
+                <l><lb break="yes"/>A qual q<ex>u</ex><hi rend="superscript"
+                        >i</hi>era pecador</l>
+                <l><lb break="yes"/>o q<ex>ue</ex> mas / o / menos yerra</l>
+                <l><lb break="yes"/>Le de gracia</l>
+                <l><lb break="yes"/>E se le faze mayor <pb n="86r"/>
+                    <cb type="single-column"/></l>
+                <l><lb break="yes"/>a mi qual sea menor</l>
+                <l><lb break="yes"/>de los siete no lo se</l>
+                <l><lb break="yes"/>por que en todos peque</l>
+                <l><lb break="yes"/>Egualme<ex>n</ex>te syn temor</l>
+            </lg>
+            <lg n="46">
+                <l><lb break="yes"/>No ministro de justicia</l>
+                <l><lb break="yes"/>eres tus dios solame<ex>n</ex>te</l>
+                <l><lb break="yes"/>mas p<ex>er</ex>donador pote<ex>n</ex>te</l>
+                <l><lb break="yes"/>del mu<ex>n</ex>do por amicicia</l>
+                <l><lb break="yes"/>mi soberana cobdicia</l>
+                <l><lb break="yes"/>yra e gula no te niego</l>
+                <l><lb break="yes"/>pereza luxuria y fuego</l>
+                <l><lb break="yes"/>ynbidia e toda malicia</l>
+            </lg>
+            <lg n="47">
+                <l><lb break="yes"/>Los me<ex>n</ex>guados no farte</l>
+                <l><lb break="yes"/>alguno se me pedio</l>
+                <l><lb break="yes"/>de vestir no lo falle</l>
+                <l><lb break="yes"/>nin los pobres receue</l>
+                <l><lb break="yes"/>Catiuos no los saque</l>
+                <l><lb break="yes"/>nin los enfermos cuytados</l>
+                <l><lb break="yes"/>fuero<ex>n</ex> por mi visitados</l>
+                <l><lb break="yes"/>nin los muertos sepulte <pb n="86v"/>
+                    <cb type="single-column"/></l>
+            </lg>
+            <lg n="48">
+                <l><lb break="yes"/>Ciertame<ex>n</ex>te tantos males</l>
+                <l><lb break="yes"/>fize q<ex>ue</ex> solo en
+                    pe<ex>n</ex>sarlos</l>
+                <l><lb break="yes"/>muero / q<ex>ue</ex> sera penarlos</l>
+                <l><lb break="yes"/>generales y speciales</l>
+                <l><lb break="yes"/>pasos puentes hospitales</l>
+                <l><lb break="yes"/>donde fuere menester</l>
+                <l><lb break="yes"/>sy q<ex>ue</ex>daron por fazer</l>
+                <l><lb break="yes"/>paresce por las señales</l>
+            </lg>
+            <lg n="49">
+                <l><lb break="yes"/>Cay con los que pecaro<ex>n</ex>
+                </l>
+                <l><lb break="yes"/>pues leuantame señor</l>
+                <l><lb break="yes"/>en los q<ex>ue</ex> por gra<ex>n</ex>
+                    dolor</l>
+                <l><lb break="yes"/>asueltos se leua<ex>n</ex>taro<ex>n</ex>
+                </l>
+                <l><lb break="yes"/>y misericordia fallaro<ex>n</ex>
+                </l>
+                <l><lb break="yes"/>a<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>q<ex>ue</ex>llos q<ex>ue</ex> a ti
+                        veniero<ex>n</ex>
+                </l>
+                <l><lb break="yes"/>y sus culpas te dixero<ex>n</ex>
+                </l>
+                <l><lb break="yes"/>y gemiendo las lloraro<ex>n</ex>
+                </l>
+            </lg>
+            <lg n="50">
+                <l><lb break="yes"/>Grandes fuero<ex>n</ex> mis pecados</l>
+                <l><lb break="yes"/>gra<ex>n</ex> misericordia pido</l>
+                <l><lb break="yes"/>a ti mi dios ynfinido</l>
+                <l><lb break="yes"/>q<ex>ue</ex> perdones los culpados <pb
+                        n="87r"/>
+                    <cb type="single-column"/></l>
+                <l><lb break="yes"/>qua<ex>n</ex>tos son Canonizados</l>
+                <l><lb break="yes"/>y bueltos de p<ex>er</ex>dicion</l>
+                <l><lb break="yes"/>solo por la contricion</l>
+                <l><lb break="yes"/>en santos santificados</l>
+            </lg>
+            <lg n="51">
+                <l><lb break="yes"/>No desespero de ti</l>
+                <l><lb break="yes"/>mas espero penite<ex>n</ex>cia</l>
+                <l><lb break="yes"/>ca mayor es tu cleme<ex>n</ex>cia</l>
+                <l><lb break="yes"/>q<ex>ue</ex> lo q<ex>ue</ex> te meresci</l>
+                <l><lb break="yes"/>En maldad enuejesci</l>
+                <l><lb break="yes"/>mas dema<ex>n</ex>dote perdon</l>
+                <l><lb break="yes"/>no q<ex>u</ex><hi rend="superscript"
+                    >i</hi>eras mi danacion</l>
+                <l><lb break="yes"/>pues para pecar nasci</l>
+            </lg>
+            <lg n="52">
+                <l><lb break="yes"/>Mas sea la conclusyon</l>
+                <l><lb break="yes"/>que de todos mis pecados</l>
+                <l><lb break="yes"/>co<ex>n</ex>fesados oluidados</l>
+                <l><lb break="yes"/>q<ex>u</ex><hi rend="superscript">a</hi>ntos
+                        fuero<ex>n</ex> y qua<ex>n</ex>tos son</l>
+                <l><lb break="yes"/>Señor te pido perdon</l>
+                <l><lb break="yes"/>e a vos maestre de espina</l>
+                <l><lb break="yes"/>honesta p<ex>er</ex>sona y diuina</l>
+                <l><lb break="yes"/>de su parte absolucion /</l>
+            </lg>
+        </body>
+        <back>
+            <div type="epilogue">
+                <head><lb break="yes"/><hi rend="rubrique">Finida</hi></head>
+                <pb n="87v"/>
+                <cb type="single-column"/>
+                <lg n="53">
+                    <l><lb break="yes"/>Caualleros y perlados</l>
+                    <l><lb break="yes"/>saped e sepa toda onbre</l>
+                    <l><lb break="yes"/>q<ex>ue</ex> este mi sermo<ex>n</ex> a
+                            no<ex>n</ex>bre</l>
+                    <l><lb break="yes"/>dotrinal de los p<ex>r</ex><hi
+                            rend="superscript">i</hi>uados</l>
+                    <l><lb break="yes"/>mis dias son ya llegados</l>
+                    <l><lb break="yes"/>e me dexar desde a<choice>
+                            <sic> </sic>
+                            <corr/>
+                        </choice>qui</l>
+                    <l><lb break="yes"/>pues rogad a dios por mi</l>
+                    <l><lb break="yes"/>gentes de todos estados</l>
+                </lg>
+            </div>
+        </back>
+    </text>
+</TEI>

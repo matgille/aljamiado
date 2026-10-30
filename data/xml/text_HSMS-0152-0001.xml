@@ -1,0 +1,2545 @@
+<?xml-model href="/home/mgl/Bureau/Travail/projets/Biblissima-Text/Transform/schemata/out/ODD_gold.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Ordenamiento de las tafurerías</title>
+                <respStmt>
+                    <resp>Transcrit par</resp>
+                    <name><surname>MacDonald</surname><forename>Robert
+                            A.</forename></name>
+                </respStmt>
+                <respStmt>
+                    <resp>Textes édités et rassemblés par </resp>
+                    <name>
+                        <forename>Francisco</forename>
+                        <surname>Gago Jover</surname>
+                    </name>
+                    <name>
+                        <forename>Javier</forename>
+                        <surname>Pueyo Mena</surname>
+                    </name>
+                </respStmt>
+                <respStmt>
+                    <resp>Modélisation, encodage et structuration XML-TEI
+                        par</resp>
+                    <name xml:id="mgl">
+                        <forename>Matthias</forename>
+                        <surname>Gille Levenson</surname>
+                    </name>
+                </respStmt>
+                <respStmt>
+                    <resp>Responsabilité du projet Biblissima-Textes: </resp>
+                    <name>
+                        <forename>Thibault</forename>
+                        <surname>Clérice</surname>
+                    </name>
+                    <name>
+                        <forename>Olivier</forename>
+                        <surname>Brisville-Fertin</surname>
+                    </name>
+                    <name>
+                        <forename>Ariane</forename>
+                        <surname>Pinche</surname>
+                    </name>
+                    <name>
+                        <forename>Marianne</forename>
+                        <surname>Reboul</surname>
+                    </name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Publié dans le cadre de Biblissima-textes à partir de
+                    matériaux publiés auparavant.</publisher>
+                <availability status="restricted">
+                    <licence
+                        target="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+                        >Creative Commons Attribution Non Commercial Share Alike
+                        4.0 International</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <!--La source premi&#232;re: le projet OSTA-->
+                <bibl xml:id="TFJ" type="source-transcription">
+                    <title>TEXT.TFJ.txt</title>
+                    <editor>
+                        <forename>Francisco</forename>
+                        <surname>Gago Jover</surname>
+                    </editor>
+                    <editor>
+                        <forename>Javier</forename>
+                        <surname>Pueyo Mena</surname>
+                    </editor>
+                    <publisher>Hispanic Seminary of Medieval Studies</publisher>
+                    <date when="2026-03-07"/>
+                    <availability status="restricted">
+                        <licence
+                            target="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+                            >Creative Commons Attribution Non Commercial Share
+                            Alike 4.0 International</licence>
+                    </availability>
+                    <note>Projet OSTA (Old Spanish Textual Archive). Source des
+                        données: <ptr
+                            target="https://raw.githubusercontent.com/hispanicseminary/OSTA/refs/heads/main/transcriptions/TEXT.TFJ.txt"
+                        />, v 1.0.</note>
+                </bibl>
+                <!--La source premi&#232;re: le projet OSTA-->
+
+                <!--L'oeuvre abstraite = work-->
+                <!--On va cat&#233;goriser la classe frbr et la forme<-->
+                <bibl ana="#frbr.work" type="work">
+                    <title>Ordenamiento de las tafurerías</title>
+                    <author
+                        corresp="https://database.factgrid.de/entity/Q266835"
+                            ><surname>Alfonso X el
+                        Sabio</surname><forename/></author><date
+                        notBefore-iso="1276">1276 a quo</date>
+                    <idno type="HSMS-WORK">HSMS-0152-0001</idno>
+                    <idno type="beta-texid">1026</idno>
+                    <idno type="factgrid-id"
+                        corresp="https://database.factgrid.de/entity/Q1083383"
+                        >Q1083383</idno>
+                    <idno type="biblissima-id"/>
+                    <idno type="BNF-id"/>
+                    <idno type="BNE-id"/>
+                    <idno type="VIAF-id"/>
+                </bibl>
+                <!--L'oeuvre abstraite-->
+
+                <!--Exemplaire / manuscrit = frbr.item (imprim&#233;) ou frbr.manifestation_singleton (manuscrit). Attribut ajout&#233; automatiquement.-->
+                <msDesc ana="#frbr.manifestation_singleton">
+                    <msIdentifier
+                        facs="http://bdh.bne.es/bnesearch/detalle/bdh0000014905">
+                        <settlement>Madrid</settlement>
+                        <!--Un identifiant de biblioth&#232;que id&#233;alement-->
+                        <repository
+                            corresp="https://database.factgrid.de/entity/Q390927"
+                            >Biblioteca Nacional de España</repository>
+                        <!--Un identifiant de biblioth&#232;que id&#233;alement-->
+                        <idno type="cote">MSS/5784</idno>
+                        <idno type="HSMS-ID">HSMS-0152</idno>
+                        <idno type="factgrid-id"
+                            corresp="https://database.factgrid.de/entity/Q1041341"
+                            >Q1041341</idno>
+                        <idno type="biblissima-id"/>
+                        <!--Manuscrit-->
+                        <idno type="beta-manid"
+                            corresp="https://philobiblon.upf.edu/xtf/servlet/org.cdlib.xtf.dynaXML.DynaXML?source=/unified/Display/3683BETA.MsEd.xml&amp;style=MsEd.xsl"
+                            >3683</idno>
+                        <!--Manuscrit-->
+                        <!--Imprim&#233;-->
+                        <!--Imprim&#233;-->
+                        <msName>MS: Madrid: Nacional (BNE), MSS/5784. 1501 -
+                            1600. Alfonso X, rey de Castilla y León ~ Roldán,
+                            maestre… Ordenamiento de las tafurerías, promulgado
+                            1276.</msName>
+                    </msIdentifier>
+                    <history>
+                        <!--Le corresp permet de lier la date &#224; l'unit&#233; codicologique, dans le cas de recueils organis&#233;s-->
+                        <origin>
+                            <origDate corresp="#HSMS-0152-0001"
+                                notBefore-iso="1501" notAfter-iso="1600">1501 -
+                                1600</origDate>
+                        </origin>
+                        <!--Le corresp permet de lier la date &#224; l'unit&#233; codicologique -->
+                    </history>
+
+                    <msContents>
+                        <msItem xml:id="HSMS-0152-0001">
+                            <locus>2r-10v</locus>
+                            <idno type="beta-cnum">5744</idno>
+                            <idno type="factgrid-cnum"
+                                corresp="https://database.factgrid.de/entity/Q1048944"
+                                >Q1048944</idno>
+                            <incipit/>
+                            <explicit/>
+                            <colophon/>
+                        </msItem>
+                    </msContents>
+                </msDesc>
+                <!--Exemplaire-->
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="osp-x-med">castellano</language>
+            </langUsage>
+            <textClass>
+                <catRef target="#prose #didactica #juridica #codigo"/>
+            </textClass>
+        </profileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>Ce document est le fruit d'une conversion automatisée de la
+                    transcription originale, qui utilise des normes d'encodages
+                    propres au projet OSTA (Old Spanish Textual Archive).</p>
+                <p>Transcription de type graphématique: réduction des
+                    allographes au graphème. Tous les graphèmes sont conservés
+                    excepté pour les abréviations qui sont développées sans
+                    conservation de la graphie originale, en indiquant cependant
+                    qu'il s'agit d'une expansion. Les transcriptions ne sont ni
+                    ponctuées, ni accentuées selon les normes actuelles. La
+                    césure à la ligne est indiquée.</p>
+                <p>La description des phénomènes matériels et/ou non textuels
+                    est conservée: sauts de ligne, changements de colonne,
+                    espaces en blanc, miniatures, illustrations, diagrammes,
+                    etc.</p>
+                <p>Le texte est structuré en divisions minimales, en fonction de
+                    son genre. La division en paragraphes, pour la prose, n'est
+                    pas réalisée.</p>
+                <p>Pour plus d'informations, voir l'ODD.</p>
+            </editorialDecl>
+            <refsDecl n="physical">
+                <!--Doit &#234;tre adapt&#233; &#224; chaque structure de document, &#224; reprendre-->
+                <citeStructure unit="page" match="//body//pb" use="@n">
+                    <citeStructure unit="column" match=".//cb" use="@n"
+                        delim=".">
+                        <citeStructure unit="line" match=".//lb" use="@n"
+                            delim="."/>
+                    </citeStructure>
+                </citeStructure>
+                <refsDecl n="default">
+                    <citeStructure match="/TEI/text/body/div" use="@n"
+                        unit="chapter">
+                        <citeStructure match=".//milestone[@unit='section']"
+                            use="@n" unit="section" delim="."/>
+                    </citeStructure>
+                </refsDecl>
+                <!--Doit &#234;tre adapt&#233; &#224; chaque structure de document-->
+            </refsDecl>
+            <classDecl>
+                <taxonomy>
+                    <bibl>
+                        <title>Catégories de segments annotés</title>
+                    </bibl>
+                    <category xml:id="glose">
+                        <catDesc>Segment glosé</catDesc>
+                    </category>
+                    <category xml:id="addendum">
+                        <catDesc>Ajout intellectuel</catDesc>
+                    </category>
+                </taxonomy>
+                <!--Merci &#224; Morgane PICA pour son aide sur l'adaptation &#224; la mod&#233;lisation FRBR-->
+                <taxonomy xml:id="frbr"
+                    sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/">
+                    <bibl>
+                        <title>Catégories FRBRoo</title>
+                    </bibl>
+                    <category xml:id="frbr.work"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F1">
+                        <catDesc>Work</catDesc>
+                    </category>
+                    <category xml:id="frbr.expression"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F2">
+                        <catDesc>Expression</catDesc>
+                    </category>
+                    <category xml:id="frbr.manifestation"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F3">
+                        <catDesc>Manifestation</catDesc>
+                    </category>
+                    <category xml:id="frbr.manifestation_singleton"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F4">
+                        <catDesc>Manifestation Singleton</catDesc>
+                    </category>
+                    <category xml:id="frbr.item"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F5">
+                        <catDesc>Item</catDesc>
+                    </category>
+                </taxonomy>
+                <taxonomy xml:id="categorisation_formelle">
+                    <bibl>
+                        <title>Catégorisation formelle</title>
+                    </bibl>
+                    <category xml:id="prose">
+                        <catDesc xml:lang="es">prosa</catDesc>
+                        <catDesc xml:lang="fr">prose</catDesc>
+                    </category>
+                    <category xml:id="vers">
+                        <catDesc xml:lang="es">verso</catDesc>
+                        <catDesc xml:lang="fr">vers</catDesc>
+                    </category>
+                </taxonomy>
+                <taxonomy xml:id="matiere_textuelle">
+                    <bibl>
+                        <title>Matière textuelle</title>
+                    </bibl>
+                    <category xml:id="didactica">
+                        <catDesc xml:lang="es">Didáctica</catDesc>
+                        <catDesc xml:lang="fr">Didactique</catDesc>
+                    </category>
+                    <category xml:id="juridica">
+                        <catDesc xml:lang="es">Jurídica</catDesc>
+                        <catDesc xml:lang="fr">Juridique</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <div type="page_titre">
+                <p><pb n="2r"/>
+                    <fw rend="titre-courant">\ 1 <lb break="yes"/>REI DON
+                            AL<ex>ONS</ex>o I<ex>E</ex>S<ex>U</ex><choice>
+                            <corr> </corr>
+                            <sic/>
+                        </choice>C<choice>
+                            <corr><ex>RIST</ex>O</corr>
+                            <sic/>
+                        </choice>
+                        <lb break="yes"/>XI<hi rend="superscript">o</hi>. ERA
+                        .10.314 an<ex>n</ex>os</fw></p>
+            </div>
+            <div type="prologue">
+                <cb type="single-column"/>
+                <lb break="yes"/>
+                <head><hi rend="rubrique">Titulo de los Juegos o
+                    tafurerias</hi></head>
+                <p>
+                    <lb break="yes"/><hi rend="initiale" n="1"
+                    >H</hi>ORdenamjento de las tafurerias que fue fecho era <lb
+                        break="yes"/>de mjll e trezientos y catorze
+                    an<ex>n</ex>os <lb break="yes"/><hi rend="initiale" n="1"
+                        >H</hi>era de mjll E trezientos y catorze an<ex>n</ex>os
+                    este es el libro que yo <lb break="yes"/>maestre Roldan
+                    ordene y compuse en Razon de las tafurerias <lb break="yes"
+                    />Por mandado del muy noble E muy alto sen<ex>n</ex>or Don
+                        alfon<lb break="no"/>so por la graçia de dios Rei de
+                    castilla de leon de toledo de ga<lb break="no"/>lizia de
+                    seujlla de cordoua de murçia de Jaen del algarue <lb
+                        break="yes"/>Porque algunos pl<ex>e</ex>itos de los
+                    dados nj de las tafurerias no eran <lb break="yes"/>scriptos
+                    en los libros de los derechos de los fueros nj los
+                        al<ex>ca</ex>ldes <lb break="yes"/>no eran sabidores nj
+                    vsaban nj Juzgaban dello fize este libro <lb break="yes"/>Apartada<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>mente de los otros fueros porque se Juzguen los
+                        tafu<lb break="no"/>res por<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>siempre porque se vede el des<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>creer E se escusen las <lb break="yes"/>muertes E
+                    las peleas e las Tafurerias E tobo por bien el Rey como <lb
+                        break="yes"/>Sabidor sen<ex>n</ex>or y entendido de
+                    todos los bienes que oviesen ca<lb break="no"/>da vnos pena
+                    y escarmjento en<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>el des<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>creer E en los males E <lb break="yes"/>enganos que
+                    se fazen en las Tafurerias </p>
+            </div>
+        </front>
+        <body n="1">
+            <div type="section" n="1">
+                <p>
+                    <lb break="yes"/><hi rend="initiale" n="1">E</hi>l Rico<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>home que Jugare los dados E tambien el hiJo<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>dalgo <lb break="yes"/>y descriere que la primera
+                    vez peche veinte m<ex>a</ex>r<ex>auedi</ex>s de oro E por
+                        <lb break="yes"/>la segunda quarenta
+                        m<ex>a</ex>r<ex>auedi</ex>s o dineros quantos valieren
+                    destos so-bre <pb n="2v"/>
+                    <fw rend="titre-courant">Titulo p<ex>rimer</ex><hi
+                            rend="superscript">o</hi> de los juegos y
+                        tafurerias</fw>
+                    <cb type="single-column"/><lb break="yes"/>dichos E por la
+                    tercera vez que sea acusado para ante EL <lb break="yes"
+                    />Rei y esta calunja mjsma ayan los ynfantes y los
+                    cavalleros <lb break="yes"/>y escuderos que Jugaren los
+                    dados E descreyeren pechen diez <choice>
+                        <corr>marauedis</corr>
+                        <sic/>
+                    </choice>
+                    <lb break="yes"/>de oro por la primera vez escape E por la
+                    segunda prendan lo por <lb break="yes"/>la calunja que sobre<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>dicha es y si no oviere de que los peche que <lb
+                        break="yes"/>los Recauden los al<ex>ca</ex>ldes E las
+                    Justicias en guisa que parezcan <lb break="yes"/>ante el Rei
+                    y el ome que no fuere fijo<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>dalgo que Jugare los dados <lb break="yes"/>y
+                    descreyere que peche por la primera vez seis
+                        m<ex>a</ex>r<ex>auedi</ex>s de oro E <lb break="yes"
+                    />por la segunda vez doze y por la terçera vez que le corten
+                    dos <lb break="yes"/>dedos de la lengoa en traujeso E si no
+                    oviere de que pechar la di<lb break="no"/>cha calunja que sobre<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>dicha es que por la primera vez que le den <lb
+                        break="yes"/>treinta açotes E por la segunda quarenta
+                    açotes E por la ter<lb break="no"/>çera vez. que le corten la<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>lengoa como sobre<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>dicho es E de los ta<lb break="no"/>fures que
+                    Juegan a los dados E no vsan otro menester E bien E <lb
+                        break="yes"/>careçen por las tafurerias E descreen E no<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>tovieren de que pechar <lb break="yes"/>la calunja
+                    que sobre<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>dicha es que por la primera vez que le den <lb
+                        break="yes"/>treinta açotes y por la segunda vez
+                    quarenta açotes E que le <lb break="yes"/>fagan dizir
+                        Sen<ex>n</ex>or dios E sancta Maria en vos creo y en vos
+                        <lb break="yes"/>fio E por la terçera que le corten la
+                    lengoa como Sobre<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>Dicho es <lb break="yes"/>y el Judio o moro que
+                    Jugare los dados E des<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>creyere E dixe<lb break="no"/>re mal de dios E de
+                    sancta maria y de otros sanctos algunos <lb break="yes"/>no es<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>cape por la pena que dicha<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>es mas que le Recauden el cuer<lb break="no"/>po E
+                    quanto toviere para ante el Rei E faga lo que por bien to<lb
+                        break="no"/>viere/. <lb break="yes"/><choice>
+                        <sic>a</sic>
+                        <corr/>
+                    </choice></p>
+            </div>
+            <div type="section" n="2">
+                <p>
+                    <hi rend="initiale" n="1">E</hi> aquellos que metieren a
+                    Juego E Jugaren con dados que aya<ex>n</ex>
+                    <lb break="yes"/>nombre los quatro./ Porque es furto
+                    manjfiesto que peche<ex>n</ex> por la <lb break="yes"
+                    />primera vez todo aquello que ganare doblado a su
+                        duen<ex>n</ex>o <lb break="yes"/>E costas E mension si
+                    las fiziere en demandando lo suyo E <pb n="3r"/>
+                    <fw rend="titre-courant">Titulo primero de los juegos E
+                        tafurerias \ fo<choice>
+                            <corr>lio</corr>
+                            <sic/>
+                        </choice> 2.</fw>
+                    <cb type="single-column"/><lb break="yes"/>las setenas al
+                    Rei E si no oviere de que pechar esto que le den <lb
+                        break="yes"/>treinta açotes em la plaça con los dados
+                    colgados al<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>cuello E por<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>la <lb break="yes"/>segunda vez que le corten el
+                    dedo pulgar de la mano derecha o de <lb break="yes"/>la
+                    exqujerda con qual<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>qujer que Jugare E aquellos que Jugaren <lb
+                        break="yes"/>con dados que ayan nombre con seys o con
+                    siete o con<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>otros dados <lb break="yes"/>que aya<choice>
+                        <corr>n</corr>
+                        <sic/>
+                    </choice> mas o de menos de sus suertes que aya la pena que
+                    debe <lb break="yes"/>aber los que Jugaren con los dados
+                    quatro Por que es otrosi furto <lb break="yes"/>magnjfiesto:
+                    E el que metiere nj Jugare con los dados plomados <lb
+                        break="yes"/>nj desuenados que peche por<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>la primera vez Todo aquello que <lb break="yes"
+                    />ganare doblado a su duen<ex>n</ex>o E costas y missiones
+                    si las a<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>quj <lb break="yes"/>fiziere en demandando lo suyo
+                    E si no oviere de que pechar esto <lb break="yes"/>que le
+                    den treinta açotes <choice>
+                        <sic>en la plaça con los dados colgados al <lb
+                                break="yes"/>pescueço E por la segunda vez que
+                            le corten el dedo pulgar de <lb break="yes"/>la mano
+                            derecha o de la exqujerda con qual el Jugare E a<lb
+                                break="no"/>quellos que Jugaren con dados que an
+                            nombre seis o siete <lb break="yes"/>o con<choice>
+                                <corr> </corr>
+                                <sic/>
+                            </choice>otros dados que ayan mas o menos de sus
+                            suertes que aya<ex>n</ex>
+                            <lb break="yes"/>la pena que deben de aber los que
+                                Jugare<ex>n</ex> con los dados que ha<ex>n</ex>
+                            <lb break="yes"/>nombre los quatro porque es otrosi
+                            furto manjfesto E el que me<lb break="no"/>tiere o
+                            Jugare con<choice>
+                                <corr> </corr>
+                                <sic/>
+                            </choice>dados plomados nj desuenados que
+                                peche<ex>n</ex> por la <lb break="yes"/>primera
+                            vez todo aquello que Jugaren doblado a su
+                                duen<ex>n</ex>o E cos<lb break="no"/>tas E
+                            missiones si las fiziere en demandando lo suyo E si
+                            no o<lb break="no"/>viere de que pechar esto que le
+                            den treynta açotes</sic>
+                        <corr/>
+                    </choice> por<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>la pri<lb break="no"/>mera vez E por la segunda
+                    çinquenta açotes E por la terçera <lb break="yes"/>que le <choice>
+                        <sic>corten</sic>
+                        <corr/>
+                    </choice> açoten por toda la villa con los dados colgados al
+                        pes<lb break="no"/>cueço y le echen fuera de la villa
+                    por malo E por engan<ex>n</ex>ador <lb break="yes"/>E el que
+                    metiere nj Jugare a Juego njnguno con dados afeitados <lb
+                        break="yes"/>que aya la pena que debe aber los que
+                        Jugare<ex>n</ex> con<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>dados plomados <lb break="yes"/><choice>
+                        <corr>o</corr>
+                        <sic/>
+                    </choice> desuenados que tanbien es fiel el dado afeitado
+                    Despues que <lb break="yes"/>los sabidores de los dados de
+                    las tafurerias los escogen E los <pb n="3v"/>
+                    <fw rend="titre-courant"><g ref="#calderon1"/> titulo .1. de
+                        los juegos y tafurerias</fw>
+                    <cb type="single-column"/><lb break="yes"/>Des<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>fazen de su quadra E de los cantos y de las quadras
+                    como <lb break="yes"/>es el plomado E desuenado E aquellos
+                    que jugaren con los estaqui<lb break="no"/>tes que dizen los
+                    quatro o con los otros estaquites que ayan demas <lb
+                        break="yes"/>o de menos de sus suertes que ayan la pena
+                    que deben aber los que <lb break="yes"/>Jugaron con los
+                    dados que ayan nombres los quatro porque es otro<lb
+                        break="no"/>si furto manifiesto A<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>quellos que saben ahincar los dados o <lb
+                        break="yes"/>Jugar con otros que no sean tan sabidores
+                    Como ellos E aquellos <lb break="yes"/>que menos saben le
+                    dixiere o<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>posiere con<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>el que sabe fincar los da<lb break="no"/>dos que
+                    Juegue Sin es<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>catima njnguna E el sabidor que fincar lo <lb
+                        break="yes"/>otorgare que lo fara deve<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>ge lo tener por qua<add hand="#self"
+                        ><ex>n</ex></add>t<del hand="#self">r</del>o lo atregoa
+                    E lo <lb break="yes"/>asegura primera<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>mente <lb break="yes"/></p>
+            </div>
+            <div type="section" n="3">
+                <head><hi rend="rubrique"><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>iij<choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice></hi>
+                </head>
+                <p><hi rend="initiale" n="1">Y</hi>ten Se entiende que aquel que
+                    departe los Juegos que conta<lb break="no"/>dos los tiene en
+                    quatro guisas E maneras Se pueden perder <lb break="yes"
+                    />porque siempre finca E Retiene la meJoria para <choice>
+                        <corr>si</corr>
+                        <sic/>
+                    </choice> de los Juegos q<ex>ue</ex>
+                    <lb break="yes"/>de<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>parten y es libre que no ha por que tornar nj aber
+                    de aquello <lb break="yes"/>que ganare el que lo perdiere
+                        <lb break="yes"/></p>
+            </div>
+            <div type="section" n="4">
+                <head><hi rend="rubrique"><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>iiij<hi rend="superscript">o</hi><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice></hi>
+                </head>
+                <p><hi rend="initiale" n="1">E</hi> aquellos que Jugaren con
+                    dados de tabla los da<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>dos de seys <lb break="yes"/>e as de quatro E de
+                    tres E de çinco E dos no ay pena njnguna nj <lb break="yes"
+                    />calunja de aquello que<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>ganare Saluo Si tornare de fuera de las <lb
+                        break="yes"/>cosas que son defendidas en las leys sobre<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>dichas de los otros da<lb break="no"/>dos <lb
+                        break="yes"/></p>
+            </div>
+            <div type="section" n="5">
+                <head><hi rend="rubrique"><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>v<choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice></hi>
+                </head>
+                <p><hi rend="initiale" n="1">E</hi> aquellos que echan los dados a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>perder que por vn par peche<ex>n</ex>
+                    <lb break="yes"/>dos marauedis buenos como aquellos que
+                    echaren o de qua<choice>
+                        <corr><ex>n</ex></corr>
+                        <sic/>
+                    </choice>t<del hand="#self">r</del>o <lb break="yes"
+                        />costare<ex>n</ex> E Si los quebrantaren con los
+                    dientes o los Jugare<ex>n</ex> que sea<ex>n</ex>
+                    <lb break="yes"/>qujtos de los no pechar Empero el tablaJero
+                    que sea tenudo de <lb break="yes"/>los cobrar los dados E de
+                    emprestar ge los quando los Jugaren <lb break="yes"/>en las
+                    tafurerias E si el cauallero o es<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>cudero qujsiere deshon<lb break="no"/>rrar a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>otro Cauallero nj escudero en las tafurerias del
+                    Rei que <pb n="4r"/>
+                    <fw rend="titre-courant"><g ref="#calderon1"/> titulo .1. de
+                        los juegos y tahurerias \ 3</fw>
+                    <cb type="single-column"/><lb break="yes"/>Se<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>lo demanden vnos a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>otros por sus fueros que se deben Juzgar <lb
+                        break="yes"/>los caualleros E los fiJos<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>dalgo <lb break="yes"/></p>
+            </div>
+            <div type="section" n="6">
+                <head><hi rend="rubrique"><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>vj<choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice></hi>
+                </head>
+                <p><hi rend="initiale" n="1">E</hi> qualqujer que diere palmada o<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>punada o tomare por los ca<lb break="no"/>uellos o
+                    diere coçes a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>otro<del hand="#self">s</del> ome en las tafurerias
+                    del Rei que pe<lb break="no"/>che dos
+                        m<ex>a</ex>r<ex>auedi</ex>s E el vno sea del Rei porque
+                    quebrantan las tafu<lb break="no"/>rerias E deshonrran
+                    alguno E el otro de<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>aquel que rreçibe la <lb break="yes"/>deshonrra y
+                    si fuere ome que no pueda dar la calunja que <lb break="yes"/>Sobre<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>dicha<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>es que Reçiba otro tanto de aquel a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>qujen fizo la des<lb break="no"/>honrra como la
+                    hizo en la tafureria del Rei en aquel logar mes<lb
+                        break="no"/>mo/. <lb break="yes"/></p>
+            </div>
+            <div type="section" n="7">
+                <head><hi rend="rubrique"><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>vij<choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice></hi>
+                </head>
+                <p><hi rend="initiale" n="1">E</hi> qual<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>qujer que fi<subst hand="#self">
+                        <del>z</del>
+                        <add>r</add>
+                    </subst>iere en<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>el tablero de punta de cochillo <lb break="yes"
+                    />por cada ferida que diere que peche medio marco de la
+                        mo<lb break="no"/>neda nueba E si diere del cochillo que
+                    peche vn marco desta <lb break="yes"/>moneda mesma por cada
+                    ferida./. otrosi <choice>
+                        <corr>si</corr>
+                        <sic/>
+                    </choice> lo quebrantare de pie<lb break="no"/>dra o de otra
+                    manera que lo peche pero si lo quebrantare en su <lb
+                        break="yes"/>cabeça mesma que sea quito de lo no<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>pechar./ Mas si algund me<lb break="no"/>nos<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>cabo Reçibiere del tablero los otros que Jugaren al
+                    tablero <lb break="yes"/>por<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>esta Razon o<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>prouaren que lo pechen aquel que lo
+                        quebra<ex>n</ex>tare <lb break="yes"/>el tablero E si no
+                    oviere de que lo pechar. que lo metan en la pri<lb
+                        break="no"/>Sion hasta que de Recaudo que le pechen <lb
+                        break="yes"/></p>
+            </div>
+            <div type="section" n="8">
+                <head><hi rend="rubrique"><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>viij<choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice></hi>
+                </head>
+                <p><hi rend="initiale" n="1">E</hi> los que tovieren penos de
+                    tafures que fueren Jugados <lb break="yes"/>que le den nuebe
+                    dias por fuero los pen<ex>n</ex>os muertos E toda vestia <lb
+                        break="yes"/>veinte dias E que sean a<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>pregonados vn dia los pen<ex>n</ex>os
+                        porq<ex>ue</ex>
+                    <lb break="yes"/>los qujten sus duenos si<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>qujtar los qujsieren E q<ex>ue</ex> entiendan <lb
+                        break="yes"/>que los venden Sin engan<ex>n</ex>o y sin
+                    codiçia A qualqujer q<ex>ue</ex>
+                    <lb break="yes"/>Jugare o emprestare sobre pen<ex>n</ex>os
+                    ansi como sobre vestias <lb break="yes"/>En<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>las tafurerias q<ex>ue</ex> tomen buen Recaudo ansi
+                    Como <pb n="4v"/>
+                    <cb type="single-column"/><lb break="yes"/>es fuero de la<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>tierra en<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>gujsa que no pueda lo que emprestare <lb
+                        break="yes"/>o ganare sobrella. E a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>estos plazos sobre<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>dichos que los vendan <lb break="yes"/>aquellos que
+                    los tovieren sin calunja njnguna E que los den A <lb
+                        break="yes"/>vender al corredor del conçejo E traya en<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>estos plazos los pen<ex>n</ex>os mu<lb break="no"
+                    />ertos diez dias a vender E la vestia nuebe dias E aquel
+                    que oviere <lb break="yes"/>los dineros sobre los
+                        pen<ex>n</ex>os Tome lo suyo en saluo E el pague al
+                        co<lb break="no"/>rredor de lo que fincare E de lo que de<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>mas ay oviere que sea todo <lb break="yes"/>de
+                    aquel que oviere Jugado los pen<ex>n</ex>os o de qual<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>qujer de los suyos <lb break="yes"/>que<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>lo oviere de aber de derecho E el que diere
+                        pen<ex>n</ex>os a vender <lb break="yes"/>al corredor
+                    que diga la verdad por quanto fuero<ex>n</ex> vendidos por
+                        <lb break="yes"/>mas de lo que yazia E lo prouare que
+                    pague aquel que da los <lb break="yes"/>pen<ex>n</ex>os a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>vender o el corredor qual<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>qujer que<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>oujere l<subst hand="#self">
+                        <del>e</del>
+                        <add>a</add>
+                    </subst> culpa todo lo <lb break="yes"/>que niega doblado a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>su duen<ex>n</ex>o E costas E mjssiones Si las
+                    fiziere <lb break="yes"/>demandando lo suyo E las setenas al
+                    Rei porque el furto es muy <lb break="yes"/>gran codiçia <lb
+                        break="yes"/></p>
+            </div>
+            <div type="section" n="9">
+                <head><hi rend="rubrique"><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>ix<choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice></hi>
+                </head>
+                <p><hi rend="initiale" n="1">E</hi> si el tablaJero que sacare
+                    tablaJe sobre<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>pusiere mas de lo que <lb break="yes"/>emprestare
+                    Sobre los pen<ex>n</ex>os aquel que toviere las tafurerias
+                        qua<ex>n</ex><lb break="no"/>do Reçibiere la cuenta del
+                    tablaJero que lo peche todo doblado <lb break="yes"/>a su
+                    dueno aquello que sobre<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>posiere E costas E mjsiones E si las <lb
+                        break="yes"/>fiziere qual<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>qujer dellos que aya la culpa en demandando le <lb
+                        break="yes"/>lo suyo al duen<ex>n</ex>o de los
+                        pen<ex>n</ex>os E setenas al Rei porq<ex>ue</ex> es
+                    furto manj<lb break="no"/>fiesto E muy gran codiçia. y si no
+                    obiere de que lo pechar que le <lb break="yes"/>den
+                    çinquenta açotes <lb break="yes"/></p>
+            </div>
+            <div type="section" n="10">
+                <head><hi rend="rubrique">.x.</hi>
+                </head>
+                <p><hi rend="initiale" n="1">E</hi>l tablaJero que sacare el
+                    tablaJe o<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>tomare dineros de<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>aq<ex>ue</ex>llos <lb break="yes"/>que tovieren las
+                    tafurerias a Renta sobre si e lo Jugare E si fuye<lb
+                        break="no"/>re con<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>ellos E les fiziere alguna varata por que aquellos
+                        q<ex>ue</ex> tiene<ex>n</ex>
+                    <lb break="yes"/>las tafurerias ayan de perder o menos<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>cabar q<ex>ue</ex> los pechen todos <lb break="yes"
+                    />los menos<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>cabos y si no oviere de que los pechar este que
+                    yaga <lb break="yes"/>en la prision vn an<ex>n</ex>o <lb
+                        break="yes"/></p>
+            </div>
+            <div type="section" n="11">
+                <head><hi rend="rubrique"><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>xj.</hi>
+                </head>
+                <p><hi rend="initiale" n="1">Q</hi>ual<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>qujer pl<ex>e</ex>ito o<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>avenençia o postura o<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>fiadoria q<ex>ue</ex> fizieren <pb n="5r"/>
+                    <fw rend="titre-courant"><g ref="#calderon1"/> titulo
+                            p<ex>rimer</ex><hi rend="superscript">o</hi> de los
+                        juegos y tafurerias \ 4</fw>
+                    <cb type="single-column"/><lb break="yes"/>vnos con<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>otros en las tafurerias o en otros logares en Razon
+                    del <lb break="yes"/>Juego que valga. E se atengan E si
+                    alguno entrare por mano de otro <lb break="yes"/>qual<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>qujer que Jugare que entregara por<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>el lo que perdiere aquel <lb break="yes"/>que lo
+                    ganare valga E entregue todo lo que entrare por mano o por
+                        <lb break="yes"/>entregador fasta que el diga aquel a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>qujen a de entregar non vos <lb break="yes"/>qujero
+                    mas fiar nj entregar por<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>esto que ha perdido o<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>por leva<ex>n</ex>tar se <lb break="yes"/>Del
+                    tablero el fiador nj el perdidoso no se escuse de pagar
+                    aquello <lb break="yes"/>que perdiere nj el fiador de
+                    entregar. <lb break="yes"/></p>
+            </div>
+            <div type="section" n="12">
+                <head><hi rend="rubrique"><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>xij<choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice></hi>
+                </head>
+                <p><hi rend="initiale" n="1">E</hi> si aquel que para la parada
+                    E la ganare E contare la parada de<lb break="no"/>mas de lo
+                    que no es E si le fuere prouado porq<ex>ue</ex> qujer llebar
+                    lo age<choice>
+                        <sic>ñ</sic>
+                        <corr>n</corr>
+                    </choice>o <lb break="yes"/>sin derecho que peche dos tanto
+                    de lo suyo a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>aquel a qujen Cuenta <lb break="yes"/>demas o a que
+                    Jure sobre sanctos avangelios por<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>la primera vez <lb break="yes"/>que lo non faz a su
+                    ençiente E si estando en<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>este mesmo Juego <lb break="yes"/>E lo fiziere otra
+                    vez que no sea creido E que peche la pena como sobre<lb
+                        break="no"/>dicho es. <lb break="yes"/></p>
+            </div>
+            <div type="section" n="13">
+                <head><hi rend="rubrique"><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>xiij<choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice></hi>
+                </head>
+                <p><hi rend="initiale" n="1">E</hi> si por a<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>ventura algunos quesieren yr a la mano del que <lb
+                        break="yes"/>lança los dados o vaya en<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>guisa a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>la mano o a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>los dados q<ex>ue</ex> no pa<lb break="no"/>resca
+                    suerte njnguna en<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>el tablero E des<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>pues que la suerte pareçiere <lb break="yes"/>de<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>aquel que alança los dados o de aquellos que la
+                    esperan no es de<lb break="no"/>recho que l<subst
+                        hand="#self">
+                        <del>e</del>
+                        <add>a</add>
+                    </subst> desfagan la suerte mas que gane por<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>ella quales<lb break="no"/>qujer que la<choice>
+                        <sic>s</sic>
+                        <corr/>
+                    </choice> suerte oviere <lb break="yes"/></p>
+            </div>
+            <div type="section" n="14">
+                <head><hi rend="rubrique"><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>xiiij./</hi>
+                </head>
+                <p><hi rend="initiale" n="1">E</hi> aquellos que hizieren las
+                    tafurerias aRendadas sobre si o el <lb break="yes"
+                    />tablaJero que fiziere fazer amor a algunos que ayan Jugado
+                    sus <lb break="yes"/>pen<ex>n</ex>os al tablaJero que a
+                    perdido Des<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>que ha entregado o por entregar <lb break="yes"/>o
+                    debe dineros al tablaJero que le faga amor de los
+                        pen<ex>n</ex>os El tablaJero <lb break="yes"/>o otro qual<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>qujer que fiziere fazer amor o lo fia que le
+                    entregara lue<lb break="no"/>go de pen<ex>n</ex>os o de
+                    dineros o pone dia Conosçido a que le faga la paga <lb
+                        break="yes"/>E entrega a su plazer E a su voluntad y
+                    despues le fiziere alg<ex>un</ex><hi rend="superscript"
+                        >a</hi>
+                    <pb n="5v"/>
+                    <cb type="single-column"/><lb break="yes"/>Rebuelta o
+                    traspaso porque aya de<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>venjr ante los al<ex>ca</ex>ldes no aya ter<lb
+                        break="no"/>çero dia nj nuebe dias nj ferias a que
+                    demando si no que pague a ocho <lb break="yes"/>dias E los
+                        dan<ex>n</ex>os <subst hand="#self">
+                        <del>p</del>
+                        <add>f</add>
+                    </subst>echos y costas E mjssiones E si las que fiziere en
+                        de<lb break="no"/>mandar lo suyo. <lb break="yes"/></p>
+            </div>
+            <div type="section" n="15">
+                <head><hi rend="rubrique"><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>xv<choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice></hi>
+                </head>
+                <p><hi rend="initiale" n="1">L</hi>os tablaJeros que
+                    consentieren E encobrieren algunos de los engan<ex>n</ex>os
+                        <lb break="yes"/>E de los defendimjentos que de<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>fiende este libro de las tafurerias E fuere <lb
+                        break="yes"/>prouado aya otro tanto de pena como
+                    aquellos a que dizen los malos d<ex>ic</ex>hos <lb
+                        break="yes"/>o<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>fazen los fechos o los engan<ex>n</ex>os <lb
+                        break="yes"/></p>
+            </div>
+            <div type="section" n="16">
+                <head><hi rend="rubrique"><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>xvj<choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice></hi>
+                </head>
+                <p><hi rend="initiale" n="1">E</hi> los que dineros o
+                        pen<ex>n</ex>os hurtaren del tablaJe en las tafurerias
+                    que pe<lb break="no"/>che aquello que furtare doblado a su
+                        duen<ex>n</ex>o E si no oviere de que lo <lb break="yes"
+                    />pechar que yaga en la presion fasta q<ex>ue</ex> cumpla de
+                    derecho E q<ex>ue</ex> le peche <lb break="yes"/></p>
+            </div>
+            <div type="section" n="17">
+                <head><hi rend="rubrique"><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>xvij<choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice></hi>
+                </head>
+                <p><hi rend="initiale" n="1">O</hi>trosi qual<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>qujer que con dineros o com pen<ex>n</ex>os se
+                    fuere del tablero des<lb break="no"/>pues que los oviere
+                    Jugados o perdidos o se fuere escondido que pe<lb break="no"
+                    />che aquello que llevare doblado al tablaJero o a otro
+                    qualquiera que<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>lo <lb break="yes"/>aya de aber E las setenas al
+                    Rei porque es Razon de furto q<ex>ue</ex> se<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>ba co<ex>n</ex> lo <lb break="yes"/>ageno E si no
+                    oviere de que pechar que yaga en<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>la presion del Rei fasta <lb break="yes"/>que
+                    cumpla de derecho. <lb break="yes"/></p>
+            </div>
+            <div type="section" n="18">
+                <head><hi rend="rubrique"><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>xviij<choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice></hi>
+                </head>
+                <p><hi rend="initiale" n="1">E</hi> aquellos que fizieron buelta o<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>mezcla asacar todo esto se entiende <lb break="yes"
+                    />vna Razon em<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>prenda o en muestra en las tafurerias que no sea
+                        te<lb break="no"/>nudo de pechar lo a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>aquel a qujen lo pierde demas del dinero de ençima
+                        <lb break="yes"/></p>
+            </div>
+            <div type="section" n="19">
+                <head><hi rend="rubrique"><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>xix<choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice></hi>
+                </head>
+                <p><hi rend="initiale" n="1">E</hi>n juego njnguno oro nj plata
+                    nj sortiJa nj piedra nj anjllo q<ex>ue</ex> no vala <lb
+                        break="yes"/>em<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>parada nj en muestra encobierta nj en otra manera.
+                    Si ante no lo fi<lb break="no"/>ziere saber primera<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>mente a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>aquellos con qujen Juega porq<ex>ue</ex> los
+                        sabido<lb break="no"/>res E los enganadores de los dados
+                    de las tafurerias fazen buelta E mez<lb break="no"/>cla con<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>ello aquellos q<ex>ue</ex> menos saben q<ex>ue</ex>
+                    ellos. <lb break="yes"/></p>
+            </div>
+            <div type="section" n="20">
+                <head><hi rend="rubrique">.xx.</hi>
+                </head>
+                <p><hi rend="initiale" n="1">E</hi> aquellos que Jugaren en las
+                    tafurerias publicas publica<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>mente <lb break="yes"/>E Se entraren a Jugar con<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>otros tam<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>buenos o meJores que ellos o<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>peores <lb break="yes"/>Dixeren palabras vedadas o
+                    fizieren cosas dellas q<ex>ue</ex> defiende este libro <pb
+                        n="6r"/>
+                    <fw rend="titre-courant"><g ref="#calderon1"/> titulo
+                            p<ex>rimer</ex><hi rend="superscript">o</hi> de los
+                        juegos y tafurerias \ 5</fw>
+                    <cb type="single-column"/><lb break="yes"/>o<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>pasare<choice>
+                        <corr><ex>n</ex></corr>
+                        <sic/>
+                    </choice> de los otros defendimjentos que aquj son scriptos
+                    no pueda<ex>n</ex>
+                    <lb break="yes"/>Sacar nj desechar de testimonjo a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>njngund cristiano por proue nj des<lb break="no"
+                    />nudo que sea nj Judio nj moro o su testimonjo cumpliere
+                    cada vno en su <lb break="yes"/>lei / de a<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>quello que oyere dizir E viere fazer por cosas en
+                    las tafurerias <lb break="yes"/>o en otro logar que no se
+                    pueda prouar sino con<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>aquellos q<ex>ue</ex> se acaeçiere<ex>n</ex>
+                    <lb break="yes"/>y despues que se asientan a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Jugar en<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>las tafurerias todos estos son ta<lb break="no"
+                    />fures llamados porq<ex>ue</ex> se entiende que tafur debe
+                    prouar sobre tafur. <lb break="yes"/></p>
+            </div>
+            <div type="section" n="21">
+                <head><hi rend="rubrique"><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>xxj.</hi>
+                </head>
+                <p><hi rend="initiale" n="1">E</hi> qual<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>qujer que Jugare con otros pen<ex>n</ex>os a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>pen<ex>n</ex>os aquel que los ganare si <lb
+                        break="yes"/>fuere bienes o armas que las tenga quarenta
+                    dias por fuero E si fuere otros <lb break="yes"
+                        />pen<ex>n</ex>os que sean de vestir o de calçar o çinta
+                    o cochillo o Ropa de casa o otros <lb break="yes"
+                        />pen<ex>n</ex>os muertos ayan veinte dias por fuero E
+                    destos plazos sobre<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>dichos <lb break="yes"/>adelante que <add
+                        hand="#self">se</add> siruan dellos sin calunja njnguna
+                    E aquel que los gan<ex>n</ex>are <lb break="yes"/>que los
+                    venda ansi como sobre<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>dicho es E finque en saluo lo que diere so<lb
+                        break="no"/>bre los pen<ex>n</ex>os E lo demas que sea
+                    todo dado a su duen<ex>n</ex>o de aquel que lo oviere <lb
+                        break="yes"/>de aber por derecho./. <lb break="yes"
+                    /></p>
+            </div>
+            <div type="section" n="22">
+                <head><hi rend="rubrique"><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>xxij<choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice></hi>
+                </head>
+                <p><hi rend="initiale" n="1">E</hi> Si alguno oviere que Jugare
+                    dineros fechos con<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>otros pen<ex>n</ex>os E el q<ex>ue</ex> tiene <lb
+                        break="yes"/>los dineros ganare los pen<ex>n</ex>os
+                    pueda luego serujr se dellos sin calunja njn<lb break="no"
+                    />guna que ansi como faria a su gujsa de los dineros si<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>ge<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>los ganase aquel que <lb break="yes"/>Juega los
+                        pen<ex>n</ex>os ansi desa mesma manera se debe serujr de
+                    los pen<ex>n</ex>os a<lb break="no"/>quel que gana los
+                        pen<ex>n</ex>os <lb break="yes"/></p>
+            </div>
+            <div type="section" n="23">
+                <head><hi rend="rubrique"><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>xxiij<choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice></hi>
+                </head>
+                <p><hi rend="initiale" n="1">E</hi> sobre armas de cauallero nj
+                    de escudero no empresten los tablaJeros nj los <lb
+                        break="yes"/>que tienen las tafurerias del Rei E si lo
+                    fizieren que pierdan Todo aquello q<ex>ue</ex>
+                    <lb break="yes"/>emprestaren porque los caualleros y los
+                    escuderos preçian mucho sus ar<lb break="no"/>mas E es
+                    peligrosa cosa de vender E podria acaeçer aquellos
+                    caualleros y <lb break="yes"/>escuderos que abrian menester
+                    las armas E no las podrian aber E por<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>esta <lb break="yes"/>Razon aCaeçeria grandes
+                    trabaJos entre ellos E los demandadores de<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>las ar<lb break="no"/>mas E de aquellos que las
+                    tovieren. <lb break="yes"/></p>
+            </div>
+            <div type="section" n="24">
+                <head><hi rend="rubrique"><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>xxiiij<choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice></hi>
+                </head>
+                <p><hi rend="initiale" n="1">S</hi>obre Cuerpo de cristiano nj
+                    de Judio nj de moro no empresten dineros <lb break="yes"/>nj
+                    Jueguen en las tafurerias pues saben que<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>el xpi<ex>sti</ex>ano que<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>es suelto E los Ju<lb break="no"/>dios E los moros como<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>qujeran que sean forros e esten sobre si
+                        sen<ex>n</ex>ores Empero <pb n="6v"/>
+                    <cb type="single-column"/><lb break="yes"/>si algunos que
+                    oviere que su moro qujsiere Jugar o catiuo o em<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>penar <lb break="yes"/>puede lo hazer o sieruo o
+                    sierua el derecho que quj<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>sier E aquel que lo Ju<lb break="no"/>gare o<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>empen<ex>n</ex>are E aquellos que Jugaro<ex>n</ex>
+                    o empen<ex>n</ex>aron Sieruo Sobrello en<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>tal <lb break="yes"/>Razon como esta que lo fagan a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>buen Recaudo E si no que se pierda <lb break="yes"
+                    /></p>
+            </div>
+            <div type="section" n="25">
+                <head><hi rend="rubrique"><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>xxv<choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice></hi>
+                </head>
+                <p><g ref="#calderon1"/>
+                    <hi rend="initiale" n="1">Q</hi>ualquier cl<ex>er</ex>igo que<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>sacare tablaJe o Jugare dados o sobre algunas cosas
+                        <seg ana="#glose"><add hand="#self">cl<choice>
+                                <corr><ex>er</ex></corr>
+                                <sic/>
+                            </choice>igo Jugador</add></seg>
+                    <lb break="yes"/>que faga a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>el o alguno en las tafurerias que dixieren E fizier
+                    algunas cosas <lb break="yes"/>de las que defiende Sancta
+                        igl<ex>es</ex>ia E este libro si quisier alçar a Juizio
+                    de <lb break="yes"/>sancta igl<ex>es</ex>ia no le vala ca
+                    despues quel cl<ex>er</ex>igo saca tablaJe o<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>se<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>oujere los <lb break="yes"/>dados viene contra
+                    aquello que defiende Sancta igl<ex>es</ex>ia E las hordenes
+                        <lb break="yes"/>porque debe pasar E Juzgar se por<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>el Juizio que pasan los otros tafures <lb
+                        break="yes"/></p>
+            </div>
+            <div type="section" n="26">
+                <head><hi rend="rubrique"><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>xxvj<choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice></hi>
+                </head>
+                <p><g ref="#calderon1"/>
+                    <hi rend="initiale" n="1">E</hi>l Rico<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>ome o el fiJo<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>dalgo que qujsiere Jugar los dados en su posada <lb
+                        break="yes"/>puede lo hazer de la puerta adentro o el su
+                    escudero posa o mora E no <lb break="yes"/>pagan omes
+                    tablero ante la puerta Do<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>posa el Rico<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>ome nj en otro logar do <lb break="yes"/>Su
+                        compan<ex>n</ex>a se acoJa E que no acoJan vezino nj
+                    morador de la villa en la <lb break="yes"/>tafureria del Rico<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>ome E si<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>lo fiziere que peche la<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>calunja como manda <lb break="yes"/>el Rei en Razon
+                    de las calunjas de las tafurerias <lb break="yes"/></p>
+            </div>
+            <div type="section" n="27">
+                <head><hi rend="rubrique"><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>xxvij<choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice></hi>
+                </head>
+                <p><g ref="#calderon1"/>
+                    <hi rend="initiale" n="1">P</hi>uedan todos los cristianos
+                    prouar em pl<ex>e</ex>itos de las tafurerias en<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>tal <lb break="yes"/>que sean de hedad para prouar
+                    que ayan diez y seis an<ex>n</ex>os o dende A<lb break="no"
+                    />Riba en tal q<ex>ue</ex> no sea njnguno dellos ome del
+                    demandador nj sea pan<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>ygua<lb break="no"/>do E al Recibir de los
+                    testimonjos aquel que oviere a Juzgar en los
+                    pl<ex>e</ex>itos de <lb break="yes"/>las tafurerias que lo
+                    faga Jurar sobre Sanctos Evangelios que digan <lb
+                        break="yes"/>verdad de aquello que les preguntaren E Si
+                    alguno que<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>o<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>viere q<ex>ue</ex> tistimo<lb break="no"/>nare
+                    falso E le fuere probado que le saquen dos dedos en traujeso
+                    de la <lb break="yes"/>lengua en<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>gujsa que la no pueda tornar a la boca E pongan le
+                    en la plaça mas <lb break="yes"/>general de la villa onde
+                    esto aCaeçiere y este ay desde la man<ex>n</ex>ana hasta <lb
+                        break="yes"/>ora de medio<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>dia que le vean todos E desi saquen le el pliego E
+                    den le de mano <lb break="yes"/>E Jamas no sea creido en
+                    testimonjo <lb break="yes"/></p>
+            </div>
+            <div type="section" n="28">
+                <head><hi rend="rubrique"><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>xxviij<choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice></hi>
+                </head>
+                <p><g ref="#calderon1"/>
+                    <hi rend="initiale" n="1">E</hi> si tafures fallaren que
+                    sean afamados en casa çerrados fuera de las <lb break="yes"
+                    />tafurerias del Rei E sospecharo<ex>n</ex> sobre ello que
+                        Jugaro<ex>n</ex> E los demandare<ex>n</ex> los <lb
+                        break="yes"/>arrendadores aquellos que han de aber las
+                    tafurerias ante aquellos q<ex>ue</ex> lo <lb break="yes"
+                    />ovieren de Juzgar E no lo podiere<ex>n</ex> probar fagan
+                    los jurar Sobre Sanctos <pb n="7r"/>
+                    <fw rend="titre-courant"><g ref="#calderon1"/> titulo
+                            p<ex>rimer</ex><hi rend="superscript">o</hi> de<choice>
+                            <corr> </corr>
+                            <sic/>
+                        </choice>los juegos y tafurerias \ 6</fw>
+                    <cb type="single-column"/><lb break="yes"/>Evangelios que no
+                        Juraro<ex>n</ex> por<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>la primera vez Otrosi por la segunda <lb
+                        break="yes"/>E por la terçera que<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>sean privados por la calunja que manda el Rei en
+                        Ra<lb break="no"/>zon de las tafurerias porque sabe que
+                    son tafures E entiende se q<ex>ue</ex> no se han <lb
+                        break="yes"/>de ençerrar por<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>al sino por<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Jugar. <lb break="yes"/></p>
+            </div>
+            <div type="section" n="29">
+                <head><hi rend="rubrique"><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>xxix<choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice></hi>
+                </head>
+                <p><g ref="#calderon1"/>
+                    <hi rend="initiale" n="1">E</hi>n la vigilia de navidad y el
+                    dia que sean sueltos de Jugar porque <choice>
+                        <corr><seg ana="#glose"><add hand="#self">Jugar
+                                    empascua</add></seg></corr>
+                        <sic/>
+                    </choice>
+                    <lb break="yes"/>en tal noche naçio n<ex>uest</ex>ro
+                        sen<ex>n</ex>or Jh<ex>es</ex>u xp<ex>ist</ex>o y es
+                    pascua vendita y de aber <lb break="yes"/>cada an<ex>n</ex>o
+                    en su posada E por<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>esta Razon no sea prendado njngund <lb break="yes"
+                    />cristiano por Juego que faga estos dias E Si los que
+                        tiene<ex>n</ex> las tafurerias <lb break="yes"/>los
+                    prendaren o otro por su mandado que torne la prenda doblada
+                    A <lb break="yes"/>su dueno E otro tanto al Rei/. <lb
+                        break="yes"/></p>
+            </div>
+            <div type="section" n="30">
+                <head><hi rend="rubrique"><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>xxx<choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice></hi>
+                </head>
+                <p><g ref="#calderon1"/>
+                    <hi rend="initiale" n="1">E</hi> aquellos que tienen las
+                    tafurerias de las villas aRendadas de <choice>
+                        <sic><seg ana="#glose"><add hand="#self">Jugar
+                                    empascua</add></seg></sic>
+                        <corr/>
+                    </choice>
+                    <lb break="yes"/>mano de qual<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>qujer que las aya de aber o de Recaudar por<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>el otro ome <lb break="yes"/>que aya
+                    pl<ex>e</ex>ito ante los al<ex>ca</ex>ldes o alguna demanda
+                    Contra otro en Razon <lb break="yes"/>de las tafurerias El
+                    demandado pidiere Tercero dia o nuebe dias o fe<lb
+                        break="no"/>rias no las aya./ mas cognosca luego de si o
+                    de no antel al<ex>ca</ex>lde que Juzgare <lb break="yes"
+                    />las tafurerias sin<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>otro alongamjento alguno E otrosi q<ex>ue</ex>
+                    njnguno no <lb break="yes"/>sea osado de tener Razon en<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>el pl<ex>e</ex>ito de las tafurerias nj los
+                        al<ex>ca</ex>ldes no <lb break="yes"/>ge lo consientan E
+                    no es de derecho embargar las cosas del Rei nj meter las <lb
+                        break="yes"/>en vanderas//. <lb break="yes"/></p>
+            </div>
+            <div type="section" n="31">
+                <head><hi rend="rubrique"><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>xxxj<choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice></hi>
+                </head>
+                <p><g ref="#calderon1"/>
+                    <hi rend="initiale" n="1">E</hi> aquellos que Jugaren vino o
+                    otras cosas de comer en las tafurerias <lb break="yes"/><seg
+                        ana="#glose">jugar cosas de Comer <choice>
+                            <corr>/</corr>
+                            <sic/>
+                        </choice> E p<ex>ar</ex>a comer luego</seg> o en<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>otros logares que Jueguen sin pena nj calunja
+                    njnguna E que lo coma<ex>n</ex>
+                    <lb break="yes"/>luego E lo veban/. Mas si le fuere probado
+                    que se aparta al comer para <lb break="yes"/>lebar a su casa
+                    o a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>otro logar o se qujtare por dineros o qujtare el
+                    vino <lb break="yes"/>en la cuba o en la tinaJa o en el odre
+                    o da dineros o vino a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>otro por<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>el vino <lb break="yes"/>que ha perdido o por las
+                    cosas de comer a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>aquel que a qujen Juega E lo <lb break="yes"/>gana
+                    porque es tafureria es<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>tanto como seco que peche la calunja E si <lb
+                        break="yes"/>aquel que vende el vino fuere demandado o
+                    acusado por la calunja <lb break="yes"/>Jure sobre sanctos
+                    Evangelios que no lo sabia que fiziesen tafureria
+                        q<ex>ue</ex>
+                    <lb break="yes"/>tornasen a seco E sea qujto de<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>la calunja E si no qujsiere Jurar que peche <lb
+                        break="yes"/>la calunja/. <pb n="7v"/>
+                    <cb type="single-column"/><lb break="yes"/></p>
+            </div>
+            <div type="section" n="32">
+                <head><hi rend="rubrique"><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>xxxij<choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice></hi>
+                </head>
+                <p><g ref="#calderon1"/>
+                    <hi rend="initiale" n="1">E</hi> aquellos que Jugaren fuera de<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>las tafurerias del Rey sin ma<ex>n</ex><lb
+                        break="no"/>damiento de aquellos que las tubieren
+                    despues que fueren arre<ex>n</ex><lb break="no"/>dadas o
+                    puestas en Recabdo que peche cada vno dellos <lb break="yes"
+                    />por cada vez que le fuere prouado diez marauedis de la <lb
+                        break="yes"/>moneda nueua y el tablaJero que sacare el
+                    tablaJe e lo con<lb break="no"/>sentiere en su casa que
+                    pechen veinte marauedis de la mone<lb break="no"/>da sobre<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>dicha cada vez que le fuere prouado que lo face al
+                        <lb break="yes"/>tercio destas calunias que sean de<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>los alcaldes que libraren <lb break="yes"/>estos
+                    pleitos de<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>las tafurerias y el otro tercio de<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>los accusa<lb break="no"/>dores <del hand="#self"
+                        >e</del> y si los accusadores fueren de aquellos que se
+                        acae<lb break="no"/>çiere en<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>el Juego que sean quitos de<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>las sus calunias y q<ex>ue</ex>
+                    <lb break="yes"/>ayan el tercio de las calunias en que
+                    fallaren aquellos a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>quien <lb break="yes"/>accusaron y si no hubiere de
+                    que las pechar las calunias <lb break="yes"/>que sobre<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>d<ex>ic</ex>ho son que las Recabden los alcaldes
+                        <del hand="#self">e</del> y <lb break="yes"/>les den
+                    docientos açotes con que beban del agua cada <lb break="yes"
+                    />Vno dellos <lb break="yes"/></p>
+            </div>
+            <div type="section" n="33">
+                <head><hi rend="rubrique"><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>xxxiij<choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice></hi>
+                </head>
+                <p><hi rend="initiale" n="1">E</hi> si aquellos que tubieren las
+                    tafurerias ouieren querellas de <lb break="yes"/>aquellos
+                    que Jugaren fuera de las tafurerias del Rey <lb break="yes"
+                    />o passaren de<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>los otros defendimientos que son Scriptos que<lb
+                        break="no"/>rellando<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>se querellan se a los alcaldes que han de complir
+                        <lb break="yes"/>el mandamiento del Rey E fagan lo<del
+                        hand="#self">s</del> con testigos y <lb break="yes"
+                    />esCriban los nombres de los testigos y el dia y mes E en
+                        <lb break="yes"/>qual mes lo querellaren cada vez y que
+                    si despues <lb break="yes"/>los alcaldes o los Jurados no
+                    les quisieren facer derecho <lb break="yes"/>de aquello que
+                    querellaren que lo pueda mostrar al Rey <lb break="yes"/>o
+                    aquellos que tubieren las tafurerias de<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>la <del hand="#self">p</del> tierra por <lb
+                        break="yes"/>mano del Rey si menester fuere E si menos<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>cabo Resci<lb break="no"/>biere el Rey en las
+                    tafurerias por culpa de<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>los alcaldes <lb break="yes"/>y de los Jurados que
+                    lo pechen al Rey doblados o como <lb break="yes"/>el tubiere
+                    por bien o al <choice>
+                        <sic>que</sic>
+                        <corr/>
+                    </choice> querelloso las costas si las <lb break="yes"
+                    />fiziere Segund que fuere el pleito <lb break="yes"/></p>
+            </div>
+            <div type="section" n="34">
+                <head><hi rend="rubrique"><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>xxxiiij<choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice></hi>
+                </head>
+                <p><hi rend="initiale" n="1">S</hi>i aquellos que Jugaren en las
+                    tafurerias tubieren contienda <pb n="8r"/>
+                    <fw rend="titre-courant"><g ref="#calderon1"/> titulo
+                            p<ex>rimer</ex><hi rend="superscript">o</hi> de los
+                        juegos y tafurerias \ 7</fw>
+                    <cb type="single-column"/><lb break="yes"/>sobre el dado que
+                    estoujere acostado deven lo Jusgar los otros q<ex>ue</ex>
+                        esto<lb break="no"/>ujeren al tablero con aquello que
+                    contiende sobre el dado E si los o<lb break="no"/>tros no
+                    Jugaren sino los contendores Juzguen lo El tablaJ<choice>
+                        <corr>ero</corr>
+                        <sic>ero</sic>
+                    </choice> q<ex>ue</ex> sacare <lb break="yes"/>el tablaJe E
+                    si no quesiere<ex>n</ex> estar los otros Ju<add hand="#self"
+                        >z</add>gadores por el tablaJero <lb break="yes"/>llamen
+                    vn ome qual quesieren aquellos que contendieren sobre EL <lb
+                        break="yes"/>dado E el Juizio que dieren los Juzgadores
+                    o el tablaJero o el home <lb break="yes"/>llamado qual<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>qujer que lo Juzgare a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>plazer de los contendores que val<lb break="no"/>ga
+                    E otrosi si algunos Jugaren en tablero que aya varras
+                        q<ex>ue</ex> digan <lb break="yes"/>los dados en<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>la varra si cayeren Tanbien como en<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>otro logar saluo <lb break="yes"/>Si<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>posieren los Jugadores que no diga dado en varra.
+                        <lb break="yes"/></p>
+            </div>
+            <div type="section" n="35">
+                <head><hi rend="rubrique"><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>xxxv<choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice></hi>
+                </head>
+                <p><g ref="#calderon1"/>
+                    <hi rend="initiale" n="1">E</hi> aquellos que tienen honbres a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>soldada o a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>bien<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>hazer o los aco<lb break="no"/>giere en su<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>posada que les fizier menos de lo suyo E lo fuere a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Jugar <lb break="yes"/>en las tafurerias del Rei E
+                    despues fuere<ex>n</ex> demandadas en Razon <lb break="yes"
+                    />de furto aquellos que tovieren las tafurerias o los
+                    tablaJeros q<ex>ue</ex> sacan <lb break="yes"/>El tablaJe no
+                    son tenudos de<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>tornar a menos de dar los dineros por <lb
+                        break="yes"/>que Jaz porque cada vno debe de tomar tal
+                    home o acoger lo en su<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>posa<lb break="no"/>da o poner tal guarda en lo
+                    suyo que sea seguro q<ex>ue</ex> no le faga mala <lb
+                        break="yes"/>varata de aquello que le metiere en la mano en<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>guarda nj de aquello <lb break="yes"/>que toujeren
+                    las tafurerias Son tan abonadas que Juegan ay bue<lb
+                        break="no"/>nos y malos E los tablaJeros no<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>toman fiador del pen<ex>n</ex>o nj a
+                        porq<ex>ue</ex> tomar <lb break="yes"/>testigos sobre
+                    los pen<ex>n</ex>os muertos que Juegan en las tafurerias
+                    empero <lb break="yes"/>el demandador faga suyos los
+                        pen<ex>n</ex>os como sobre<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>dicho es segund di<lb break="no"/>zen los otros
+                    fueros E el tablaJero Jure sobre sanctos evangelios <lb
+                        break="yes"/>que diga la verdad por quanto
+                        fuero<ex>n</ex> Jugados E de los sus pen<ex>n</ex>os E
+                        <lb break="yes"/>Reçiba sus dineros del o de su
+                    mandado./. <lb break="yes"/></p>
+            </div>
+            <div type="section" n="36">
+                <head><hi rend="rubrique"><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>xxxvj<choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice></hi>
+                </head>
+                <p><g ref="#calderon1"/>
+                    <hi rend="initiale" n="1">E</hi> si algunos segujeren
+                        pl<ex>e</ex>itos en Razon de las<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>tafurerias E el pl<ex>e</ex>ito <lb break="yes"
+                    />fuere en logar que aya de aber costas que las peche el
+                    vençido al ven<lb break="no"/>çedor en<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>esta gujsa si fuere el vençedor que traya vestia
+                    cavallar <lb break="yes"/>o mular de le el vençido por cada
+                    dia q<ex>ue</ex> fuere segund El pl<ex>e</ex>ito .diez <lb
+                        break="yes"/>y seis dineros de la moneda nueba y si
+                    fuere ome de pie de<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>le ocho di<lb break="no"/>neros desta mesma
+                    moneda/. <pb n="8v"/>
+                    <cb type="single-column"/><lb break="yes"/></p>
+            </div>
+            <div type="section" n="37">
+                <head><hi rend="rubrique"><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>xxxvij<choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice></hi>
+                </head>
+                <p><g ref="#calderon1"/>
+                    <hi rend="initiale" n="1">S</hi>i algunos sabidores de los
+                    dados ganaren a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>mayoria din<ex>er</ex><hi rend="superscript"
+                    >o</hi>s <lb break="yes"/>o cornados sabidores desto si ay
+                    aCaeçiere en<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>el comen<choice>
+                        <corr>ç</corr>
+                        <sic>ç</sic>
+                    </choice>amj<ex>ent</ex><hi rend="superscript">o</hi> o
+                        des<lb break="no"/>pues turante el Juego durare de a<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>quel que perdiere los dineros <choice>
+                        <corr>a</corr>
+                        <sic>a</sic>
+                    </choice>
+                    <lb break="yes"/>peoria de si o de aquellos que los ganan a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>mayoria E se atoujeren <lb break="yes"/>a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>el E despues le demandare parte de<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>aquellos din<ex>er</ex><hi rend="superscript"
+                        >o</hi>s que<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>ganare <lb break="yes"/>E por la mayoria que
+                    entienden que faz <del hand="#self">es</del> el sabidor E
+                        fuere<ex>n</ex> ho<lb break="no"/>mes que sepan aquel
+                    Juego Tanto como el sabidor deve ge lo dar <lb break="yes"
+                    />Pero los que se asientan atienen<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>se al sabidor deven le dar dineros <lb break="yes"
+                    />o pen<ex>n</ex>os que aventure al Juego de a<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>quel porq<ex>ue</ex> se atiene a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>el E si<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>ge<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>los <lb break="yes"/>dieren deven llevar su<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>parte cada vno dellos segund q<ex>ue</ex> se
+                    aCaeçiere <lb break="yes"/>el Juego E si no no ay<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>an aquj parte E si perdiere El sabidor aquel <lb
+                        break="yes"/>Juego o a<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>quellos otros q<ex>ue</ex> se atienen a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>el que<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>pague cada vno dellos su <lb break="yes"/>parte de a<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>quello que perdieren quanto y montare porque se
+                    aCaeçe <lb break="yes"/>a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>las vezes que pierde ome Juego de mayoria/. <lb
+                        break="yes"/></p>
+            </div>
+            <div type="section" n="38">
+                <head><hi rend="rubrique"><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>xxxviij<choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice></hi>
+                </head>
+                <p><g ref="#calderon1"/>
+                    <hi rend="initiale" n="1">E</hi> aquellos que han de
+                    arrendar las tafurerias por<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>el Rei de<lb break="no"/>ven preguntar por a<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>quellos q<ex>ue</ex> entienden o saben mas de las
+                        tafu<lb break="no"/>rerias en<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>todo logar q<ex>ue</ex> entrare E los llamaren em
+                    pregontar les por <lb break="yes"/>las tafurerias de los
+                    logares do ellos moran E mostrar les el poder <lb
+                        break="yes"/>E la firme<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>dumbre que traen del Rei deven le prometer E dar
+                    cada <lb break="yes"/>vno como entendiese que se podrian
+                    aprouechar las tafurerias <lb break="yes"/>Del Rei deven ser
+                    sabidores los aRendadores porque piden las <lb break="yes"
+                    />tafurerias para aquellos que han Sabor de las aRendar Ca
+                    despues <lb break="yes"/>que saben que a<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>quel q<ex>ue</ex> Recauda viene E es en los logares
+                    fablan todos <lb break="yes"/>De consuno de<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>gujsa que njnguno no las pague. E dan Vno dellos
+                        q<ex>ue</ex>
+                    <lb break="yes"/>las aRiende por todos esto fazen por<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>a<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>vatir las tafurerias E aber <lb break="yes"/>las de<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>buen mercado E otrosi los aRendadores de las
+                    tafurerias de<lb break="no"/>ven las fazer pregonar en cada
+                    logar dos dias dos vezes en<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>el dia la <lb break="yes"/>vna en la
+                        manan<ex>n</ex>a E la otra en la hora de visperas
+                        porq<ex>ue</ex> venga<ex>n</ex> a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>eL <lb break="yes"/>aquellos que las qujsieren
+                    aRendar E entienda el Rei E los <pb n="9r"/>
+                    <fw rend="titre-courant"><g ref="#calderon1"/> titulo
+                            p<ex>rimer</ex><hi rend="superscript">o</hi> de los
+                        juegos y tafurerias \ 8</fw>
+                    <cb type="single-column"/><lb break="yes"/>Homes de<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>la tierra que lo fazen bien y leal<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>mente Sin engan<ex>n</ex>o njngu<lb break="no"/>no
+                    E despues que<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>oviere ARendadas las tafurerias E oviere fechas las
+                        <lb break="yes"/>cartas de los aRendamjentos con los
+                    aRendadores no sean poderosos <lb break="yes"/>de se las
+                    toller fasta acabado aquel tiempo segund que dixeren las
+                        car<lb break="no"/>tas del aRendamjento que
+                        fuero<ex>n</ex> fechas en<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>esta Razon Saluo si<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>el otro <lb break="yes"/>diere el<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>terçio demas E deste preçio que diere demas Sea el
+                    terçio de a<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>que<lb break="no"/>llos a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>qujen tolliero<ex>n</ex> las Rentas de las
+                    tafurerias en<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>esta guisa E todo lo aL <lb break="yes"/>para el
+                    Rei porq<ex>ue</ex> las cosas del Rei se deben aprouechar./
+                        <lb break="yes"/></p>
+            </div>
+            <div type="section" n="39">
+                <head><hi rend="rubrique"><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>xxxix<choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice></hi>
+                </head>
+                <p><g ref="#calderon1"/>
+                    <hi rend="initiale" n="1">E</hi> de todos los
+                    pl<ex>e</ex>itos de<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>las tafurerias se<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>puede cada vno q<ex>ue</ex> quesiere <lb
+                        break="yes"/>alçar <choice>
+                        <corr>a</corr>
+                        <sic>a</sic>
+                    </choice>l Rei saluo de la pena que es puesta en<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>el libro de las tafurerias <lb break="yes"/>sobre
+                    aquellos que Juegan fuera de las tafurerias del Rei Despues
+                        q<ex>ue</ex>
+                    <lb break="yes"/>fueren puestas en Renta o en Recaudo si no
+                    fuere por<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>a<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>mor o por gr<ex>açi</ex>a <lb break="yes"/>de aquel
+                    que las toviere aRendadas E aquellos que se
+                        aggraujare<ex>n</ex>
+                    <lb break="yes"/>de las sententias que dieren los
+                        al<ex>ca</ex>ldes de los logares que han de Juzgar <lb
+                        break="yes"/>los pl<ex>e</ex>itos de las tafurerias por
+                        n<ex>uest</ex>ro sen<ex>n</ex>or el rrey por<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>el libro q<ex>ue</ex> fizo <lb break="yes"/>maestre <choice>
+                        <corr>R</corr>
+                        <sic>R</sic>
+                    </choice>oldan de las tafurerias deve <choice>
+                        <corr>dizir</corr>
+                        <sic>dizir</sic>
+                    </choice> al al<ex>ca</ex>lde da<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>nos fieL <lb break="yes"/>Juizio scri<choice>
+                        <sic>~</sic>
+                        <corr/>
+                    </choice>pto E mostrar por la ley del libro porq<ex>ue</ex>
+                    vos Juzgaredes <lb break="yes"/>E todo esto debe hazer
+                    tambien aquellos que estan sueltos como a<lb break="no"
+                    />quellos q<ex>ue</ex> estan en las presiones E debe soltar
+                    los presos el al<ex>ca</ex>lde en <lb break="yes"/>tal
+                    manera q<ex>ue</ex> tome buen fiador de la demanda que le
+                    fizieren y de las <lb break="yes"/>costas <lb break="yes"
+                    /></p>
+            </div>
+            <div type="section" n="40">
+                <head><hi rend="rubrique"><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>xl<choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice></hi>
+                </head>
+                <p><g ref="#calderon1"/>
+                    <hi rend="initiale" n="1">T</hi>odo ome que qujsiere Jugar
+                    las tablas puede fazer en<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>esta guisa <lb break="yes"/>que lo Juegue al
+                        emp<ex>er</ex>ador o a las fallas o al cabo qu<choice>
+                        <corr>in</corr>
+                        <sic/>
+                    </choice>al o al seys E dos <lb break="yes"/>y as E no <del
+                        hand="#self">qu</del>a <add hand="#self"><hi
+                            rend="superscript">o</hi></add>tro Juego njnguno E
+                    Juegue fasta seis m<ex>a</ex>r<ex>auedi</ex>s de la moneda
+                        <lb break="yes"/>blanca E no<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>mas E que Juegue a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>embites fasta seis m<ex>a</ex>r<ex>auedi</ex>s E
+                    que de seis <lb break="yes"/>m<ex>a</ex>r<ex>auedi</ex>s
+                    adelante que pague el tablaJe E Si Jugare paradas que lo
+                    pague de <lb break="yes"/>la marvoto o de la garguista o del<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>a<subst hand="#self">
+                        <del><gap reason="illegible" extent="subword"/></del>
+                        <add>z</add>
+                    </subst>ar E en tres dados E si Jugare a la Jal<lb
+                        break="no"/>deta fuera de las tafurerias nj a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>pares no<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>pares nj a las cruzetas nj o<lb break="no"/>tro
+                    Juego njnguno a que se pierden dineros que pague Saluo si
+                    fuere <lb break="yes"/>a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>la vallesta o al teJuelo o al dardo o a la via de<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>la capa Si no fuere por <lb break="yes"/>mandado de<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>aquellos q<ex>ue</ex> toviere<ex>n</ex> las
+                    tafurerias q<ex>ue</ex> peche la pena q<ex>ue</ex> man-Da
+                        <pb n="9v"/>
+                    <cb type="single-column"/><lb break="yes"/>la carta del Rey
+                    en Razon de las Tafurerias Saluo si Jugare<ex>n</ex>
+                    <lb break="yes"/>a comer o a beuer asi como dize la ley
+                    deste libro. <lb break="yes"/></p>
+            </div>
+            <div type="section" n="41">
+                <head><hi rend="rubrique"><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>xlj<choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice></hi>
+                </head>
+                <p><g ref="#calderon1"/>
+                    <hi rend="initiale" n="1">P</hi>onga las manos sobre los
+                    sanctos Evangelios sobre la cruz del altar <lb break="yes"
+                    />E el que le tomare la Jura de<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>aquel que oviere de Jurar a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>lo de conJurar <lb break="yes"/>desta gujsa vos me
+                    Jurades por dios padre que hizo el çielo y la tierra <lb
+                        break="yes"/>E todas las otras cosas q<ex>ue</ex> son
+                    fechas por Jh<ex>es</ex>u xp<ex>ist</ex>o q<ex>ue</ex> naçio
+                    de la virgen <lb break="yes"/>gl<ex>or</ex>iosa sancta maria
+                    y por<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>el spiritu santto que son tres personas y <lb
+                        break="yes"/>vn solo dios E por<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>estes sanctos Evangelios que cuentan las pala<lb
+                        break="no"/>bras y los fechos de n<ex>uest</ex>ro
+                        sen<ex>n</ex>or Jh<ex>es</ex>u xp<ex>ist</ex>o E si
+                    toviere la mano puesta <lb break="yes"/>sobre la cruz diga
+                    que Jura por<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>aquella cruz que<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>es semeJança de aq<ex>ue</ex><lb break="no"/>lla en
+                        q<ex>ue</ex> n<ex>uest</ex>ro sen<ex>n</ex>or
+                        Jh<ex>es</ex>u xp<ex>ist</ex>o paso muerte y
+                        pasio<ex>n</ex> por nos pecado<lb break="no"/>res saluar
+                    E Si las metiere sobre el altar diga que Jura por<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>aqueL <lb break="yes"/>altar en q<ex>ue</ex> fue
+                    conSagrado el cuerpo de n<ex>uest</ex>ro Redentor
+                        Jh<ex>es</ex>u <subst hand="#self">
+                        <del>C</del>
+                        <add>x</add>
+                    </subst>p<ex>ist</ex>o q<ex>ue</ex> a<lb break="no"/>quello
+                        q<ex>ue</ex> demanda es ansi como su contendor dize y
+                    esto sobre<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>la Ra<lb break="no"/>zon q<ex>ue</ex> ovier de
+                    Jurar E sobre todas estas palabras ha de Responder <lb
+                        break="yes"/>aquel que fiziere la Jura al otro
+                        q<ex>ue</ex> se la toma o asi como ge la faze E <lb
+                        break="yes"/>despues desto ha de dizir aquel que toma la
+                    Jura q<ex>ue</ex> ansi le ayude <lb break="yes"/>dios
+                        q<ex>ue</ex> en aquellas palabras que el dixo en los
+                    Evangelios o en<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>la cruz <lb break="yes"/>o en<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>el altar sobre que Jura como dize verdad E aquel que<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>Jura ha <lb break="yes"/>de dizir Amen como es
+                    gujsado E aquel que toma la Jura no sea maL<lb break="no"
+                    />trecho por<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>el derecho que demanda./. <lb break="yes"/></p>
+            </div>
+            <div type="section" n="42">
+                <head><hi rend="rubrique">Juramento del Judio <lb break="yes"/><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>xlij<choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice></hi>
+                </head>
+                <p><g ref="#calderon1"/>
+                    <hi rend="initiale" n="1">E</hi>n<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>esta guisa primera<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>mente Jure sobre el libro de moysen <lb break="yes"
+                    />asi Juras tu Jodio por<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>esta lei que fue dada por mano de moysen <lb
+                        break="yes"/>a los Judios en<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>el monte Sinay <foreign xml:lang="heb"
+                        >hebeeten</foreign> por su nombre Espeçial<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>mente <lb break="yes"/><foreign xml:lang="heb">en
+                        tu lo asesu</foreign> E desi llamen al Rabi o al que lo
+                    oviere de conJurar su <lb break="yes"/>nombre este es el
+                        <foreign xml:lang="heb">oren aliut elgumer</foreign> E
+                    ha de tener <foreign xml:lang="heb">cofer</foreign> tura en
+                    su <lb break="yes"/>braço aquella que sacan los Judios lunes
+                    E Juebes E sabado y fasta <lb break="yes"/>que acaben la
+                    Jura Asi Juras tu Jodio por diez vezes de los
+                        mandamj<ex>ent</ex><hi rend="superscript">o</hi>s <lb
+                        break="yes"/>S<choice>
+                        <corr>i</corr>
+                        <sic>i</sic>
+                    </choice>nay en dia de çinquesma que dixo yo fue al siglo E
+                    yo soi E otro no <lb break="yes"/>E el que dixo no Jures el
+                    nombre del dio vibo q<ex>ue</ex> a no le aparara
+                        dapn<ex>n</ex>o <pb n="10r"/>
+                    <fw rend="titre-courant"><g ref="#calderon1"/> Rey don
+                        alonso en<choice>
+                            <corr> </corr>
+                            <sic/>
+                        </choice>vall<ex>adol</ex>id era E an<ex>n</ex>o .13.73
+                            an<ex>n</ex>os \ 9</fw>
+                    <cb type="single-column"/><lb break="yes"/>El que<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>juro en su nombre E yo nombros al dia del sabado
+                    por s<ex>an</ex>tig<choice>
+                        <corr>uar</corr>
+                        <sic>uar</sic>
+                    </choice> lio / ca en seis <lb break="yes"/>dias fizo don
+                    dio el çielo y la tierra y<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>el dia septeno paso el fuego <choice>
+                        <corr>ca</corr>
+                        <sic>ca</sic>
+                    </choice> sa<lb break="no"/>bedes los Judios que por la Jura <choice>
+                        <corr>falsa</corr>
+                        <sic>falsa</sic>
+                    </choice> viene el mal a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>todo el çieglo E tu Juras <lb break="yes"/>por la
+                    fuerça E por<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>el bien y por la ley E por<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>el nombre por quel mundo se formo <lb break="yes"
+                    />E <foreign xml:lang="heb">samjforas</foreign> que<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>es forma del mundo Juro si tu verdad dizes
+                        venga<ex>n</ex> sobre ti <lb break="yes"/>todas las
+                    vendiçiones que son scriptas en <foreign xml:lang="heb">se
+                        for</foreign> mose E si tu verdad sabes <lb break="yes"
+                    />E la encubres o la<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>njegas o la dixeres en esta rrazon que yo demando
+                    que ven<lb break="no"/>gan sobre ti todas las llagas que
+                        vinjero<ex>n</ex> sobre los de egito E todas las
+                        maldi<lb break="no"/>çiones de las leyes que son
+                    scriptas contra aquellos que despreçian los
+                        ma<ex>n</ex>da<lb break="no"/>mjentos de dios y si tu
+                    esta Jura pasares maldito que seas en<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>el dia y en la <lb break="yes"/>noche maldito seas
+                    en tu echar y en<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>tu levantar maldito seas en tu an<lb break="no"
+                    />dar E en cujdar / maldito en<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>el campo maldito en tu saber maldito en<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>todo sa<lb break="no"/>ber maldito en tu poder A
+                    todo esto Responda el que Jura Amen Sin Re<lb break="no"
+                    />fierta njnguna E si Refartare que sea caydo de la demanda
+                    por que <lb break="yes"/>faz la Jura/./. <lb break="yes"
+                    /></p>
+            </div>
+            <div type="section" n="43">
+                <head><hi rend="rubrique">Juramento Del moRo <lb break="yes"/><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>xliij<choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>
+                    </hi>
+                </head>
+                <p><lb break="yes"/><g ref="#calderon1"/>
+                    <hi rend="initiale" n="1">O</hi>trosi los moros han su Jura
+                    apartada que deben fazer en<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>esta gujsa <lb break="yes"/>tambien el que ha de
+                    Jurar como el que a de Tomar la Jura a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>la puerta de la <lb break="yes"/>mezqujta que
+                    oviere si no en logar do les mandare El Juzgador E el moro
+                        <lb break="yes"/>que oviere de Jurar debe estar em pie E
+                    tornar se de cara y alçar las ma<choice>
+                        <sic>~</sic>
+                        <corr/>
+                    </choice>nos <lb break="yes"/>contra el medio<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>dia El qual llaman ellos alqujbla E aquel que
+                    oviere de to<lb break="no"/>mar la Jura debe de dizir estas
+                    palabras Juras tu moro por<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>dios que no a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>o<lb break="no"/>tro sino aquel que<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>es demandador E conosçedor E destruydor E
+                    alcançador <lb break="yes"/>de todas las cosas que en<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>esta parte de al<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>qujbla Contra qujen tu<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>fazes oraçio<ex>n</ex>
+                    <lb break="yes"/>otrosi me Juras por lo q<ex>ue</ex> Resabio
+                    Joel de la fee de dios para si E para sus fijos <lb
+                        break="yes"/>E por<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>el homenaJe que hizo de la<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>guardar E por la verdad q<ex>ue</ex> tu tienes que
+                    puso <lb break="yes"/>dios en la voca de mahoma fiJo de
+                    Audalla quando hizo sus prophetas <lb break="yes"/>E su
+                    mandado segund que tu crees esto que yo digo que no es asi como<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>tu di<lb break="no"/>zes E si mentira dizes que
+                    seas perdido de todos los bienes de dios E de ma<lb
+                        break="no"/>foma aquel que tu<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>dizes profeta el su mandadero E no ayas parte con<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>eL <pb n="10v"/>
+                    <fw rend="titre-courant">\ fo<choice>
+                            <corr>lio</corr>
+                            <sic/>
+                        </choice> 9.</fw>
+                    <cb type="single-column"/><lb break="yes"/>nj con los otros
+                    profetas E njnguno de los paradizos mas todas las penas <lb
+                        break="yes"/>que dizen en<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>el alcoran que son dadas E quedadas q<ex>ue</ex> no
+                    creen en la tu ley <lb break="yes"/>sobre ti venga E <choice>
+                        <corr>a</corr>
+                        <sic/>
+                    </choice> todo esto sobre<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>dicho deve Reponder el que Jura Asi <lb break="yes"
+                    />lo Juro diziendo estas palabras El mesmo asi como las
+                    dixere aqueL <lb break="yes"/>que toma la Jura desde el
+                    comjenço hasta el<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>cabo E sobre todo esto dizir <lb break="yes"/>amen
+                    Sin Refierta njnguna segund dize la Jura de los
+                        Xpi<ex>sti</ex>anos E de los Ju<lb break="no"/>dios <lb
+                        break="yes"/></p>
+            </div>
+            <div type="section" n="44">
+                <head><hi rend="rubrique"><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>xliiij<choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice></hi>
+                </head>
+                <p><g ref="#calderon1"/>
+                    <hi rend="initiale" n="1">O</hi>trosi qual<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>qujera que sacare tablaJe Sin liç<ex>ençi</ex><hi
+                        rend="superscript">a</hi> del tablaJero quando se <lb
+                        break="yes"/>a<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>Rendare. <lb break="yes"/></p>
+            </div>
+            <div type="section" n="45">
+                <head><hi rend="rubrique"><choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice>xlv<choice>
+                            <corr>.</corr>
+                            <sic/>
+                        </choice></hi>
+                </head>
+                <p><g ref="#calderon1"/>
+                    <hi rend="initiale" n="1">O</hi>trosi qual<choice>
+                        <sic> </sic>
+                        <corr/>
+                    </choice>qujer que acogiere Jugador a<choice>
+                        <corr> </corr>
+                        <sic/>
+                    </choice>su casa sin mandado del tabla<lb break="no"/>Jero
+                    que pague por cada vez çinquenta
+                    m<ex>a</ex>r<ex>auedi</ex>s.//. <lb break="yes"/></p>
+            </div>
+            <div type="section" n="46">
+                <head><hi rend="rubrique"><choice>
+                            <corr>.xlvj.</corr>
+                            <sic/>
+                        </choice></hi> todo </head>
+                <p><del hand="#self">s</del> esto sea demandado ante el
+                        al<ex>ca</ex>lde E al<ex>ca</ex>lde ante qujen fuere
+                        dema<ex>n</ex><lb break="no"/>dado faga luego derecho
+                    dello E si el al<ex>ca</ex>lde no qujsiere fazer derecho
+                        de<lb break="no"/>llo tome testimonjo Sobre el E
+                    muestren lo al Rei y sus Justiçias <lb break="yes"/><choice>
+                        <sic>...</sic>
+                        <corr/>
+                    </choice></p>
+            </div>
+        </body>
+    </text>
+</TEI>

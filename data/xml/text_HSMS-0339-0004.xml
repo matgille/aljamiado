@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="/home/mgl/Bureau/Travail/projets/Biblissima-Text/Transform/schemata/out/ODD_gold.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Carta a la condesa doña Juana Pimentel y el conde don
+                    Juan, mujer e hijo de don Álvaro de Luna</title>
+                <respStmt>
+                    <resp>Transcrit par</resp>
+                    <name xml:id="transcriptor"
+                            ><surname>Larkin</surname><forename>James
+                            B.</forename></name>
+                </respStmt>
+                <respStmt>
+                    <resp>Textes édités et rassemblés par </resp>
+                    <name>
+                        <forename>Francisco</forename>
+                        <surname>Gago Jover</surname>
+                    </name>
+                    <name>
+                        <forename>Javier</forename>
+                        <surname>Pueyo Mena</surname>
+                    </name>
+                </respStmt>
+                <respStmt>
+                    <resp>Modélisation, encodage et structuration XML-TEI
+                        par</resp>
+                    <name xml:id="mgl">
+                        <forename>Matthias</forename>
+                        <surname>Gille Levenson</surname>
+                    </name>
+                </respStmt>
+                <respStmt>
+                    <resp>Responsabilité du projet Biblissima-Textes: </resp>
+                    <name>
+                        <forename>Thibault</forename>
+                        <surname>Clérice</surname>
+                    </name>
+                    <name>
+                        <forename>Olivier</forename>
+                        <surname>Brisville-Fertin</surname>
+                    </name>
+                    <name>
+                        <forename>Ariane</forename>
+                        <surname>Pinche</surname>
+                    </name>
+                    <name>
+                        <forename>Marianne</forename>
+                        <surname>Reboul</surname>
+                    </name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Publié dans le cadre de Biblissima-textes à partir de
+                    matériaux publiés auparavant.</publisher>
+                <availability status="restricted">
+                    <licence
+                        target="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+                        >Creative Commons Attribution Non Commercial Share Alike
+                        4.0 International</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <!--La source premi&#232;re: le projet OSTA-->
+                <bibl xml:id="JPM" type="source-transcription">
+                    <title>TEXT.JPM.txt</title>
+                    <editor>
+                        <forename>Francisco</forename>
+                        <surname>Gago Jover</surname>
+                    </editor>
+                    <editor>
+                        <forename>Javier</forename>
+                        <surname>Pueyo Mena</surname>
+                    </editor>
+                    <publisher>Hispanic Seminary of Medieval Studies</publisher>
+                    <date when="2026-03-07"/>
+                    <availability status="restricted">
+                        <licence
+                            target="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+                            >Creative Commons Attribution Non Commercial Share
+                            Alike 4.0 International</licence>
+                    </availability>
+                    <note>Projet OSTA (Old Spanish Textual Archive). Source des
+                        données: <ptr
+                            target="https://raw.githubusercontent.com/hispanicseminary/OSTA/refs/heads/main/transcriptions/TEXT.JPM.txt"
+                        />, v 1.0. Notes (codex): <quote>los textos están
+                            numerados de forma consecutiva siguiendo el
+                            códice.</quote></note>
+                </bibl>
+                <!--La source premi&#232;re: le projet OSTA-->
+
+                <!--L'oeuvre abstraite = work-->
+                <!--On va cat&#233;goriser la classe frbr et la forme<-->
+                <bibl ana="#frbr.work" type="work">
+                    <title>Carta a la condesa doña Juana Pimentel y el conde don
+                        Juan, mujer e hijo de don Álvaro de Luna</title>
+                    <author
+                        corresp="https://database.factgrid.de/entity/Q400031"
+                            ><surname>de
+                            Valera</surname><forename>Diego</forename></author><date
+                        when="1453-05-24">1453-05-24</date>
+                    <idno type="HSMS-WORK">HSMS-0339-0004</idno>
+                    <idno type="beta-texid">Unknown</idno>
+                    <idno type="factgrid-id"
+                        corresp="https://database.factgrid.de/entity/Q1084018"
+                        >Q1084018</idno>
+                    <idno type="biblissima-id"/>
+                    <idno type="BNF-id"/>
+                    <idno type="BNE-id"/>
+                    <idno type="VIAF-id"/>
+                </bibl>
+                <!--L'oeuvre abstraite-->
+
+                <!--Exemplaire / manuscrit = frbr.item (imprim&#233;) ou frbr.manifestation_singleton (manuscrit). Attribut ajout&#233; automatiquement.-->
+                <msDesc ana="#frbr.manifestation_singleton">
+                    <msIdentifier facs="https://uvadoc.uva.es/handle/10324/592">
+                        <settlement>Valladolid</settlement>
+                        <!--Un identifiant de biblioth&#232;que id&#233;alement-->
+                        <repository
+                            corresp="https://database.factgrid.de/entity/Q946896"
+                            >Biblioteca Histórica de Santa Cruz</repository>
+                        <!--Un identifiant de biblioth&#232;que id&#233;alement-->
+                        <idno type="cote">U/Bc Ms 434</idno>
+                        <idno type="HSMS-ID">HSMS-0339</idno>
+                        <idno type="factgrid-id"
+                            corresp="https://database.factgrid.de/entity/Q1041378"
+                            >Q1041378</idno>
+                        <idno type="biblissima-id"/>
+                        <!--Manuscrit-->
+                        <idno type="beta-manid"
+                            corresp="https://philobiblon.upf.edu/xtf/servlet/org.cdlib.xtf.dynaXML.DynaXML?source=/unified/Display/3728BETA.MsEd.xml&amp;style=MsEd.xsl"
+                            >3728</idno>
+                        <!--Manuscrit-->
+                        <!--Imprim&#233;-->
+                        <!--Imprim&#233;-->
+                        <msName>MS: Valladolid: Universidad (Santa Cruz), 434.
+                            Jerónimo Zurita, cronista de Aragó, 1501 - 1600.
+                            Desconocido, Abreviación del Halconero, escrito 1489
+                            a quo - 1517 ad quem.</msName>
+                    </msIdentifier>
+                    <history>
+                        <!--Le corresp permet de lier la date &#224; l'unit&#233; codicologique, dans le cas de recueils organis&#233;s-->
+                        <origin>
+                            <origDate corresp="#HSMS-0339-0004"
+                                notBefore-iso="1501" notAfter-iso="1600">1501 -
+                                1600</origDate>
+                        </origin>
+                        <!--Le corresp permet de lier la date &#224; l'unit&#233; codicologique -->
+                    </history>
+
+                    <msContents>
+                        <msItem xml:id="HSMS-0339-0004">
+                            <locus>311r-318v</locus>
+                            <idno type="beta-cnum">3434</idno>
+                            <idno type="factgrid-cnum"
+                                corresp="https://database.factgrid.de/entity/Q1046973"
+                                >Q1046973</idno>
+                            <incipit>[p]&lt;sup&gt;3&lt;/sup&gt;ues ꝓsigujendo
+                                nr̃o ꝓposito muy huma|no señor digo q̃ fue
+                                luenga mente deba|tido</incipit>
+                            <explicit>vr̃o mãdado | conpljr com̃o las
+                                esterior&lt;i&gt;e&lt;/i&gt;s lo son
+                                q&lt;i&gt;ua&lt;/i&gt;ndo | espyrmentarlo [!]
+                                [&lt;i&gt;borr.&lt;/i&gt;: q̃rrs]
+                                q̃reys</explicit>
+                            <colophon/>
+                        </msItem>
+                    </msContents>
+                </msDesc>
+                <!--Exemplaire-->
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="osp-x-med">castellano</language>
+            </langUsage>
+            <textClass>
+                <catRef target="#prose #narrativa #historica #carta"/>
+            </textClass>
+        </profileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>Ce document est le fruit d'une conversion automatisée de la
+                    transcription originale, qui utilise des normes d'encodages
+                    propres au projet OSTA (Old Spanish Textual Archive).</p>
+                <p>Transcription de type graphématique: réduction des
+                    allographes au graphème. Tous les graphèmes sont conservés
+                    excepté pour les abréviations qui sont développées sans
+                    conservation de la graphie originale, en indiquant cependant
+                    qu'il s'agit d'une expansion. Les transcriptions ne sont ni
+                    ponctuées, ni accentuées selon les normes actuelles. La
+                    césure à la ligne est indiquée.</p>
+                <p>La description des phénomènes matériels et/ou non textuels
+                    est conservée: sauts de ligne, changements de colonne,
+                    espaces en blanc, miniatures, illustrations, diagrammes,
+                    etc.</p>
+                <p>Le texte est structuré en divisions minimales, en fonction de
+                    son genre. La division en paragraphes, pour la prose, n'est
+                    pas réalisée.</p>
+                <p>Pour plus d'informations, voir l'ODD.</p>
+            </editorialDecl>
+            <refsDecl n="physical">
+                <!--Doit &#234;tre adapt&#233; &#224; chaque structure de document, &#224; reprendre-->
+                <citeStructure unit="page" match="//body//pb" use="@n">
+                    <citeStructure unit="column" match=".//cb" use="@n"
+                        delim=".">
+                        <citeStructure unit="line" match=".//lb" use="@n"
+                            delim="."/>
+                    </citeStructure>
+                </citeStructure>
+                <refsDecl n="default">
+                    <citeStructure match="/TEI/text/body/div" use="@n"
+                        unit="chapter">
+                        <citeStructure match=".//milestone[@unit='section']"
+                            use="@n" unit="section" delim="."/>
+                    </citeStructure>
+                </refsDecl>
+                <!--Doit &#234;tre adapt&#233; &#224; chaque structure de document-->
+            </refsDecl>
+            <classDecl>
+                <taxonomy>
+                    <bibl>
+                        <title>Catégories de segments annotés</title>
+                    </bibl>
+                    <category xml:id="glose">
+                        <catDesc>Segment glosé</catDesc>
+                    </category>
+                    <category xml:id="addendum">
+                        <catDesc>Ajout intellectuel</catDesc>
+                    </category>
+                </taxonomy>
+                <!--Merci &#224; Morgane PICA pour son aide sur l'adaptation &#224; la mod&#233;lisation FRBR-->
+                <taxonomy xml:id="frbr"
+                    sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/">
+                    <bibl>
+                        <title>Catégories FRBRoo</title>
+                    </bibl>
+                    <category xml:id="frbr.work"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F1">
+                        <catDesc>Work</catDesc>
+                    </category>
+                    <category xml:id="frbr.expression"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F2">
+                        <catDesc>Expression</catDesc>
+                    </category>
+                    <category xml:id="frbr.manifestation"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F3">
+                        <catDesc>Manifestation</catDesc>
+                    </category>
+                    <category xml:id="frbr.manifestation_singleton"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F4">
+                        <catDesc>Manifestation Singleton</catDesc>
+                    </category>
+                    <category xml:id="frbr.item"
+                        sameAs="http://iflastandards.info/ns/fr/frbr/frbroo/F5">
+                        <catDesc>Item</catDesc>
+                    </category>
+                </taxonomy>
+                <taxonomy xml:id="categorisation_formelle">
+                    <bibl>
+                        <title>Catégorisation formelle</title>
+                    </bibl>
+                    <category xml:id="prose">
+                        <catDesc xml:lang="es">prosa</catDesc>
+                        <catDesc xml:lang="fr">prose</catDesc>
+                    </category>
+                    <category xml:id="vers">
+                        <catDesc xml:lang="es">verso</catDesc>
+                        <catDesc xml:lang="fr">vers</catDesc>
+                    </category>
+                </taxonomy>
+                <taxonomy xml:id="matiere_textuelle">
+                    <bibl>
+                        <title>Matière textuelle</title>
+                    </bibl>
+                    <category xml:id="didactica">
+                        <catDesc xml:lang="es">Didáctica</catDesc>
+                        <catDesc xml:lang="fr">Didactique</catDesc>
+                    </category>
+                    <category xml:id="juridica">
+                        <catDesc xml:lang="es">Jurídica</catDesc>
+                        <catDesc xml:lang="fr">Juridique</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="section">
+                <pb n="311r"/>
+                <cb type="single-column"/>
+                <lb break="yes"/>
+                <head><hi rend="rubrique">El Rey.</hi></head>
+                <p>
+                    <lb break="yes"/><hi rend="initiale" n="1">C</hi>ondessa
+                    doña Juana Pimentel e conde don <lb break="yes"
+                        />Ju<ex>an</ex> su fijo.</p>
+                <p>Vi vn escrito lleno de toda blasfemia <lb break="yes"/>e
+                    deslealtad e non menos de deshonestidad e orgu<lb break="no"
+                    />llo de loca soberuia: el qual me embiastes con <lb
+                        break="yes"/>Fran<ex>cis</ex><hi rend="superscript"
+                        >co</hi> de Trejo firmado de v<ex>uest</ex>ros nombres e
+                        se<lb break="no"/>llado con v<ex>uest</ex>ros sellos
+                    sobre la prision que yo mande <lb break="yes"/>fazer a don
+                        Alu<ex>ar</ex><hi rend="superscript">o</hi> de Luna
+                        v<ex>uest</ex>ro marido e padre <lb break="yes"/>por el
+                    qual entre las otras cosas me desides que yo <lb break="yes"
+                    />sepa e assi me fue d<ex>ic</ex>ho por el d<ex>ic</ex>ho
+                        Fran<ex>cis</ex><hi rend="superscript">co</hi> de Trejo,
+                        <lb break="yes"/>que en el caso contenido en el
+                        d<ex>ic</ex>ho v<ex>uest</ex>ro escrito no<lb break="no"
+                    />tificariades a n<ex>uest</ex>ro s<ex>an</ex><hi
+                        rend="superscript">to</hi> padre e a todos los princi<lb
+                        break="no"/>pes christianos aquesta que
+                        vosot<ex>r</ex><hi rend="superscript">o</hi>s aunque
+                        men<lb break="no"/>tirosa e falsam<ex>en</ex><hi
+                        rend="superscript">te</hi> llamades muy gran crueldad.
+                        <lb break="yes"/>La qual verdadera e
+                        santam<ex>en</ex><hi rend="superscript">te</hi> fablando
+                    es entera <lb break="yes"/>e pura e real Just<ex>ici</ex><hi
+                        rend="superscript">a</hi>.</p>
+                <p>E desides mas que les notifi<lb break="no"/>caredes todos los
+                        juram<ex>ent</ex><hi rend="superscript">o</hi>s e
+                    seguridades q<ex>ue</ex> dezides <lb break="yes"/>que tengo
+                    fechos e que convocaredes e llamaredes <lb break="yes"/>e
+                    traeredes no solo aquellos que yo tengo por <lb break="yes"
+                    />enemigos mas a los moros e a los diablos si pudie<lb
+                        break="no"/>ssedes dandoles no<ex>n</ex> solo lo que
+                    tenedes del d<ex>ic</ex>ho <pb n="311v"/>
+                    <cb type="single-column"/><lb break="yes"/>v<ex>uest</ex>ro
+                    marido e padre lo qual verdaderam<ex>en</ex><hi
+                        rend="superscript">te</hi> fablando es mio <lb
+                        break="yes"/>e no<ex>n</ex> suyo, ca lo el robo e tomo
+                    injusta mente &amp; non de<lb break="no"/>vida mente <del
+                        hand="#self">v<ex>uest</ex>ro marido</del>
+                    <note resp="#transcriptor">strike-out above line.</note> sin
+                    mi licencia e <lb break="yes"/>mandado de mi propia <lb
+                        break="yes"/>fazienda e patrimonio &amp; del sudor e
+                    trabajo de mis <lb break="yes"/>vassallos subditos e
+                    naturales mayormente de los <lb break="yes"/>pobres. E avn
+                    desides que no<ex>n</ex> solo les daredes esto <lb
+                        break="yes"/>mas avn de v<ex>uest</ex>ras vidas e
+                    personas: e que quando mas <lb break="yes"/>non podiessedes
+                    que desso que dezides que yo pien<lb break="no"/>so auer e
+                    tomar con estrema cobdicia lo pornedes <lb break="yes"/>en
+                    llamas e fuegos: e otras muchas cosas q<ex>ue</ex> muy <lb
+                        break="yes"/>desordenadam<ex>en</ex><hi
+                        rend="superscript">te</hi> por v<ex>uest</ex>ro escrito
+                    dezides las quales <lb break="yes"/>bien se muestran
+                        no<ex>n</ex> ser suplicacio<ex>n</ex> de vassallos <lb
+                        break="yes"/>e subditos naturales a su rey e
+                        s<ex>eñ</ex><hi rend="superscript">or</hi> natural nin
+                        <lb break="yes"/>con aquella obediencia e
+                        reveren<ex>ci</ex><hi rend="superscript">a</hi> que de
+                        necess<ex>ari</ex><hi rend="superscript">o</hi>
+                    <lb break="yes"/>se requeria e la razon &amp; derecho e
+                    leyes quieren <lb break="yes"/>e mandan duenas <seg
+                        ana="#glose"><note resp="#transcriptor">marked in right
+                            margin; correction in left.</note>
+                        <add hand="#self">al<ex>gun</ex><hi rend="superscript"
+                                >o</hi> antes</add></seg>
+                    <lb break="yes"/>para prouocar con gran razon <lb
+                        break="yes"/>e just<ex>ici</ex><hi rend="superscript"
+                        >a</hi> toda yra e indignacion e por ellas parece <lb
+                        break="yes"/>que v<ex>uest</ex>ra intencion es fundada
+                    en toda deslealtad <lb break="yes"/>e dañada e corrupta en
+                    todo e por todo e que non <lb break="yes"/>solo por
+                        pensami<ex>ent</ex><hi rend="superscript">o</hi> mas por
+                    obra proferides <del hand="#self">de</del>
+                    <lb break="yes"/>deponer la naturaleza que avedes en mis
+                    regnos, <lb break="yes"/>e la fidelidad &amp; lealtad e
+                        reveren<ex>ci</ex><hi rend="superscript">a</hi> &amp;
+                    subjecion <pb n="312r"/>
+                    <cb type="single-column"/><lb break="yes"/>e obediencia
+                        e<gap reason="illegible" extent="subword"/> las otras
+                    cosas que me deuedes <lb break="yes"/>e sodes obligados como
+                    a v<ex>uest</ex>ro Rey e soberano s<ex>eñ</ex><hi
+                        rend="superscript">or</hi>
+                    <lb break="yes"/>natural. Todo esto a grande sin razon e sin
+                        le<lb break="no"/>gitima causa segun e por lo que
+                    adelante sera <lb break="yes"/>declarado. E aquel que tan
+                    malo e falso e <lb break="yes"/>desleal consejo vos dio
+                    assaz muestra por <add hand="#self">si</add>
+                    <note resp="#transcriptor">addition above line.</note> su
+                        <lb break="yes"/>deslealtad e fatuidad e a todos es bien
+                        conos<lb break="no"/>cido los grandes casos e penas en
+                    que non so<lb break="no"/>lamente por lo pensar mas por lo
+                    poner en <lb break="yes"/>escrito avedes incurrido e
+                    incorredes assi vos <lb break="yes"/>ot<ex>r</ex><hi
+                        rend="superscript">o</hi>s como aquel desleal &amp; malo
+                    e impruden<lb break="no"/>te e loco e vano consegero que lo
+                    ordeno e com<lb break="no"/>puso.</p>
+                <p>E tornando al neg<ex>oci</ex><hi rend="superscript">o</hi>
+                    principal cierto es <lb break="yes"/>e verdad e assi es
+                        pub<ex>li</ex>c<hi rend="superscript">o</hi> e
+                        not<ex>ori</ex><hi rend="superscript">o</hi> e
+                        manifies<lb break="no"/>to en mis regnos e aun fuera
+                    dellos que yo <lb break="yes"/>me movi a mandar prender al
+                        d<ex>ic</ex>ho v<ex>uest</ex>ro ma<lb break="no"/>rido
+                    &amp; padre con grande razon e justicia e <lb break="yes"
+                    />por los frequentes e grandes assiduos e con<lb break="no"
+                    />tinuos clamores comunm<ex>en</ex><hi rend="superscript"
+                        >te</hi> de todos mis reg<lb break="no"/>nos e de los
+                    tres estados dellos assi perlados <lb break="yes"/>e
+                    clerigos e religiosos de todas las ordenes <pb n="312v"/>
+                    <cb type="single-column"/><lb break="yes"/>como de los
+                    grandes cauall<ex>er</ex><hi rend="superscript">o</hi>s e
+                    fidalgos de mis <lb break="yes"/>regnos e de las cibdades
+                    &amp; villas e lugares <lb break="yes"/>e pueblos dellos
+                    tanto e en tal manera que <lb break="yes"/>ya subian al
+                    cielo e no<ex>n</ex> auia quien lo pudi<lb break="no"/>esse
+                    soportar nin tolerar e la justicia diui<lb break="no"/>na e
+                    real no<ex>n</ex> lo consentian ya mas sofrir <lb
+                        break="yes"/>nin dissimular, non enbargante que yo
+                        vsan<lb break="no"/>do con el d<ex>ic</ex>ho
+                        v<ex>uest</ex>ro marido e padre de toda <lb break="yes"
+                    />superabundante clemen<ex>ci</ex><hi rend="superscript"
+                        >a</hi> le mande e <lb break="yes"/>requeri e amoneste
+                    por muchas vezes <lb break="yes"/>que se corrigiesse e
+                    emendasse e partiesse <lb break="yes"/>de aquel mal
+                        prop<ex>osit</ex><hi rend="superscript">o</hi> que tenia
+                    e en que de <lb break="yes"/>tanto t<ex>iem</ex>po aca
+                    perseveraua e que biuiesse pa<lb break="no"
+                        />cificam<ex>en</ex><hi rend="superscript">te</hi> sin
+                    escandalo nin offensa de los <lb break="yes"/>grandes de mis
+                    regnos nin de otro alg<ex>un</ex><hi rend="superscript"
+                        >o</hi>
+                    <lb break="yes"/>dexando toda elacion e soberuia pues
+                        q<ex>ue</ex>
+                    <lb break="yes"/>a mi plazia dello como por la
+                        gr<ex>aci</ex><hi rend="superscript">a</hi> de dios soy
+                        <lb break="yes"/>Rey <add hand="#self">e s<ex>eñ</ex><hi
+                            rend="superscript">or</hi></add>
+                    <note resp="#transcriptor">added above.</note> de todos e
+                    que todos me sirvan e amen <lb break="yes"/>e ellos e cada
+                    vno en su estado resciba de <lb break="yes"/>mi
+                        m<ex>erce</ex>d<ex>e</ex>s e gr<ex>aci</ex>as e
+                        benef<ex>ici</ex><hi rend="superscript">o</hi>s e sean
+                    de <lb break="yes"/>mi acatados e honrados e bien tratados:
+                    e que por <pb n="313r"/>
+                    <cb type="single-column"/><lb break="yes"/>esta via yo ser
+                    mejor seruido de todos e aun del <lb break="yes"/>assi
+                    mesmo: e que todo esto era lo que cumplia <lb break="yes"/>a
+                        s<ex>er</ex>ui<ex>ci</ex><hi rend="superscript">o</hi>
+                    de dios e mio e a guarda e conservacio<ex>n</ex>
+                    <lb break="yes"/>de mi preheminencia e a honor de mi corona
+                        <lb break="yes"/>real e al bien publico e pacifico
+                    estado &amp; tran<lb break="no"/>quilidad <note
+                        resp="#transcriptor">omitted text in right
+                        margin.</note>
+                    <seg ana="#glose"><add hand="#self">de mis reynos <lb
+                                break="yes"/>e al bueno e <lb break="yes"
+                            />honesto reposo e <lb break="yes"/>sossiego e
+                                pros<lb break="no"/>peridad</add></seg> de todos
+                    ellos. E aun otrosi al bien <lb break="yes"/>e conservacion
+                    de la persona e estado del <lb break="yes"/>mismo: lo qual
+                    el con cora<choice>
+                        <corr>ç</corr>
+                        <sic>c</sic>
+                    </choice>on endurecido, <lb break="yes"/>mostrandose del
+                    todo incorregible &amp; inobe<lb break="no"/>diente &amp;
+                    rebelde &amp; indigno e desagradesci<lb break="no"/>do &amp;
+                        no<ex>n</ex> meresciente de las dignidades en
+                        q<ex>ue</ex>
+                    <lb break="yes"/>yo vsando de la manificienca deuida a los
+                        <lb break="yes"/>Reyes le puse e sublime e de los
+                    grandes bene<lb break="no"/>ficios e
+                        m<ex>erce</ex>d<ex>e</ex>s que de mi avia rescibido
+                    nunca <lb break="yes"/>quiso obedecer nin fazer nin cumplir,
+                    por <lb break="yes"/>lo qual yo con gran causa e
+                        just<ex>ici</ex><hi rend="superscript">a</hi> e legitima
+                        <lb break="yes"/>razon e excitado y mouido a ellos por
+                    dios <lb break="yes"/>n<ex>uest</ex>ro s<ex>eñ</ex><hi
+                        rend="superscript">or</hi> en las manos del qual es el
+                    coraçon de <lb break="yes"/>los reyes mande proueer segun
+                    que provey <lb break="yes"/>con lo qual concurrio la
+                        denu<ex>n</ex>ciacion de mi pro-<choice>
+                        <sic>pro</sic>
+                        <corr/>
+                    </choice>cur<ex>ad</ex><hi rend="superscript">or</hi>
+                    <pb n="313v"/>
+                    <cb type="single-column"/><lb break="yes"/>fiscal e promotor
+                    de la mi just<ex>ici</ex><hi rend="superscript">a</hi> que
+                        <lb break="yes"/>contra el ante mi propuso recontando
+                    por <lb break="yes"/>ella ot<ex>r</ex><hi rend="superscript"
+                        >o</hi>s muchos graues e enhormes &amp; ex<lb break="no"
+                    />ecrables e de<subst hand="#self">
+                        <del>s</del>
+                        <add>t</add>
+                    </subst>estables e insoportables casos e <lb break="yes"
+                    />culpas e demeritos contra el. e en como el <lb break="yes"
+                    />vsurpando de toda tyrania el estado que <lb break="yes"
+                    />non era suyo mas del todo ageno del e <lb break="yes"/>de
+                    su condicion se apodero de mi casa &amp; pala<ex>ci</ex><hi
+                        rend="superscript">o</hi>
+                    <lb break="yes"/>e corte e de algunas de las mas principales
+                        <lb break="yes"/>cibdades e villas e lugares e
+                        cast<ex>ill</ex><hi rend="superscript">o</hi>s e fort<lb
+                        break="no"/>alezas e t<ex>ie</ex>rras de mis regnos
+                    &amp; rescibien<lb break="no"/>do juram<ex>ent</ex><hi
+                        rend="superscript">o</hi>s e pl<ex>e</ex>ytos homenages
+                    dellos e <lb break="yes"/>de algunos grandes de mis regnos e
+                    de <lb break="yes"/>ot<ex>r</ex><hi rend="superscript"
+                        >o</hi>s mis vassallos e subditos &amp; naturales de <lb
+                        break="yes"/>ellos no<ex>n</ex> me no<ex>n</ex>brando
+                    nin excetando nin <lb break="yes"/>faziendo de mi mencion
+                    segun que de ne<lb break="no"/>cess<ex>ari</ex><hi
+                        rend="superscript">o</hi> se devia fazer e las leyes de
+                    mis reg<lb break="no"/>nos lo quieren en mandan, mas
+                    vsurpando <lb break="yes"/>lo e aprosuandolo <seg
+                        ana="#glose"><add hand="#self">al<ex>gun</ex><hi
+                                rend="superscript">o</hi> ap<lb break="no"
+                            />propiandolo</add></seg> e aplicandolo todo a <lb
+                        break="yes"/>si mesmo e para si e faziendo otros auctos
+                    a <lb break="yes"/>el illicitos e defendidos queriendo
+                    fingir e <pb n="314r"/>
+                    <cb type="single-column"/><lb break="yes"/>fazer e mostrar
+                    que todas las cosas eran so su <lb break="yes"
+                        />mandami<ex>ent</ex><hi rend="superscript">o</hi> e
+                    governacion como si el fuera tal <lb break="yes"/>que
+                        no<ex>n</ex> reconosciera rey nin superior e come<lb
+                        break="no"/>tiendo e faziendo carceles privadas e muchos
+                        <lb break="yes"/>robos e fuerças e execuciones e
+                    conlusiones e <lb break="yes"/>cohechos e vendiendo los
+                        off<ex>ici</ex><hi rend="superscript">o</hi>s de mi
+                    justicia <lb break="yes"/>e de mi casa e de la
+                    administracion de mi fa<lb break="no"/>sienda e de las
+                    cibdades e villas de mis reynos <lb break="yes"/>e procuro e
+                    puso en mis reynos muchos escanda<lb break="no"/>los e
+                    zizañas e enemistades conspirando e fa<lb break="no"/>siendo
+                    ligas e monipodios e sediciones e juras <lb break="yes"/>e
+                    confederaciones <note resp="#transcriptor">Marked in
+                        margin.</note> con enemigos mios e de mis <lb
+                        break="yes"/>reynos e con los setares dellos con otras
+                        perso<lb break="no"/>nas sin mi licen<ex>ci</ex><hi
+                        rend="superscript">a</hi> e mandado embiando a ellos <lb
+                        break="yes"/>sus mensageros e embax<ex>ado</ex><hi
+                        rend="superscript">res</hi> e mandandoles que <lb
+                        break="yes"/>les dixessen e affirmassen de mi parte las
+                    cosas <lb break="yes"/>que yo no<ex>n</ex> sabia nin por mi
+                    les era mandado nin <lb break="yes"/>cometido.</p>
+                <p>E sobre todo esto continuando de <lb break="yes"/>tomar e
+                    ocupar e tomando e ocupando mis <lb break="yes"/><del
+                        hand="#self">rentas</del> der<ex>ech</ex><hi
+                        rend="superscript">o</hi>s &amp; rentas &amp; pechos e
+                    tributos e cen-sos <pb n="314v"/>
+                    <cb type="single-column"/><lb break="yes"/>e defraudando e
+                    menoscabando aquellos e per<lb break="no"/>turbando la mi
+                        just<ex>ici</ex><hi rend="superscript">a</hi> e el vso e
+                    exercicio e execu<lb break="no"/>cion della e faziendo
+                        ot<ex>r</ex><hi rend="superscript">o</hi>s muchos males
+                    e daños en <lb break="yes"/>gran desservi<ex>ci</ex><hi
+                        rend="superscript">o</hi> de dios &amp; mio e
+                        q<ex>ue</ex> el bien pub<ex>li</ex><hi
+                        rend="superscript">co</hi> e paz <lb break="yes"/>e
+                    sossiego de mis regnos e en menguami<ex>ent</ex><hi
+                        rend="superscript">o</hi> e destruy<lb break="no"/>cion
+                    de mi patrim<ex>oni</ex><hi rend="superscript">o</hi> e
+                        abaxami<ex>ent</ex><hi rend="superscript">o</hi> de mi
+                    corona <lb break="yes"/>real. <note resp="#transcriptor"
+                        >Marked in margin.</note> Tanto que muchas vezes
+                    fallescio el <lb break="yes"/>mantenimi<ex>ent</ex><hi
+                        rend="superscript">o</hi> cotidiano de mi casa real e
+                    non me<lb break="no"/>nos de aquellos pocos continos mios e
+                    amigos e <lb break="yes"/>servidores mios: quitandolo a
+                    aquellos e dan<lb break="no"/>dolo a los suyos e tomando
+                    para si e para los <lb break="yes"/>suyos todo lo que vacaua
+                    en mis libros: e <lb break="yes"/>aun teniendo manera e
+                    procurando con toda <lb break="yes"/>importunidad porque se
+                    revocassen &amp; reboca<lb break="no"/>ron las
+                        m<ex>erce</ex>d<ex>e</ex>s por mi fechas a mis criados e
+                    otros <lb break="yes"/>mis s<ex>er</ex>ui<ex>do</ex><hi
+                        rend="superscript">res</hi> e aquellos se testassen e
+                    quitassen <lb break="yes"/>de mis libros segun que
+                        primeram<ex>en</ex><hi rend="superscript">te</hi> fueron
+                        <lb break="yes"/>quitados e testados a los que
+                        primeram<ex>en</ex><hi rend="superscript">te</hi> por
+                        <lb break="yes"/>mi mandado en ellos eran assentados e
+                    se diesse<ex>n</ex>
+                    <lb break="yes"/>e assentassen a los suyos. Todo esto
+                    oluidando <lb break="yes"/>el temor de dios e mio e la
+                        v<ex>er</ex>guença de las <lb break="yes"/>gentes e con
+                    gran desobediencia &amp; no<ex>n</ex> menos con <lb
+                        break="yes"/>pura ceguedad de avaricia e ambicion e
+                    desorde-nada <pb n="315r"/>
+                    <cb type="single-column"/><lb break="yes"/>e insaciable
+                    cobdicia la qual es rayz de <lb break="yes"/>todos los males
+                    e faziendo e cometiendo otros <lb break="yes"/>muchos
+                    crimenes e delitos excessos e maleficios <lb break="yes"
+                    />todo esto con gran fausto &amp; soberuia e desobe<lb
+                        break="no"/>diencia oluidada toda sujecion e reuerencia
+                        <lb break="yes"/>e lealtad e fidelidad e mostrandose de
+                        desagrade<lb break="no"/>scido e desconocido e
+                        no<ex>n</ex> meresciente del es<lb break="no"/>tado e
+                    dignidad en que lo yo auia puesto <lb break="yes"/>e
+                    sublimado e de los grandes benef<ex>ici</ex><hi
+                        rend="superscript">o</hi>s e grandes <lb break="yes"
+                        />m<ex>erce</ex>d<ex>e</ex>s que de mi auia rescibido de
+                    los quales se <lb break="yes"/>el fizo e mostro indigno
+                    allende de los casos <lb break="yes"/>e penas en que por las
+                        sobred<ex>ic</ex>has cosas incu<lb break="no"/>rrio
+                    segun que esto e otras cosas mas largam<ex>en</ex><hi
+                        rend="superscript">te</hi>
+                    <lb break="yes"/>en la d<ex>ic</ex>ha denunciacion se
+                    contienen.</p>
+                <p>De lo qual <lb break="yes"/>todo e de la notoriedad dello yo
+                    e mandado <lb break="yes"/>inquirir e saber verdad e
+                    entiendo por aque<lb break="no"/>lla forma e
+                        man<ex>er</ex><hi rend="superscript">a</hi> que a mi
+                    como a rey e soberano <lb break="yes"/>s<ex>eñ</ex><hi
+                        rend="superscript">or</hi> de mis reynos es deuido e
+                    pertenesce de lo <lb break="yes"/>fazer e
+                        especialm<ex>en</ex><hi rend="superscript">te</hi> por
+                    descargo de mi consciencia <lb break="yes"/>e por cumplir la
+                        just<ex>ici</ex><hi rend="superscript">a</hi> que de
+                    dios me es en-comendada <pb n="315v"/>
+                    <cb type="single-column"/><lb break="yes"/>e assi mesmo por
+                    la conseruacion del bie<ex>n</ex>
+                    <lb break="yes"/>comu<ex>n</ex> e paz e sossiego de mis
+                    regnos e por euita<lb break="no"/>cion de muy grandes
+                    escandalos e inco<ex>n</ex>vinientes <lb break="yes"/>que se
+                    podrian seguir mandare proveer e <lb break="yes"/>fazer e
+                    proveere e fare sobre todo aquello q<ex>ue</ex>
+                    <lb break="yes"/>segun dios e por la guarda de mi
+                    consciencia <lb break="yes"/>a toda real magestad pertenesce
+                    e es propio <lb break="yes"/>de fazer por man<ex>er</ex><hi
+                        rend="superscript">a</hi> que tales e tan graues <lb
+                        break="yes"/>e <gap reason="illegible" extent="word"
+                    />tissimas cosas non queden impuni<lb break="no"/>das e sea
+                        escarmi<ex>ent</ex><hi rend="superscript">o</hi> e
+                    exemplo a otros que se <lb break="yes"/>no<ex>n</ex> atrevan
+                    a fazer nin perpetrar las tales <lb break="yes"/>nin
+                    semejantes temerarias e peruersas e <lb break="yes"
+                    />detestables osadias mayormente contra su <lb break="yes"
+                    />rey e s<ex>eñ</ex><hi rend="superscript">or</hi> natural e
+                    contra la cosa pub<ex>li</ex><hi rend="superscript">ca</hi>
+                    <lb break="yes"/>de sus regnos. e todos reconoscan e
+                    obedescan <lb break="yes"/>e sirvan vn dios, e en la tierra
+                    vn rey vic<ex>ari</ex><hi rend="superscript">o</hi>
+                    <lb break="yes"/>suyo e <del hand="#self">que</del> su lugar
+                    tiene.</p>
+                <p>Segun lo qual vos <lb break="yes"/>otros nin ot<ex>r</ex><hi
+                        rend="superscript">o</hi>s algunos no<ex>n</ex> tenedes
+                    razon de <lb break="yes"/>vos agrauiar dello nin por ello se
+                    entienda <lb break="yes"/>yo yr contra juram<ex>ent</ex><hi
+                        rend="superscript">o</hi> nin seguridad alguna <lb
+                        break="yes"/>que yo aya fecho mayormente a
+                        vass<ex>all</ex><hi rend="superscript">o</hi> e subdito
+                        <pb n="316r"/>
+                    <cb type="single-column"/><lb break="yes"/>mio que tantos e
+                    tan grandes benef<ex>ici</ex><hi rend="superscript">o</hi>s
+                    e m<ex>erce</ex>d<ex>e</ex>s de <lb break="yes"/>mi avia
+                    rescebido e tan grandes juram<ex>ent</ex><hi
+                        rend="superscript">o</hi>s e <lb break="yes"/>pleytos
+                    homenages me auia fecho e aunque non <lb break="yes"/>los
+                    oviera fecho por la sola naturaleza e fi<lb break="no"
+                    />delidad e lealtad que el me devia era ascrito <lb
+                        break="yes"/>e obligado e ligado de toda obligacion e
+                        <lb break="yes"/>constricion e ligami<ex>ent</ex><hi
+                        rend="superscript">o</hi> natural e no<ex>n</ex> mudable
+                        <lb break="yes"/>de me seruir bien e leal e
+                        fielm<ex>en</ex><hi rend="superscript">te</hi> sobre
+                    todas <lb break="yes"/>cosas e contra todas las personas del
+                    mundo: <lb break="yes"/>cessante todo fraude e engaño e
+                    cautela e <lb break="yes"/>ficio<ex>n</ex> e simulacion e
+                    poner por ello a todo dis<lb break="no"/>crimen e peligro de
+                    su persona e vida e bien<ex>e</ex>s <lb break="yes"/>El qual
+                    fallesciendo <del hand="#self">destas</del> en qualquier de
+                        <lb break="yes"/>estas cosas por el mesmo fecho incurria
+                    en el m<ex>a</ex>yor <lb break="yes"/>e peor caso.</p>
+                <p>E yo porque segun razon nin der<ex>ech</ex><hi
+                        rend="superscript">o</hi>
+                    <lb break="yes"/>natural nin diuino nin aun positiuo puesto
+                    que <lb break="yes"/>del tal yo no<ex>n</ex> fuesse suelto
+                    lo que soy, no<ex>n</ex> seria <lb break="yes"/>obligado a
+                    le guardar nin obseruar juram<ex>ent</ex><hi
+                        rend="superscript">o</hi> nin <lb break="yes"/>seguridad
+                        <del hand="#self">caso que alguno se mostrasse</del>
+                        alg<ex>un</ex><hi rend="superscript">a</hi>
+                    <lb break="yes"/>porque aquellos todos son e entienden ser
+                    condicio-nados <pb n="316v"/>
+                    <cb type="single-column"/><lb break="yes"/>segun
+                        der<ex>ech</ex><hi rend="superscript">o</hi> e las leyes
+                    assi lo dizen que el tal <lb break="yes"
+                        />juram<ex>ent</ex><hi rend="superscript">o</hi> e
+                    seguridad <del hand="#self">q</del> caso que alguna se
+                        mostra<lb break="no"/>sse yo auer fecho no<ex>n</ex> se
+                        puede<ex>n</ex> nin deue<ex>n</ex> estender <lb
+                        break="yes"/>nin entender ni se entiende<ex>n</ex> ni
+                        estiende<ex>n</ex> a las <lb break="yes"/>cosas
+                        susod<ex>ic</ex>has que contra el d<ex>ic</ex>ho
+                        v<ex>uest</ex>ro marido e <lb break="yes"/>padre fize e
+                    me son denu<ex>n</ex>ciadas. E si por lo tal <lb break="yes"
+                    />yo ouiesse de dexar de fazer <del hand="#self"
+                            >iust<ex>ici</ex><hi rend="superscript">a</hi></del>
+                    aquello q<ex>ue</ex>
+                    <lb break="yes"/>la just<ex>ici</ex><hi rend="superscript"
+                        >a</hi> requiere e a mi pertenesce fazer <lb break="yes"
+                    />seria gran cargo de mi consciencia e de negar <lb
+                        break="yes"/>expressam<ex>en</ex><hi rend="superscript"
+                        >te</hi> la just<ex>ici</ex><hi rend="superscript"
+                        >a</hi> que por dios me es encome<ex>n</ex><lb
+                        break="no"/>dada en la tierra. E si en algun
+                        t<ex>iem</ex>po el d<ex>ic</ex>ho v<ex>uest</ex>ro ma<lb
+                        break="no"/>rido e padre me fizo algunos
+                        serui<ex>ci</ex><hi rend="superscript">o</hi>s como
+                        de<lb break="no"/>zides por esso yo no<ex>n</ex> deuo
+                    dexar de adminis<lb break="no"/>trar e fazer
+                        just<ex>ici</ex><hi rend="superscript">a</hi>
+                        m<ex>a</ex>yorm<ex>en</ex>te que todos saben <lb
+                        break="yes"/>que aquellos le fueron por mi bien e
+                        altam<ex>en</ex><hi rend="superscript">te</hi> re<lb
+                        break="no"/>munerados tanto e en tal grado que
+                        no<ex>n</ex> se falla <lb break="yes"/>por coronica
+                        <note resp="#transcriptor">Marked in margin.</note> de
+                    mis reynos nin aun de fuera <lb break="yes"/>de ellos que
+                    principe nin rey ni<ex>n</ex> otro s<ex>eñ</ex><hi
+                        rend="superscript">or</hi> tan <lb break="yes"
+                        />magnificam<ex>en</ex><hi rend="superscript">te</hi> se
+                    aya auido con seruidor suyo, <lb break="yes"/>quanto mas
+                    auido respeto e consideracion al <pb n="317r"/>
+                    <cb type="single-column"/><lb break="yes"/>estado en que el
+                    vino a mi casa e corte e a su <lb break="yes"/>pobre e
+                    pequeña fazienda que el en esse t<ex>iem</ex>po te<lb
+                        break="no"/>nia lo qual a todos es not<ex>ori</ex><hi
+                        rend="superscript">o</hi>. De la qual remunera<lb
+                        break="no"/>cion e muy abondosos e grandes
+                        benef<ex>ici</ex><hi rend="superscript">o</hi>s e
+                        m<ex>erce</ex>d<ex>e</ex>s <lb break="yes"/>e
+                        gr<ex>aci</ex>as que le yo fize el no<ex>n</ex> contento
+                    mas con <lb break="yes"/>grande orgullo de soberuia
+                    queriendo semejar <lb break="yes"/>a Lucifer se ovo en todos
+                    sus fechos e abtos segu<ex>n</ex>
+                    <lb break="yes"/>e en aquella man<ex>er</ex><hi
+                        rend="superscript">a</hi> que todos saben e es
+                        not<ex>ori</ex><hi rend="superscript">o</hi>
+                    <lb break="yes"/>en todos mis reynos e aun fuera dellos e lo
+                    yo se <lb break="yes"/>mas e mejor que otro
+                        alg<ex>un</ex><hi rend="superscript">o</hi>. E yo
+                        no<ex>n</ex> e auido nin <lb break="yes"/>he mi consejo
+                    en estos fechos con tales personas <lb break="yes"/>como en
+                        v<ex>uest</ex>ro escrito se contiene mas con personas
+                        <lb break="yes"/>temientes a dios e de gran autoridad e
+                    de bu<lb break="no"/>ena e sana conciencia e varones
+                    honestos e reli<lb break="no"/>giosos e omes letrados e
+                    sabios e aprouados e <lb break="yes"/>carescientes de toda
+                    avaricia e sospecha e que <lb break="yes"
+                        />derechame<ex>n</ex>te aman mi serui<ex>ci</ex><hi
+                        rend="superscript">o</hi> e la just<ex>ici</ex><hi
+                        rend="superscript">a</hi> e <lb break="yes"/>bien
+                        pub<ex>li</ex><hi rend="superscript">co</hi> e pacifico
+                    estado e tranquilidad de <lb break="yes"/>mis reynos.</p>
+                <p>E mi intencio<ex>n</ex> no<ex>n</ex> fue nin es de <lb
+                        break="yes"/>vsar de crueldad como contra toda verdad
+                    vos <pb n="317v"/>
+                    <cb type="single-column"/><lb break="yes"/>otros dezides
+                        ni<ex>n</ex> yo di el cargo del a tales personas <lb
+                        break="yes"/>en que todo vaya por forma de voluntad e
+                    consejo <lb break="yes"/>malvado e errado como imprudente e
+                        desuergon<lb break="no"/>çada e peruersa e deshonesta e
+                    deslealmente e <lb break="yes"/>contra toda v<ex>er</ex>dad
+                    en v<ex>uest</ex>ro escrito se contiene. Lo <lb break="yes"
+                    />qual todo vos fuera bien escusado de dezir nin <lb
+                        break="yes"/>escriuir si para ello ovierades bueno e
+                    sano e leal <lb break="yes"/>consejo. E a lo que dezides que
+                    el d<ex>ic</ex>ho v<ex>uest</ex>ro ma<lb break="no"/>rido e
+                    padre nunca me erro nin aun por pen<lb break="no"
+                        />sami<ex>ent</ex><hi rend="superscript">o</hi> vn
+                    punto, si esto es assi o no<ex>n</ex> sus obras <lb
+                        break="yes"/>an dado e dan testim<ex>oni</ex><hi
+                        rend="superscript">o</hi> dello e dios e todo el mun<lb
+                        break="no"/>do lo sabe e yo assi mesmo e la notificacion
+                    que <lb break="yes"/>dezides que queredes fazer al
+                        n<ex>uest</ex>ro s<ex>an</ex><hi rend="superscript"
+                        >to</hi> padre <lb break="yes"/>e a los principes
+                    christianos e a las cibdades e <lb break="yes"/>villas de
+                    mis regnos es bien escusado porque ya <lb break="yes"/>por
+                    mi les es fecha: e aun porq<ex>ue</ex> sin aquella ellos <lb
+                        break="yes"/>an bien conoscido al d<ex>ic</ex>ho
+                        v<ex>uest</ex>ro marido e padre e <lb break="yes"/>saben
+                    quales an seydo sus obras e fechos.</p>
+                <p>Poren<lb break="no"/>de toda via vos mando por la naturaleza
+                    e fide<lb break="no"/>lidad e lealtad e subjecion e
+                    vassallage q<ex>ue</ex> me de<lb break="no"/>vedes como mis
+                    vassallos e subditos e naturales e <pb n="318r"/>
+                    <cb type="single-column"/><lb break="yes"/>soys ascritos e
+                    obligados como a v<ex>uest</ex>ro Rey ⅋ soberano
+                        s<ex>eñ</ex><hi rend="superscript">or</hi>
+                    <lb break="yes"/>natural por toda ley e derecho e
+                    especialmente por <lb break="yes"/>las leyes de mis reynos
+                        q<ex>ue</ex> en esto fablan q<ex>ue</ex> luego sin <lb
+                        break="yes"/>otra luenga ni<ex>n</ex> tardança
+                        ni<ex>n</ex> escusa alguna e sin <lb break="yes"/>me mas
+                    requerir nin consultar sobre ello ni<ex>n</ex> esperar <lb
+                        break="yes"/>otra mi c<ex>a</ex>r<ex>t</ex>a
+                        ni<ex>n</ex> segunda jussio<ex>n</ex> me fagades lla<lb
+                        break="no"/>na essa villa e fortaleza de Escalona e las
+                    otras <lb break="yes"/>que tenedes e las fagades abrir e
+                    avrades las puer<lb break="no"/>tas dellas porque yo sea
+                    rescibido e acogido en ellas <lb break="yes"/>en aquella
+                        man<ex>er</ex><hi rend="superscript">a</hi> e con
+                    aquella reuerencia e obedi<lb break="no"/>encia e solenidad
+                        q<ex>ue</ex> Rey e sob<ex>eran</ex><hi
+                        rend="superscript">o</hi> s<ex>eñ</ex><hi
+                        rend="superscript">or</hi> deue ser rescebido en <lb
+                        break="yes"/>las fortalezas de sus regnos &amp; que vos
+                        no<ex>n</ex> pongades <lb break="yes"/>en resistencia
+                    nin contradicion nin otro re<del hand="#self"><gap
+                            reason="illegible" extent="subword"/></del>bello <lb
+                        break="yes"/>alg<ex>un</ex><hi rend="superscript">o</hi>
+                    nin cometades ni<ex>n</ex> fagades ni<ex>n</ex>
+                    p<ex>e</ex>rmitades de der<ex>ech</ex><hi rend="superscript"
+                        >o</hi>
+                    <lb break="yes"/>nin de fecho ni<ex>n</ex> de consejo
+                        ni<ex>n</ex> en otra man<ex>er</ex><hi
+                        rend="superscript">a</hi> ning<ex>un</ex><hi
+                        rend="superscript">a</hi>
+                    <lb break="yes"/>que sea o ser pueda la maluada e facinerosa
+                    e exe<lb break="no"/>crable e desleal traycion
+                        hereticam<ex>en</ex><hi rend="superscript">te</hi>
+                    cominada <lb break="yes"/>por v<ex>uest</ex>ro escrito en
+                    tanto desservi<ex>ci</ex><hi rend="superscript">o</hi> de
+                    dios e mio e <lb break="yes"/>contra el bien d<ex>e</ex> la
+                    cosa pub<ex>lica</ex> de mis r<ex>eynos</ex> e en blasmo e
+                        <lb break="yes"/>manzilla perp<ex>etua</ex> de
+                        v<ex>uest</ex>ras p<ex>e</ex>r<ex>sonas</ex> e
+                        est<ex>ado</ex> e lina<ex>ge</ex> nin otra <pb n="318v"/>
+                    <cb type="single-column"/><lb break="yes"/>al<ex>guna</ex>
+                    pues sab<ex>edes</ex> o devedes sab<ex>er</ex> e a
+                        tod<ex>os</ex> es not<ex>ori</ex><hi rend="superscript"
+                        >o</hi> q<ex>ue</ex> todo aq<ex>ue</ex><lb break="no"
+                    />llo vos es espr<ex>essamente</ex> defendido por toda ley e
+                        der<ex>ech</ex><hi rend="superscript">o</hi>
+                        di<ex>uino</ex> e h<ex>umano</ex> e <lb break="yes"
+                        />mayorm<ex>en</ex><hi rend="superscript">te</hi> por
+                    las l<ex>eyes</ex> de mis r<ex>eynos</ex>. E no<ex>n</ex>
+                        fag<ex>ades</ex> e<ex>nde</ex> al<ex>go</ex> por <lb
+                        break="yes"/>alg<ex>un</ex><hi rend="superscript">a</hi>
+                        m<ex>anera</ex> so pe<ex>na</ex> de la mi
+                        m<ex>erced</ex> e de caer e q<ex>ue</ex> ayades cay<lb
+                        break="no"/>do por el m<ex>ism</ex><hi
+                        rend="superscript">o</hi> fecho en caso de
+                        tr<ex>aycion</ex> e q<ex>ue</ex> ay<ex>ades</ex>
+                        perd<ex>ido</ex> e per<lb break="no"/>dades los C. e
+                        q<ex>u</ex><hi rend="superscript">a</hi>nto auedes. e
+                    que vosot<ex>r</ex><hi rend="superscript">o</hi>s e los de
+                        v<ex>uest</ex>ro linage <lb break="yes"/>seades e
+                    quededes por tr<ex>aydores</ex>.</p>
+                <p>E esto mesmo mando so l<ex>as</ex>
+                    <lb break="yes"/>d<ex>ic</ex>has p<ex>enas</ex> e caso a los
+                        cau<ex>alleros</ex> e escud<ex>eros</ex> e otras
+                        per<ex>sonas</ex> mis va<ex>sallos</ex>
+                    <lb break="yes"/>sub<ex>ditos</ex> e nat<ex>urales</ex> e
+                    vesinos e morad<ex>ores</ex> d<ex>e</ex> la d<ex>ic</ex>ha
+                        v<ex>illa</ex> q<ex>ue</ex> co<ex>n</ex> vos <lb
+                        break="yes"/>otros son q<ex>ue</ex> lo faga<ex>n</ex> e
+                        guar<ex>den</ex> e cumplan assi apercib<ex>o</ex>
+                    <lb break="yes"/>a vos e a ellos q<ex>ue</ex> si por gran
+                        desvent<ex>ur</ex><hi rend="superscript">a</hi> e ciega
+                    e desleal <lb break="yes"/>porfia v<ex>uest</ex>ra e suya
+                    assi no<ex>n</ex> lo fezier<ex>an</ex> e cumpl<ex>ieran</ex>
+                    e fiziere<ex>n</ex>
+                    <lb break="yes"/>&amp; cumpl<ex>ieran</ex> yo a
+                        v<ex>uest</ex>ro grande e manifiesto cargo e por
+                        v<ex>uest</ex>ra <lb break="yes"/>rebellio<ex>n</ex> e
+                        not<ex>ori</ex><hi rend="superscript">a</hi> &amp;
+                    euidente cul<ex>pa</ex> proced<ex>ere</ex> c<ex>ontra</ex>
+                    vosotros <lb break="yes"/>e c<ex>ontra</ex>
+                        v<ex>uestros</ex> bien<ex>es</ex> e lina<ex>ges</ex> e
+                        c<ex>ontra</ex> todos los ot<ex>r</ex><hi
+                        rend="superscript">o</hi>s q<ex>ue</ex> vos an dado <lb
+                        break="yes"/>e diere<ex>n</ex> fa<ex>uor</ex> e
+                        ay<ex>uda</ex> e c<ex>ontrari</ex><hi rend="superscript"
+                        >o</hi> p<ex>ar</ex>a la d<ex>ic</ex>ha
+                        reb<ex>elion</ex> a las d<ex>ic</ex>has
+                        pe<ex>rsonas</ex>
+                    <lb break="yes"/>e casos e a cada vno dellos como en
+                        not<ex>ori</ex><hi rend="superscript">a</hi> rebelion e
+                        <lb break="yes"/>deslealtad sin vos mas llamar ni oyr
+                    sobre ello. de lo <lb break="yes"/>qual mande dar la
+                        pr<ex>esente</ex> fir<ex>mada</ex> de mi no<ex>n</ex>bre
+                    e sellada co<ex>n</ex>
+                    <lb break="yes"/>mi sello con la qual embio alla a vos a
+                    Asturias mi <lb break="yes"/>persevante. </p>
+                <p>De fuentsalida XXIIIJ dias de Mayo <lb break="yes"/>de
+                    LIII.</p>
+            </div>
+        </body>
+    </text>
+</TEI>
